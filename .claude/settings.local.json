@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(git --version)",
+      "Bash(python -c \"import yaml, aiohttp, sqlite3\")",
+      "Bash(python -m fp.parser /d/DATN2/nuclei-templates/http/technologies /d/DATN2/fingerprinter/fingerprints.db)",
+      "Bash(python *)"
+    ]
+  }
+}
