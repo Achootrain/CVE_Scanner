@@ -16,3 +16,4 @@ fingerprinter/stub_session.json
 # Curate by hand into fp/regex_blocklist.txt; the audit log is local-only.
 fingerprinter/fp/regex_blocklist.auto.log
 lab
+.env
