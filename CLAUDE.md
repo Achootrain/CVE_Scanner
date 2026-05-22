@@ -228,3 +228,18 @@ Corpus split happens per-tech after filtering (blind-test boundary maintained pe
 **Scanner/dataset:** fix URL evidence in results, refine pipeline as labeling tool, research owl-carousel/nextjs/wp-rocket/shopify/jquery-ui-tooltip/xenforo/nuxt.js/requirejs/tailwind, scan + label versions, refine data for ML.
 
 **Lab RAG:** see §12 Next Steps.
+
+### problems
+Target	Config	Time	Techs	Versioned	Notes
+hanoi.edu.vn	api + no-katana	5.9s	3	0	Header-only: cloudflare, HSTS, ASP.NET
+api + katana	62.2s	3	0	+60s for nothing (katana timeout, same 3 techs)
+page + no-katana	93.6s	10	5	✅ bootstrap, FA, jQuery, Slick, OGP, google-font-api
+page + katana	95.1s	10	5	Katana timeout adds nothing over page-only
+gosu.vn	all configs	4-64s	0	0	Site down/unreachable
+cafebiz.vn	api + no-katana	39.1s	6	1	Not CF-blocked, api works
+api + katana	62.3s	6	1	+23s katana timeout, same 6 techs
+page + no-katana	67.7s	6	1	Slower, same result (no CF block here)
+page + katana	71.0s	6	1	Slowest, same result
+
+- katana is useless. check why
+- maybe add a smart detection ( cloudflare detection to enable/disable page mode)
