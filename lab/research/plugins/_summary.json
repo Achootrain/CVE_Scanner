@@ -1,0 +1,130 @@
+{
+  "plugins": [
+    {
+      "slug": "better-font-awesome",
+      "product": "Better Font Awesome",
+      "primary": "2.0.4",
+      "cross": [
+        "2.0.3",
+        "2.0.2",
+        "2.0.1"
+      ],
+      "tagged": true,
+      "rule_count": 2,
+      "exit_code": 0,
+      "bundled_rule_count": 6
+    },
+    {
+      "slug": "font-awesome",
+      "product": "Font Awesome",
+      "primary": "5.2.0-1",
+      "cross": [
+        "5.1.5",
+        "5.1.4",
+        "5.1.3"
+      ],
+      "tagged": true,
+      "rule_count": 1,
+      "exit_code": 0,
+      "bundled_rule_count": 0
+    },
+    {
+      "slug": "wp-font-awesome",
+      "product": "WP Font Awesome",
+      "primary": "1.8.0",
+      "cross": [
+        "1.7.7"
+      ],
+      "tagged": true,
+      "rule_count": 2,
+      "exit_code": 0,
+      "bundled_rule_count": 2
+    },
+    {
+      "slug": "shortcode-for-font-awesome",
+      "product": "Shortcode for Font Awesome",
+      "primary": "1.4.6",
+      "cross": [
+        "1.4.5",
+        "1.4.4",
+        "1.4.3"
+      ],
+      "tagged": true,
+      "rule_count": 1,
+      "exit_code": 0,
+      "bundled_rule_count": 0
+    },
+    {
+      "slug": "block-for-font-awesome",
+      "product": "Block for Font Awesome",
+      "primary": "current",
+      "cross": [],
+      "tagged": false,
+      "rule_count": 2,
+      "exit_code": 0,
+      "bundled_rule_count": 0
+    },
+    {
+      "slug": "surbma-font-awesome",
+      "product": "Surbma Font Awesome",
+      "primary": "3.1",
+      "cross": [
+        "3.0",
+        "2.6.0",
+        "2.5.0"
+      ],
+      "tagged": true,
+      "rule_count": 2,
+      "exit_code": 0,
+      "bundled_rule_count": 0
+    },
+    {
+      "slug": "perfect-font-awesome-integration",
+      "product": "Perfect Font Awesome Integration",
+      "primary": "current",
+      "cross": [],
+      "tagged": false,
+      "rule_count": 1,
+      "exit_code": 0,
+      "bundled_rule_count": 18
+    },
+    {
+      "slug": "ss-font-awesome-icon",
+      "product": "SS Font Awesome Icon",
+      "primary": "current",
+      "cross": [],
+      "tagged": false,
+      "rule_count": 1,
+      "exit_code": 0,
+      "bundled_rule_count": 0
+    },
+    {
+      "slug": "advanced-custom-fields-font-awesome",
+      "product": "Advanced Custom Fields: Font Awesome Field",
+      "primary": "6.0.2",
+      "cross": [
+        "6.0.1",
+        "6.0.0",
+        "5.0.2"
+      ],
+      "tagged": true,
+      "rule_count": 2,
+      "exit_code": 0,
+      "bundled_rule_count": 0
+    },
+    {
+      "slug": "eds-font-awesome",
+      "product": "Ed's Font Awesome",
+      "primary": "3.0.1",
+      "cross": [
+        "3.0",
+        "2.1",
+        "2.0"
+      ],
+      "tagged": true,
+      "rule_count": 2,
+      "exit_code": 0,
+      "bundled_rule_count": 29
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "tech_slug": "wp-plugin",
+  "canonical_name": "WordPress Plugin (generic)",
+  "slug_url_rules": [
+    {
+      "rule_id": "wp_plugin_readme",
+      "pattern": "/wp-content/plugins/([a-z0-9][a-z0-9_\\-]*)/readme\\.txt$",
+      "extracts": {
+        "slug": {"g": 1, "from": "url"},
+        "version": {"g": 1, "from": "body", "body_pattern": "(?im)^Stable\\s+tag:\\s*(\\S+)"},
+        "name_template": "{slug}"
+      },
+      "applies_to": "wp plugin readme.txt body (first 8 KiB)",
+      "confidence": "high",
+      "source": {
+        "principle": "WordPress plugin readme.txt MUST contain a 'Stable tag:' line per the WordPress.org plugin standard. URL path /wp-content/plugins/<slug>/readme.txt encodes the canonical plugin slug.",
+        "ref_url": "https://developer.wordpress.org/plugins/wordpress-org/how-your-readme-txt-works/",
+        "validated_against": [
+          "centralretail.com.vn/wp-content/plugins/elementor/readme.txt -> Stable tag: 3.4.2",
+          "centralretail.com.vn/wp-content/plugins/polylang/readme.txt -> Stable tag: 3.1.1",
+          "centralretail.com.vn/wp-content/plugins/wpforms-lite/readme.txt -> Stable tag: 1.8.1.2",
+          "centralretail.com.vn/wp-content/plugins/admin-menu-editor/readme.txt -> Stable tag: 1.9.10"
+        ]
+      }
+    }
+  ]
+}

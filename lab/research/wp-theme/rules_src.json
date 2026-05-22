@@ -1,0 +1,33 @@
+{
+  "tech_slug": "wp-theme",
+  "canonical_name": "WordPress Theme (generic)",
+  "slug_url_rules": [
+    {
+      "rule_id": "wp_theme_style",
+      "pattern": "/wp-content/themes/([^/?#]+)/style\\.css(?:[?#]|$)",
+      "extracts": {
+        "slug": {
+          "g": 1,
+          "from": "url"
+        },
+        "version": {
+          "g": 1,
+          "from": "body",
+          "body_pattern": "(?im)^(?:[ \\t]*<\\?php)?[ \\t/*#@]*Version:\\s*(\\S+)"
+        },
+        "name_template": "wp-theme:{slug}"
+      },
+      "applies_to": "wp theme style.css body (first 8 KiB)",
+      "confidence": "high",
+      "source": {
+        "principle": "WordPress core parses theme headers via get_file_data() which reads the first 8 KiB of the file and applies regex /^(?:[ \\t]*<\\?php)?[ \\t/*#@]*<Field>:(.*)$/mi for each declared header. 'Version' is one of the declared headers in WP_Theme::$file_headers and is required by the WordPress.org Theme Repository. Slug charset widened to [^/?#]+ to match actual WP behavior (filesystem directory names allow dots, uppercase, etc; e.g., Newspaper12.7.3-child, vidi_v1.0 in real corpus). Per src/wp-includes/class-wp-theme.php WP does no validation on the slug -- it is whatever directory exists.",
+        "src_file_parser": "wordpress-develop/src/wp-includes/functions.php:6979 (get_file_data preg_match)",
+        "src_file_field_list": "wordpress-develop/src/wp-includes/class-wp-theme.php:30-45 (WP_Theme::$file_headers, includes 'Version' => 'Version')",
+        "src_url_parser": "https://github.com/WordPress/wordpress-develop/blob/trunk/src/wp-includes/functions.php",
+        "doc_url": "https://developer.wordpress.org/themes/getting-started/main-stylesheet-style-css/",
+        "doc_quote_required_fields": "Version: The version of the theme, written in X.X or X.X.X format. (Required)"
+      },
+      "name_prefix_rationale": "Theme slugs collide with plugin slugs (e.g. 'astra' is both a popular theme and several plugins). Prefixing with 'wp-theme:' makes the canonical name unambiguous at reconcile time."
+    }
+  ]
+}

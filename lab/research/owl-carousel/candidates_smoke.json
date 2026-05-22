@@ -1,0 +1,22 @@
+{
+  "tech": "owl-carousel",
+  "refs": [
+    "2.3.4"
+  ],
+  "candidates": [
+    {
+      "candidate_id": "owl-carousel--banner--lab-research-owl-carousel-out-source-2-3-4-dist-owl-carousel-js--L2",
+      "kind": "banner",
+      "channel": "js body",
+      "anchor": "Owl Carousel",
+      "version_observed": "2.3.4",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/dist/owl.carousel.js",
+        "line_start": 2,
+        "line_end": 6,
+        "preview": " * Owl Carousel v2.3.4\n * Copyright 2013-2018 David Deutsch\n * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE\n */\n/**\n"
+      },
+      "task_for_drafter": "Draft a 'banner' rule (section='banner_rules', kind='banner') that captures the version from the comment header of lab/research/owl-carousel/out/source/2.3.4/dist/owl.carousel.js. The literal observed in this release is shown in the evidence preview -- generalise it so it captures any version of the same form (do not hardcode 2.3.4). applies_to should match the file type (js body)."
+    }
+  ]
+}

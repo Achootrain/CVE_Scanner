@@ -1,0 +1,38 @@
+{
+  "rules": [
+    {
+      "id": "owl_carousel_banner",
+      "section": "banner_rules",
+      "kind": "banner",
+      "pattern": "(?i)\\*\\s*Owl\\s+Carousel\\s+v(\\d+(?:\\.\\d+)+)",
+      "extracts": {
+        "version": {
+          "g": 1
+        }
+      },
+      "applies_to": "js body",
+      "confidence": "high",
+      "source": {
+        "principle": "Captures the version from the Owl Carousel comment header banner in JavaScript files.",
+        "citations": [
+          {
+            "file_path": "lab\\research\\owl-carousel\\out\\source\\2.3.4\\dist\\owl.carousel.js",
+            "line_start": 1,
+            "line_end": 30,
+            "content_hash": "491430bcae2b4237d318d75fbb59476bb4d500b98b70f7bba977483a8471cb51"
+          }
+        ]
+      },
+      "_drafter_meta": {
+        "signal_shape": "Owl Carousel banner version",
+        "ninth_gate_outcome": "no_near_match",
+        "turns_used": 5,
+        "rule_queries": [
+          "Owl Carousel banner version",
+          "js comment header version disclosure"
+        ],
+        "candidate_id": "owl-carousel--banner--lab-research-owl-carousel-out-source-2-3-4-dist-owl-carousel-js--L2"
+      }
+    }
+  ]
+}

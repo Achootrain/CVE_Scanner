@@ -1,0 +1,47 @@
+{
+  "tech_slug": "vue",
+  "canonical_name": "Vue.js",
+  "banner_rules": [
+    {
+      "rule_id": "banner_vue3_dom_safety",
+      "pattern": "[\"'](\\d+\\.\\d+\\.\\d+(?:-[\\w.]+)?)[\"'][\\s\\S]{0,200}(?:[\"']undefined[\"']!=typeof\\s+document\\?document:null|[\"']undefined[\"']!=typeof\\s+window&&window\\.trustedTypes)",
+      "extracts": {"version": {"g": 1}},
+      "applies_to": "js bundle body (full read)",
+      "confidence": "high",
+      "source": {
+        "principle": "Vue 3 emits `export const version = __VERSION__` in packages/runtime-core/src/index.ts. After build, the minifier interleaves the version constant with Vue 3's DOM-safety initialisation. Empirically across 3.2.37 / 3.4.0 / 3.5.0 / 3.5.13: version literal sits within ~200 chars of one of two Vue 3 distinctive DOM checks -- `\"undefined\"!=typeof document?document:null` (Vue 3 runtime-dom env detection, 3.2-3.4) OR `\"undefined\"!=typeof window&&window.trustedTypes` (Vue 3 trusted-types policy init, 3.4+). Both are stable Vue 3 internals -- the former is in packages/runtime-dom/src/index.ts, the latter in packages/runtime-dom/src/nodeOps.ts (or equivalent). The proximity anchor catches Vue 3 builds where retire.js's six v3 fingerprints fail (verified: retire.js misses 3.2.37 global entirely).",
+        "src_file_version_export": "vuejs/core@v3.5.0 packages/runtime-core/src/index.ts:3",
+        "src_file_trustedtypes": "vuejs/core packages/runtime-dom/src/nodeOps.ts (trustedTypes policy creation)",
+        "validated_against": [
+          "3.2.37 global -> HIT 3.2.37 (retire.js misses)",
+          "3.4.0  global -> HIT 3.4.0",
+          "3.5.0  global -> HIT 3.5.0",
+          "3.5.0  runtime-only -> HIT 3.5.0",
+          "3.5.13 global -> HIT 3.5.13"
+        ],
+        "negative_tests": [
+          "jquery@3.7.1 jquery.min.js -> miss (no Vue 3 trustedTypes/document check pattern)",
+          "react@18.3.0 react.production.min.js -> miss"
+        ],
+        "complement_to_retire_js": "retire.js's six v3 fingerprints are version-context-specific (SSR utils comment, __vue_app__ binding, devtoolsFormatters proximity, etc.) and miss multiple production Vue 3 builds. This rule anchors on Vue 3's DOM-safety init which is universal across the v3.x lineage."
+      }
+    },
+    {
+      "rule_id": "banner_vue2_functional_render_ctx",
+      "pattern": "\"FunctionalRenderContext\"[\\s\\S]{0,400}?\\.version\\s*=\\s*[\"'](\\d+\\.\\d+\\.\\d+)[\"']|\\.version\\s*=\\s*[\"'](\\d+\\.\\d+\\.\\d+)[\"'][\\s\\S]{0,400}?\"FunctionalRenderContext\"",
+      "extracts": {"version": {"g": 1}},
+      "applies_to": "js bundle body (full read)",
+      "confidence": "high",
+      "source": {
+        "principle": "Vue 2 (incl. 2.7.x) emits `Object.defineProperty(Vue, 'FunctionalRenderContext', {value: FunctionalRenderContext}); Vue.version = version` consecutively in src/core/index.ts. The minifier preserves the string literal 'FunctionalRenderContext' (a defineProperty key) and the `.version=' assignment within ~200 chars. retire.js's own `Vue.version = '...'` fingerprint requires the literal prefix `Vue.version`, which minified bundles strip when the Vue constructor is renamed (e.g. `ir.version='2.7.13'`). This rule anchors on the preserved string literal instead.",
+        "src_file": "vuejs/vue@v2.7.16 src/core/index.ts:21-25",
+        "src_excerpt": "Object.defineProperty(Vue, 'FunctionalRenderContext', { value: FunctionalRenderContext })\\nVue.version = version",
+        "validated_against_corpus": [
+          "9pay.vn /static/a916bea.js -> ir.version=\"2.7.13\" near \"FunctionalRenderContext\""
+        ],
+        "complement_to_retire_js": "retire.js fingerprint id=1124 catches `Vue.version='X.Y.Z'` literally; this rule catches the minified form where Vue is renamed."
+      },
+      "applies_only_to": "Vue 2.x (FunctionalRenderContext was removed in Vue 3); Vue 3 is already covered by retire.js's 9 v3-specific filecontent fingerprints."
+    }
+  ]
+}

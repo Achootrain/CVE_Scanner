@@ -1,0 +1,52 @@
+{
+  "tech_slug": "bootstrap",
+  "canonical_name": "Bootstrap",
+  "banner_rules": [
+    {
+      "rule_id": "banner_bootstrap",
+      "pattern": "Bootstrap\\s+v?(\\d+\\.\\d+(?:\\.\\d+)?)",
+      "extracts": {"version": {"g": 1}},
+      "applies_to": "css/js body (first 8 KiB)",
+      "confidence": "high",
+      "source": {
+        "releases_validated": ["3.4.1", "4.3.1", "4.4.1", "4.6.2", "5.0.2", "5.3.3"],
+        "format_observed": [
+          "/*!\\n * Bootstrap v3.4.1 (https://getbootstrap.com/)",
+          "/*!\\n * Bootstrap v4.6.2 (https://getbootstrap.com/)",
+          "@charset \"UTF-8\";/*!\\n * Bootstrap  v5.3.3 (https://getbootstrap.com/)"
+        ],
+        "files": ["dist/css/bootstrap.min.css", "dist/js/bootstrap.bundle.min.js"],
+        "principle": "Bootstrap's release pipeline emits a /*! ... v X.Y.Z ... */ banner at the top of every minified CSS and JS artifact. The /*! prefix is the standard 'preserve through minification' marker honored by uglify/terser/cssnano. Banner has been stable across 3.x, 4.x, and 5.x majors. The 'Bootstrap' token plus optional 'v' and dotted version is the entire signal -- this rule does NOT pin separator or surrounding chars (per CLAUDE.md sec 7 'think signal, not samples'). 5.3.x CSS uses an extra space ('Bootstrap  v5.3.3') -- absorbed by \\\\s+. Verified against official jsdelivr mirror + 3 self-hosted corpus targets.",
+        "rejects_by_design": [
+          "Strings like 'Bootstrap 4 template' (no dotted version)",
+          "'BootstrapCDN' (token would need to be 'Bootstrap ' boundary -- handled by \\\\s+ requirement)"
+        ]
+      }
+    },
+    {
+      "rule_id": "version_getter_inline",
+      "pattern": "\\bVERSION\\b.{1,40}?[\"'](\\d+\\.\\d+\\.\\d+(?:-[0-9A-Za-z.\\-]+)?)[\"']",
+      "extracts": {"version": {"g": 1}},
+      "applies_to": "js body (first 8 KiB)",
+      "confidence": "medium",
+      "source": {
+        "releases_validated": ["4.0.0-beta.2", "4.3.1", "4.6.2"],
+        "format_observed": [
+          "var VERSION = '4.0.0-beta.2';                       // bootstrap@4.0.0-beta.2/dist/js/bootstrap.js (un-minified per-component)",
+          "{key:\"VERSION\",get:function(){return\"4.0.0-beta.2\"}}  // same source after Babel ES6 class -> ES5 _createClass transpilation",
+          "key: \"VERSION\", get: function get() { return VERSION$a; }  // bootstrap@4.6.2 modular form -- references shared const, this rule does NOT fire here (banner handles 4.6.2)"
+        ],
+        "files": ["dist/js/bootstrap.js (un-minified)", "self-hosted re-transpiles of dist/js/bootstrap.js"],
+        "principle": "Bootstrap 4.x non-minified bootstrap.js emits 'var VERSION = ...' per component (Util, Alert, Button, etc.) at the producer site -- 11 components total in 4.0.x, each with the literal version string. When a downstream build (Babel ES5 class transpile) reshapes the component into a _createClass call, the literal becomes {key:\"VERSION\",get:function(){return\"X.Y.Z\"}}. Both forms share \\\\bVERSION\\\\b -> short gap -> quoted dotted-3 version. \\\\bVERSION\\\\b enforces word boundary (rejects MY_VERSION, VERSION_TEMPLATE, VERSIONS). 40-char gap absorbs the longest seen transpiled form (24 chars: '\",get:function(){return\"'). Requires 3 dotted parts to reject incomplete '1.5' style and reduce false positives on unrelated VERSION='1.0' tokens. Source: https://cdn.jsdelivr.net/npm/bootstrap@4.0.0-beta.2/dist/js/bootstrap.js (WebFetch 2026-05-18 -- confirmed 11 'var VERSION = ' occurrences, all '4.0.0-beta.2'). Cross-check: https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.js uses VERSION$N shared-const form which this rule does NOT match (intentional -- banner rule handles 4.6.2).",
+        "rejects_by_design": [
+          "VERSION$a / VERSION$9 in modular 4.6.x+ builds (no quoted literal in same proximity -- banner_bootstrap catches these)",
+          "MY_VERSION = '1.2.3' (\\\\b word-boundary fails because _ is word-char)",
+          "VERSIONS = ['1.0.0'] (\\\\b after N fails -- S is word-char)",
+          "VERSION = '1.5' (only 2 dotted parts -- bootstrap always emits 3)",
+          "Unrelated VERSION token > 40 chars from the version literal"
+        ],
+        "negative_overlap_check": "On minified bootstrap.min.js bodies (5sfashion.vn, caresoft) the VERSION literals are mangled away by Terser -- this rule yields None there, banner_bootstrap fires. No double-counting risk. On un-minified or re-transpiled bodies (cofer.edu.vn, chungauto.vn) this rule recovers what the banner_rule misses or duplicates with consistent version."
+      }
+    }
+  ]
+}

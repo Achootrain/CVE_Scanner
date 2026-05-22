@@ -1,0 +1,140 @@
+# Fingerprint-rule lab fixtures.
+#
+# Each entry spins up a single container or a compose project whose tech +
+# version are known ground truth. The orchestrator (run.py) starts it, waits
+# for readiness, optionally runs a setup hook, re-checks readiness, scans,
+# then tears down.
+#
+# Fields:
+#   id             — unique fixture id (used as container / compose project name)
+#   image          — docker image:tag (for single-container fixtures)
+#   compose        — path to docker-compose.yml (for multi-container fixtures)
+#                    compose files receive HOST_PORT env so they can map ports
+#   port           — host port to expose the app on
+#   container_port — optional, default 80 (ignored for compose)
+#   expected       — ground truth
+#     tech         — case-insensitive substring; matched against detection "name"
+#     version      — exact version string the container is pinned to
+#   ready          — readiness probe
+#     path         — HTTP path to poll, default "/"
+#     status       — acceptable statuses, default [200, 301, 302, 401, 403, 404]
+#     timeout      — seconds to wait, default 60
+#   setup          — optional post-ready setup script (python file)
+#   setup_ready    — optional second readiness probe run after setup
+#                    same fields as `ready`; if omitted, setup completion is trusted
+
+fixtures:
+  - id: nginx-1-26-0
+    image: nginx:1.26.0
+    port: 18100
+    expected:
+      tech: nginx
+      version: 1.26.0
+
+  - id: nginx-1-25-3
+    image: nginx:1.25.3
+    port: 18101
+    expected:
+      tech: nginx
+      version: 1.25.3
+
+  - id: nginx-1-24-0
+    image: nginx:1.24.0
+    port: 18102
+    expected:
+      tech: nginx
+      version: 1.24.0
+
+  # Multi-distro variants — same upstream nginx, alpine base. Validates
+  # that candidate extractors survive across rendering differences between
+  # official debian-based and alpine-based images.
+  - id: nginx-1-25-3-alpine
+    image: nginx:1.25.3-alpine
+    port: 18106
+    expected:
+      tech: nginx
+      version: 1.25.3
+
+  - id: nginx-1-24-0-alpine
+    image: nginx:1.24.0-alpine
+    port: 18107
+    expected:
+      tech: nginx
+      version: 1.24.0
+
+  - id: httpd-2-4-59
+    image: httpd:2.4.59
+    port: 18105
+    expected:
+      tech: Apache
+      version: 2.4.59
+
+  - id: httpd-2-4-58
+    image: httpd:2.4.58
+    port: 18103
+    expected:
+      tech: Apache
+      version: 2.4.58
+
+  - id: httpd-2-4-57
+    image: httpd:2.4.57
+    port: 18104
+    expected:
+      tech: Apache
+      version: 2.4.57
+
+  - id: wordpress-6-4-3
+    compose: fixtures/wordpress-6-4-3/docker-compose.yml
+    port: 18201
+    expected:
+      tech: WordPress
+      version: 6.4.3
+    ready:
+      path: /
+      status: [200, 301, 302]
+      timeout: 180
+    setup: fixtures/wordpress-6-4-3/setup.py
+    setup_ready:
+      path: /
+      status: [200]
+      timeout: 30
+
+  - id: wordpress-6-4-2
+    compose: fixtures/wordpress-6-4-2/docker-compose.yml
+    port: 18203
+    expected:
+      tech: WordPress
+      version: 6.4.2
+    ready:
+      path: /
+      status: [200, 301, 302]
+      timeout: 180
+    setup: fixtures/wordpress-6-4-2/setup.py
+    setup_ready:
+      path: /
+      status: [200]
+      timeout: 30
+
+  - id: grafana-10-2-3
+    image: grafana/grafana:10.2.3
+    port: 18202
+    container_port: 3000
+    expected:
+      tech: Grafana
+      version: 10.2.3
+    ready:
+      path: /api/health
+      status: [200]
+      timeout: 90
+
+  - id: grafana-10-2-2
+    image: grafana/grafana:10.2.2
+    port: 18204
+    container_port: 3000
+    expected:
+      tech: Grafana
+      version: 10.2.2
+    ready:
+      path: /api/health
+      status: [200]
+      timeout: 90

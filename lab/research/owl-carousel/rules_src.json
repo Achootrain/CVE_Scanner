@@ -1,0 +1,35 @@
+{
+  "banner_rules": [
+    {
+      "id": "owl_carousel_banner",
+      "kind": "banner",
+      "pattern": "(?i)\\*\\s*(?:jQuery\\s+)?Owl[\\s\\-]?Carousel\\s+v(\\d+(?:\\.\\d+)+)",
+      "extracts": {
+        "version": {
+          "g": 1
+        }
+      },
+      "applies_to": "js body",
+      "confidence": "high",
+      "source": {
+        "principle": "Owl Carousel banner across v1.x and v2.x. v1.x: '* jQuery OwlCarousel v1.3.3' (project was 'jQuery OwlCarousel', one word). v2.x: '* Owl Carousel v2.3.4' (renamed, two words). Generalised per CLAUDE.md §9: same signal shape, absorbable variations are the optional 'jQuery ' prefix and the separator between Owl and Carousel (space or none).",
+        "citations": [
+          {
+            "file_path": "lab/research/owl-carousel/out/source/2.3.4/dist/owl.carousel.js",
+            "line_start": 1,
+            "line_end": 30,
+            "content_hash": "491430bcae2b4237d318d75fbb59476bb4d500b98b70f7bba977483a8471cb51",
+            "label": "v2.3.4 release artifact (git clone OwlCarousel2@2.3.4)"
+          },
+          {
+            "file_path": "lab/research/owl-carousel/out/snapshots/hstatic-owl.carousel-1.3.3.js",
+            "line_start": 1,
+            "line_end": 9,
+            "content_hash": "4d3babf39e6fe3465e2d78d83867caecf652657c31f437588ca3544f08e76466",
+            "label": "v1.3.3 live-fetched 2026-05-21 from hstatic.net (deployed copy; canonical 1.x repo no longer hosted)"
+          }
+        ]
+      }
+    }
+  ]
+}

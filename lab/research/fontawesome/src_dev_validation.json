@@ -1,0 +1,1863 @@
+{
+  "summary": {
+    "corpus_sites": 70,
+    "version_extracted": 64,
+    "generation_only": 4,
+    "kit_only": 2,
+    "no_signal": 0,
+    "any_signal_pct": 100.0,
+    "version_pct": 91.4,
+    "elapsed_s": 33.0,
+    "with_fetch": true
+  },
+  "per_site": [
+    {
+      "version": "6.6.0",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      ],
+      "host": "568play.vn"
+    },
+    {
+      "version": "5.1.1",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        }
+      ],
+      "fa_urls": [
+        "https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      ],
+      "host": "5giay.vn"
+    },
+    {
+      "version": "4.3.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": "free",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://769audio.vn/css/font-awesome.min.css"
+        },
+        {
+          "rule": "banner_v4",
+          "kind": "banner",
+          "url": "https://769audio.vn/css/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://769audio.vn/css/font-awesome.min.css"
+      ],
+      "host": "769audio.vn"
+    },
+    {
+      "version": "6.8.3",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_with_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://abby.vn/wp-content/plugins/ubermenu/assets/fontawesome/css/all.min.css?ver=6.8.3"
+        },
+        {
+          "rule": "url_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://abby.vn/wp-content/plugins/ubermenu/assets/fontawesome/css/all.min.css?ver=6.8.3"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://abby.vn/wp-content/plugins/ubermenu/assets/fontawesome/css/all.min.css?ver=6.8.3"
+        }
+      ],
+      "fa_urls": [
+        "https://abby.vn/wp-content/plugins/ubermenu/assets/fontawesome/css/all.min.css?ver=6.8.3"
+      ],
+      "host": "abby.vn"
+    },
+    {
+      "version": "5.9.0",
+      "generation": 5,
+      "generation_at_least": 5,
+      "edition": "Pro",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "banner_v5plus",
+          "kind": "banner",
+          "url": "https://abic.com.vn/Styles/lib/font-awesome-all.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://abic.com.vn/Styles/lib/font-awesome-all.min.css"
+      ],
+      "host": "abic.com.vn"
+    },
+    {
+      "version": "4.7.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_with_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://acc.vn/wp-content/themes/fptheme/assets/fonts/fontawesome-webfont.woff2?v=4.7.0"
+        },
+        {
+          "rule": "url_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://acc.vn/wp-content/themes/fptheme/assets/fonts/fontawesome-webfont.woff2?v=4.7.0"
+        },
+        {
+          "rule": "font_v4_webfont",
+          "kind": "webfont_rules",
+          "url": "https://acc.vn/wp-content/themes/fptheme/assets/fonts/fontawesome-webfont.woff2"
+        },
+        {
+          "rule": "font_v4_webfont",
+          "kind": "webfont_rules",
+          "url": "https://acc.vn/wp-content/themes/fptheme/assets/fonts/fontawesome-webfont.woff2?v=4.7.0"
+        }
+      ],
+      "fa_urls": [
+        "https://acc.vn/wp-content/themes/fptheme/assets/fonts/fontawesome-webfont.woff2",
+        "https://acc.vn/wp-content/themes/fptheme/assets/fonts/fontawesome-webfont.woff2?v=4.7.0"
+      ],
+      "host": "acc.vn"
+    },
+    {
+      "version": "4.7.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        },
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      ],
+      "host": "accesstrade.vn"
+    },
+    {
+      "version": "4.7.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://account.ehou.edu.vn/cas/webjars/font-awesome/4.7.0/css/font-awesome.min.css"
+        },
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://account.ehou.edu.vn/cas/webjars/font-awesome/4.7.0/css/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://account.ehou.edu.vn/cas/webjars/font-awesome/4.7.0/css/font-awesome.min.css"
+      ],
+      "host": "account.ehou.edu.vn"
+    },
+    {
+      "version": "5.15.3",
+      "generation": 5,
+      "generation_at_least": 5,
+      "edition": "Free",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://www.acervietnam.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://www.acervietnam.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css"
+        },
+        {
+          "rule": "banner_v5plus",
+          "kind": "banner",
+          "url": "https://www.acervietnam.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://www.acervietnam.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css",
+        "https://www.acervietnam.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css",
+        "https://www.acervietnam.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css"
+      ],
+      "host": "acervietnam.com.vn"
+    },
+    {
+      "version": null,
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://vcdn.acfc.com.vn/static/version1778713608/frontend/Acfc/default/vi_VN/Magenest_FrontendOptions/css/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://vcdn.acfc.com.vn/static/version1778713608/frontend/Acfc/default/vi_VN/Magenest_FrontendOptions/css/font-awesome.min.css"
+      ],
+      "host": "acfc.com.vn"
+    },
+    {
+      "version": "6.6.0",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://admon.com.vn/wp-content/uploads/font-awesome/v6.6.0/css/svg-with-js.css"
+        },
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://use.fontawesome.com/releases/v6.6.0/css/all.css"
+        },
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://use.fontawesome.com/releases/v6.6.0/css/v4-shims.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://admon.com.vn/wp-content/uploads/font-awesome/v6.6.0/css/svg-with-js.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://use.fontawesome.com/releases/v6.6.0/css/all.css"
+        }
+      ],
+      "fa_urls": [
+        "https://use.fontawesome.com",
+        "https://admon.com.vn/wp-content/uploads/font-awesome/v6.6.0/css/svg-with-js.css",
+        "https://use.fontawesome.com/releases/v6.6.0/css/all.css",
+        "https://use.fontawesome.com/releases/v6.6.0/css/v4-shims.css"
+      ],
+      "host": "admon.com.vn"
+    },
+    {
+      "version": "4.4.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": "free",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://adoremon.vn/Content/themes/css/font-awesome.min.css"
+        },
+        {
+          "rule": "banner_v4",
+          "kind": "banner",
+          "url": "https://adoremon.vn/Content/themes/css/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://adoremon.vn/Content/themes/css/font-awesome.min.css"
+      ],
+      "host": "adoremon.vn"
+    },
+    {
+      "version": "5.15.4",
+      "generation": 5,
+      "generation_at_least": 5,
+      "edition": "Pro",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "class_v5_short_prefix",
+          "kind": "class",
+          "url": null
+        },
+        {
+          "rule": "banner_v5plus",
+          "kind": "banner",
+          "url": "https://aeonmall-binhtan.com.vn/assets/css/fontawesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://aeonmall-binhtan.com.vn/assets/css/fontawesome.min.css"
+      ],
+      "host": "aeonmall-binhtan.com.vn"
+    },
+    {
+      "version": "6.5.0",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      ],
+      "host": "aiavatar.vn"
+    },
+    {
+      "version": "4.3.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": "free",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://aigato.vn/fonts/font-awesome/css/font-awesome.css"
+        },
+        {
+          "rule": "banner_v4",
+          "kind": "banner",
+          "url": "https://aigato.vn/fonts/font-awesome/css/font-awesome.css"
+        }
+      ],
+      "fa_urls": [
+        "https://aigato.vn/fonts/font-awesome/css/font-awesome.css"
+      ],
+      "host": "aigato.vn"
+    },
+    {
+      "version": "5.4.1",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        },
+        {
+          "rule": "class_v5_short_prefix",
+          "kind": "class",
+          "url": null
+        }
+      ],
+      "fa_urls": [
+        "https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      ],
+      "host": "akishop.com.vn"
+    },
+    {
+      "version": "6.4.0",
+      "generation": null,
+      "generation_at_least": 6,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        },
+        {
+          "rule": "class_v5_short_prefix",
+          "kind": "class",
+          "url": null
+        },
+        {
+          "rule": "class_v6plus_long_prefix",
+          "kind": "class",
+          "url": null
+        }
+      ],
+      "fa_urls": [
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      ],
+      "host": "algae.vn"
+    },
+    {
+      "version": "4.7.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        },
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      ],
+      "host": "amcdn.vn"
+    },
+    {
+      "version": "4.11.53",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_with_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://www.americanstandard.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=4.11.53"
+        },
+        {
+          "rule": "url_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://www.americanstandard.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=4.11.53"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://www.americanstandard.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=4.11.53"
+        },
+        {
+          "rule": "font_v5plus_filenames",
+          "kind": "webfont_rules",
+          "url": "https://americanstandard.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff2"
+        },
+        {
+          "rule": "class_v5_short_prefix",
+          "kind": "class",
+          "url": null
+        }
+      ],
+      "fa_urls": [
+        "https://www.americanstandard.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=4.11.53",
+        "https://americanstandard.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff2"
+      ],
+      "host": "americanstandard.com.vn"
+    },
+    {
+      "version": "6.8.1",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_with_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://amis.vn/wp-content/plugins/agp-font-awesome-collection/vendor/agp/agp-fontawesome/css/font-awesome.min.css?ver=6.8.1"
+        },
+        {
+          "rule": "url_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://amis.vn/wp-content/plugins/agp-font-awesome-collection/vendor/agp/agp-fontawesome/css/font-awesome.min.css?ver=6.8.1"
+        },
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://amis.vn/wp-content/plugins/agp-font-awesome-collection/vendor/agp/agp-fontawesome/css/font-awesome.min.css?ver=6.8.1"
+        }
+      ],
+      "fa_urls": [
+        "https://amis.vn/wp-content/plugins/agp-font-awesome-collection/vendor/agp/agp-fontawesome/css/font-awesome.min.css?ver=6.8.1"
+      ],
+      "host": "amis.vn"
+    },
+    {
+      "version": "5.15.1",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://angiang.edu.vn/3rdparty/font-awesome-5.15.1/css/all.min.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://angiang.edu.vn/3rdparty/font-awesome-5.15.1/css/all.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://angiang.edu.vn/3rdparty/font-awesome-5.15.1/css/all.min.css"
+      ],
+      "host": "angiang.edu.vn"
+    },
+    {
+      "version": "5.15.4",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      ],
+      "host": "ankhang.vn"
+    },
+    {
+      "version": "4.7.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": "free",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://apag.edu.vn/Content/publishingv2/css/font-awesome.min.css"
+        },
+        {
+          "rule": "banner_v4",
+          "kind": "banner",
+          "url": "https://apag.edu.vn/Content/publishingv2/css/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://apag.edu.vn/Content/publishingv2/css/font-awesome.min.css"
+      ],
+      "host": "apag.edu.vn"
+    },
+    {
+      "version": "5.13.0",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://use.fontawesome.com/releases/v5.13.0/css/all.css?ver=5.13.0"
+        },
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css?ver=5.13.0"
+        },
+        {
+          "rule": "url_fa_with_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://apec.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.4.3"
+        },
+        {
+          "rule": "url_fa_with_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://apec.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.4.3"
+        },
+        {
+          "rule": "url_fa_with_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://apec.com.vn/wp-content/themes/apec-theme/assets/build/library/fontawesome-pro/css/all.min.css?ver=6.9.4"
+        },
+        {
+          "rule": "url_fa_with_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://use.fontawesome.com/releases/v5.13.0/css/all.css?ver=5.13.0"
+        },
+        {
+          "rule": "url_fa_with_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css?ver=5.13.0"
+        },
+        {
+          "rule": "url_fa_with_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://apec.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.4.3"
+        },
+        {
+          "rule": "url_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://apec.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.4.3"
+        },
+        {
+          "rule": "url_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://apec.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.4.3"
+        },
+        {
+          "rule": "url_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://apec.com.vn/wp-content/themes/apec-theme/assets/build/library/fontawesome-pro/css/all.min.css?ver=6.9.4"
+        },
+        {
+          "rule": "url_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://use.fontawesome.com/releases/v5.13.0/css/all.css?ver=5.13.0"
+        },
+        {
+          "rule": "url_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css?ver=5.13.0"
+        },
+        {
+          "rule": "url_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://apec.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.4.3"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://apec.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.4.3"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://apec.com.vn/wp-content/themes/apec-theme/assets/build/library/fontawesome-pro/css/all.min.css?ver=6.9.4"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://use.fontawesome.com/releases/v5.13.0/css/all.css?ver=5.13.0"
+        }
+      ],
+      "fa_urls": [
+        "https://use.fontawesome.com",
+        "https://apec.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.4.3",
+        "https://apec.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.4.3",
+        "https://apec.com.vn/wp-content/themes/apec-theme/assets/build/library/fontawesome-pro/css/all.min.css?ver=6.9.4",
+        "https://use.fontawesome.com/releases/v5.13.0/css/all.css?ver=5.13.0",
+        "https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css?ver=5.13.0",
+        "https://apec.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.4.3"
+      ],
+      "host": "apec.com.vn"
+    },
+    {
+      "version": "4.7.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": "free",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://page.aptistests.vn/public/template/frontend/fontawesome/css/font-awesome.min.css"
+        },
+        {
+          "rule": "banner_v4",
+          "kind": "banner",
+          "url": "https://page.aptistests.vn/public/template/frontend/fontawesome/css/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://page.aptistests.vn/public/template/frontend/fontawesome/css/font-awesome.min.css"
+      ],
+      "host": "aptistests.vn"
+    },
+    {
+      "version": "4.6.2",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_with_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://www.armybox.vn/wp-content/themes/vantage/fontawesome/css/font-awesome.css?ver=4.6.2"
+        },
+        {
+          "rule": "url_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://www.armybox.vn/wp-content/themes/vantage/fontawesome/css/font-awesome.css?ver=4.6.2"
+        },
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://www.armybox.vn/wp-content/themes/vantage/fontawesome/css/font-awesome.css?ver=4.6.2"
+        }
+      ],
+      "fa_urls": [
+        "https://www.armybox.vn/wp-content/themes/vantage/fontawesome/css/font-awesome.css?ver=4.6.2"
+      ],
+      "host": "armybox.vn"
+    },
+    {
+      "version": "4.7.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        },
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      ],
+      "host": "asin.com.vn"
+    },
+    {
+      "version": "5.15.3",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_with_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://vidi.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3"
+        },
+        {
+          "rule": "url_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://vidi.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://vidi.vn/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=1775631036"
+        }
+      ],
+      "fa_urls": [
+        "https://vidi.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3",
+        "https://vidi.vn/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=1775631036"
+      ],
+      "host": "avia.vn"
+    },
+    {
+      "version": "6.1.1",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+        }
+      ],
+      "fa_urls": [
+        "https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+      ],
+      "host": "aznet.vn"
+    },
+    {
+      "version": "4.5.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": "free",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://baa.vn/css/font-awesome.min.css"
+        },
+        {
+          "rule": "banner_v4",
+          "kind": "banner",
+          "url": "https://baa.vn/css/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://baa.vn/css/font-awesome.min.css",
+        "https://baa.vn/css/font-awesome-animation.min.css"
+      ],
+      "host": "baa.vn"
+    },
+    {
+      "version": "4.7.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": "free",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://backorder.inet.vn/public/css/libs/font-awesome.css"
+        },
+        {
+          "rule": "banner_v4",
+          "kind": "banner",
+          "url": "https://backorder.inet.vn/public/css/libs/font-awesome.css"
+        }
+      ],
+      "fa_urls": [
+        "https://backorder.inet.vn/public/css/libs/font-awesome.css",
+        "https://backorder.inet.vn/public/css/libs/fontawesome-all.css"
+      ],
+      "host": "backorder.inet.vn"
+    },
+    {
+      "version": "5.15.1",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://bacninh.edu.vn/3rdparty/font-awesome-5.15.1/css/all.min.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://bacninh.edu.vn/3rdparty/font-awesome-5.15.1/css/all.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://bacninh.edu.vn/3rdparty/font-awesome-5.15.1/css/all.min.css"
+      ],
+      "host": "bacninh.edu.vn"
+    },
+    {
+      "version": "5.10.0",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        }
+      ],
+      "fa_urls": [
+        "https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      ],
+      "host": "bacninh.gov.vn"
+    },
+    {
+      "version": "4.7.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": "free",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://bacninhtv.vn/assets/fonts/awesome/font-awesome.min.css"
+        },
+        {
+          "rule": "banner_v4",
+          "kind": "banner",
+          "url": "https://bacninhtv.vn/assets/fonts/awesome/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://bacninhtv.vn/assets/fonts/awesome/font-awesome.min.css"
+      ],
+      "host": "bacninhtv.vn"
+    },
+    {
+      "version": "5.8.2",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://bagps.vn/public/fonts/fontawesome-pro-5.8.2-web/css/all.min.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://bagps.vn/public/fonts/fontawesome-pro-5.8.2-web/css/all.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://bagps.vn/public/fonts/fontawesome-pro-5.8.2-web/css/all.min.css",
+        "https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css"
+      ],
+      "host": "bagroup.vn"
+    },
+    {
+      "version": "4.3.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+        },
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+      ],
+      "host": "banhangvnpt.vn"
+    },
+    {
+      "version": "5.11.2",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": "legacy_kit",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://baoangiang.com.vn/css/fontawesome-free-5.11.2-web/css/all.css?id=1.0005"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://baoangiang.com.vn/css/fontawesome-free-5.11.2-web/css/all.css?id=1.0005"
+        },
+        {
+          "rule": "kit_legacy_use",
+          "kind": "kit_rules",
+          "url": "https://use.fontawesome.com/f455f83be3.js"
+        },
+        {
+          "rule": "class_v5_short_prefix",
+          "kind": "class",
+          "url": null
+        }
+      ],
+      "fa_urls": [
+        "https://baoangiang.com.vn/css/fontawesome-free-5.11.2-web/css/all.css?id=1.0005",
+        "https://use.fontawesome.com/f455f83be3.js"
+      ],
+      "host": "baoangiang.com.vn"
+    },
+    {
+      "version": "4.5.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": "free",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://baoanjsc.com.vn/css/font-awesome.min.css"
+        },
+        {
+          "rule": "banner_v4",
+          "kind": "banner",
+          "url": "https://baoanjsc.com.vn/css/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://baoanjsc.com.vn/css/font-awesome.min.css",
+        "https://baoanjsc.com.vn/css/font-awesome-animation.min.css"
+      ],
+      "host": "baoanjsc.com.vn"
+    },
+    {
+      "version": "4.7.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://baobacgiang.vn/font/font-awesome-4.7.0/css/font-awesome.css"
+        },
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://baobacgiang.vn/font/font-awesome-4.7.0/css/font-awesome.css"
+        }
+      ],
+      "fa_urls": [
+        "https://baobacgiang.vn/font/font-awesome-4.7.0/css/font-awesome.css"
+      ],
+      "host": "baobacgiang.vn"
+    },
+    {
+      "version": "4.7.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://baobacninhtv.vn/font/font-awesome-4.7.0/css/font-awesome.css"
+        },
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://baobacninhtv.vn/font/font-awesome-4.7.0/css/font-awesome.css"
+        }
+      ],
+      "fa_urls": [
+        "https://baobacninhtv.vn/font/font-awesome-4.7.0/css/font-awesome.css"
+      ],
+      "host": "baobacninhtv.vn"
+    },
+    {
+      "version": "5.15.3",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://baobinhphuoc.com.vn/common/fontawesome-pro-5.15.3-web/css/all.min.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://baobinhphuoc.com.vn/common/fontawesome-pro-5.15.3-web/css/all.min.css"
+        },
+        {
+          "rule": "class_v5_short_prefix",
+          "kind": "class",
+          "url": null
+        }
+      ],
+      "fa_urls": [
+        "https://baobinhphuoc.com.vn/common/fontawesome-pro-5.15.3-web/css/all.min.css"
+      ],
+      "host": "baobinhphuoc.com.vn"
+    },
+    {
+      "version": null,
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://baocantho.com.vn/css/fontawesome/css/all.css"
+        },
+        {
+          "rule": "class_v5_short_prefix",
+          "kind": "class",
+          "url": null
+        }
+      ],
+      "fa_urls": [
+        "https://baocantho.com.vn/css/fontawesome/css/all.css"
+      ],
+      "host": "baocantho.com.vn"
+    },
+    {
+      "version": "4.7.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": "free",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://baocaobang.vn/assets/fonts/awesome/font-awesome.min.css"
+        },
+        {
+          "rule": "banner_v4",
+          "kind": "banner",
+          "url": "https://baocaobang.vn/assets/fonts/awesome/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://baocaobang.vn/assets/fonts/awesome/font-awesome.min.css"
+      ],
+      "host": "baocaobang.vn"
+    },
+    {
+      "version": null,
+      "generation": null,
+      "generation_at_least": null,
+      "edition": "legacy_kit",
+      "kit_only": true,
+      "sources": [
+        {
+          "rule": "kit_legacy_use",
+          "kind": "kit_rules",
+          "url": "https://use.fontawesome.com/f455f83be3.js"
+        }
+      ],
+      "fa_urls": [
+        "https://use.fontawesome.com/f455f83be3.js"
+      ],
+      "host": "baodongkhoi.vn"
+    },
+    {
+      "version": "5.15.3",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://baodongnai.com.vn/common/fontawesome-pro-5.15.3-web/css/all.min.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://baodongnai.com.vn/common/fontawesome-pro-5.15.3-web/css/all.min.css"
+        },
+        {
+          "rule": "class_v5_short_prefix",
+          "kind": "class",
+          "url": null
+        }
+      ],
+      "fa_urls": [
+        "https://baodongnai.com.vn/common/fontawesome-pro-5.15.3-web/css/all.min.css"
+      ],
+      "host": "baodongnai.com.vn"
+    },
+    {
+      "version": "4.7.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": "free",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://baohungyen.vn/assets/fonts/awesome/font-awesome.min.css"
+        },
+        {
+          "rule": "banner_v4",
+          "kind": "banner",
+          "url": "https://baohungyen.vn/assets/fonts/awesome/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://baohungyen.vn/assets/fonts/awesome/font-awesome.min.css"
+      ],
+      "host": "baohungyen.vn"
+    },
+    {
+      "version": "5.15.3",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://baokhanhhoa.vn/common/fontawesome-pro-5.15.3-web/css/all.min.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://baokhanhhoa.vn/common/fontawesome-pro-5.15.3-web/css/all.min.css"
+        },
+        {
+          "rule": "class_v5_short_prefix",
+          "kind": "class",
+          "url": null
+        }
+      ],
+      "fa_urls": [
+        "https://baokhanhhoa.vn/common/fontawesome-pro-5.15.3-web/css/all.min.css"
+      ],
+      "host": "baokhanhhoa.vn"
+    },
+    {
+      "version": "4.7.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": "free",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://baolangson.vn/assets/fonts/awesome/font-awesome.min.css"
+        },
+        {
+          "rule": "banner_v4",
+          "kind": "banner",
+          "url": "https://baolangson.vn/assets/fonts/awesome/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://baolangson.vn/assets/fonts/awesome/font-awesome.min.css"
+      ],
+      "host": "baolangson.vn"
+    },
+    {
+      "version": null,
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://baolongan.vn/assets/fonts/awesome/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://baolongan.vn/assets/fonts/awesome/font-awesome.min.css"
+      ],
+      "host": "baolongan.vn"
+    },
+    {
+      "version": "5.15.4",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://static.baophunuthudo.vn/web/fonts/fontawesome-pro-5.15.4-web/css/all.min.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://static.baophunuthudo.vn/web/fonts/fontawesome-pro-5.15.4-web/css/all.min.css"
+        },
+        {
+          "rule": "class_v5_short_prefix",
+          "kind": "class",
+          "url": null
+        }
+      ],
+      "fa_urls": [
+        "https://static.baophunuthudo.vn/web/fonts/fontawesome-pro-5.15.4-web/css/all.min.css"
+      ],
+      "host": "baophunuthudo.vn"
+    },
+    {
+      "version": "4.7.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": "free",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://baoquangninh.vn/assets/fonts/awesome/font-awesome.min.css"
+        },
+        {
+          "rule": "banner_v4",
+          "kind": "banner",
+          "url": "https://baoquangninh.vn/assets/fonts/awesome/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://baoquangninh.vn/assets/fonts/awesome/font-awesome.min.css"
+      ],
+      "host": "baoquangninh.vn"
+    },
+    {
+      "version": "5.13.1",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://baoquankhu4.com.vn/3rdparty/font-awesome-5.13.1/css/all.min.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://baoquankhu4.com.vn/3rdparty/font-awesome-5.13.1/css/all.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://baoquankhu4.com.vn/3rdparty/font-awesome-5.13.1/css/all.min.css"
+      ],
+      "host": "baoquankhu4.com.vn"
+    },
+    {
+      "version": "4.7.0",
+      "generation": 4,
+      "generation_at_least": 5,
+      "edition": "free",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://sf.ex-cdn.com/nongnghiepmoitruong.vn/v0.2.223/templates/themes/css/font-awesome.min.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://sf.ex-cdn.com/nongnghiepmoitruong.vn/v0.2.223/templates/themes/css/all.css?f=fonts.css%2Bfont-awesome.min.css%2Bthemify-icons.min.css%2Bjquery.bxslider.min.css%2Bjquery.toast.min.css%2Bowl.carousel.min.css%2Bexplus.min.css"
+        },
+        {
+          "rule": "banner_v4",
+          "kind": "banner",
+          "url": "https://sf.ex-cdn.com/nongnghiepmoitruong.vn/v0.2.223/templates/themes/css/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://sf.ex-cdn.com/nongnghiepmoitruong.vn/v0.2.223/templates/themes/css/font-awesome.min.css",
+        "https://sf.ex-cdn.com/nongnghiepmoitruong.vn/v0.2.223/templates/themes/css/all.css?f=fonts.css%2Bfont-awesome.min.css%2Bthemify-icons.min.css%2Bjquery.bxslider.min.css%2Bjquery.toast.min.css%2Bowl.carousel.min.css%2Bexplus.min.css"
+      ],
+      "host": "baotainguyenmoitruong.vn"
+    },
+    {
+      "version": "4.7.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": "free",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://baotayninh.vn/assets/fonts/awesome/font-awesome.min.css"
+        },
+        {
+          "rule": "banner_v4",
+          "kind": "banner",
+          "url": "https://baotayninh.vn/assets/fonts/awesome/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://baotayninh.vn/assets/fonts/awesome/font-awesome.min.css"
+      ],
+      "host": "baotayninh.vn"
+    },
+    {
+      "version": "5.15.3",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://baothainguyen.vn/common/fontawesome-pro-5.15.3-web/css/all.min.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://baothainguyen.vn/common/fontawesome-pro-5.15.3-web/css/all.min.css"
+        },
+        {
+          "rule": "class_v5_short_prefix",
+          "kind": "class",
+          "url": null
+        }
+      ],
+      "fa_urls": [
+        "https://baothainguyen.vn/common/fontawesome-pro-5.15.3-web/css/all.min.css"
+      ],
+      "host": "baothainguyen.vn"
+    },
+    {
+      "version": "2026.03.15",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_with_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://baothuathienhue.vn/Portals/_default/Resource/font-awesome/css/font-awesome.min.css?v=2026.03.15.1"
+        },
+        {
+          "rule": "url_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://baothuathienhue.vn/Portals/_default/Resource/font-awesome/css/font-awesome.min.css?v=2026.03.15.1"
+        },
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://baothuathienhue.vn/Portals/_default/Resource/font-awesome/css/font-awesome.min.css?v=2026.03.15.1"
+        }
+      ],
+      "fa_urls": [
+        "https://baothuathienhue.vn/Portals/_default/Resource/font-awesome/css/font-awesome.min.css?v=2026.03.15.1"
+      ],
+      "host": "baothuathienhue.vn"
+    },
+    {
+      "version": "5.15.4",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://baotuyenquang.com.vn/common/fontawesome5.15.4/css/all.min.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://baotuyenquang.com.vn/common/fontawesome5.15.4/css/all.min.css"
+        },
+        {
+          "rule": "class_v5_short_prefix",
+          "kind": "class",
+          "url": null
+        }
+      ],
+      "fa_urls": [
+        "https://baotuyenquang.com.vn/common/fontawesome5.15.4/css/all.min.css"
+      ],
+      "host": "baotuyenquang.com.vn"
+    },
+    {
+      "version": "6.4.0",
+      "generation": null,
+      "generation_at_least": 6,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://media.baovanhoa.vn/web/fonts/fontawesome-pro-6.4.0-web/css/all.min.css?v=5.9"
+        },
+        {
+          "rule": "url_fa_with_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://media.baovanhoa.vn/web/fonts/fontawesome-pro-6.4.0-web/css/all.min.css?v=5.9"
+        },
+        {
+          "rule": "url_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://media.baovanhoa.vn/web/fonts/fontawesome-pro-6.4.0-web/css/all.min.css?v=5.9"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://media.baovanhoa.vn/web/fonts/fontawesome-pro-6.4.0-web/css/all.min.css?v=5.9"
+        },
+        {
+          "rule": "class_v5_short_prefix",
+          "kind": "class",
+          "url": null
+        },
+        {
+          "rule": "class_v6plus_long_prefix",
+          "kind": "class",
+          "url": null
+        }
+      ],
+      "fa_urls": [
+        "https://media.baovanhoa.vn/web/fonts/fontawesome-pro-6.4.0-web/css/all.min.css?v=5.9"
+      ],
+      "host": "baovanhoa.vn"
+    },
+    {
+      "version": null,
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://baovephapluat.vn/Portals/_default/Skins/TN/resource/font-awesome/css/font-awesome.min.css?v=84"
+        }
+      ],
+      "fa_urls": [
+        "https://baovephapluat.vn/Portals/_default/Skins/TN/resource/font-awesome/css/font-awesome.min.css?v=84"
+      ],
+      "host": "baovephapluat.vn"
+    },
+    {
+      "version": "4.7.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": "free",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://baovietnhantho.com.vn/fonts/fontawesome/font-awesome.min.css"
+        },
+        {
+          "rule": "banner_v4",
+          "kind": "banner",
+          "url": "https://baovietnhantho.com.vn/fonts/fontawesome/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://baovietnhantho.com.vn/fonts/fontawesome/font-awesome.min.css"
+      ],
+      "host": "baovietnhantho.com.vn"
+    },
+    {
+      "version": "4.4.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": "free",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://staticfile.batdongsan.com.vn/css/fontawesomeMSV/css/font-awesome.min.css"
+        },
+        {
+          "rule": "banner_v4",
+          "kind": "banner",
+          "url": "https://staticfile.batdongsan.com.vn/css/fontawesomeMSV/css/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://staticfile.batdongsan.com.vn/css/fontawesomeMSV/css/font-awesome.min.css"
+      ],
+      "host": "batdongsan.com.vn"
+    },
+    {
+      "version": "4.1.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+        },
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      ],
+      "host": "batdongsan24h.edu.vn"
+    },
+    {
+      "version": "4.7.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": "free",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://bdu.edu.vn/assets/css/font-awesome.min.css?t=1704506109"
+        },
+        {
+          "rule": "banner_v4",
+          "kind": "banner",
+          "url": "https://bdu.edu.vn/assets/css/font-awesome.min.css?t=1704506109"
+        }
+      ],
+      "fa_urls": [
+        "https://bdu.edu.vn/assets/css/font-awesome.min.css?t=1704506109"
+      ],
+      "host": "bdu.edu.vn"
+    },
+    {
+      "version": null,
+      "generation": null,
+      "generation_at_least": null,
+      "edition": "legacy_kit",
+      "kit_only": true,
+      "sources": [
+        {
+          "rule": "kit_legacy_use",
+          "kind": "kit_rules",
+          "url": "https://use.fontawesome.com/b6de74fbb9.js"
+        }
+      ],
+      "fa_urls": [
+        "https://use.fontawesome.com/b6de74fbb9.js"
+      ],
+      "host": "beck.vn"
+    },
+    {
+      "version": "5.15.1",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      ],
+      "host": "beemart.vn"
+    },
+    {
+      "version": "6.4.2",
+      "generation": null,
+      "generation_at_least": 5,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://beetechno.com.vn/wp-content/uploads/font-awesome/v6.4.2/css/svg-with-js.css"
+        },
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://use.fontawesome.com/releases/v6.4.2/css/all.css"
+        },
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://use.fontawesome.com/releases/v6.4.2/css/v4-shims.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://beetechno.com.vn/wp-content/uploads/font-awesome/v6.4.2/css/svg-with-js.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://use.fontawesome.com/releases/v6.4.2/css/all.css"
+        }
+      ],
+      "fa_urls": [
+        "https://use.fontawesome.com",
+        "https://beetechno.com.vn/wp-content/uploads/font-awesome/v6.4.2/css/svg-with-js.css",
+        "https://use.fontawesome.com/releases/v6.4.2/css/all.css",
+        "https://use.fontawesome.com/releases/v6.4.2/css/v4-shims.css"
+      ],
+      "host": "beetechno.com.vn"
+    },
+    {
+      "version": "4.7.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        },
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      ],
+      "host": "bejob.vn"
+    },
+    {
+      "version": "6.4.2",
+      "generation": null,
+      "generation_at_least": 6,
+      "edition": null,
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_fa_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        },
+        {
+          "rule": "url_v5plus_css",
+          "kind": "url_filename_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        },
+        {
+          "rule": "class_v6plus_long_prefix",
+          "kind": "class",
+          "url": null
+        }
+      ],
+      "fa_urls": [
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      ],
+      "host": "ben.com.vn"
+    },
+    {
+      "version": "4.7.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": "free",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://benhvien108.vn/bower_components/font-awesome/css/font-awesome.min.css"
+        },
+        {
+          "rule": "banner_v4",
+          "kind": "banner",
+          "url": "https://benhvien108.vn/bower_components/font-awesome/css/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://benhvien108.vn/bower_components/font-awesome/css/font-awesome.min.css"
+      ],
+      "host": "benhvien108.vn"
+    },
+    {
+      "version": "4.7.0",
+      "generation": 4,
+      "generation_at_least": 4,
+      "edition": "free",
+      "kit_only": false,
+      "sources": [
+        {
+          "rule": "url_v4_css",
+          "kind": "url_filename_rules",
+          "url": "https://benhvienphuongdong.vn/frontend/css/font-awesome.min.css"
+        },
+        {
+          "rule": "banner_v4",
+          "kind": "banner",
+          "url": "https://benhvienphuongdong.vn/frontend/css/font-awesome.min.css"
+        }
+      ],
+      "fa_urls": [
+        "https://benhvienphuongdong.vn/frontend/css/font-awesome.min.css"
+      ],
+      "host": "benhvienphuongdong.vn"
+    }
+  ]
+}

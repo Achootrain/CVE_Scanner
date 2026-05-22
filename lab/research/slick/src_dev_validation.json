@@ -1,0 +1,1040 @@
+{
+  "summary": {
+    "corpus_sites": 35,
+    "version_extracted": 18,
+    "detected_no_version": 17,
+    "no_signal": 0,
+    "version_pct": 51.4,
+    "any_signal_pct": 100.0,
+    "elapsed_s": 35.2,
+    "with_fetch": true
+  },
+  "per_site": [
+    {
+      "version": null,
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://adsun.vn/themes/crysys/plugins/slick/slick.min.js"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://adsun.vn/themes/crysys/plugins/slick/slick.css"
+        },
+        {
+          "rule": "url_slick_theme_css",
+          "kind": "url_filename_rules",
+          "url": "https://adsun.vn/themes/crysys/plugins/slick/slick-theme.css"
+        }
+      ],
+      "slick_urls": [
+        "https://adsun.vn/themes/crysys/plugins/slick/slick-theme.css",
+        "https://adsun.vn/themes/crysys/plugins/slick/slick.css",
+        "https://adsun.vn/themes/crysys/plugins/slick/slick.min.js",
+        "https://adsun.vn/themes/crysys/plugins/slick/slick-animation.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css",
+        "url_slick_theme_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://adsun.vn"
+    },
+    {
+      "version": "1.9.0",
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://www.aeon.com.vn/wp-content/themes/aeon/assets/js/js-general/slick.min.js?ver=20240324"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://www.aeon.com.vn/wp-content/themes/aeon/assets/css/css-general/slick.min.css?v=16052026"
+        },
+        {
+          "rule": "banner_slick",
+          "kind": "banner",
+          "url": "https://www.aeon.com.vn/wp-content/themes/aeon/assets/js/js-general/slick.min.js?ver=20240324"
+        }
+      ],
+      "slick_urls": [
+        "https://www.aeon.com.vn/wp-content/themes/aeon/assets/css/css-general/slick.min.css?v=16052026",
+        "https://www.aeon.com.vn/wp-content/themes/aeon/assets/js/js-general/slick.min.js?ver=20240324"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://aeon.com.vn"
+    },
+    {
+      "version": null,
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://aeonmall-binhtan.com.vn/assets/js/slick.min.js"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://aeonmall-binhtan.com.vn/assets/css/slick.min.css"
+        }
+      ],
+      "slick_urls": [
+        "https://aeonmall-binhtan.com.vn/assets/css/slick.min.css",
+        "https://aeonmall-binhtan.com.vn/assets/js/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://aeonmall-binhtan.com.vn"
+    },
+    {
+      "version": null,
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://akishop.com.vn/themes/introduce/w3ni735/js/slick.min.js"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://akishop.com.vn/themes/introduce/w3ni735/css/slick.css"
+        },
+        {
+          "rule": "url_slick_theme_css",
+          "kind": "url_filename_rules",
+          "url": "https://akishop.com.vn/themes/introduce/w3ni735/css/slick-theme.css"
+        }
+      ],
+      "slick_urls": [
+        "https://akishop.com.vn/themes/introduce/w3ni735/css/slick.css",
+        "https://akishop.com.vn/themes/introduce/w3ni735/css/slick-theme.css",
+        "https://akishop.com.vn/themes/introduce/w3ni735/js/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css",
+        "url_slick_theme_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://akishop.com.vn"
+    },
+    {
+      "version": "4.11.53",
+      "sources": [
+        {
+          "rule": "url_slick_with_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://www.americanstandard.com.vn/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-css/slick.min.css?ver=4.11.53"
+        },
+        {
+          "rule": "url_slick_with_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://www.americanstandard.com.vn/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-js/slick.min.js?ver=4.11.53"
+        },
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://www.americanstandard.com.vn/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-js/slick.min.js?ver=4.11.53"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://www.americanstandard.com.vn/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-css/slick.min.css?ver=4.11.53"
+        }
+      ],
+      "slick_urls": [
+        "https://www.americanstandard.com.vn/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-css/slick.min.css?ver=4.11.53",
+        "https://www.americanstandard.com.vn/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-js/slick.min.js?ver=4.11.53"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://americanstandard.com.vn"
+    },
+    {
+      "version": "1.8.0",
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://ananas.vn/wp-content/themes/ananas/fe-assets/js/slick.js?ver=20251511"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://ananas.vn/wp-content/themes/ananas/fe-assets/css/slick.css?ver=20233105"
+        },
+        {
+          "rule": "url_slick_theme_css",
+          "kind": "url_filename_rules",
+          "url": "https://ananas.vn/wp-content/themes/ananas/fe-assets/css/slick-theme.css?ver=20233105"
+        },
+        {
+          "rule": "banner_slick",
+          "kind": "banner",
+          "url": "https://ananas.vn/wp-content/themes/ananas/fe-assets/js/slick.js?ver=20251511"
+        }
+      ],
+      "slick_urls": [
+        "https://ananas.vn/wp-content/themes/ananas/fe-assets/css/slick.css?ver=20233105",
+        "https://ananas.vn/wp-content/themes/ananas/fe-assets/css/slick-theme.css?ver=20233105",
+        "https://ananas.vn/wp-content/themes/ananas/fe-assets/js/slick.js?ver=20251511"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css",
+        "url_slick_theme_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://ananas.vn"
+    },
+    {
+      "version": "1.8.1",
+      "sources": [
+        {
+          "rule": "url_slick_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        },
+        {
+          "rule": "url_slick_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        },
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        },
+        {
+          "rule": "url_slick_theme_css",
+          "kind": "url_filename_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        }
+      ],
+      "slick_urls": [
+        "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css",
+        "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_theme_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://anta.com.vn"
+    },
+    {
+      "version": null,
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://apag.edu.vn/Content/publishing_home/javascript/Silick/slick.min.js"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://apag.edu.vn/Content/publishing_home/javascript/Silick/slick.css"
+        },
+        {
+          "rule": "url_slick_theme_css",
+          "kind": "url_filename_rules",
+          "url": "https://apag.edu.vn/Content/publishing_home/javascript/Silick/slick-theme.css"
+        }
+      ],
+      "slick_urls": [
+        "https://apag.edu.vn/Content/publishing_home/javascript/Silick/slick-theme.css",
+        "https://apag.edu.vn/Content/publishing_home/javascript/Silick/slick.css",
+        "https://apag.edu.vn/Content/publishing_home/javascript/Silick/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css",
+        "url_slick_theme_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://apag.edu.vn"
+    },
+    {
+      "version": null,
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://apollo.edu.vn/apollo/js/slick.min.js"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://apollo.edu.vn/apollo/css/slick.css"
+        }
+      ],
+      "slick_urls": [
+        "https://apollo.edu.vn/apollo/css/slick.css",
+        "https://apollo.edu.vn/apollo/js/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://apollo.edu.vn"
+    },
+    {
+      "version": null,
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://azmua.vn/templates/fashion02/assets/lib/slick.min.js"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://azmua.vn/templates/fashion02/assets/lib/slick.css"
+        }
+      ],
+      "slick_urls": [
+        "https://azmua.vn/templates/fashion02/assets/lib/slick.css",
+        "https://azmua.vn/templates/fashion02/assets/lib/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://azmua.vn"
+    },
+    {
+      "version": null,
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://bacninh.gov.vn/o/bn.portal.news/js/slick.min.js"
+        }
+      ],
+      "slick_urls": [
+        "https://bacninh.gov.vn/o/bn.portal.news/js/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js"
+      ],
+      "webfont_matches": [],
+      "target": "https://bacninh.gov.vn"
+    },
+    {
+      "version": null,
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://bagps.vn/public/js/slick.min.js"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://bagps.vn/public/css/slick.css"
+        },
+        {
+          "rule": "url_slick_theme_css",
+          "kind": "url_filename_rules",
+          "url": "https://bagps.vn/public/css/slick-theme.css"
+        }
+      ],
+      "slick_urls": [
+        "https://bagps.vn/public/css/slick.css",
+        "https://bagps.vn/public/css/slick-theme.css",
+        "https://bagps.vn/public/js/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css",
+        "url_slick_theme_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://bagroup.vn"
+    },
+    {
+      "version": "1.8.0",
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://kenwheeler.github.io/slick/slick/slick.js"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://kenwheeler.github.io/slick/slick/slick.css"
+        },
+        {
+          "rule": "url_slick_theme_css",
+          "kind": "url_filename_rules",
+          "url": "https://kenwheeler.github.io/slick/slick/slick-theme.css"
+        },
+        {
+          "rule": "banner_slick",
+          "kind": "banner",
+          "url": "https://kenwheeler.github.io/slick/slick/slick.js"
+        }
+      ],
+      "slick_urls": [
+        "https://kenwheeler.github.io/slick/slick/slick.css",
+        "https://kenwheeler.github.io/slick/slick/slick-theme.css",
+        "https://kenwheeler.github.io/slick/slick/slick.js"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css",
+        "url_slick_theme_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://bandina.vn"
+    },
+    {
+      "version": null,
+      "sources": [
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://baoangiang.com.vn/js/slick/slick.css"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://baoangiang.com.vn/rao-vat/js/slick/slick.css"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://baoangiang.com.vn/tim-kiem/js/slick/slick.css"
+        },
+        {
+          "rule": "url_slick_theme_css",
+          "kind": "url_filename_rules",
+          "url": "https://baoangiang.com.vn/js/slick/slick-theme.css"
+        },
+        {
+          "rule": "url_slick_theme_css",
+          "kind": "url_filename_rules",
+          "url": "https://baoangiang.com.vn/rao-vat/js/slick/slick-theme.css"
+        },
+        {
+          "rule": "url_slick_theme_css",
+          "kind": "url_filename_rules",
+          "url": "https://baoangiang.com.vn/tim-kiem/js/slick/slick-theme.css"
+        }
+      ],
+      "slick_urls": [
+        "https://baoangiang.com.vn/js/slick/slick.css",
+        "https://baoangiang.com.vn/js/slick/slick-theme.css",
+        "https://baoangiang.com.vn/rao-vat/js/slick/slick.css",
+        "https://baoangiang.com.vn/rao-vat/js/slick/slick-theme.css",
+        "https://baoangiang.com.vn/tim-kiem/js/slick/slick.css",
+        "https://baoangiang.com.vn/tim-kiem/js/slick/slick-theme.css"
+      ],
+      "filename_matches": [
+        "url_slick_css",
+        "url_slick_css",
+        "url_slick_css",
+        "url_slick_theme_css",
+        "url_slick_theme_css",
+        "url_slick_theme_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://baoangiang.com.vn"
+    },
+    {
+      "version": "1.8.1",
+      "sources": [
+        {
+          "rule": "url_slick_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        },
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        }
+      ],
+      "slick_urls": [
+        "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js"
+      ],
+      "webfont_matches": [],
+      "target": "https://baobinhphuoc.com.vn"
+    },
+    {
+      "version": null,
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://baocamau.vn/js/slick.min.js"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://baocamau.vn/js/slick/slick.css"
+        },
+        {
+          "rule": "url_slick_theme_css",
+          "kind": "url_filename_rules",
+          "url": "https://baocamau.vn/js/slick/slick-theme.css"
+        }
+      ],
+      "slick_urls": [
+        "https://baocamau.vn/js/slick/slick.css",
+        "https://baocamau.vn/js/slick/slick-theme.css",
+        "https://baocamau.vn/js/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css",
+        "url_slick_theme_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://baocamau.vn"
+    },
+    {
+      "version": null,
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://baocantho.com.vn/js/slick/slick.min.js"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://baocantho.com.vn/js/slick/slick.css"
+        },
+        {
+          "rule": "url_slick_theme_css",
+          "kind": "url_filename_rules",
+          "url": "https://baocantho.com.vn/js/slick/slick-theme.css"
+        }
+      ],
+      "slick_urls": [
+        "https://baocantho.com.vn/js/slick/slick.css",
+        "https://baocantho.com.vn/js/slick/slick-theme.css",
+        "https://baocantho.com.vn/js/slick/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css",
+        "url_slick_theme_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://baocantho.com.vn"
+    },
+    {
+      "version": "1.8.1",
+      "sources": [
+        {
+          "rule": "url_slick_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        },
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        }
+      ],
+      "slick_urls": [
+        "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js"
+      ],
+      "webfont_matches": [],
+      "target": "https://baodaklak.vn"
+    },
+    {
+      "version": "1.8.0",
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://baodautu.vn/templates/themes/js/slick.min.js"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://baodautu.vn/templates/themes/css/slick.css?v7"
+        },
+        {
+          "rule": "banner_slick",
+          "kind": "banner",
+          "url": "https://baodautu.vn/templates/themes/js/slick.min.js"
+        }
+      ],
+      "slick_urls": [
+        "https://baodautu.vn/templates/themes/css/slick.css?v7",
+        "https://baodautu.vn/templates/themes/js/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://baodautu.vn"
+    },
+    {
+      "version": null,
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://baodongkhoi.vn/js/slick/slick.js"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://baodongkhoi.vn/js/slick/slick.css"
+        },
+        {
+          "rule": "url_slick_theme_css",
+          "kind": "url_filename_rules",
+          "url": "https://baodongkhoi.vn/js/slick/slick-theme.css"
+        }
+      ],
+      "slick_urls": [
+        "https://baodongkhoi.vn/js/slick/slick.css",
+        "https://baodongkhoi.vn/js/slick/slick-theme.css",
+        "https://baodongkhoi.vn/js/slick/slick.js"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css",
+        "url_slick_theme_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://baodongkhoi.vn"
+    },
+    {
+      "version": "1.8.1",
+      "sources": [
+        {
+          "rule": "url_slick_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        },
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        }
+      ],
+      "slick_urls": [
+        "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js"
+      ],
+      "webfont_matches": [],
+      "target": "https://baodongnai.com.vn"
+    },
+    {
+      "version": null,
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://baohoanviet.vn/frontend/common/js/slick.min.js?v=1721231848"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://baohoanviet.vn/frontend/common/css/slick.min.css?v=1721231848"
+        },
+        {
+          "rule": "url_slick_theme_css",
+          "kind": "url_filename_rules",
+          "url": "https://baohoanviet.vn/frontend/common/css/slick-theme.css?v=1767326183"
+        }
+      ],
+      "slick_urls": [
+        "https://baohoanviet.vn/frontend/common/css/slick.min.css?v=1721231848",
+        "https://baohoanviet.vn/frontend/common/css/slick-theme.css?v=1767326183",
+        "https://baohoanviet.vn/frontend/common/js/slick.min.js?v=1721231848"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css",
+        "url_slick_theme_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://baohoanviet.vn"
+    },
+    {
+      "version": null,
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://baolongan.vn/assets/js/plugins/slick/slick.min.js"
+        }
+      ],
+      "slick_urls": [
+        "https://baolongan.vn/assets/js/plugins/slick/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js"
+      ],
+      "webfont_matches": [],
+      "target": "https://baolongan.vn"
+    },
+    {
+      "version": null,
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://baoquangninh.vn/assets/js/plugins/slick/slick.min.js"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://baoquangninh.vn/assets/js/plugins/slick/slick.css"
+        },
+        {
+          "rule": "url_slick_theme_css",
+          "kind": "url_filename_rules",
+          "url": "https://baoquangninh.vn/assets/js/plugins/slick/slick-theme.css"
+        }
+      ],
+      "slick_urls": [
+        "https://baoquangninh.vn/assets/js/plugins/slick/slick.css",
+        "https://baoquangninh.vn/assets/js/plugins/slick/slick-theme.css",
+        "https://baoquangninh.vn/assets/js/plugins/slick/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css",
+        "url_slick_theme_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://baoquangninh.vn"
+    },
+    {
+      "version": "1.8.1",
+      "sources": [
+        {
+          "rule": "url_slick_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        },
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        }
+      ],
+      "slick_urls": [
+        "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js"
+      ],
+      "webfont_matches": [],
+      "target": "https://baoquangtri.vn"
+    },
+    {
+      "version": "1.3.15",
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://baotanglichsu.vn/Content/js/slickslider/slick.min.js"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://baotanglichsu.vn/Content/js/slickslider/slick.css"
+        },
+        {
+          "rule": "banner_slick",
+          "kind": "banner",
+          "url": "https://baotanglichsu.vn/Content/js/slickslider/slick.min.js"
+        }
+      ],
+      "slick_urls": [
+        "https://baotanglichsu.vn/Content/js/slickslider/slick.css",
+        "https://baotanglichsu.vn/Content/js/slickslider/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://baotanglichsu.vn"
+    },
+    {
+      "version": null,
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://baotayninh.vn/assets/js/plugins/slick/slick.min.js"
+        }
+      ],
+      "slick_urls": [
+        "https://baotayninh.vn/assets/js/plugins/slick/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js"
+      ],
+      "webfont_matches": [],
+      "target": "https://baotayninh.vn"
+    },
+    {
+      "version": "1.8.1",
+      "sources": [
+        {
+          "rule": "url_slick_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        },
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        }
+      ],
+      "slick_urls": [
+        "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js"
+      ],
+      "webfont_matches": [],
+      "target": "https://baothainguyen.vn"
+    },
+    {
+      "version": "1.8.1",
+      "sources": [
+        {
+          "rule": "url_slick_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        },
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        }
+      ],
+      "slick_urls": [
+        "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js"
+      ],
+      "webfont_matches": [],
+      "target": "https://baotuyenquang.com.vn"
+    },
+    {
+      "version": "1.8.1",
+      "sources": [
+        {
+          "rule": "url_slick_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        },
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        }
+      ],
+      "slick_urls": [
+        "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js"
+      ],
+      "webfont_matches": [],
+      "target": "https://baovinhlong.com.vn"
+    },
+    {
+      "version": "1.8.1",
+      "sources": [
+        {
+          "rule": "url_slick_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        },
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        }
+      ],
+      "slick_urls": [
+        "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js"
+      ],
+      "webfont_matches": [],
+      "target": "https://baovinhlong.vn"
+    },
+    {
+      "version": "1.8.0",
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://staticfile.batdongsan.com.vn/lib/slick/slick.min.js"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://staticfile.batdongsan.com.vn/lib/slick/slick.min.css"
+        },
+        {
+          "rule": "banner_slick",
+          "kind": "banner",
+          "url": "https://staticfile.batdongsan.com.vn/lib/slick/slick.min.js"
+        }
+      ],
+      "slick_urls": [
+        "https://staticfile.batdongsan.com.vn/lib/slick/slick.min.css",
+        "https://staticfile.batdongsan.com.vn/lib/slick/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://batdongsan.com.vn"
+    },
+    {
+      "version": null,
+      "sources": [
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://bazaarvietnam.vn/wp-content/themes/harpersbazaar/library/js/libs/slick/slick.css"
+        },
+        {
+          "rule": "url_slick_theme_css",
+          "kind": "url_filename_rules",
+          "url": "https://bazaarvietnam.vn/wp-content/themes/harpersbazaar/library/js/libs/slick/slick-theme.css"
+        }
+      ],
+      "slick_urls": [
+        "https://bazaarvietnam.vn/wp-content/themes/harpersbazaar/library/js/libs/slick/slick.css",
+        "https://bazaarvietnam.vn/wp-content/themes/harpersbazaar/library/js/libs/slick/slick-theme.css"
+      ],
+      "filename_matches": [
+        "url_slick_css",
+        "url_slick_theme_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://bazaarvietnam.vn"
+    },
+    {
+      "version": "6.8",
+      "sources": [
+        {
+          "rule": "url_slick_with_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://be.com.vn/wp-content/themes/beThemes/assets/css/plugins/slick.min.css?ver=6.8"
+        },
+        {
+          "rule": "url_slick_with_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://be.com.vn/wp-content/themes/beThemes/assets/js/plugins/slick.min.js?ver=6.8"
+        },
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://be.com.vn/wp-content/themes/beThemes/assets/js/plugins/slick.min.js?ver=6.8"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://be.com.vn/wp-content/themes/beThemes/assets/css/plugins/slick.min.css?ver=6.8"
+        }
+      ],
+      "slick_urls": [
+        "https://be.com.vn/wp-content/themes/beThemes/assets/css/plugins/slick.min.css?ver=6.8",
+        "https://be.com.vn/wp-content/themes/beThemes/assets/js/plugins/slick.min.js?ver=6.8"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://be.com.vn"
+    },
+    {
+      "version": "1.8.1",
+      "sources": [
+        {
+          "rule": "url_slick_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        },
+        {
+          "rule": "url_slick_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+        },
+        {
+          "rule": "url_slick_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        },
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        },
+        {
+          "rule": "url_slick_theme_css",
+          "kind": "url_filename_rules",
+          "url": "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+        }
+      ],
+      "slick_urls": [
+        "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css",
+        "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css",
+        "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css",
+        "url_slick_theme_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://ben.com.vn"
+    }
+  ]
+}

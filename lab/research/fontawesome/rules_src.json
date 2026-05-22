@@ -1,0 +1,231 @@
+{
+  "_meta": {
+    "tech": "Font Awesome",
+    "authored_from": "FA release tarballs v4.7.0, v5.15.4, v6.5.2, v7.2.0 + documented downstream conventions (WordPress wp_enqueue_style, FA official CDN docs, npm package naming)",
+    "inventory": "src_artifact_inventory.json",
+    "principle": "every rule cites a file+line in an FA release OR a documented downstream convention. corpus is for validation, not authoring.",
+    "extracts_semantics": {
+      "{\"g\": N}": "value comes from regex capture group N",
+      "{\"l\": V}": "literal value V",
+      "{\"from_host\": {host: value, ...}}": "value chosen by URL host"
+    }
+  },
+  "banner_rules": [
+    {
+      "id": "banner_v4",
+      "kind": "banner",
+      "pattern": "Font Awesome (\\d+\\.\\d+(?:\\.\\d+)?) by @davegandy",
+      "extracts": {
+        "version": {"g": 1},
+        "edition": {"l": "free"},
+        "generation": {"l": 4}
+      },
+      "applies_to": "css body",
+      "source": {
+        "release": "4.7.0",
+        "file": "css/font-awesome.css",
+        "line_range": "1-4",
+        "literal": "Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome"
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "banner_v5plus",
+      "kind": "banner",
+      "pattern": "Font Awesome (Free|Pro) (\\d+\\.\\d+(?:\\.\\d+)?) by @fontawesome",
+      "extracts": {
+        "edition": {"g": 1},
+        "version": {"g": 2}
+      },
+      "generation_from_version": {"5": 5, "6": 6, "7": 7},
+      "applies_to": "css body, js body",
+      "source": {
+        "releases": ["5.15.4", "6.5.2", "7.2.0"],
+        "file": "css/all.css line 1-5",
+        "note": "banner format stable from v5.0 onward. 'Free'|'Pro' substituted; v5+ uses lowercase edition spelling."
+      },
+      "confidence": "high"
+    }
+  ],
+  "url_version_in_path_rules": [
+    {
+      "id": "url_fa_token_then_version",
+      "kind": "url_version",
+      "pattern": "(?:font-?awesome|fortawesome)[^\\d?#]*?(\\d+\\.\\d+(?:\\.\\d+)?)",
+      "extracts": {
+        "version": {"g": 1}
+      },
+      "applies_to": "any URL string",
+      "source": {
+        "principle": "Proximity match: FA token, then any non-digit non-query chars, then a dotted-semver version. The `[^\\d?#]*?` bridge tolerates real-world path noise (/releases/v, /npm/@fortawesome/fontawesome-free@, /ajax/libs/) while still refusing to cross into a query string (which is the cache-buster/wrapper-version territory handled by the rule below).",
+        "covers": [
+          "cdnjs:        /ajax/libs/font-awesome/4.7.0/",
+          "jsdelivr npm: /npm/font-awesome@4.7.0/  or  /@fortawesome/fontawesome-free@5.15.4/",
+          "unpkg:        /@fortawesome/fontawesome-free@5.15.4",
+          "bootstrapcdn: /font-awesome/4.4.0/",
+          "official CDN: use.fontawesome.com/releases/v5.13.0/  + pro.fontawesome.com/releases/v.../",
+          "self-hosted:  /font-awesome-5.15.1/,  /font-awesome/v6.6.0/,  fontawesome-free-5.11.2-web/",
+          "dot-notation: /font-awesome.4.7.0.css"
+        ],
+        "rejects_by_design": [
+          "kit URLs use.fontawesome.com/<hex>.js (hex like f455f83be3 contains no .digit. shape -- regex requires \\d+\\.\\d+)",
+          "?cb=1.2.3 / any ?* cache-buster (query boundary [^?])",
+          "elementor-bundled FA ?ver=X.Y.Z (query boundary; the medium-confidence query rule below catches it explicitly)"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "url_fa_with_query_ver",
+      "kind": "url_version",
+      "pattern": "(?:font-?awesome|fortawesome)[^?#]*?[?&](?:ver|version|v)=(\\d+\\.\\d+(?:\\.\\d+)?)",
+      "extracts": {
+        "version": {"g": 1}
+      },
+      "applies_to": "any URL with query string",
+      "source": {
+        "principle": "WordPress wp_enqueue_style/wp_enqueue_script appends ?ver=$version to enqueued assets. URL contains FA token; ?ver= / ?version= / ?v= carries the version.",
+        "doc_url": "https://developer.wordpress.org/reference/functions/wp_enqueue_style/",
+        "limit_explicitly_recognised": "When a WP plugin/theme bundles its OWN copy of FA (e.g. Elementor ships FA under wp-content/plugins/elementor/assets/lib/font-awesome/), the ?ver= carries the WRAPPER'S version, not FA's. We accept this as a tolerable false-positive; the alternative (no version) is worse. Resolution: lab/research/fontawesome/detect_src.py prefers banner-from-body extraction over this when both are available."
+      },
+      "confidence": "medium"
+    }
+  ],
+  "url_filename_rules": [
+    {
+      "id": "url_v4_css",
+      "kind": "url_filename",
+      "pattern": "(?:^|/)font-awesome(?:\\.min)?\\.css(?:\\?|$|#)",
+      "extracts": {"generation": {"l": 4}},
+      "applies_to": "any URL",
+      "source": {
+        "release": "4.7.0",
+        "file": "css/font-awesome.css and css/font-awesome.min.css",
+        "literal": "v4 ships ONLY 'font-awesome.css'. v5 renamed root file to 'fontawesome.css' (no hyphen) and added 'all.css'. The hyphenated 'font-awesome.css' filename is v4-exclusive."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "url_v5plus_css",
+      "kind": "url_filename",
+      "pattern": "(?:^|/)(all|solid|regular|brands|svg-with-js)(?:\\.min)?\\.css(?:\\?|$|#)",
+      "extracts": {"generation_at_least": {"l": 5}},
+      "applies_to": "any URL",
+      "source": {
+        "releases": ["5.15.4", "6.5.2", "7.2.0"],
+        "file": "css/",
+        "literal": "all.css/solid.css/regular.css/brands.css/svg-with-js.css all introduced in v5. None present in v4 release tarball.",
+        "exclusion_check": "v4 release tarball ls(css/) = ['font-awesome.css', 'font-awesome.min.css'] only."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "url_v6plus_v4compat",
+      "kind": "url_filename",
+      "pattern": "fa-v4compatibility\\.(?:woff2|ttf|css|min\\.css)",
+      "extracts": {"generation_at_least": {"l": 6}},
+      "applies_to": "any URL",
+      "source": {
+        "release": "6.5.2",
+        "file": "webfonts/fa-v4compatibility.woff2",
+        "literal": "fa-v4compatibility.* introduced in v6 release tarball. Absent from v4 and v5 tarballs."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "url_v6plus_v5_font_face",
+      "kind": "url_filename",
+      "pattern": "(?:^|/)v5-font-face(?:\\.min)?\\.css",
+      "extracts": {"generation_at_least": {"l": 6}},
+      "applies_to": "any URL",
+      "source": {
+        "release": "6.5.2",
+        "file": "css/v5-font-face.css",
+        "literal": "v5-compat shim CSS introduced in v6 tarball. Absent from v4 and v5."
+      },
+      "confidence": "high"
+    }
+  ],
+  "webfont_rules": [
+    {
+      "id": "font_v4_webfont",
+      "kind": "webfont",
+      "pattern": "fontawesome-webfont\\.(?:woff2|woff|ttf|eot|svg|otf)",
+      "extracts": {"generation": {"l": 4}},
+      "applies_to": "any URL",
+      "source": {
+        "release": "4.7.0",
+        "file": "fonts/fontawesome-webfont.{woff,woff2,ttf,eot,svg}",
+        "literal": "v4 ships ONE webfont named 'fontawesome-webfont'. v5+ replaces this with fa-{solid-900,regular-400,brands-400}.{woff2,...}."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "font_v5plus_filenames",
+      "kind": "webfont",
+      "pattern": "fa-(solid-900|regular-400|brands-400)\\.(?:woff2|woff|ttf|eot|svg)",
+      "extracts": {"generation_at_least": {"l": 5}},
+      "applies_to": "any URL",
+      "source": {
+        "releases": ["5.15.4", "6.5.2", "7.2.0"],
+        "file": "webfonts/fa-{solid-900,regular-400,brands-400}.woff2",
+        "literal": "v5 introduced family-weight font naming. Identical filenames in v5/v6/v7 tarballs. Absent from v4."
+      },
+      "confidence": "high"
+    }
+  ],
+  "css_class_rules": [
+    {
+      "id": "class_v5_short_prefix",
+      "kind": "css_class",
+      "pattern": "\\b(fas|far|fab|fad|fal|fat)\\s+fa-",
+      "extracts": {"generation_at_least": {"l": 5}},
+      "applies_to": "html class attributes",
+      "source": {
+        "releases": ["5.15.4", "6.5.2", "7.2.0"],
+        "file": "css/all.css selector definitions for .fas, .far, .fab, .fal, .fad",
+        "literal": "short-form family/style prefixes introduced in v5. v4 source has no .fas/.far/.fab selectors."
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "class_v6plus_long_prefix",
+      "kind": "css_class",
+      "pattern": "\\bfa-(solid|regular|brands|light|thin|duotone|sharp)\\b",
+      "extracts": {"generation_at_least": {"l": 6}},
+      "applies_to": "html class attributes",
+      "source": {
+        "releases": ["6.5.2", "7.2.0"],
+        "file": "css/all.css selectors .fa-solid, .fa-regular, .fa-brands",
+        "literal": "long-form classes introduced in v6, default in v7. v5 source has no .fa-solid selector."
+      },
+      "confidence": "high"
+    }
+  ],
+  "kit_rules": [
+    {
+      "id": "kit_legacy_use",
+      "kind": "kit",
+      "pattern": "use\\.fontawesome\\.com/[0-9a-f]{8,}\\.js",
+      "extracts": {"edition": {"l": "legacy_kit"}},
+      "applies_to": "script src",
+      "source": {
+        "documentation": "FA Cloud (legacy) embed. The kit JS body is window.FontAwesomeCdnConfig = {...code: '<id>'...}; verified by fetching f455f83be3.js and b6de74fbb9.js (9494/9493 bytes each, no version string).",
+        "literal_body_header": "window.FontAwesomeCdnConfig = { ... code: \"<id>\" };"
+      },
+      "confidence": "high",
+      "note": "Version unrecoverable from URL; report kit_only."
+    },
+    {
+      "id": "kit_modern",
+      "kind": "kit",
+      "pattern": "kit\\.fontawesome\\.com/[0-9a-f]{8,}\\.js",
+      "extracts": {"edition": {"l": "modern_kit"}},
+      "applies_to": "script src",
+      "source": {
+        "documentation": "FA modern Kit (post-2018). Kit JS body contains version metadata, but we have not yet acquired one to author the body-extraction rule. Detection only."
+      },
+      "confidence": "high"
+    }
+  ]
+}

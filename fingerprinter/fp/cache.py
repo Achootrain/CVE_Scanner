@@ -53,16 +53,19 @@ def _path_from_template(path_template: str) -> str:
 def _normalise_matcher(row: sqlite3.Row) -> dict[str, Any]:
     payload = json.loads(row["payload"]) if row["payload"] else {}
     mtype = row["type"]
+    case_insensitive = bool(payload.get("case-insensitive"))
     out: dict[str, Any] = {
         "type": mtype,
         "name": row["name"],
         "part": row["part"],
         "condition": row["condition"],
         "negative": bool(row["negative"]),
+        "case_insensitive": case_insensitive,
     }
     if mtype == "word":
-        # Nuclei `word` matcher is case-insensitive by default.
-        out["values"] = [str(w).lower() for w in (payload.get("words") or [])]
+        # Nuclei word matchers are case-sensitive unless `case-insensitive: true`.
+        words = [str(w) for w in (payload.get("words") or [])]
+        out["values"] = [w.lower() for w in words] if case_insensitive else words
     elif mtype == "regex":
         out["values"] = list(payload.get("regex") or [])
     elif mtype == "status":

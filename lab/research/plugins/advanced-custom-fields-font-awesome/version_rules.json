@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-05-13",
+  "source": "https://downloads.wordpress.org/plugin/advanced-custom-fields-font-awesome.{tag}.zip",
+  "primary_version": "6.0.2",
+  "cross_versions": [
+    "6.0.1",
+    "6.0.0",
+    "5.0.2"
+  ],
+  "rule_count": 2,
+  "rules": [
+    {
+      "path": "/acf-font-awesome.php",
+      "regex": "(?im)^\\s*\\*?\\s*Version\\s*:\\s*([0-9][\\w.\\-]*)",
+      "regex_family": "php header: Version: X.Y.Z",
+      "validated_versions": [
+        "6.0.2",
+        "5.0.2",
+        "6.0.0",
+        "6.0.1"
+      ],
+      "sample_context": {
+        "6.0.2": "ield to the popular Advanced Custom Fields plugin.\\nVersion: 6.0.2\\nAuthor: Justin Kruit, Matt Keys\\nAuthor URI: http://justinkr",
+        "6.0.1": "ield to the popular Advanced Custom Fields plugin.\\nVersion: 6.0.1\\nAuthor: Justin Kruit, Matt Keys\\nAuthor URI: http://justinkr",
+        "6.0.0": "ield to the popular Advanced Custom Fields plugin.\\nVersion: 6.0.0\\nAuthor: Justin Kruit, Matt Keys\\nAuthor URI: http://justinkr",
+        "5.0.2": "ield to the popular Advanced Custom Fields plugin.\\nVersion: 5.0.2\\nAuthor: Justin Kruit, Matt Keys\\nAuthor URI: http://justinkr"
+      }
+    },
+    {
+      "path": "/readme.txt",
+      "regex": "(?im)^Stable\\s*tag\\s*:\\s*([0-9][\\w.\\-]*)",
+      "regex_family": "wp plugin readme: Stable tag: X.Y.Z",
+      "validated_versions": [
+        "6.0.2",
+        "5.0.2",
+        "6.0.0",
+        "6.0.1"
+      ],
+      "sample_context": {
+        "6.0.2": "wesome\\nRequires at least: 6.5\\nTested up to: 6.9\\nStable tag: 6.0.2\\nRequires PHP: 5.6\\nLicense: GPLv2 or later\\nLicense URI: http",
+        "6.0.1": "wesome\\nRequires at least: 6.5\\nTested up to: 6.9\\nStable tag: 6.0.1\\nRequires PHP: 5.6\\nLicense: GPLv2 or later\\nLicense URI: http",
+        "6.0.0": "wesome\\nRequires at least: 6.5\\nTested up to: 6.9\\nStable tag: 6.0.0\\nRequires PHP: 5.6\\nLicense: GPLv2 or later\\nLicense URI: http",
+        "5.0.2": "wesome\\nRequires at least: 3.5\\nTested up to: 6.9\\nStable tag: 5.0.2\\nRequires PHP: 5.6\\nLicense: GPLv2 or later\\nLicense URI: http"
+      }
+    }
+  ]
+}

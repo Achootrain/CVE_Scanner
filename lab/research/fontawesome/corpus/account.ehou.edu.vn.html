@@ -1,0 +1,194 @@
+<!DOCTYPE html><html>
+<head>
+    <title>Central Authentication Service - CAS &#8211; Central Authentication Service</title>
+    <meta charset="UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="/cas/webjars/font-awesome/4.7.0/css/font-awesome.min.css"/><link type="text/css" rel="stylesheet" href="/cas/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css"/><link type="text/css" rel="stylesheet" href="/cas/webjars/lato/0.3.0/css/lato.min.css"/><link rel="stylesheet" href="/cas/css/cas.css"/><link rel="icon" href="/cas/favicon.ico" type="image/x-icon"/><script type="text/javascript" src="/cas/webjars/zxcvbn/4.3.0/zxcvbn.js"></script>
+    <script type="text/javascript" src="/cas/webjars/jquery/3.3.1/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/cas/webjars/jquery-cookie/1.4.1-1/jquery.cookie.js"></script>
+    <script src="//www.google.com/recaptcha/api.js" async defer></script>
+    <script src="/cas/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js"></script>
+
+    <script>
+        /*<![CDATA[*/
+
+        var trackGeoLocation = false;
+
+        var googleAnalyticsTrackingId = "UA-126306642-1";
+
+        if (googleAnalyticsTrackingId != null && googleAnalyticsTrackingId != '') {
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', googleAnalyticsTrackingId, 'auto');
+            ga('send', 'pageview');
+        }
+
+        /*]]>*/
+    </script>
+</head>
+
+<body id="cas" class="login">
+<div id="container" class="container">
+    <header>
+    
+</header>
+<div id="content">
+        <div class="row">
+            <div id="notices" class="col-sm-12 col-md-6 col-md-push-6">
+                <div id="cookiesDisabled" class="alert alert-info" style="display:none;">
+    <h2>Trình duyệt của bạn đang tắt chức năng cookie</h2>
+    <p>Trình duyệt của bạn không chấp nhận cookies. Đăng nhập một lần SẼ KHÔNG HOẠT ĐỘNG.</p>
+</div>
+<div id="serviceui" class="alert alert-info">
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <img src="images/webapp.png"/></td>
+                <td id="servicedesc">
+                    <h2>HTTPS and IMAPS</h2>
+                    <p>This service definition authorizes all application urls that support HTTPS and IMAPS protocols.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!--<div th:replace="fragments/cas-resources-list" />--></div>
+            <div class="col-sm-12 col-md-5 col-md-pull-8">
+                <div class="box" id="login">
+    <div class="login-header">
+		<a href="https://hou.edu.vn"><img id="login-header-logo"/></a>
+        <h2 id="login-header-text">Central Authentication Service</h2>
+        
+        <!-- <span class="fa-stack fa-2x hidden-xs">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+        </span> --></div>
+
+    <form method="post" id="fm1" action="login">
+
+        <h2>Enter your Username and Password</h2>
+
+        <section class="row">
+            <label for="username"><span class="accesskey">T</span>ên đăng nhập:</label>
+
+            <div>
+                <input class="required"
+                       id="username"
+                       size="25"
+                       tabindex="1"
+                       type="text"
+                       accesskey="y"
+                       autocomplete="off" name="username" value=""/></div>
+        </section>
+
+        <section class="row">
+            <label for="password"><span class="accesskey">M</span>ật khẩu:</label>
+
+            <div>
+                <input class="required"
+                       type="password"
+                       id="password"
+                       size="25"
+                       tabindex="2"
+                       accesskey="m"
+                       autocomplete="off" name="password" value=""/><span id="capslock-on" style="display:none;">
+                    <p>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <span>Phím CAPSLOCK đang được bật!</span>
+                    </p>
+                </span>
+            </div>
+        </section>
+
+        <section class="row check">
+            </section>
+
+        <section class="row check">
+            </section>
+
+        <section class="row">
+            <div class="g-recaptcha" data-sitekey="6Lfch3AUAAAAABa8rFihnLGZqHAXPRTsSXzFrYnR"/></section>
+
+        <section class="row btn-row">
+            <input type="hidden" name="execution" value="920cca06-bb11-4f54-9cea-c30a26f95f47_ZXlKaGJHY2lPaUpJVXpVeE1pSjkuVzFqTjZBNnpuaUNMZHpBY1JTUjNaYkdUaGlwTHZiN01NUDJ1OERkcWQ1bFEvOExrK0tvUUlVZGJaSThocnZHQkFHRTNTOFlYbEhFMW1DYm5ReXVJSWY4NW1WM3A2QVNvd0NPYVkxbTlVaUUrWWdmMnJyOHRXbUN5blpaQ2dWbWtwSEowdUs5TURxQkFnR2tTRWUwRUlZUnJEcHMrbGk5MEFxMU5pdXRuV01TSTZWU2hnZXRaMEVFYkJhdzcwRjNsaGNqM3dmU25OK2s0T2ZQYk5YUS9QYmloa1hVUUtGMFFJSDlIVG44dlBCck1rdmxJUEtNRUN4UmhMSTMyQWdSZGhCbU9MNUN3UWtpQ0Y4cTJEek1rT2ErK0dXR1J0WDlUdTJXMFNiNndvVkRyK2p1ek5ZR2VJbEhlSm5JaXM3dldSdG5mVWI5WWhzR1dvajVVWHEvMUtsbE9YMEplWUVxVkdYRFFYNjVzNGZaRzFnMTNsRjM5MFcwcEZCM2crRTA3MUVSWnp4UUlsbFAvMTVoRFZrdDRsdWZ0OENyY3JGZ1UvU09VaU9BVkdndy9rTmZwbkt2STh6Nm4xbGV5bE1tYmNWMEoySFRkSmZJL0Z3dndjMXp6Wmp1cjFaRnR6WXJCc2lQS09QYWdEZ2FGSkZheWRlZVY5dmhCK0d1alVHOThRdFJyTVdMM25GU1dreGlHcmljUVI5YzR3V25KQTB0Slh5UUpjZ2YrZVNOZlp1Wi8wM1E0cWo1S3BEay83TXJvdEM4cXlEbDk3b0FjdkFONW9zWFBQZFhCLytHRzRXUGIyL1lYWWU1UWdSdVBPdVRMbGhpdytpTkNscjhsTnNFS3dJQTB5ZHRtQWo5NmhlcVZFNkI3NHdlMDJocEhUbncxWTRKb0ZaS3UxbGZESVFndkdHZ1J5SmdiVkNxMGYyQVNxQVdTQlUxR0RLVE1vby9RdHpSV0tmQTIwWWtOdWd4UDJPK01ETktqMUh2cjFJU2xOb2FIN3FQQ0Y4eDgvNWNMcTFVT1FkbFUza01hN0dKbVdXeWpHOGtWc3BRRk0rYzJUby9MQkhLa3ZmLzV6QURadjZIZ0p2cXVaRkk1LzdKSUNRem01OHU1NGZjTzV4UmVPNmlRZWR1cnBGTlNQNHNNaTRxTWRJcllYSXRsNGpPTC9rVWpnQ1Z3SkoyeG9qZWpRNHlQKzB0WTZteXBzdVVxUGxCMTJKTm9WbVMwNVpkMWxCZ201QjVwbnJTZGZKQm9lenU0b0E2RlZ6M3RNb2JPTldtNk1USjhvUkRLTEhicWJxUGcvK0pJbldSdjU0OThIN0EzNGovSWRERndNSllrU2JybHNnMnBaemJLVEYzZWpMTkkvbzE5N3AxTm14L1FIc2pFSXhkSzloVks4di9iSzJGS3hyL0VIb1RwamJ5QmRsQnY3WGEvNmk4Q3ZRRU5tOUNrYTFvc3ZteFdsWkZGVjF5d3Z1UjlqdlBSSk9mY2tJVnl0QkJvM2dKWXNXcWFKdStDclpOYzhFWG9hdDBQYnNWVEtvQ1JYN0NBUzkxejlTaStFTTBKQ1V2NGFOWlBEMzBpVlBxRE9XZEVCenBkdnVJRzd2ZytXZ00vZFR5YWJMK0Fwa1BucXpPeU9DWEpzVDE4Zm5VWld3U3NaaU0rWlJYdTRqOEErY1o1VmtoeitPSTdZYWNnYUVOcjZFY2t0TFNwUy9wOGo4OGpVc0d0dHo1SFZLclEvOVFUc3VWSE01TnkrWXlUQVRvYXBpbGhFZG5IRWtXZ2hOQ0V5WEJNeUErZVEySWg1UWxzMzlpYXEwT1czQWRwTVorbEUxVjF5aFNJZlZTNCtuZ3NGZEsyOTcxUnNkMW5jODQ3bE5SYzlWLzNCMzEzWjRqWUFCS1hIeThWTU93OGZ4VERDcFBNU216QWRhUDJPcDNzdlc4WjUvMnQrZUQzcUtVTGNWY2tKLytHNGt2Y0N6azRSVHp3Wkw3akdCV3dxcmtTdEFONmIxam43TE9BQlRoR01nL3U5Q0dCN2dhQVg5aHJVY0pGa09vMm5BQVd2THFoQXJIR3FGcDlyUThJNzEyUTk4ZXVNV2xNV01kUFVnQkluZzNaM3J3VzVuZmtVK1N1UnRPUzhaV21oUm9MS0FSOXFmMDY0c3VseTJXeURkU3N1MkZkU0QyaFZQWXRpUFQzZGpZeUtudnFpRVg5a2lkdFBQM0c3cFRhaEYvK1JhbXNaK01SZkhCZU0xcWxNS3M2RWptNHBuUHFqeVBlRWU3T0JMdytpUzgvT1NrYVdTVVRwb3R4M0ZSSjNFTVU2SklwMW90L3NDd3NmK1NpN3RvWUtMVzh6Skw5L0hXQnl6cndvaWk5bkxicXAvYW44dHZ5Nm5vTHlCWG1pNlFFanBiUUpreDNObG1KYkZMWklpU2JXeUlHNUpsbE4zWUhEeW4vY0tIY3R6b0lqeFBNdk4wNEhiNGw3bGUxT3MrRnhabllzS045Z0VuQU1XdllnanFRdXE5ZlhtZVVyUGozcTFhaWRQT2hWSld2bHBsWVNta1NRTllUM2xjZDQwNENta3ViNThueC82cW5XSzN4cUhNZy9kdlRHUUhBajdFdzJvRU1PRnQxMjNtMmpodXRPWTRHNzZVL0lUR3VmVDNWcHhaTWREbEZTVm1UT0wzNm56U1R0TXRNSWVwdVRDd0ZZZUJjNEY1Qk5qOVlMV3I0OHpjeTg3V25UOVplcUVLRjAwWkFGdTNONGlsTEZEaXQyenV6eWlJdjQ1dDBhWEFwdmJGbWpXREYwQmZTdHhselFXYXMyMGNlaTlBaVQwZTBMZDlUZk5QREI1ODBkbG5EWWxJQTB4MXo5QUE5YTk0ZUxzTDYxcHE2eWRyb0FUVGxtMDVXRTN5Zm5CNzE0NHF1WG1KOVNERWdYMThvNWVtOHovNTh4WmVLYXRwYkRHLzRlMXV2SDlTTUs1ZzhXYncxSWpRY3ZNTFZoQjMrNWdCdVZIcFhFVkQ5OWliM2Vhd2hxaWFianl0TnVUdVFQZ2FZYmM1VXpaczl6aHdtVTZ3VGI5eGN5Q3VYREpnRzFzdURNdzlSZ25uMWI2K092VnUrY1JUN2tYUEJMS21CZllhY0pBVmhveVZ5eTlLZVFqc2xrVVp2dGRPdnJRQzJicUxidVpKYlJTcE9hTGVpNk81VlB1YnlBaHdqWm1HcXBEeTFINHNSSTJET1gwWlhsMkczd0VHSXBjRHNYK3FnV3RocUtTbGVqeVRIOG1DVlJDdmRBbkoxZDMvbS8yM2diS3pYUVZOZno4MzN3VmxNOTBWbDNnSUxYNW10d240MzBUUUdhU0xGNTVDZGZhSVVLeFhvUVdVY0c4Q3ZGeW9qVjRjeEUwQVRkUk5ZckhyS21tWUNsZmRpRFRyRzdRZXhvWXcvVnU0VENqK1lESkRXU3BvN2JucTJ2Mkl5T3NxR1ZlZHNmcW9sc0V6OUs2cG4xOEJLbE12NFIxNVNDQ0hkUDgzRUlPeHB3RlUyNkJlbFJmZ1VYUFNIemk2MmxsOGZ6aWY1MmVMVmtCYVpIZ2YycUhuOVgraDQ3aS9PZ0JYUTQvRUUxR2lMQmFpMTk5dm42Q3VVc05lZjE1Yng4VFJXVkMrbGpCRG9jWlozT2lFNXhxOHhVYThOa0gvMEoxNkg4M3R6dEZldVljUDJ5cFQremdHQzdLWXVkNEFNSUd1LzZodXV1T2tMK1cwY1ZsK2R1ZFBqVHYrNFB1RXQveUl2VHFKb2RNQnhlcEtVMVhzYzlCclA5U1F1TkQ3YVVBSHcrWlArTFpzMWdDcDZyREN2U3BaRUlaVFdxdG5hNDYrLzM2S3cxNnBYTnIzN1Z3aDFBMVg3QmsxMUZJK2xlYTZ5cU9yVDljQi9qZUZUY21PZXpOUzVDMnpyNDFDNmw3eVBMOUpCaXV3cDdTZEtuUmkyTW91T08xU0h0VGp2d0FJU013UUdVQ2JFYmdtQllWeEQ2ZVdtV1ZzQXhmWEl3QlZncTNtT0gvSzBmaWhtaVBjdiswTnNlUWVHYTFNQlFLNnBBblFrTVNWZjJXRGU0QWkwNVVnRlc0Z2taYklXLm5jWVdjekFvdkhuQVNqQTFmTzEwV2Etci1Ed0VDY2lCeXFNYzFQdkkxOGVObmFZX1l0MndkN2UxZnNGZmFzUlAxRmxSeER5UjM1T3lNQ1hnLW94RjBB"/><input type="hidden" name="_eventId" value="submit"/><input type="hidden" name="geolocation"/><input class="btn btn-submit btn-block"
+                   name="submit"
+                   accesskey="l"
+                   value="ĐĂNG NHẬP"
+                   tabindex="6"
+                   type="submit"/></section>
+    </form>
+
+    <div>
+        <span class="fa fa-question-circle"></span>
+        <span><a href="https://accounts.hou.edu.vn/reset-password.php">Bạn quên mật khẩu? </a></span>
+        <p/></div>
+
+    <script type="text/javascript">
+        var i = "Xin vui l\u00F2ng \u0111\u1EE3i..."
+        $("#fm1").submit(function () {
+            $(":submit").attr("disabled", true);
+            $(":submit").attr("value", i);
+            return true;
+        });
+    </script>
+    <div id="sidebar">
+    <div class="sidebar-content">
+        <p>Đối với các bạn sinh viên lần đầu truy cập hệ thống có thể đăng nhập với mã sinh viên viết hoa (ví dụ 19A76094339) là tên đăng nhập và mật khẩu. Lưu ý tự đổi mật khẩu của mình sau khi đăng nhập thành công. Nếu vẫn không thể truy cập được tài khoản vui lòng gọi số điện thoại <a href="tel:0399113247">0399113247</a>. Vì lý do an toàn, vui lòng <a href="logout">đăng xuất</a> và thoát trình duyệt web khi bạn đã sử dụng xong dịch vụ yêu cầu xác thực!</p>
+    </div>
+</div>
+
+<div style="text-align: center;">
+		<span style="font-weight: bold; font-size: 14px;">Copyright © 2018 of Hanoi Open University</span>
+	</div>
+</div>
+</div>
+        </div>
+    </div>
+    <footer>
+    <!--<div id="copyright" class="container">
+        <p th:utext="#{copyright}"></p>
+        <p>Powered by <a href="http://www.apereo.org/cas">
+            Apereo Central Authentication Service
+            <span th:text="${T(org.apereo.cas.util.CasVersion).getVersion()}"></span>
+            <span th:text="${T(org.apereo.cas.util.CasVersion).getDateTime()}"></span> </a>
+        </p>
+    </div>--></footer>
+</div>
+<div><script src="/cas/webjars/headjs/1.0.3/head.min.js"></script>
+<script type="text/javascript" src="/cas/js/cas.js"></script>
+
+<script>
+head.ready(document, function () {
+    if (!window.jQuery) {
+    	var jqueryUrl = "\/cas\/webjars\/jquery\/3.3.1\/dist\/jquery.min.js"; 
+        head.load(jqueryUrl, loadjQueryUI);
+    } else {
+        notifyResourcesAreLoaded(resourceLoadedSuccessfully);
+    }
+});
+
+function loadjQueryUI() {
+	var jqueryUrl = "\/cas\/webjars\/jquery-ui\/1.12.1\/jquery-ui.min.js"; 
+	head.load(jqueryUrl, loadjQueryCookies);
+}
+
+function loadjQueryCookies() {
+	var jqueryUrl = "\/cas\/webjars\/jquery-cookie\/1.4.1-1\/jquery.cookie.js"; 
+	head.load(jqueryUrl, notifyResourcesAreLoaded(resourceLoadedSuccessfully));
+}
+
+function notifyResourcesAreLoaded(callback) {
+    if (typeof callback === "function") {
+        callback();
+    }
+}
+</script>
+
+
+</div>
+
+</body>
+</html>

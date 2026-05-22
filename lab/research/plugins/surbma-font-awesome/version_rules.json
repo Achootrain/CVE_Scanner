@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-05-13",
+  "source": "https://downloads.wordpress.org/plugin/surbma-font-awesome.{tag}.zip",
+  "primary_version": "3.1",
+  "cross_versions": [
+    "3.0",
+    "2.6.0",
+    "2.5.0"
+  ],
+  "rule_count": 2,
+  "rules": [
+    {
+      "path": "/readme.txt",
+      "regex": "(?im)^Stable\\s*tag\\s*:\\s*([0-9][\\w.\\-]*)",
+      "regex_family": "wp plugin readme: Stable tag: X.Y.Z",
+      "validated_versions": [
+        "3.1",
+        "2.5.0",
+        "2.6.0",
+        "3.0"
+      ],
+      "sample_context": {
+        "3.1": " icons\\nRequires at least: 5.1\\nTested up to: 6.7\\nStable tag: 3.1\\nRequires PHP: 7.4\\nLicense: GPLv2\\nLicense URI: http://www.gn",
+        "3.0": " icons\\nRequires at least: 5.1\\nTested up to: 6.2\\nStable tag: 3.0\\nRequires PHP: 7.0\\nLicense: GPLv2\\nLicense URI: http://www.gn",
+        "2.6.0": " icons\\nRequires at least: 3.0\\nTested up to: 4.8\\nStable tag: 2.6.0\\nLicense: GPLv2\\nLicense URI: http://www.gnu.org/licenses/gpl",
+        "2.5.0": " icons\\nRequires at least: 3.0\\nTested up to: 4.5\\nStable tag: 2.5.0\\nLicense: GPLv2\\nLicense URI: http://www.gnu.org/licenses/gpl"
+      }
+    },
+    {
+      "path": "/surbma-font-awesome.php",
+      "regex": "(?im)^\\s*\\*?\\s*Version\\s*:\\s*([0-9][\\w.\\-]*)",
+      "regex_family": "php header: Version: X.Y.Z",
+      "validated_versions": [
+        "3.1",
+        "2.5.0",
+        "2.6.0",
+        "3.0"
+      ],
+      "sample_context": {
+        "3.1": "n: Font Awesome - The iconic font and CSS toolkit\\n\\nVersion: 3.1\\n\\nAuthor: Surbma\\nAuthor URI: https://surbma.com/\\n\\nLicense: G",
+        "3.0": "n: Font Awesome - The iconic font and CSS toolkit\\n\\nVersion: 3.0\\n\\nAuthor: Surbma\\nAuthor URI: https://surbma.com/\\n\\nLicense: G",
+        "2.6.0": "n: Font Awesome - The iconic font and CSS toolkit\\n\\nVersion: 2.6.0\\n\\nAuthor: Surbma\\nAuthor URI: http://surbma.com/\\n\\nLicense: GP",
+        "2.5.0": "n: Font Awesome - The iconic font and CSS toolkit\\n\\nVersion: 2.5.0\\n\\nAuthor: Surbma\\nAuthor URI: http://surbma.com/\\n\\nLicense: GP"
+      }
+    }
+  ]
+}

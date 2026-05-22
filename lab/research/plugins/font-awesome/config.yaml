@@ -1,0 +1,31 @@
+slug: font-awesome
+archive_url: https://downloads.wordpress.org/plugin/{slug}.{tag}.zip
+raw_url: https://plugins.svn.wordpress.org/{slug}/tags/{tag}/{path}
+# Primary pinned to 5.1.5 (NOT the SVN-tag-latest 5.2.0-1) because the
+# plugin author released 5.2.0-1 with readme.txt's `Stable tag:` line
+# still saying `5.1.3` - a literal-string scan for `5.2.0-1` finds nothing
+# in readme.txt and drops the readme rule. Picking a primary whose readme
+# actually contains the version string is the workaround.
+primary: 5.1.5
+cross:
+- 5.1.4
+- 5.1.3
+- 5.1.2
+include_paths:
+- readme.txt
+- '*.php'
+- '**/*.php'
+- block.json
+- package.json
+regex_bank:
+- label: 'wp plugin readme: Stable tag: X.Y.Z'
+  pattern: (?im)^Stable\s*tag\s*:\s*([0-9][\w.\-]*)
+- label: 'php header: Version: X.Y.Z'
+  pattern: (?im)^\s*\*?\s*Version\s*:\s*([0-9][\w.\-]*)
+- label: 'json: "version": "X.Y.Z"'
+  pattern: '"version"\s*:\s*"([0-9][^"]*)"'
+- label: 'php define: PLUGIN_VERSION-style constant'
+  pattern: define\s*\(\s*['"][A-Z][A-Z0-9_]*VERSION['"]\s*,\s*['"]([0-9][\w.\-]*)['"]
+secondary_techs:
+- slug: fontawesome
+  path_filter: '(?:^|/)font[-_]?awesome(?:[-_]|/)'

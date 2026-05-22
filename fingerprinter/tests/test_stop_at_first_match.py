@@ -26,7 +26,7 @@ class _DummySession:
 
 def test_stop_at_first_match_does_not_skip_later_paths(monkeypatch):
     # Ensure no real HTTP happens.
-    monkeypatch.setattr(scanner_mod.aiohttp, "ClientSession", lambda **_kw: _DummySession())
+    monkeypatch.setattr(scanner_mod, "_CurlSession", lambda **_kw: _DummySession())
 
     async def fake_fetch(self, session, url: str) -> FetchedResponse:  # noqa: ARG001
         # Return different bodies per path.

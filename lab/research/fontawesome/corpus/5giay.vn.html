@@ -1,0 +1,3348 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>5giay | sàn mua bán online</title>
+    <meta content="width=device-width, initial-scale=1.0, user-scalable=yes" name="viewport">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="5giay.vn - sàn mua bán online, đăng tin rao vặt nhanh chóng">
+    <meta name="keywords" content="5giay,mua bán,rao vặt,5giay,chotot,đồ cũ,chợ đồ cũ,rao bán">
+    <meta property="og:title" content="5giay | sàn mua bán online">
+    <meta property="og:url">
+    <meta property="og:site_name" content="5giay | sàn mua bán online">
+    <meta property="og:description" content="5giay.vn - sàn mua bán online, đăng tin rao vặt nhanh chóng">
+    <meta property="og:type" content="article">
+     
+    
+     
+    <link rel="shortcut icon" href="https://www.5giay.vn/styles/default/five/favicon.ico" type="image/x-icon">
+     
+    <!-- link(href=URL_ROOT + '/library/bootstrap/css/bootstrap.min.css', rel='stylesheet')-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css" media="screen">
+    <link href="https://5giay.vn/library/bootstrap/panel-tabs.css" rel="stylesheet">
+    <link href="https://5giay.vn/base/view/css/user.css" rel="stylesheet">
+    <!-- link(href=URL_ROOT + '/library/font_awesome/css/font-awesome.min.css', rel='stylesheet')-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="apple-touch-icon-precomposed" sizes="512x512" href="https://5giay.vn/base/view/images/icon512.jpg">
+    <link rel="apple-touch-icon" href="https://5giay.vn/base/view/images/icon512.jpg">
+        <script src="https://5giay.vn/library/javascript/jquery-3.1.1.min.js"></script>        <script src="https://5giay.vn/library/javascript/jquery.cookie.js"></script>        <script src="https://5giay.vn/library/javascript/nprogress/nprogress.js"></script>        <script src="https://5giay.vn/library/javascript/push.min.js"></script>    <!-- push notification-->
+    <link rel="manifest" href="https://5giay.vn/manifest.json">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3080009714544446" crossorigin="anonymous"></script>  </head>
+  <body>
+<script>//- (function(d, s, id) {
+//-   var js, fjs = d.getElementsByTagName(s)[0];
+//-   if (d.getElementById(id)) return;
+//-   js = d.createElement(s); js.id = id;
+//-   js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8&appId=586511584891073";
+//-   fjs.parentNode.insertBefore(js, fjs);
+//- }(document, 'script', 'facebook-jssdk'));
+
+// hide ad banner
+function getMobileOS() {
+ var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+ 
+ if (/windows phone/i.test(userAgent)) {
+  return "Windows Phone";
+ }
+ 
+ if (/android/i.test(userAgent)) {
+  return "Android";
+ }
+ 
+ if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+  return "iOS";
+ }
+ 
+ return "unknown";
+}
+function hideAdBanner() {
+ $.cookie('hideAppAd', 1 , { expires: 3, path: '/' });
+ $('#appbanner').hide()
+}
+function openAppstore() {
+ var iosLink = 'https://itunes.apple.com/us/app/five-bán-nhanh-mua-dễ/id1272648902?mt=8'
+ var androidLink = 'https://play.google.com/store/apps/details?id=com.bitbrick.five'
+ window.open(getMobileOS()=='iOS' ? iosLink : androidLink, '_blank')
+ hideAdBanner()
+}
+$(function() {
+ var mobileOS = getMobileOS();
+ if(mobileOS == 'iOS' || mobileOS == 'Android')
+  !$.cookie('hideAppAd') ? $('#appbanner').show() : $('#appbanner').hide()
+ else
+  $('#appbanner').hide()
+})</script>    <a id="overlay" onclick="sideBarToggle()"></a>    <!-- body content-->
+<script>function sideBarToggle() {
+ $('#sidebar').toggle()
+ // show sidebar
+ if($('#sidebar').is(":visible")) {
+  $('#overlay').fadeIn()
+  $('#wrapper').css("position", "absolute")
+  $('#wrapper').css("width", "100%")
+  $('#hamburger-close').show()
+  $('#hamburger-hamburger').hide()
+ }
+ // hide sidebar
+ else { 
+  $('#overlay').fadeOut()
+  $('#wrapper').css("position", "static")
+  $('#wrapper').css("width", "auto")
+  $('#hamburger-close').hide()
+  $('#hamburger-hamburger').show()
+ }
+}
+$(document).ready(function(){
+ $('[data-toggle="tooltip"]').tooltip(); 
+});
+$(function() {
+ $( "#marketsearch,#marketsearchm" ).submit(function( event ) {
+  var keyword = $(this).find('input[name="keyword"]').val().replace(/[^\w\p{L}]+/ug, '+')
+  var catId = $(this).find('select[name="cat_id"]').val()
+  var url = 'https://5giay.com/search?cat_id=0&type=1&keyword=' + keyword
+  if(catId && catId!=0) url += '?cat_id=' + catId
+  location.href=url
+  event.preventDefault()
+ })
+})
+</script>    <nav style="background-color:white !important" class="navbar navbar-default navbar-fixed-top navbar-md">
+      <div id="navbar-container" class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed">
+             
+            <i class="fa fa-angle-down"></i>          </button>
+          <button type="button" style="display:block;margin-right:15px;" onclick="javascript:sideBarToggle()" class="navbar-toggle pull-left">
+            <div id="hamburger-close" style="display:none;position:relative"><a class="close"></a></div>
+            <div id="hamburger-hamburger"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></div>
+          </button>
+          <a href="javascript:;" onclick="javascript:sideBarToggle()" style="display:block;padding-top:15px;margin-right:20px;margin-left:-5px" class="pull-left visible-lg"><b>Danh mục sản phẩm</b></a>          <a href="https://5giay.vn" class="navbar-brand"><img src="https://5giay.com/static/logo.png" width="100" align="left" style="vertical-align:middle;margin-top:-5px;margin-right:10px;"></a>          <a href="https://5giay.vn/blog" class="navbar-brand subitem">Blog</a>        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+           
+            <div class="navbar-left">
+              <div class="visible-lg">
+                 
+                  <form id="marketsearch" role="search" action="https://5giay.com" method="get" target="_blank" class="navbar-form">
+                    <div class="input-group">
+                      <input type="text" placeholder="Tìm kiếm" name="keyword" size="20" class="form-control">
+                      <div class="input-group-btn">
+                        <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                      </div>
+                    </div>
+                  </form>
+                 
+              </div>
+            </div>
+           
+          <ul id="loginpart" class="nav navbar-nav navbar-right">
+            <!--li: a#pick-location(href='javascript:;', data-toggle='modal' data-target='#pick-location-modal') 
+					i.fa.fa-map-marker
+					if $currentLoc->id != 0
+						=$currentLoc->name
+					else
+						| Toàn Quốc
+-->
+             
+              <li><a href="https://www.5giay.vn/login">Đăng nhập</a></li>
+              <li><a href="https://www.5giay.vn/register">Đăng ký</a></li>
+             
+            <li><a href="https://www.5giay.vn/createThread" style="margin:7px 5px !important" class="hasbtn lean ta-center"><btn class="btn btn-success"><i class="fa fa-pencil-square-o"></i>Đăng tin</btn></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="pick-location-modal" role="dialog" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" data-dismiss="modal" class="close">×</button>
+            <h4 class="modal-title">Chọn địa điểm</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4"><a href="https://5giay.vn/toan-quoc" class="change-city">Toàn quốc</a></div>
+               
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="padding-left:10px" class="hidden-lg">
+       
+        <form id="marketsearchm" role="search" action="https://5giay.com" method="get" target="_blank" style="padding:0px;margin:0px" class="navbar-form">
+          <div class="input-group">
+            <input type="text" placeholder="Tìm kiếm" name="keyword" size="20" class="form-control">
+            <div class="input-group-btn">
+              <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+        </form>
+       
+    </div>
+    <div id="wrapper">
+      <div id="sidebar">
+        <style>
+          @media (min-width: 800px) {
+           #catlist {
+            max-height:calc(100vh - 65px) !important;
+            overflow-y:scroll !important
+           } 
+          }
+        </style>
+        <div id="sidebar-wrapper">
+          <div id="catlist" style="position:fixed;top:65px;min-width:205px;max-width:205px !important;margin-bottom:10px" class="list-group list-group-root well">
+             
+              <div class="list-group-item">
+                <a href="#sub_53" data-toggle="collapse"><i style="margin-right:5px" class="fa fa-angle-right"></i></a>                <a href="https://5giay.vn/categories/gioi-thieu-gop-y.67/">Giới Thiệu - Góp ý</a>              </div>
+               
+                 
+                 
+                  <div id="sub_53" style="position:relative" class="list-group collapse">
+                     
+                      
+                   
+                    <a href="https://5giay.vn/forums/gioi-thieu-ve-5giay-vn.68/" class="list-group-item">Giới Thiệu Về 5Giay</a>                   
+                    <a href="https://5giay.vn/forums/noi-quy-thong-bao.71/" class="list-group-item">Nội Quy &amp; Thông Báo</a>                   
+                    <a href="https://5giay.vn/forums/chat-voi-5giay-thac-mac-diem-k.42/" class="list-group-item">Chat với 5giay - Thắc mắc &amp; Điểm K</a>                   
+                 
+                 
+                     
+                  </div>
+                 
+               
+             
+              <div class="list-group-item">
+                <a href="#sub_1" data-toggle="collapse"><i style="margin-right:5px" class="fa fa-angle-right"></i></a>                <a href="https://5giay.vn/categories/thoi-trang.112/">Thời trang</a>              </div>
+               
+                 
+                 
+                  <div id="sub_1" style="position:relative" class="list-group collapse">
+                     
+                      
+                   
+                    <a href="https://5giay.vn/thoi-trang-my-pham/" class="list-group-item">Thời Trang - Mỹ Phẩm</a>                   
+                    <a href="https://5giay.vn/giay-dep-balo-tui-xach/" class="list-group-item">Giày Dép - Balo - Túi Xách</a>                   
+                    <a href="https://5giay.vn/dong-ho-phu-kien/" class="list-group-item">Đồng Hồ - Phụ Kiện</a>                   
+                 
+                 
+                     
+                  </div>
+                 
+               
+             
+              <div class="list-group-item">
+                <a href="#sub_2" data-toggle="collapse"><i style="margin-right:5px" class="fa fa-angle-right"></i></a>                <a href="https://5giay.vn/categories/dien-thoai.153/">Điện thoại</a>              </div>
+               
+                 
+                 
+                  <div id="sub_2" style="position:relative" class="list-group collapse">
+                     
+                      
+                   
+                    <a href="https://5giay.vn/mobile/" class="list-group-item">Mobile</a>                   
+                    <a href="https://5giay.vn/phone/" class="list-group-item">iPhone</a>                   
+                    <a href="https://5giay.vn/phu-kien-dien-thoai/" class="list-group-item">Phụ Kiện Điện Thoại</a>                   
+                    <a href="https://5giay.vn/forums/sim-so-dep-sim-4g.73/" class="list-group-item">Sim Số Đẹp - Sim 4G</a>                   
+                 
+                 
+                     
+                  </div>
+                 
+               
+             
+              <div class="list-group-item">
+                <a href="#sub_3" data-toggle="collapse"><i style="margin-right:5px" class="fa fa-angle-right"></i></a>                <a href="https://5giay.vn/categories/laptop-pc-tablet.3/">Laptop - PC - Tablet</a>              </div>
+               
+                 
+                 
+                  <div id="sub_3" style="position:relative" class="list-group collapse">
+                     
+                      
+                   
+                    <a href="https://5giay.vn/forums/may-tinh-bang-va-phu-kien.145/" class="list-group-item">Máy Tính Bảng Và Phụ Kiện</a>                   
+                    <a href="https://5giay.vn/forums/computer-may-tinh-ban.14/" class="list-group-item">Computer - Máy Tính Để Bàn</a>                   
+                    <a href="https://5giay.vn/laptop-phu-kien/" class="list-group-item">Laptop - Phụ Kiện </a>                   
+                    <a href="https://5giay.vn/forums/sua-chua-nap-muc-may-in.158/" class="list-group-item">Sửa Chữa - Nạp Mực Máy In</a>                   
+                 
+                 
+                     
+                  </div>
+                 
+               
+             
+              <div class="list-group-item">
+                <a href="#sub_4" data-toggle="collapse"><i style="margin-right:5px" class="fa fa-angle-right"></i></a>                <a href="https://5giay.vn/categories/ky-thuat-so.173/">Máy ảnh</a>              </div>
+               
+                 
+                 
+                  <div id="sub_4" style="position:relative" class="list-group collapse">
+                     
+                      
+                   
+                    <a href="https://5giay.vn/forums/may-anh-camera.24/" class="list-group-item">Máy Ảnh - Camera</a>                   
+                 
+                 
+                     
+                  </div>
+                 
+               
+             
+              <div class="list-group-item">
+                <a href="#sub_5" data-toggle="collapse"><i style="margin-right:5px" class="fa fa-angle-right"></i></a>                <a href="https://5giay.vn/categories/dien-may.154/">Điện tử - Đồ Gia dụng</a>              </div>
+               
+                 
+                 
+                  <div id="sub_5" style="position:relative" class="list-group collapse">
+                     
+                      
+                   
+                    <a href="https://5giay.vn/forums/linh-tinh.32/" class="list-group-item">Linh Tinh</a>                   
+                    <a href="https://5giay.vn/dien-tu-dien-lanh-am-thanh/" class="list-group-item">Điện Tử - Điện Lạnh - Âm Thanh</a>                   
+                    <a href="https://5giay.vn/forums/can-mua-doi-do.176/" class="list-group-item">Cần Mua - Đổi Đồ</a>                   
+                    <a href="https://5giay.vn/do-choi-mo-hinh-flycam/" class="list-group-item">Đồ Chơi Mô Hình - Flycam</a>                   
+                    <a href="https://5giay.vn/ve-chai-dien-tu/" class="list-group-item">Ve Chai Điện Tử</a>                   
+                 
+                 
+                     
+                  </div>
+                 
+               
+             
+              <div class="list-group-item">
+                <a href="#sub_6" data-toggle="collapse"><i style="margin-right:5px" class="fa fa-angle-right"></i></a>                <a href="https://5giay.vn/categories/2-banh-4-banh.194/">Xe máy - xe ôtô</a>              </div>
+               
+                 
+                 
+                  <div id="sub_6" style="position:relative" class="list-group collapse">
+                     
+                      
+                   
+                    <a href="https://5giay.vn/forums/xe-2-banh.43/" class="list-group-item">Xe 2 Bánh</a>                   
+                    <a href="https://5giay.vn/forums/xe-4-banh-va-cho-thue.139/" class="list-group-item">Xe 4 Bánh Và Cho Thuê</a>                   
+                    <a href="https://5giay.vn/forums/phu-tung-xe.182/" class="list-group-item">Phụ tùng Xe</a>                   
+                 
+                 
+                     
+                  </div>
+                 
+               
+             
+              <div class="list-group-item">
+                <a href="#sub_7" data-toggle="collapse"><i style="margin-right:5px" class="fa fa-angle-right"></i></a>                <a href="https://5giay.vn/categories/nha-dat-noi-that.155/">Nhà Đất - Nội thất</a>              </div>
+               
+                 
+                 
+                  <div id="sub_7" style="position:relative" class="list-group collapse">
+                     
+                      
+                   
+                    <a href="https://5giay.vn/forums/noi-that-5giay.202/" class="list-group-item">Nội Thấnh 5giay</a>                   
+                    <a href="https://5giay.vn/forums/sohot-app-noi-that.205/" class="list-group-item">Sohot - App Nội Thất</a>                   
+                    <a href="https://5giay.vn/sieu-thi-noi-that/" class="list-group-item">Siêu Thị Nội Thất</a>                   
+                    <a href="https://5giay.vn/forums/bat-dong-san.44/" class="list-group-item">Bất Động Sản</a>                   
+                 
+                 
+                     
+                  </div>
+                 
+               
+             
+              <div class="list-group-item">
+                <a href="#sub_8" data-toggle="collapse"><i style="margin-right:5px" class="fa fa-angle-right"></i></a>                <a href="https://5giay.vn/categories/am-thuc-sinh-vat-canh-du-lich.156/">Ẩm thực - Thú Cưng</a>              </div>
+               
+                 
+                 
+                  <div id="sub_8" style="position:relative" class="list-group collapse">
+                     
+                      
+                   
+                    <a href="https://5giay.vn/am-thuc/" class="list-group-item">Ẩm thực</a>                   
+                    <a href="https://5giay.vn/thu-cung-thu-nuoi/" class="list-group-item">Thú Cưng - Thú Nuôi</a>                   
+                    <a href="https://5giay.vn/phu-kien-sinh-vat-canh/" class="list-group-item">Phụ Kiện Sinh Vật Cảnh</a>                   
+                    <a href="https://5giay.vn/cay-canh-thuy-sinh/" class="list-group-item">Cây Cảnh - Thuỷ Sinh</a>                   
+                    <a href="https://5giay.vn/du-lich/" class="list-group-item">Du Lịch</a>                   
+                 
+                 
+                     
+                  </div>
+                 
+               
+             
+              <div class="list-group-item">
+                <a href="#sub_9" data-toggle="collapse"><i style="margin-right:5px" class="fa fa-angle-right"></i></a>                <a href="https://5giay.vn/viec-lam-hoc-hanh/">Việc Làm - Học Hành</a>              </div>
+               
+             
+              <div class="list-group-item">
+                <a href="#sub_60" data-toggle="collapse"><i style="margin-right:5px" class="fa fa-angle-right"></i></a>                <a href="https://5giay.vn/categories/thao-luan.4/">Thảo Luận</a>              </div>
+               
+                 
+                 
+                  <div id="sub_60" style="position:relative" class="list-group collapse">
+                     
+                      
+                   
+                    <a href="https://5giay.vn/forums/chuyen-tro.13/" class="list-group-item">Chuyện Trò</a>                   
+                 
+                 
+                     
+                  </div>
+                 
+               
+             
+              <div class="list-group-item">
+                <a href="#sub_62" data-toggle="collapse"><i style="margin-right:5px" class="fa fa-angle-right"></i></a>                <a href="https://5giay.vn/categories/khu-vuc-giu-trat-tu-cho-dien-dan.8/">Khu Vực Giữ Trật Tự Cho 5giay</a>              </div>
+               
+                 
+                 
+                  <div id="sub_62" style="position:relative" class="list-group collapse">
+                     
+                      
+                   
+                    <a href="https://5giay.vn/forums/khi-nguoi-dan-ong-khoc.20/" class="list-group-item">Khi Người Đàn Ông Khóc</a>                   
+                 
+                 
+                     
+                  </div>
+                 
+               
+             
+          </div>
+        </div>
+<script>$(function() {
+ if ($('body').innerWidth() > 980 && $('#main-content').height()>$('#sidebar-wrapper').height()) {
+  $('#sidebar-wrapper').affix({
+   offset: {
+    top: 0,
+    bottom: function () {
+     return (this.bottom = $('#footer').outerHeight(true) + 20);
+    }
+   }
+  })
+ } else $('#sidebar-wrapper').removeAttr('data-spy');
+ $('.list-group-item a').not('.icon').on('click', function() {
+  $(this).find('i.fa')
+   .toggleClass('fa-angle-right')
+   .toggleClass('fa-angle-down');
+ });
+});</script>      </div>
+      <div id="main-content" class="col-md-12">
+        <div class="row"><style>
+  .scriptad {
+   //- border:1px solid blue; 
+  } 
+  .col-xs-5ths, 
+  .col-sm-5ths, 
+  .col-md-5ths, 
+  .col-lg-5ths {
+   position: relative;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px; 
+  } 
+   
+  .col-xs-5ths {
+   width: 20%;
+   float: left; 
+  } 
+   
+  @media (min-width: 768px) {
+   .col-sm-5ths {
+    width: 20%;
+    float: left;
+   } 
+  } 
+   
+  @media (min-width: 992px) {
+   .col-md-5ths {
+    width: 20%;
+    float: left;
+   } 
+  } 
+   
+  @media (min-width: 1200px) {
+   .col-lg-5ths {
+    width: 20%;
+    float: left;
+   } 
+  }
+</style>
+<style>
+  /* Zoom-n-rotate Container */ 
+  .img-hover-zoom--zoom-n-rotate img {
+   transition: transform .5s ease-in-out; 
+  } 
+  /* The Transformation */ 
+  .img-hover-zoom--zoom-n-rotate:hover img {
+   transform: scale(2) rotate(25deg); 
+  } 
+  .adblock .cont {
+   position:relative;
+   overflow:hidden;
+   height:190px;
+   text-align:center; 
+  } 
+  .adblock {
+   padding-left:10px;
+   padding-right:10px; 
+  } 
+  .adblock img {
+   object-fit:cover;
+   max-width:100%;
+   max-height:100%;
+   min-height:190px;
+   text-align:center; 
+  } 
+  .adblock .title {
+   position: absolute;
+   background:rgba(0,0,0,0.4);
+   text-align:center;
+   color:#ffffff;
+   bottom:0px;
+   left:0px;
+   right:0px;
+   padding:5px; 
+  } 
+  @media screen and (min-width: 728px) {
+   #myCarousel {
+    display:none
+   } 
+  } 
+  .carousel-inner {
+   height:auto; 
+  } 
+  .carousel-inner > .item > img, 
+  .carousel-inner > .item > a > img {
+   width: 100%;
+   margin: auto;
+   min-height:initial; 
+  } 
+  .carousel-control>i.fa {
+   position: absolute;
+   top: 50%;
+   z-index: 5;
+   display: inline-block;
+   margin-right: -15px;
+   margin-left: -15px; 
+  } 
+  .carousel-control.left, .carousel-control.right {
+   background-image: none 
+  }
+</style>
+ 
+  <div style="position:fixed;right:0px;width:150px;overflow-x:hidden" class="visible-xl">
+     
+      <a href="https://www.5giay.vn/forums/xe-4-banh-va-cho-thue.139/"><img src="https://5giay.vn/uploads/ad/iux4f73p421jt8cm.gif" style="width:150px"></a>     
+  </div>
+ 
+<div class="panel panel-default">
+  <div class="panel-heading"><strong>Lối tắt danh mục</strong></div>
+  <div style="width:auto;height:260px;align-items: flex-start;background-color: #fff;display: flex;flex-direction: column;flex-wrap: wrap;overflow-x: auto;padding: 0;" class="panel-body">
+     
+       
+     
+       
+        <div style="padding: 10px 5px;float:left;width:120px;height:120px" class="text-center"><a href="https://5giay.vn/categories/thoi-trang.112/"><img src="https://five.vn/uploads/market/caticon/g3001r46pkyjkqjf.png" style="width:64px;border-radius:10px;margin-bottom:5px"><div>Thời trang</div></a></div>
+       
+     
+       
+        <div style="padding: 10px 5px;float:left;width:120px;height:120px" class="text-center"><a href="https://5giay.vn/categories/dien-thoai.153/"><img src="https://five.vn/uploads/market/caticon/rp6yfmumejq1pkf3.png" style="width:64px;border-radius:10px;margin-bottom:5px"><div>Điện thoại</div></a></div>
+       
+     
+       
+        <div style="padding: 10px 5px;float:left;width:120px;height:120px" class="text-center"><a href="https://5giay.vn/categories/laptop-pc-tablet.3/"><img src="https://five.vn/uploads/market/caticon/rxvygjk90ayjskfx.png" style="width:64px;border-radius:10px;margin-bottom:5px"><div>Laptop - PC - Tablet</div></a></div>
+       
+     
+       
+        <div style="padding: 10px 5px;float:left;width:120px;height:120px" class="text-center"><a href="https://5giay.vn/categories/ky-thuat-so.173/"><img src="https://five.vn/uploads/market/caticon/oufeoqbe8s5ve03g.png" style="width:64px;border-radius:10px;margin-bottom:5px"><div>Máy ảnh</div></a></div>
+       
+     
+       
+        <div style="padding: 10px 5px;float:left;width:120px;height:120px" class="text-center"><a href="https://5giay.vn/categories/dien-may.154/"><img src="https://five.vn/uploads/market/caticon/5h30k07du3eq7rf3.png" style="width:64px;border-radius:10px;margin-bottom:5px"><div>Điện tử - Đồ Gia dụng</div></a></div>
+       
+     
+       
+        <div style="padding: 10px 5px;float:left;width:120px;height:120px" class="text-center"><a href="https://5giay.vn/categories/2-banh-4-banh.194/"><img src="https://five.vn/uploads/market/caticon/bq81c3eljbfvz3z2.png" style="width:64px;border-radius:10px;margin-bottom:5px"><div>Xe máy - xe ôtô</div></a></div>
+       
+     
+       
+        <div style="padding: 10px 5px;float:left;width:120px;height:120px" class="text-center"><a href="https://5giay.vn/categories/nha-dat-noi-that.155/"><img src="https://five.vn/uploads/market/caticon/57il349xqolc2pxc.png" style="width:64px;border-radius:10px;margin-bottom:5px"><div>Nhà Đất - Nội thất</div></a></div>
+       
+     
+       
+        <div style="padding: 10px 5px;float:left;width:120px;height:120px" class="text-center"><a href="https://5giay.vn/categories/am-thuc-sinh-vat-canh-du-lich.156/"><img src="https://five.vn/uploads/market/caticon/1j2sf2x8olrdfe7z.png" style="width:64px;border-radius:10px;margin-bottom:5px"><div>Ẩm thực - Thú Cưng</div></a></div>
+       
+     
+       
+        <div style="padding: 10px 5px;float:left;width:120px;height:120px" class="text-center"><a href="https://5giay.vn/viec-lam-hoc-hanh/"><img src="https://five.vn/uploads/market/caticon/dgxvzyf4udyag9ei.png" style="width:64px;border-radius:10px;margin-bottom:5px"><div>Việc Làm - Học Hành</div></a></div>
+       
+     
+       
+     
+       
+     
+  </div>
+</div>
+<div style="margin-bottom:10px;" class="panel panel-default">
+  <div class="topiclist panel-body">
+     
+       
+         
+          <div class="scriptad"><ins class="adsbygoogle" style="display:inline-block;width:1150px;height:145px" data-ad-client="ca-pub-3080009714544446" data-ad-slot="5030658766"></ins><script> (adsbygoogle = window.adsbygoogle || []).push({});</script>
+<iframe
+  id="advertnativevnIframe"
+  src="https://advertnativevn.com/ads/right.html/10vZYiQzxB"
+  style="
+    position: fixed;
+    bottom: calc(33.33vh);
+    left: 90%;
+    transform: translateX(-90%);
+    width: 180px;
+    height: 180px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    z-index: 99999;
+    overflow: visible;
+  "
+  loading="lazy"
+  title="Advertnative Content"
+  allowfullscreen
+></iframe></div>
+         
+       
+      <div class="clearfix"></div>
+      <div class="spacer"></div>
+      <hr style="border-top: 1px solid #cf0f19;">
+      <div class="spacer"></div>
+     
+     
+      <div>
+        <h2 style="background:#1e75aa;color:white;display:inline-block;padding:5px 10px !important;border-radius: 5px;margin-top:10px !important"><a href="https://5giay.vn/iphone/" style="color:white">iPhone - Mobile</a><a href="https://5giay.vn/iphone/" style="position:absolute;right:10px;text-align:right">xem thêm »</a></h2>
+        <div class="topiclist topiclist-wrapper">
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/iphone-air-256g-blue-zp-a-sac-10-lan-bh-1-2027.10304986/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10304986.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10304986.10304986/" class="f-black">Iphone Air 256G Blue ZP/A Sạc 10 Lần BH 1/2027 !</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>20.45 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/17e-256g-pink-zp-a-moi-100-new-seal.10297195/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10297195.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10297195.10297195/" class="f-black">17e 256G Pink ZP/A Mới 100% New Seal !</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>15.85 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/17e-17-air-17-pro-17-promax-new-seal.10304908/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10304908.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10304908.10304908/" class="f-black">17e, 17 Air, 17 Pro, 17 ProMax new seal.</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>15.9 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/mo-khoa-icloud-tai-tp-hcm-0857809999.10236367/" class="thumb"><img src="https://5giay.vn/threads_thumb/072025/10236367.png"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10236367.10236367/" class="f-black">mở khóa icloud tại tp hcm 0857809999</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/mo-khoa-icloud-tai-tp-hcm-0857-80-9999.10190557/" class="thumb"><img src="https://5giay.vn/threads_thumb/022025/10190557.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10190557.10190557/" class="f-black">mở khóa icloud tại TP HCM 0857.80.9999</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1.2 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/vovo-app-thuong-mai-dien-tu-mua-sam-dung-gu.10304821/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10304821.png"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10304821.10304821/" class="f-black">VOVO APP THƯƠNG MẠI ĐIỆN TỬ MUA SẮM ĐÚNG GU</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/kham-pha-vovo-app-thuong-mai-dien-tu-viet-nam.10304820/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10304820.png"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10304820.10304820/" class="f-black">KHÁM PHÁ VOVO APP THƯƠNG MẠI ĐIỆN TỬ VIỆT NAM</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/vovo-app-thuong-mai-dien-tu-cho-phong-cach-rieng.10304819/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10304819.png"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10304819.10304819/" class="f-black">VOVO APP THƯƠNG MẠI ĐIỆN TỬ CHO PHONG CÁCH RIÊNG</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/air-256g-white-zp-a-sac-24l-bh-tgdd-4-2027.10303873/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10303873.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10303873.10303873/" class="f-black">Air 256G White ZP/A Sạc 24L BH TGDĐ 4/2027</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>20.95 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/17-pro-max-256g-zp-a-likenew-pin-100-bh-10-2026.10301862/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10301862.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10301862.10301862/" class="f-black">17 Pro max 256G ZP/A Likenew. Pin 100%. BH 10/2026</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>31.75 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/can-ban-dien-thoai-iphone-17pm-256g-hang-viettel-nguyen-seal-chua-khui.10303455/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10303455.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10303455.10303455/" class="f-black">Cần bán điện thoại iphone 17pm 256g hàng viettel nguyên seal chưa khui</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>35.4 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/15-promax-unlocked-usa-zin-ap-dep-99-ko-danh-kinh-pin-cao-9x-100.10296592/" class="thumb"><img src="https://5giay.vn/threads_thumb/042026/10296592.png"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10296592.10296592/" class="f-black">15 ProMax Unlocked USA Zin Áp Đẹp 99% Ko Đánh Kính Pin Cao 9X-100%</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>17.5 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/16-16e-16plus-16-pro-16-promax-128g-256g-512g-1tb-new-seal.10107886/" class="thumb"><img src="https://5giay.vn/threads_thumb/092024/10107886.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10107886.10107886/" class="f-black">16, 16e, 16plus, 16 Pro,16 ProMax 128G, 256G, 512G, 1TB new seal.</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>20.5 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/vovo-thuong-mai-dien-tu-ung-dung-mua-sam-the-he-moi.10304488/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10304488.png"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10304488.10304488/" class="f-black">VOVO THƯƠNG MẠI ĐIỆN TỬ ỨNG DỤNG MUA SẮM THẾ HỆ MỚI</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/vovo-thuong-mai-dien-tu-ung-dung-mua-sam-online-tien-loi-cho-nguoi-v.10304487/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10304487.png"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10304487.10304487/" class="f-black">VOVO THƯƠNG MẠI ĐIỆN TỬ – ỨNG DỤNG MUA SẮM ONLINE TIỆN LỢI CHO NGƯỜI V</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/vovo-giai-phap-giup-san-pham-con-gia-tri-tiep-can-nguoi-mua-de-hon.10304472/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10304472.png"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10304472.10304472/" class="f-black">VOVO – GIẢI PHÁP GIÚP SẢN PHẨM CÒN GIÁ TRỊ TIẾP CẬN NGƯỜI MUA DỄ HƠN</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/vovo-thuong-mai-dien-tu-nen-tang-mua-sam-online-moi.10304470/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10304470.png"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10304470.10304470/" class="f-black">VOVO THƯƠNG MẠI ĐIỆN TỬ – NỀN TẢNG MUA SẮM ONLINE MỚI</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/vovo-thuong-mai-dien-tu-thuc-day-xu-huong-tieu-dung-thong-minh.10304451/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10304451.png"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10304451.10304451/" class="f-black">VOVO THƯƠNG MẠI ĐIỆN TỬ THÚC ĐẨY XU HƯỚNG TIÊU DÙNG THÔNG MINH</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/vovo-thuong-mai-dien-tu-mo-rong-trai-nghiem-mua-sam-online.10304450/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10304450.png"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10304450.10304450/" class="f-black">VOVO THƯƠNG MẠI ĐIỆN TỬ MỞ RỘNG TRẢI NGHIỆM MUA SẮM ONLINE</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/vovo-thuong-mai-dien-tu-phat-trien-mo-hinh-hop-ky-gui-moi.10304448/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10304448.png"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10304448.10304448/" class="f-black">VOVO THƯƠNG MẠI ĐIỆN TỬ PHÁT TRIỂN MÔ HÌNH HỘP KÝ GỬI MỚI</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          <hr style="display:none">
+        </div>
+      </div>
+       
+     
+      <div>
+        <h2 style="background:#1e75aa;color:white;display:inline-block;padding:5px 10px !important;border-radius: 5px;margin-top:10px !important"><a href="https://5giay.vn/laptop-phu-kien/" style="color:white">Laptop</a><a href="https://5giay.vn/laptop-phu-kien/" style="position:absolute;right:10px;text-align:right">xem thêm »</a></h2>
+        <div class="topiclist topiclist-wrapper">
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/lap-internet-wifi-vnpt-sieu-toc-do-sieu-uu-dai.10285646/" class="thumb"><img src="https://5giay.vn/threads_thumb/012026/10285646.png"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10285646.10285646/" class="f-black">Lắp Internet WiFi VNPT - Siêu tốc độ siêu ưu đãi</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/lenovo-thinkpad-t14-gen-3-core-i5-1245u-16g-512g-14-fhd.10281765/" class="thumb"><img src="https://5giay.vn/threads_thumb/122025/10281765.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10281765.10281765/" class="f-black">Lenovo Thinkpad T14-Gen 3 Core i5-1245u 16G 512G 14'' FHD+</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>10.5 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/laptop-dell-latitude-5330-i5-1245u-ram-16g-ssd-256g-fhd-led-phim-w11.10287320/" class="thumb"><img src="https://5giay.vn/threads_thumb/012026/10287320.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10287320.10287320/" class="f-black">Laptop Dell Latitude 5330 i5 1245u Ram 16G SSD 256G FHD Led Phím W11</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>10.8 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/macbook-pro-2019-13-inch-i5-8g-256g-98-zin.10303310/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10303310.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10303310.10303310/" class="f-black">Macbook Pro 2019 13 inch i5 8G/256G 98%… Zin !</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>6.75 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/asus-k3605zf-core-i5-12500h-16g-16in-fhd-144hz-rtx2050-con-bh-16th.10304610/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10304610.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10304610.10304610/" class="f-black">ASUS K3605ZF: Core i5 12500H/16G/16in FHD+ 144Hz/RTX2050/còn BH 16th!!</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>12.3 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/acer-aspire-a315-core-i3-gen13-8g-256g-15-6in-fhd-ips-con-bh-hang-2th.10185071/" class="thumb"><img src="https://5giay.vn/threads_thumb/022025/10185071.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10185071.10185071/" class="f-black">ACER Aspire A315: Core i3 Gen13/8G/256G/15.6in FHD IPS/còn BH hãng 2th</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>5.3 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/apple-macbook-pro-2018-touchbar-i5-8gb-256gb.10304014/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10304014.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10304014.10304014/" class="f-black">Apple Macbook Pro 2018 Touchbar i5 8GB 256GB</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>8.5 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/lenovo-ideapad-330s-core-i5-8250u-8gb-256gb-14-den-phim.10301631/" class="thumb"><img src="https://5giay.vn/threads_thumb/042026/10301631.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10301631.10301631/" class="f-black">Lenovo ideapad 330s Core i5-8250U 8GB 256GB 14&quot; Đèn Phím</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>5.9 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/lenovo-flex-5-core-i3-1215u-8g-512g-14in-2-2k-cam-ung-xoay-con-bh-6th.10304977/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10304977.png"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10304977.10304977/" class="f-black">LENOVO Flex 5: Core i3 1215u/8G/512G/14in 2.2K cảm ứng xoay/còn BH 6th</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>7.4 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/lenovo-slim-5-light-ryzen-7-7730u-16g-512g-14in-fhd-ips-con-bh-11th.10302017/" class="thumb"><img src="https://5giay.vn/threads_thumb/042026/10302017.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10302017.10302017/" class="f-black">LENOVO Slim 5 Light: Ryzen 7 7730u/16G/512G/14in FHD IPS/còn BH 11th!!</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>11.3 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/dell-precision-m4800-m6800-core-i7-16g-ssd-512g-man-hinh-fhd.10191333/" class="thumb"><img src="https://5giay.vn/threads_thumb/032025/10191333.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10191333.10191333/" class="f-black">Dell Precision M4800 &amp; M6800 Core i7, 16G, SSD 512G, Màn Hình FHD</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>5.9 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/msi-gaming-thin-15-b12ucx-i5-12450h-16gb-512gb-rtx-2050-4gb-15-6-144hz.10304186/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10304186.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10304186.10304186/" class="f-black">MSI Gaming Thin 15 B12UCX i5-12450H/16GB/512GB/RTX 2050 4GB/15.6&quot;144Hz</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>11 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/dell-vostro-3568-i7-7500u-ram-8gb-ssd-240gb-r5-m420-2gb-15-6-fhd.10299154/" class="thumb"><img src="https://5giay.vn/threads_thumb/042026/10299154.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10299154.10299154/" class="f-black">Dell Vostro 3568 i7-7500U, RAM 8GB, SSD 240GB, R5 M420 2GB, 15.6&quot; FHD</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>4.3 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/lenovo-v14-iil-core-i5-1035g1-ram-4gb-ssd-256gb-uhd-graphics-14-hd.10298320/" class="thumb"><img src="https://5giay.vn/threads_thumb/042026/10298320.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10298320.10298320/" class="f-black">Lenovo V14-IIL Core i5-1035G1, RAM 4GB, SSD 256GB, UHD Graphics, 14&quot;HD</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>3.9 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/dell-latitude-3450-core-i5-1335u-16g-ssd-256g-14inch-fhd-tich-hop-ai.10269201/" class="thumb"><img src="https://5giay.vn/threads_thumb/112025/10269201.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10269201.10269201/" class="f-black">Dell Latitude 3450 Core i5 1335u 16G SSD 256G 14inch FHD tích hợp AI</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>10.9 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/hp-elite-x2-gen-8-tablet-2in1-core-i5-1145g7-ram-16g-ssd-256g-touch.10284608/" class="thumb"><img src="https://5giay.vn/threads_thumb/012026/10284608.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10284608.10284608/" class="f-black">Hp Elite X2 Gen 8 Tablet 2in1 Core i5 1145G7 Ram 16G SSD 256G Touch</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>9.9 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/dell-precision-3561-core-i7-11850h-ram-32g-ssd-512g-fhd-vga-4g-ship-us.10196654/" class="thumb"><img src="https://5giay.vn/threads_thumb/032025/10196654.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10196654.10196654/" class="f-black">Dell Precision 3561 Core i7 11850H Ram 32G SSD 512G FHD VGA 4G Ship US</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>14.9 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/dell-latitude-5330-core-i7-1265u-ram-16g-ssd-512g-fhd-led-phim-win-11.10204184/" class="thumb"><img src="https://5giay.vn/threads_thumb/042025/10204184.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10204184.10204184/" class="f-black">Dell Latitude 5330 Core i7 1265u Ram 16G SSD 512G FHD Led Phím Win 11</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>11.9 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/laptop-dell-latitude-3540-i5-1335u-ram-8g-16g-ssd-256g-phim-so-w11-pro.10291353/" class="thumb"><img src="https://5giay.vn/threads_thumb/032026/10291353.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10291353.10291353/" class="f-black">Laptop Dell Latitude 3540 i5 1335u Ram 8G/16G SSD 256G Phím số W11 Pro</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>9.8 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/toshiba-dynabook-tecra-a40k-i7-1370p-16g-512g-14-full-hd.10285087/" class="thumb"><img src="https://5giay.vn/threads_thumb/012026/10285087.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10285087.10285087/" class="f-black">Toshiba Dynabook Tecra A40K i7-1370P 16G 512G 14'' Full HD</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>12.8 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          <hr style="display:none">
+        </div>
+      </div>
+       
+     
+      <div>
+        <h2 style="background:#1e75aa;color:white;display:inline-block;padding:5px 10px !important;border-radius: 5px;margin-top:10px !important"><a href="https://5giay.vn/forums/computer-may-tinh-ban.14/" style="color:white">Máy tính</a><a href="https://5giay.vn/forums/computer-may-tinh-ban.14/" style="position:absolute;right:10px;text-align:right">xem thêm »</a></h2>
+        <div class="topiclist topiclist-wrapper">
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/list-hang-may-tinh-dong-bo-dell-hp-lenovo-linh-kien-gia-re-hang-ngay.8554761/" class="thumb"><img src="https://5giay.vn/threads_thumb/062023/8554761.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/8554761.8554761/" class="f-black">List Hàng Máy Tính Đồng Bộ: DELL, HP, LENOVO &amp; Linh Kiện Giá Rẻ Hàng Ngày</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/mini-pc-chuyen-ai-minisforum-amd-ai-9-hx-370-64gb-ram-ddr5-1tb-nvme.10288525/" class="thumb"><img src="https://5giay.vn/threads_thumb/022026/10288525.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10288525.10288525/" class="f-black">Mini PC chuyên AI Minisforum AMD AI 9 HX 370 / 64GB Ram DDR5/ 1TB NVME</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>3.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/hcm-conbo-asus-proart-x870e-creator-wifi-ryzen-9950x-bh-36th.10304078/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10304078.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10304078.10304078/" class="f-black">HCM: Conbo Asus Proart X870E Creator Wifi + Ryzen 9950X BH 36TH</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>30 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/imac-2015-retina-5k-27-core-i5-3-2ghz-16g-256g-radeon-r9-m380-2gb.10270856/" class="thumb"><img src="https://5giay.vn/threads_thumb/112025/10270856.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10270856.10270856/" class="f-black">iMac 2015 Retina 5K 27&quot;Core i5 3.2GHz 16G 256G Radeon-R9 M380-2GB</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>8.5 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/hcm-may-bo-em-yeu-khoa-hoc-gia-re-gia-tot-nhat-5giay-vn.393979/" class="thumb"><img src="https://5giay.vn/threads_thumb/042023/393979.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/393979.393979/" class="f-black">HCM - Máy bộ em yêu khoa học giá rẻ - giá tốt nhất 5giay.vn</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/17-12-linh-kien-pc-laptop-dien-thoai-kts-update-hang-ngay.9511333/" class="thumb"><img src="https://5giay.vn/threads_thumb/042023/9511333.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9511333.9511333/" class="f-black">17.12 : Linh kiện PC, Laptop, điện thoại, KTS update hàng ngày</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>50.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/7-10-linh-kien-pc-laptop-dien-thoai-kts-update-hang-ngay.9656366/" class="thumb"><img src="https://5giay.vn/threads_thumb/032023/9656366.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9656366.9656366/" class="f-black">7.10 : Linh kiện PC, Laptop, điện thoại, KTS update hàng ngày</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>50.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/1-1-linh-kien-pc-laptop-dien-thoai-kts-update-hang-ngay.10275847/" class="thumb"><img src="https://5giay.vn/threads_thumb/122025/10275847.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10275847.10275847/" class="f-black">1.1: Linh kiện PC, Laptop, điện thoại, KTS update hàng ngày</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>50.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/usb-cai-windows-tu-dong-gia-re.9939617/" class="thumb"><img src="https://5giay.vn/threads_thumb/122023/9939617.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9939617.9939617/" class="f-black">USB cài windows tự động giá rẻ</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>169.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/all-in-one-hw215-i5-7500-16gb-512gb-21-5-inch-fhd.10296688/" class="thumb"><img src="https://5giay.vn/threads_thumb/042026/10296688.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10296688.10296688/" class="f-black">All-in-one Hw215 i5-7500 16GB 512GB 21.5 inch FHD</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>6.9 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/dich-vu-cho-thue-may-chu-server-cau-hinh-cao-gia-re.10194211/" class="thumb"><img src="https://5giay.vn/threads_thumb/032025/10194211.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10194211.10194211/" class="f-black">Dịch Vụ Cho Thuê Máy Chủ Server Cấu Hình Cao – Giá Rẻ</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>5.5 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/thu-mua-may-chu-server-cu-gia-cao-thanh-toan-ngay.10194219/" class="thumb"><img src="https://5giay.vn/threads_thumb/032025/10194219.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10194219.10194219/" class="f-black">THU MUA MÁY CHỦ (SERVER) CŨ – GIÁ CAO, THANH TOÁN NGAY!</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>5.5 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/thanh-ly-server-ibm-x3650-m4-gia-chi-3-900-000d.10269784/" class="thumb"><img src="https://5giay.vn/threads_thumb/112025/10269784.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10269784.10269784/" class="f-black">THANH LÝ SERVER IBM X3650 M4 – GIÁ CHỈ 3.900.000đ</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>3.9 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/nguon-coolermaster-gigabyte-850w-bh-120t-sw-cisco-1g.10274137/" class="thumb"><img src="https://5giay.vn/threads_thumb/112025/10274137.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10274137.10274137/" class="f-black">Nguồn CoolerMaster; Gigabyte 850W- BH:120T -SW Cisco 1G</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1.9 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/all-in-one-hp-600g2-aio-full-hd-ips-i5-cau-hinh-cao.9730499/" class="thumb"><img src="https://5giay.vn/threads_thumb/022023/9730499.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9730499.9730499/" class="f-black">All In One – HP 600G2 AIO Full HD IPS i5 cấu hình cao</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>7 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ban-phim-dell-mutimedia-version-1-2-3-kb522-sk-8135-y-u0003-del5.9670246/" class="thumb"><img src="https://5giay.vn/threads_thumb/102022/9670246.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9670246.9670246/" class="f-black">Bàn phím Dell Mutimedia Version 1 -2 -3 KB522/ SK-8135 /Y-U0003-DEL5</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>400.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/bo-phat-wifi-3g-4g-di-dong-chinh-hang-va-sim-data-3g-4g-chat-luong.9788520/" class="thumb"><img src="https://5giay.vn/threads_thumb/042023/9788520.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9788520.9788520/" class="f-black">Bộ Phát Wifi 3G/4G Di Dộng Chính Hãng Và Sim Data 3G/4G Chất Lượng</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>499.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/vi-tinh-anh-vinh-list-main-cpu-ram-hdd-vga-lcd-can-ban-co-so-luong-du-cho-phong-net-voi-gia-re.7648416/" class="thumb"><img src="https://5giay.vn/threads_thumb/082024/7648416.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/7648416.7648416/" class="f-black">[Vi Tính Anh Vinh] List main/cpu/ram/ hdd/vga/lcd.cần bán, có số lượng đủ cho phòng nét với giá rẽ</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>300.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/bo-chia-nguon-hp.10205185/" class="thumb"><img src="https://5giay.vn/threads_thumb/042025/10205185.JPG"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10205185.10205185/" class="f-black">Bộ chia nguồn HP</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>350.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/dich-vu-bao-tri-may-tinh-tan-noi-giai-phap-hieu-qua-cho-doanh-nghiep.10194208/" class="thumb"><img src="https://5giay.vn/threads_thumb/032025/10194208.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10194208.10194208/" class="f-black">Dịch Vụ Bảo Trì Máy Tính Tận Nơi – Giải Pháp Hiệu Quả Cho Doanh Nghiệp</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>5.5 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          <hr style="display:none">
+        </div>
+      </div>
+       
+        <div class="spacer"></div>
+        <hr style="border-top: 1px solid #cf0f19;">
+        <div class="spacer"></div>
+         
+           
+         
+           
+            <div class="scriptad"><ins class="adsbygoogle" style="display:inline-block;width:11500px;height:145px" data-ad-client="ca-pub-3080009714544446" data-ad-slot="8709881493"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></div>
+           
+         
+        <div class="clearfix"></div>
+        <div class="spacer"></div>
+        <hr style="border-top: 1px solid #cf0f19;">
+        <div class="spacer"></div>
+       
+     
+      <div>
+        <h2 style="background:#1e75aa;color:white;display:inline-block;padding:5px 10px !important;border-radius: 5px;margin-top:10px !important"><a href="https://5giay.vn/forums/noi-that-5giay.202/" style="color:white">Nội thất 5giay</a><a href="https://5giay.vn/forums/noi-that-5giay.202/" style="position:absolute;right:10px;text-align:right">xem thêm »</a></h2>
+        <div class="topiclist topiclist-wrapper">
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ghe-bang-khong-ngai-vet-ban.10184768/" class="thumb"><img src="https://5giay.vn/threads_thumb/022025/10184768.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10184768.10184768/" class="f-black">Ghế băng không ngại vết bẩn</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1.2 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ghe-oleandro-hang-xk.10181702/" class="thumb"><img src="https://5giay.vn/threads_thumb/022025/10181702.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10181702.10181702/" class="f-black">ghế Oleandro hàng XK</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>900.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ban-tra-2-tang-humla.10181701/" class="thumb"><img src="https://5giay.vn/threads_thumb/022025/10181701.png"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10181701.10181701/" class="f-black">Bàn trà 2 tầng Humla</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1.6 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/tu-dau-giuong-co-cong-sac-usb.10181698/" class="thumb"><img src="https://5giay.vn/threads_thumb/022025/10181698.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10181698.10181698/" class="f-black">Tủ đầu giường có cổng sạc USB</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>900.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ghe-nhua-duc-ponny-1.9805012/" class="thumb"><img src="https://5giay.vn/threads_thumb/052023/9805012.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9805012.9805012/" class="f-black">Ghế nhựa đúc Ponny 1</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>300.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ban-console-la-gi.9177672/" class="thumb"><img src="https://5giay.vn/threads_thumb/092020/9535611.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9177672.9177672/" class="f-black">Bàn Console là gì</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>2.35 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ban-laptop-da-nang.10054551/" class="thumb"><img src="https://5giay.vn/threads_thumb/062024/10054551.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10054551.10054551/" class="f-black">Bàn laptop đa năng</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>300.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/chan-ban-doi.10022972/" class="thumb"><img src="https://5giay.vn/threads_thumb/052024/10022972.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10022972.10022972/" class="f-black">Chân bàn đôi</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/chan-ban-tra-sofa-go-ash.9577065/" class="thumb"><img src="https://5giay.vn/threads_thumb/022021/9577065.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9577065.9577065/" class="f-black">Chân bàn trà sofa gỗ Ash</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>650.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ghe-ch25-dan-day.9642524/" class="thumb"><img src="https://5giay.vn/threads_thumb/012022/9642524.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9642524.9642524/" class="f-black">Ghế CH25 đan dây</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>5.5 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ghe-nhua-duc-ponny-3.9805017/" class="thumb"><img src="https://5giay.vn/threads_thumb/052023/9805017.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9805017.9805017/" class="f-black">Ghế nhựa đúc Ponny 3</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>500.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ghe-nhua-duc-ponny-2.9805015/" class="thumb"><img src="https://5giay.vn/threads_thumb/052023/9805015.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9805015.9805015/" class="f-black">Ghế nhựa đúc Ponny 2</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>450.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/chan-ban-cafe-chan-ban-tru-sat-gang.9719328/" class="thumb"><img src="https://5giay.vn/threads_thumb/112022/9719328.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9719328.9719328/" class="f-black">Chân bàn cafe , chân bàn trụ sắt gang</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ghe-neva-go-walnut.9640085/" class="thumb"><img src="https://5giay.vn/threads_thumb/102021/9640085.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9640085.9640085/" class="f-black">Ghế neva gỗ walnut</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>2.2 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ghe-an-camila-xoay.9722540/" class="thumb"><img src="https://5giay.vn/threads_thumb/122022/9722540.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9722540.9722540/" class="f-black">Ghế ăn Camila xoay</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>900.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/nhung-mau-ban-sofa-dep-nhat-tai-5giay.9668663/" class="thumb"><img src="https://5giay.vn/threads_thumb/042022/9668663.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9668663.9668663/" class="f-black">Những mẫu bàn sofa đẹp nhất tại 5Giây</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1.8 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/chan-ban-chu-x.9491665/" class="thumb"><img src="https://5giay.vn/threads_thumb/062020/9491665.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9491665.9491665/" class="f-black">Chân bàn chữ X</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>800.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/chan-ban-tra-50cm-45cm.9490364/" class="thumb"><img src="https://5giay.vn/threads_thumb/062020/9490364.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9490364.9490364/" class="f-black">Chân bàn trà 50cm - 45cm</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>700.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ghe-aurora.9722541/" class="thumb"><img src="https://5giay.vn/threads_thumb/122022/9722541.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9722541.9722541/" class="f-black">Ghế AURORA</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1.15 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ghe-shell-thu-gian.9343300/" class="thumb"><img src="https://5giay.vn/threads_thumb/052019/9343300.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9343300.9343300/" class="f-black">Ghế Shell thư giãn</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>2.8 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          <hr style="display:none">
+        </div>
+      </div>
+       
+        <div class="spacer"></div>
+        <hr style="border-top: 1px solid #cf0f19;">
+        <div class="spacer"></div>
+         
+           
+         
+           
+            <div class="scriptad"><ins class="adsbygoogle" style="display:inline-block;width:1150px;height:145px" data-ad-client="ca-pub-3080009714544446" data-ad-slot="1070214564"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script></div>
+           
+         
+        <div class="clearfix"></div>
+        <div class="spacer"></div>
+        <hr style="border-top: 1px solid #cf0f19;">
+        <div class="spacer"></div>
+       
+     
+      <div>
+        <h2 style="background:#1e75aa;color:white;display:inline-block;padding:5px 10px !important;border-radius: 5px;margin-top:10px !important"><a href="https://5giay.vn/forums/xe-2-banh.43/" style="color:white">Xe máy</a><a href="https://5giay.vn/forums/xe-2-banh.43/" style="position:absolute;right:10px;text-align:right">xem thêm »</a></h2>
+        <div class="topiclist topiclist-wrapper">
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ban-xe-may-sym-elite-50cc-tai-ha-noi.10295110/" class="thumb"><img src="https://5giay.vn/threads_thumb/032026/10295110.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10295110.10295110/" class="f-black">Bán xe máy SYM Elite 50cc tại Hà Nội</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>16 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/can-ban-bmw-gsa-1250-rallye-2024.10304980/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10304980.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10304980.10304980/" class="f-black">___[ Cần Bán ]___BMW GSA 1250 Rallye 2024___</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>625 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/harley-davidson-road-glide-117-st-2022.10301401/" class="thumb"><img src="https://5giay.vn/threads_thumb/042026/10301401.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10301401.10301401/" class="f-black">___HARLEY-DAVIDSON Road Glide 117 ST 2022___</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>939 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/daelim-125-cc-magma-mau-do-sieu-pham.9784365/" class="thumb"><img src="https://5giay.vn/threads_thumb/042023/9784365.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9784365.9784365/" class="f-black">Daelim 125 cc Magma màu đỏ siêu phẩm</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>27.5 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/isuzu-qlr230-2-490-tan-tat-ca-cac-loai-thung.9797030/" class="thumb"><img src="https://5giay.vn/threads_thumb/052023/9797030.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9797030.9797030/" class="f-black">ISUZU QLR230 ( 2.490 TẤN) TẤT CẢ CÁC LOẠI THÙNG.</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>525 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/chuyen-den-led-tro-sang-xe-may-c6-u5-u7-h14-led-mat-cu-ex-150-linh-tin.9636198/" class="thumb"><img src="https://5giay.vn/threads_thumb/102021/9636198.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9636198.9636198/" class="f-black">Chuyên Đèn Led Trợ Sáng Xe Máy C6.U5.U7.H14.Led Mắt Cú EX 150.Linh tin</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>150.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/chuyen-den-led-tro-sang-xe-may-c6-u5-u7-h14-led-mat-cu-ex-150-linh-tin.9774676/" class="thumb"><img src="https://5giay.vn/threads_thumb/042023/9774676.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9774676.9774676/" class="f-black">Chuyên Đèn Led Trợ Sáng Xe Máy C6.U5.U7.H14.Led Mắt Cú EX 150.Linh tin</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>199.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ao-wave-110-thai-gia-1-2tr-dc-858-quoc-lo-1a-p-linh-trung-tp-thu-duc.10304277/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10304277.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10304277.10304277/" class="f-black">Áo wave 110 thái giá 1,2tr. Đc:858 Quốc Lộ 1A, p Linh Trung,Tp Thủ Đức</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1.200 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/.10297339/" class="thumb"><img src="https://5giay.vn/threads_thumb/042026/10297339.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10297339.10297339/" class="f-black">______</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1.49 tỷ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/harley-48-date-2020.10301697/" class="thumb"><img src="https://5giay.vn/threads_thumb/042026/10301697.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10301697.10301697/" class="f-black">___HARLEY 48 Date 2020___</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>345 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/can-ban-harley-fat-boy-114ci-2019.10288650/" class="thumb"><img src="https://5giay.vn/threads_thumb/022026/10288650.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10288650.10288650/" class="f-black">___[ Cần Bán ]___HARLEY Fat Boy 114Ci 2019___</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>568 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/can-ban-harley-pan-america-1250-adv-2021.10280346/" class="thumb"><img src="https://5giay.vn/threads_thumb/122025/10280346.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10280346.10280346/" class="f-black">___[ Cần Bán ]___HARLEY Pan America 1250 ADV 2021___</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>386 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/can-ban-bmw-gsa-1250-rallye-2024.10296399/" class="thumb"><img src="https://5giay.vn/threads_thumb/042026/10296399.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10296399.10296399/" class="f-black">___[ Cần Bán ]___BMW GSA 1250 Rallye 2024___</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>618 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/bmw-r1250-gs-2022-limited-40th.10287325/" class="thumb"><img src="https://5giay.vn/threads_thumb/012026/10287325.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10287325.10287325/" class="f-black">___BMW R1250 GS 2022 Limited 40th___</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>565 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/xe-dap-asama-can-ban.10293417/" class="thumb"><img src="https://5giay.vn/threads_thumb/032026/10293417.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10293417.10293417/" class="f-black">Xe đạp Asama cần bán</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>2.5 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/can-ban-bmw-r-1200r-2017.10296010/" class="thumb"><img src="https://5giay.vn/threads_thumb/032026/10296010.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10296010.10296010/" class="f-black">___[ Cần Bán ]___BMW R 1200R 2017___</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>323 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/xe-win-hq-giay-to-ok.10231051/" class="thumb"><img src="https://5giay.vn/threads_thumb/102025/10231051.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10231051.10231051/" class="f-black">Xe Win HQ giấy tờ ok</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>5 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/harley-street-glide-107ci-limited-115th-2018.10294776/" class="thumb"><img src="https://5giay.vn/threads_thumb/032026/10294776.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10294776.10294776/" class="f-black">___HARLEY Street Glide 107Ci Limited 115th 2018___</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>688 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/can-ban-honda-sh-mode-125.10294734/" class="thumb"><img src="https://5giay.vn/threads_thumb/032026/10294734.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10294734.10294734/" class="f-black">Cần Bán Honda Sh mode 125</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>16 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/can-ban-vision-110-moi-100-doi-2026.10294731/" class="thumb"><img src="https://5giay.vn/threads_thumb/032026/10294731.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10294731.10294731/" class="f-black">Cần Bán Vision 110 mới 100% đời 2026</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>10 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          <hr style="display:none">
+        </div>
+      </div>
+       
+        <div class="spacer"></div>
+        <hr style="border-top: 1px solid #cf0f19;">
+        <div class="spacer"></div>
+         
+           
+         
+           
+            <a href="https://sohot.vn"><img src="https://5giay.vn/uploads/ad/as6h7esm31egkgut.gif" style="width:375px;height:auto"></a>           
+         
+        <div class="clearfix"></div>
+        <div class="spacer"></div>
+        <hr style="border-top: 1px solid #cf0f19;">
+        <div class="spacer"></div>
+       
+     
+      <div>
+        <h2 style="background:#1e75aa;color:white;display:inline-block;padding:5px 10px !important;border-radius: 5px;margin-top:10px !important"><a href="https://5giay.vn/forums/bat-dong-san.44/" style="color:white">Bất động sản</a><a href="https://5giay.vn/forums/bat-dong-san.44/" style="position:absolute;right:10px;text-align:right">xem thêm »</a></h2>
+        <div class="topiclist topiclist-wrapper">
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/cho-thue-phong-tro-chinh-chu-mat-tien-27-dai-nghia-p6-tan-binh.9937144/" class="thumb"><img src="https://5giay.vn/threads_thumb/122023/9937144.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9937144.9937144/" class="f-black">Cho thuê phòng trọ chính chủ, mặt tiền 27 Đại Nghĩa, P6, Tân Bình</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>4 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/phong-cho-thue-chinh-chu-trung-tam-quan-5-an-ninh-gio-tu-do-gia-re.9691341/" class="thumb"><img src="https://5giay.vn/threads_thumb/072022/9691341.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9691341.9691341/" class="f-black">Phòng cho thuê chính chủ, trung tâm quận 5, an ninh, giờ tự do, giá rẻ</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>3.5 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/cho-thue-nha-mat-tien-kinh-doanh-duong-nguyen-khoai.10289360/" class="thumb"><img src="https://5giay.vn/threads_thumb/022026/10289360.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10289360.10289360/" class="f-black">Cho thuê nhà mặt tiền kinh doanh đường Nguyễn Khoái</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>6 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/nha-cho-thue-hem-tran-hung-dao-q1.10304978/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10304978.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10304978.10304978/" class="f-black">Nhà cho thuê Hẻm Trần Hưng Đạo Q1</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>7 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/dich-vu-nha-dat-the-chap-nha-dat-vay-von-ngan-hang-hoac-vay-tu-nhan.9398197/" class="thumb"><img src="https://5giay.vn/threads_thumb/092019/9398197.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9398197.9398197/" class="f-black">Dịch vụ nhà đất: thế chấp nhà đất vay vốn ngân hàng hoặc vay tư nhân</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>5 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ban-lo-dat-duong-quoc-lo-1a-x-xuan-hoa-xuan-loc-dong-nai.9721159/" class="thumb"><img src="https://5giay.vn/threads_thumb/122022/9721159.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9721159.9721159/" class="f-black">Bán lô đất đường Quốc Lộ 1A, x.Xuân Hoà, Xuân Lộc, Đồng Nai</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>800 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/can-ban-lo-dat-duong-tranh-quoc-lo-27-lien-hiep-duc-trong-lam-dong.10128779/" class="thumb"><img src="https://5giay.vn/threads_thumb/102024/10128779.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10128779.10128779/" class="f-black">Cần bán lô đất đường Tránh Quốc Lộ 27, Liên Hiệp, Đức Trọng, Lâm Đồng</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>3.1 tỷ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ban-lo-dat-hai-mat-tien-tam-thon-hiep-x-tam-thon-hiep-can-gio.9715704/" class="thumb"><img src="https://5giay.vn/threads_thumb/112022/9715704.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9715704.9715704/" class="f-black">Bán lô đất hai mặt tiền Tam Thôn Hiệp, x.Tam Thôn Hiệp, Cần Giờ</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>8.5 tỷ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ban-gap-nha-mat-tien-bach-dang-p-2-tan-binh.10127242/" class="thumb"><img src="https://5giay.vn/threads_thumb/102024/10127242.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10127242.10127242/" class="f-black">Bán gấp nhà mặt tiền Bạch Đằng, P.2, Tân Bình</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>19.7 tỷ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ban-gap-nha-mat-tien-duong-tan-tru-phuong-15-tan-binh.10127404/" class="thumb"><img src="https://5giay.vn/threads_thumb/102024/10127404.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10127404.10127404/" class="f-black">Bán gấp nhà mặt tiền đường Tân Trụ, phường 15, Tân Bình</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>13.5 tỷ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ban-gap-nha-mat-tien-dang-van-tron-p-hiep-hoa-bien-hoa.10131014/" class="thumb"><img src="https://5giay.vn/threads_thumb/102024/10131014.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10131014.10131014/" class="f-black">Bán gấp nhà mặt tiền Đặng Văn Trơn, P. Hiệp Hoà, Biên Hoà</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>14 tỷ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/can-tien-ban-lo-dat-dt-761-thanh-son-dinh-quan-dong-nai.10130161/" class="thumb"><img src="https://5giay.vn/threads_thumb/102024/10130161.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10130161.10130161/" class="f-black">Cần tiền bán lô đất DT 761, Thanh Sơn, Định Quán, Đồng Nai</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>450 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/can-ban-lo-dat-mat-tien-huong-lo-7-xa-hoa-hoi-chau-thanh-tay-ninh.9946211/" class="thumb"><img src="https://5giay.vn/threads_thumb/122023/9946211.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9946211.9946211/" class="f-black">Cần bán lô đất mặt tiền Hương Lộ 7, Xã Hoà Hội, Châu Thành, Tây Ninh</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1.2 tỷ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ban-lo-dat-mat-tien-duong-nhua-xa-ninh-dien-h-chau-thanh-tay-ninh.9909393/" class="thumb"><img src="https://5giay.vn/threads_thumb/102023/9909393.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9909393.9909393/" class="f-black">Bán lô đất mặt tiền đường nhựa xã Ninh Điền, H. Châu Thành, Tây Ninh</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1.6 tỷ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ban-gap-lo-dat-mat-tien-duong-nhua-thi-tran-vinh-an-vinh-cuu.9876674/" class="thumb"><img src="https://5giay.vn/threads_thumb/082023/9876674.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9876674.9876674/" class="f-black">Bán Gấp lô đất mặt tiền đường nhựa Thị Trấn Vĩnh An, Vĩnh Cửu</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>950 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ban-gap-nha-duong-so-42-p-binh-trung-dong-q2-tp-thu-duc.9870478/" class="thumb"><img src="https://5giay.vn/threads_thumb/082023/9870478.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9870478.9870478/" class="f-black">Bán gấp nhà Đường số 42, P.Bình Trưng Đông, Q2 - TP. Thủ Đức</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>7.4 tỷ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/cho-thue-dat-1000m2-dt-761-thanh-son-dinh-quan-dong-nai.10131045/" class="thumb"><img src="https://5giay.vn/threads_thumb/022026/10131045.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10131045.10131045/" class="f-black">Cho thuê đất 1000m2 ĐT 761 Thanh Sơn, Định Quán, Đồng Nai</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>900.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ban-nha-duong-nhua-ban-co-le-thi-hong-p-17-go-vap.10150932/" class="thumb"><img src="https://5giay.vn/threads_thumb/022026/10150932.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10150932.10150932/" class="f-black">Bán nhà đường nhựa bàn cờ Lê Thị Hồng, P.17, Gò Vấp</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>15.9 tỷ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/can-ban-lo-dat-tan-dong-tan-hung-h-tan-chau-tay-ninh.9715854/" class="thumb"><img src="https://5giay.vn/threads_thumb/022026/9715854.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9715854.9715854/" class="f-black">Cần bán lô đất Tân Đông, Tân Hưng, H. Tân Châu, Tây Ninh</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>700 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ban-gap-lo-dat-duong-suoi-da-x-suoi-da-h-duong-minh-chau-tay-ninh.9824631/" class="thumb"><img src="https://5giay.vn/threads_thumb/062023/9824631.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9824631.9824631/" class="f-black">Bán gấp lô đất đường Suối Đá, X.Suối Đá, H.Dương Minh Châu, Tây Ninh</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>2.6 tỷ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          <hr style="display:none">
+        </div>
+      </div>
+       
+     
+      <div>
+        <h2 style="background:#1e75aa;color:white;display:inline-block;padding:5px 10px !important;border-radius: 5px;margin-top:10px !important"><a href="https://5giay.vn/dien-tu-dien-lanh-am-thanh/" style="color:white">Điện tử điện lạnh</a><a href="https://5giay.vn/dien-tu-dien-lanh-am-thanh/" style="position:absolute;right:10px;text-align:right">xem thêm »</a></h2>
+        <div class="topiclist topiclist-wrapper">
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/day-tin-hieu-am-thanh-high-end-einstein-xlr-made-in-germany.8949394/" class="thumb"><img src="https://5giay.vn/threads_thumb/092017/8949394.JPG"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/8949394.8949394/" class="f-black">Dây tín hiệu âm thanh High End  EINSTEIN  XLR. Made in Germany</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>9.6 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ampli-power-rotel-yamaha-integra-parasound-cac-loai.9721320/" class="thumb"><img src="https://5giay.vn/threads_thumb/122022/9721320.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9721320.9721320/" class="f-black">ampli Power ; rotel-yamaha-integra-Parasound ... các loại</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong> đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/su-dung-tui-chuom-huong-duong-giup-giam-dau.9677382/" class="thumb"><img src="https://5giay.vn/threads_thumb/052022/9677382.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9677382.9677382/" class="f-black">Sử dụng túi chườm HƯỚNG DƯƠNG giúp giảm đau</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>140.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/can-ban-can-suc-khoe-dien-tu-hieu-sanyo.9763832/" class="thumb"><img src="https://5giay.vn/threads_thumb/032023/9763832.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9763832.9763832/" class="f-black">Cần bán cân sức khỏe điện tử hiệu Sanyo</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>500.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/tui-suoi-huong-duong-tim-nha-phan-phoi-toan-quoc.10137033/" class="thumb"><img src="https://5giay.vn/threads_thumb/112024/10137033.JPG"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10137033.10137033/" class="f-black">TÚI SƯỞI HƯỚNG DƯƠNG- TÌM NHÀ PHÂN PHỐI TOÀN QUỐC</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>140.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/may-tro-giang-khong-day-sony-sn-90-gia-dep-thuong-hieu-dep.10304991/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10304991.png"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10304991.10304991/" class="f-black">Máy trợ giảng không dây Sony SN-90 giá đẹp, thương hiệu đẹp</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>690.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/loa-phong-thanh-ln-250vn-san-pham-cua-cong-ty-anh-duong-electronic.10293264/" class="thumb"><img src="https://5giay.vn/threads_thumb/032026/10293264.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10293264.10293264/" class="f-black">Loa phóng thanh LN-250VN sản phẩm của công ty Ánh Dương Electronic</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>990.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/loa-phong-thanh-hc-30-vn-loa-chinh-hang-anh-duong-electronic-gia-re.10293466/" class="thumb"><img src="https://5giay.vn/threads_thumb/032026/10293466.png"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10293466.10293466/" class="f-black">Loa phóng thanh HC-30 VN loa chính hãng Ánh dương ELECTRONIC giá rẻ</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>490.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/loa-phong-thanh-ht-20w-hang-viet-nam-chat-luong-ma-gia-re.10299542/" class="thumb"><img src="https://5giay.vn/threads_thumb/042026/10299542.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10299542.10299542/" class="f-black">Loa phóng thanh HT-20W hàng Việt Nam chất lượng mà giá rẻ</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>290.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/tam-xop-eps-chen-hang-cat-theo-yeu-cau-quy-cach.9987274/" class="thumb"><img src="https://5giay.vn/threads_thumb/032024/9987274.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9987274.9987274/" class="f-black">Tấm xốp eps chèn hàng cắt theo yêu cầu quy cách</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>70.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/mut-xop-pe-foam-cat-tam-theo-yeu-cau-gia-tai-xuong.9973090/" class="thumb"><img src="https://5giay.vn/threads_thumb/022024/9973090.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9973090.9973090/" class="f-black">Mút xốp pe foam cắt tấm theo yêu cầu giá tại xưởng</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>3.500 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/cong-ty-san-xuat-mut-xop-pe-boc-goi-hang-hoa-gia-re.9983592/" class="thumb"><img src="https://5giay.vn/threads_thumb/032024/9983592.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9983592.9983592/" class="f-black">Công ty sản xuất mút xốp pe bọc gói hàng hóa giá rẻ</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>330.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/amply-sherwood-s-7100a-con-denon-sansui-luxman-jbl.10304071/" class="thumb"><img src="https://5giay.vn/threads_thumb/052026/10304071.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10304071.10304071/" class="f-black">Amply Sherwood S-7100A, Còn Denon Sansui Luxman JBL</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>5.5 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/tivi-am-ly-loa-mic-vang-day-ban-mixer-nhin-la-me-gia-mien-che.10240609/" class="thumb"><img src="https://5giay.vn/threads_thumb/072025/10240609.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10240609.10240609/" class="f-black">Tivi, Âm Ly, Loa, Mic, Vang, Đẩy, Bàn Mixer...nhìn Là Mê, Giá Miễn Chê</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>1.9 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ban-dan-guitar-dan-guitar-acoustic-dan-guitar-classic-quan-go-vap.9673548/" class="thumb"><img src="https://5giay.vn/threads_thumb/052022/9673548.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9673548.9673548/" class="f-black">bán đàn guitar, dan guitar acoustic, dan guitar classic quan go vap</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong> đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ban-capo-guitar-quan-go-vap-gia-tot-nhat-tai-5giay-vn.9673603/" class="thumb"><img src="https://5giay.vn/threads_thumb/052022/9673603.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9673603.9673603/" class="f-black">bán capo guitar quận gò vấp giá tốt nhất tại 5giay.vn</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong> đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/decal-tranh-thiec-bien-so-xe-trang-tri-retro-vintage-cho-quan-bar-cafe.9566580/" class="thumb"><img src="https://5giay.vn/threads_thumb/122020/9566580.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9566580.9566580/" class="f-black">Decal tranh thiếc biển số xe trang trí retro vintage cho quán bar cafe</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>24.000 đ</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/ban-ampli-karaoke-loa.9760729/" class="thumb"><img src="https://5giay.vn/threads_thumb/032023/9760729.jpg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/9760729.9760729/" class="f-black">bán ampli karaoke + loa</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>2 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/loc-eq-usa-sentrek-shq3210-117v-con-denon-sansui-luxman-jbl-bose.10301381/" class="thumb"><img src="https://5giay.vn/threads_thumb/042026/10301381.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10301381.10301381/" class="f-black">Lọc EQ Usa SENTREK SHQ3210, 117V, Còn Denon Sansui luxman JBL Bose</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>4.6 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div class="item grid col-md-5ths col-xs-6">
+              <div class="itemcontainer">
+                <div class="col-md-4 col-sm-3 col-xs-5">
+                  <div style="padding-left:15px" class="row"><a href="https://5giay.vn/threads/cd-sony-xa5es-hi-end-khung-long-con-denon-sansui-luxman-tannoy.10299712/" class="thumb"><img src="https://5giay.vn/threads_thumb/042026/10299712.jpeg"></a></div>
+                </div>
+                <div class="col-md-8 col-sm-9 col-xs-7">
+                  <div class="row">
+                    <div class="col-sm-9">
+                      <h3><a href="https://5giay.vn/threads/10299712.10299712/" class="f-black">CD sony XA5ES Hi-end Khủng long, Còn Denon Sansui luxman tannoy</a></h3>
+                    </div>
+                    <div class="col-sm-3 f-red text-right">
+                      <strong>8.5 triệu</strong>                      <div class="spacer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+          <hr style="display:none">
+        </div>
+      </div>
+       
+     
+  </div>
+</div>
+ 
+<script>$(function() {
+ $.ajax('https://www.5giay.vn/loginapi/index.php').done(function(d) {
+  if(d) {
+   console.log(d)
+   let pd = JSON.parse(d);
+   if(pd.user_id) {
+    $('#loginpart').html(
+     '<li><a href="https://www.5giay.vn/members/'+pd.username+'.'+pd.user_id+'/"><strong>'+pd.username+'</strong></a></li>' +
+     '<li><a href="https://www.5giay.vn/createThread/">Đăng tin</a></li>' +
+     '<li><a href="https://www.5giay.vn/logout/">Thoát</a></li>')
+   }
+  }
+ })
+})
+function setCookie(c_name,value,expiredays)
+{
+ var today = new Date();
+ var expires = 3600000*3;//var expires = 3600000*24*1;
+ var expires_date = new Date(today.getTime() + (expires));
+ document.cookie = c_name+"="+value+";expires=" + expires_date.toGMTString();
+ /*
+ var exdate=new Date();
+ exdate.setDate(exdate.getDate()+expiredays);
+ document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+expires_date.toGMTString());
+ */
+}
+function getCookie(c_name)
+{
+ if (document.cookie.length>0)
+ {
+ c_start=document.cookie.indexOf(c_name + "=");
+ if (c_start!=-1)
+  {
+  c_start=c_start + c_name.length+1;
+  c_end=document.cookie.indexOf(";",c_start);
+  if (c_end==-1) c_end=document.cookie.length;
+  return unescape(document.cookie.substring(c_start,c_end));
+  }
+ }
+ return "";
+}
+</script> 
+</div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <!-- all js-->
+        <script src="https://5giay.vn/library/bootstrap/js/bootstrap.min.js"></script>     
+<script>function chatOnTopic(url) {
+ alert('Xin lỗi, bạn cần đăng nhập để có thể chat với người bán');
+}</script>     
+<script>// change seller, city
+$(function(){
+ $('.change-seller').on('click', function(e) {
+  var seller = $(this).attr('data-value');
+  if(! seller) $.removeCookie('seller', { path: '/' });
+  else $.cookie('seller', seller , { expires: 30, path: '/' });
+ });
+ $('.change-city').on('click', function(e) {
+  var city = $(this).attr('data-value');
+  if(! city) $.removeCookie('city', { path: '/' });
+  else $.cookie('city', city , { expires: 30, path: '/' });
+ });
+});
+
+// ga
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1594947-29', 'auto');
+ga('send', 'pageview');
+</script>    <div id="footer">
+      <div class="cont">
+        <div style="margin: auto" class="s-pad row">
+          <div class="col-xs-9">
+            <h3>&copy; 5giay.vn</h3>
+          </div>
+          <div class="col-xs-3 text-right">
+            <h3><i data-toggle="collapse" data-target="#more-footer" class="fa fa-info-circle fa-lg"></i></h3>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div id="more-footer" id="more-footer" class="collapse">
+          <div class="row">
+            <div class="col-12">
+              CÔNG TY CỔ PHẦN TM VÀ DV TIN HỌC NHẬT NGUYỆT
+              <br>              Địa chỉ: 114 Đường số 2 Cư Xá Đô Thành F.4, Q.3, Tp.HCM
+              <br>              Điện thoại: 0913.123.030
+              <br>              E-mail: 
+              <a href="mailto:123@nhatnguyet.vn">123@nhatnguyet.vn</a>              <br>              GPTLMXH 493/GP-BTTTT do Bộ Thông tin và Truyền Thông cấp ngày 25/9/2015. Chịu trách nhiệm nội dung: Lưu Thanh Phương
+              <br>              <a href="https://m.me/5GiayVietNam" target="_blank">Chat với 5giay</a>              <!--img(src='https://online.gov.vn/Images/dadangky.png' width='150') -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

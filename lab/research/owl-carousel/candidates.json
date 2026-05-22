@@ -1,0 +1,442 @@
+{
+  "tech": "owl-carousel",
+  "refs": [
+    "2.3.4"
+  ],
+  "candidates": [
+    {
+      "candidate_id": "owl-carousel--banner--lab-research-owl-carousel-out-source-2-3-4-dist-owl-carousel-js--L2",
+      "kind": "banner",
+      "channel": "js body",
+      "anchor": "Owl Carousel",
+      "version_observed": "2.3.4",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/dist/owl.carousel.js",
+        "line_start": 2,
+        "line_end": 6,
+        "preview": " * Owl Carousel v2.3.4\n * Copyright 2013-2018 David Deutsch\n * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE\n */\n/**\n"
+      },
+      "task_for_drafter": "Draft a 'banner' rule (section='banner_rules', kind='banner') that captures the version from the comment header of lab/research/owl-carousel/out/source/2.3.4/dist/owl.carousel.js. The literal observed in this release is shown in the evidence preview -- generalise it so it captures any version of the same form (do not hardcode 2.3.4). applies_to should match the file type (js body)."
+    },
+    {
+      "candidate_id": "owl-carousel--banner--lab-research-owl-carousel-out-source-2-3-4-dist-owl-carousel-min-js--L2",
+      "kind": "banner",
+      "channel": "js body",
+      "anchor": "Owl Carousel",
+      "version_observed": "2.3.4",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/dist/owl.carousel.min.js",
+        "line_start": 2,
+        "line_end": 6,
+        "preview": " * Owl Carousel v2.3.4\n * Copyright 2013-2018 David Deutsch\n * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE\n */\n!function(a,b,c,d){function e(b,c){this.settings=null,this.options=a.extend({},e.Defaults,c),this.$element=a(b),this._handlers={},this._p"
+      },
+      "task_for_drafter": "Draft a 'banner' rule (section='banner_rules', kind='banner') that captures the version from the comment header of lab/research/owl-carousel/out/source/2.3.4/dist/owl.carousel.min.js. The literal observed in this release is shown in the evidence preview -- generalise it so it captures any version of the same form (do not hardcode 2.3.4). applies_to should match the file type (js body)."
+    },
+    {
+      "candidate_id": "owl-carousel--banner--lab-research-owl-carousel-out-source-2-3-4-docs-assets-css-docs-theme-min-css--L1",
+      "kind": "banner",
+      "channel": "css body",
+      "anchor": "owl-carousel",
+      "version_observed": "1.1",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/docs/assets/css/docs.theme.min.css",
+        "line_start": 1,
+        "line_end": 5,
+        "preview": "/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress"
+      },
+      "task_for_drafter": "Draft a 'banner' rule (section='banner_rules', kind='banner') that captures the version from the comment header of lab/research/owl-carousel/out/source/2.3.4/docs/assets/css/docs.theme.min.css. The literal observed in this release is shown in the evidence preview -- generalise it so it captures any version of the same form (do not hardcode 1.1). applies_to should match the file type (css body)."
+    },
+    {
+      "candidate_id": "owl-carousel--banner--lab-research-owl-carousel-out-source-2-3-4-docs-assets-owlcarousel-owl-carousel-js--L2",
+      "kind": "banner",
+      "channel": "js body",
+      "anchor": "Owl Carousel",
+      "version_observed": "2.3.4",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/docs/assets/owlcarousel/owl.carousel.js",
+        "line_start": 2,
+        "line_end": 6,
+        "preview": " * Owl Carousel v2.3.4\n * Copyright 2013-2018 David Deutsch\n * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE\n */\n/**\n"
+      },
+      "task_for_drafter": "Draft a 'banner' rule (section='banner_rules', kind='banner') that captures the version from the comment header of lab/research/owl-carousel/out/source/2.3.4/docs/assets/owlcarousel/owl.carousel.js. The literal observed in this release is shown in the evidence preview -- generalise it so it captures any version of the same form (do not hardcode 2.3.4). applies_to should match the file type (js body)."
+    },
+    {
+      "candidate_id": "owl-carousel--banner--lab-research-owl-carousel-out-source-2-3-4-docs-assets-owlcarousel-owl-carousel-min-js--L2",
+      "kind": "banner",
+      "channel": "js body",
+      "anchor": "Owl Carousel",
+      "version_observed": "2.3.4",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/docs/assets/owlcarousel/owl.carousel.min.js",
+        "line_start": 2,
+        "line_end": 6,
+        "preview": " * Owl Carousel v2.3.4\n * Copyright 2013-2018 David Deutsch\n * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE\n */\n!function(a,b,c,d){function e(b,c){this.settings=null,this.options=a.extend({},e.Defaults,c),this.$element=a(b),this._handlers={},this._p"
+      },
+      "task_for_drafter": "Draft a 'banner' rule (section='banner_rules', kind='banner') that captures the version from the comment header of lab/research/owl-carousel/out/source/2.3.4/docs/assets/owlcarousel/owl.carousel.min.js. The literal observed in this release is shown in the evidence preview -- generalise it so it captures any version of the same form (do not hardcode 2.3.4). applies_to should match the file type (js body)."
+    },
+    {
+      "candidate_id": "owl-carousel--banner--lab-research-owl-carousel-out-source-2-3-4-docs-assets-owlcarousel-assets-owl-carousel-css--L2",
+      "kind": "banner",
+      "channel": "css body",
+      "anchor": "Owl Carousel",
+      "version_observed": "2.3.4",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/docs/assets/owlcarousel/assets/owl.carousel.css",
+        "line_start": 2,
+        "line_end": 6,
+        "preview": " * Owl Carousel v2.3.4\n * Copyright 2013-2018 David Deutsch\n * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE\n */\n/*\n"
+      },
+      "task_for_drafter": "Draft a 'banner' rule (section='banner_rules', kind='banner') that captures the version from the comment header of lab/research/owl-carousel/out/source/2.3.4/docs/assets/owlcarousel/assets/owl.carousel.css. The literal observed in this release is shown in the evidence preview -- generalise it so it captures any version of the same form (do not hardcode 2.3.4). applies_to should match the file type (css body)."
+    },
+    {
+      "candidate_id": "owl-carousel--banner--lab-research-owl-carousel-out-source-2-3-4-docs-assets-owlcarousel-assets-owl-carousel-min-css--L2",
+      "kind": "banner",
+      "channel": "css body",
+      "anchor": "Owl Carousel",
+      "version_observed": "2.3.4",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css",
+        "line_start": 2,
+        "line_end": 6,
+        "preview": " * Owl Carousel v2.3.4\n * Copyright 2013-2018 David Deutsch\n * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE\n */\n.owl-carousel,.owl-carousel .owl-item{-webkit-tap-highlight-color:transparent;position:relative}.owl-carousel{display:none;width:100%;z-i"
+      },
+      "task_for_drafter": "Draft a 'banner' rule (section='banner_rules', kind='banner') that captures the version from the comment header of lab/research/owl-carousel/out/source/2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css. The literal observed in this release is shown in the evidence preview -- generalise it so it captures any version of the same form (do not hardcode 2.3.4). applies_to should match the file type (css body)."
+    },
+    {
+      "candidate_id": "owl-carousel--banner--lab-research-owl-carousel-out-source-2-3-4-docs-assets-owlcarousel-assets-owl-theme-default-css--L2",
+      "kind": "banner",
+      "channel": "css body",
+      "anchor": "Owl Carousel",
+      "version_observed": "2.3.4",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.css",
+        "line_start": 2,
+        "line_end": 6,
+        "preview": " * Owl Carousel v2.3.4\n * Copyright 2013-2018 David Deutsch\n * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE\n */\n/*\n"
+      },
+      "task_for_drafter": "Draft a 'banner' rule (section='banner_rules', kind='banner') that captures the version from the comment header of lab/research/owl-carousel/out/source/2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.css. The literal observed in this release is shown in the evidence preview -- generalise it so it captures any version of the same form (do not hardcode 2.3.4). applies_to should match the file type (css body)."
+    },
+    {
+      "candidate_id": "owl-carousel--banner--lab-research-owl-carousel-out-source-2-3-4-docs-assets-owlcarousel-assets-owl-theme-default-min-css--L2",
+      "kind": "banner",
+      "channel": "css body",
+      "anchor": "Owl Carousel",
+      "version_observed": "2.3.4",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css",
+        "line_start": 2,
+        "line_end": 6,
+        "preview": " * Owl Carousel v2.3.4\n * Copyright 2013-2018 David Deutsch\n * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE\n */\n.owl-theme .owl-dots,.owl-theme .owl-nav{text-align:center;-webkit-tap-highlight-color:transparent}.owl-theme .owl-nav{margin-top:10px}.o"
+      },
+      "task_for_drafter": "Draft a 'banner' rule (section='banner_rules', kind='banner') that captures the version from the comment header of lab/research/owl-carousel/out/source/2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css. The literal observed in this release is shown in the evidence preview -- generalise it so it captures any version of the same form (do not hardcode 2.3.4). applies_to should match the file type (css body)."
+    },
+    {
+      "candidate_id": "owl-carousel--banner--lab-research-owl-carousel-out-source-2-3-4-docs-assets-owlcarousel-assets-owl-theme-green-css--L2",
+      "kind": "banner",
+      "channel": "css body",
+      "anchor": "Owl Carousel",
+      "version_observed": "2.3.4",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/docs/assets/owlcarousel/assets/owl.theme.green.css",
+        "line_start": 2,
+        "line_end": 6,
+        "preview": " * Owl Carousel v2.3.4\n * Copyright 2013-2018 David Deutsch\n * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE\n */\n/*\n"
+      },
+      "task_for_drafter": "Draft a 'banner' rule (section='banner_rules', kind='banner') that captures the version from the comment header of lab/research/owl-carousel/out/source/2.3.4/docs/assets/owlcarousel/assets/owl.theme.green.css. The literal observed in this release is shown in the evidence preview -- generalise it so it captures any version of the same form (do not hardcode 2.3.4). applies_to should match the file type (css body)."
+    },
+    {
+      "candidate_id": "owl-carousel--banner--lab-research-owl-carousel-out-source-2-3-4-docs-assets-owlcarousel-assets-owl-theme-green-min-css--L2",
+      "kind": "banner",
+      "channel": "css body",
+      "anchor": "Owl Carousel",
+      "version_observed": "2.3.4",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/docs/assets/owlcarousel/assets/owl.theme.green.min.css",
+        "line_start": 2,
+        "line_end": 6,
+        "preview": " * Owl Carousel v2.3.4\n * Copyright 2013-2018 David Deutsch\n * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE\n */\n.owl-theme .owl-dots,.owl-theme .owl-nav{text-align:center;-webkit-tap-highlight-color:transparent}.owl-theme .owl-nav{margin-top:10px}.o"
+      },
+      "task_for_drafter": "Draft a 'banner' rule (section='banner_rules', kind='banner') that captures the version from the comment header of lab/research/owl-carousel/out/source/2.3.4/docs/assets/owlcarousel/assets/owl.theme.green.min.css. The literal observed in this release is shown in the evidence preview -- generalise it so it captures any version of the same form (do not hardcode 2.3.4). applies_to should match the file type (css body)."
+    },
+    {
+      "candidate_id": "owl-carousel--banner--lab-research-owl-carousel-out-source-2-3-4-dist-assets-owl-carousel-css--L2",
+      "kind": "banner",
+      "channel": "css body",
+      "anchor": "Owl Carousel",
+      "version_observed": "2.3.4",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/dist/assets/owl.carousel.css",
+        "line_start": 2,
+        "line_end": 6,
+        "preview": " * Owl Carousel v2.3.4\n * Copyright 2013-2018 David Deutsch\n * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE\n */\n/*\n"
+      },
+      "task_for_drafter": "Draft a 'banner' rule (section='banner_rules', kind='banner') that captures the version from the comment header of lab/research/owl-carousel/out/source/2.3.4/dist/assets/owl.carousel.css. The literal observed in this release is shown in the evidence preview -- generalise it so it captures any version of the same form (do not hardcode 2.3.4). applies_to should match the file type (css body)."
+    },
+    {
+      "candidate_id": "owl-carousel--banner--lab-research-owl-carousel-out-source-2-3-4-dist-assets-owl-carousel-min-css--L2",
+      "kind": "banner",
+      "channel": "css body",
+      "anchor": "Owl Carousel",
+      "version_observed": "2.3.4",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/dist/assets/owl.carousel.min.css",
+        "line_start": 2,
+        "line_end": 6,
+        "preview": " * Owl Carousel v2.3.4\n * Copyright 2013-2018 David Deutsch\n * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE\n */\n.owl-carousel,.owl-carousel .owl-item{-webkit-tap-highlight-color:transparent;position:relative}.owl-carousel{display:none;width:100%;z-i"
+      },
+      "task_for_drafter": "Draft a 'banner' rule (section='banner_rules', kind='banner') that captures the version from the comment header of lab/research/owl-carousel/out/source/2.3.4/dist/assets/owl.carousel.min.css. The literal observed in this release is shown in the evidence preview -- generalise it so it captures any version of the same form (do not hardcode 2.3.4). applies_to should match the file type (css body)."
+    },
+    {
+      "candidate_id": "owl-carousel--banner--lab-research-owl-carousel-out-source-2-3-4-dist-assets-owl-theme-default-css--L2",
+      "kind": "banner",
+      "channel": "css body",
+      "anchor": "Owl Carousel",
+      "version_observed": "2.3.4",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/dist/assets/owl.theme.default.css",
+        "line_start": 2,
+        "line_end": 6,
+        "preview": " * Owl Carousel v2.3.4\n * Copyright 2013-2018 David Deutsch\n * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE\n */\n/*\n"
+      },
+      "task_for_drafter": "Draft a 'banner' rule (section='banner_rules', kind='banner') that captures the version from the comment header of lab/research/owl-carousel/out/source/2.3.4/dist/assets/owl.theme.default.css. The literal observed in this release is shown in the evidence preview -- generalise it so it captures any version of the same form (do not hardcode 2.3.4). applies_to should match the file type (css body)."
+    },
+    {
+      "candidate_id": "owl-carousel--banner--lab-research-owl-carousel-out-source-2-3-4-dist-assets-owl-theme-default-min-css--L2",
+      "kind": "banner",
+      "channel": "css body",
+      "anchor": "Owl Carousel",
+      "version_observed": "2.3.4",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/dist/assets/owl.theme.default.min.css",
+        "line_start": 2,
+        "line_end": 6,
+        "preview": " * Owl Carousel v2.3.4\n * Copyright 2013-2018 David Deutsch\n * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE\n */\n.owl-theme .owl-dots,.owl-theme .owl-nav{text-align:center;-webkit-tap-highlight-color:transparent}.owl-theme .owl-nav{margin-top:10px}.o"
+      },
+      "task_for_drafter": "Draft a 'banner' rule (section='banner_rules', kind='banner') that captures the version from the comment header of lab/research/owl-carousel/out/source/2.3.4/dist/assets/owl.theme.default.min.css. The literal observed in this release is shown in the evidence preview -- generalise it so it captures any version of the same form (do not hardcode 2.3.4). applies_to should match the file type (css body)."
+    },
+    {
+      "candidate_id": "owl-carousel--banner--lab-research-owl-carousel-out-source-2-3-4-dist-assets-owl-theme-green-css--L2",
+      "kind": "banner",
+      "channel": "css body",
+      "anchor": "Owl Carousel",
+      "version_observed": "2.3.4",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/dist/assets/owl.theme.green.css",
+        "line_start": 2,
+        "line_end": 6,
+        "preview": " * Owl Carousel v2.3.4\n * Copyright 2013-2018 David Deutsch\n * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE\n */\n/*\n"
+      },
+      "task_for_drafter": "Draft a 'banner' rule (section='banner_rules', kind='banner') that captures the version from the comment header of lab/research/owl-carousel/out/source/2.3.4/dist/assets/owl.theme.green.css. The literal observed in this release is shown in the evidence preview -- generalise it so it captures any version of the same form (do not hardcode 2.3.4). applies_to should match the file type (css body)."
+    },
+    {
+      "candidate_id": "owl-carousel--banner--lab-research-owl-carousel-out-source-2-3-4-dist-assets-owl-theme-green-min-css--L2",
+      "kind": "banner",
+      "channel": "css body",
+      "anchor": "Owl Carousel",
+      "version_observed": "2.3.4",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/dist/assets/owl.theme.green.min.css",
+        "line_start": 2,
+        "line_end": 6,
+        "preview": " * Owl Carousel v2.3.4\n * Copyright 2013-2018 David Deutsch\n * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE\n */\n.owl-theme .owl-dots,.owl-theme .owl-nav{text-align:center;-webkit-tap-highlight-color:transparent}.owl-theme .owl-nav{margin-top:10px}.o"
+      },
+      "task_for_drafter": "Draft a 'banner' rule (section='banner_rules', kind='banner') that captures the version from the comment header of lab/research/owl-carousel/out/source/2.3.4/dist/assets/owl.theme.green.min.css. The literal observed in this release is shown in the evidence preview -- generalise it so it captures any version of the same form (do not hardcode 2.3.4). applies_to should match the file type (css body)."
+    },
+    {
+      "candidate_id": "owl-carousel--package_metadata--lab-research-owl-carousel-out-source-2-3-4-bower-json--L3",
+      "kind": "package_metadata",
+      "channel": "json file",
+      "anchor": "bower.json",
+      "version_observed": "2.3.4",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/bower.json",
+        "line_start": 3,
+        "line_end": 4,
+        "preview": "  \"name\": \"owl.carousel\",\n  \"version\": \"2.3.4\",\n  \"main\": ["
+      },
+      "task_for_drafter": "Package metadata is rarely the consumer-side signal we fingerprint -- visitors don't see package.json. Use this candidate as ground-truth for the version, then look for a co-shipped consumer-side disclosure (banner, filename, inline constant). Skip this candidate if no consumer-side signal exists."
+    },
+    {
+      "candidate_id": "owl-carousel--package_metadata--lab-research-owl-carousel-out-source-2-3-4-package-json--L4",
+      "kind": "package_metadata",
+      "channel": "json file",
+      "anchor": "package.json",
+      "version_observed": "2.3.4",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/package.json",
+        "line_start": 4,
+        "line_end": 5,
+        "preview": "  \"description\": \"Touch enabled jQuery plugin that lets you create beautiful responsive carousel slider.\",\n  \"version\": \"2.3.4\",\n  \"homepage\": \"https://github.com/OwlCarousel2/OwlCarousel2\","
+      },
+      "task_for_drafter": "Package metadata is rarely the consumer-side signal we fingerprint -- visitors don't see package.json. Use this candidate as ground-truth for the version, then look for a co-shipped consumer-side disclosure (banner, filename, inline constant). Skip this candidate if no consumer-side signal exists."
+    },
+    {
+      "candidate_id": "owl-carousel--inline_const--lab-research-owl-carousel-out-source-2-3-4-docs-src-assets-js-foundation-min-js--L1",
+      "kind": "inline_version_const",
+      "channel": "js body",
+      "anchor": "version",
+      "version_observed": "5.2.2",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/docs_src/assets/js/foundation.min.js",
+        "line_start": 1,
+        "line_end": 3,
+        "preview": "!function(a,b,c,d){\"use strict\";function e(a){return(\"string\"==typeof a||a instanceof String)&&(a=a.replace(/^['\\\\/\"]+|(;\\s?})+|['\\\\/\"]+$/g,\"\")),a}var f=function(b){for(var c=b.length,d=a(\"head\");c--;)0===d.has(\".\"+b[c]).length&&d.append('<meta class=\"'+b[c]+'\" />')};f([\"foundation-mq-small\",\"founda"
+      },
+      "task_for_drafter": "Draft a rule that captures the inline version constant shown in lab/research/owl-carousel/out/source/2.3.4/docs_src/assets/js/foundation.min.js ('version: 5.2.2'). If this file ships to clients as-is (no build step), section is 'banner_rules' or a body-channel rule. If it's a build-time source that gets compiled (Sass / Less), prefer the COMPILED output's emitted form -- use retrieve_source on the matching .css output to find it."
+    },
+    {
+      "candidate_id": "owl-carousel--inline_const--lab-research-owl-carousel-out-source-2-3-4-docs-src-assets-js-foundation-min-js--L2",
+      "kind": "inline_version_const",
+      "channel": "js body",
+      "anchor": "version",
+      "version_observed": "5.2.2",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/docs_src/assets/js/foundation.min.js",
+        "line_start": 2,
+        "line_end": 4,
+        "preview": "!function(a,b,c,d){\"use strict\";function e(a){return(\"string\"==typeof a||a instanceof String)&&(a=a.replace(/^['\\\\/\"]+|(;\\s?})+|['\\\\/\"]+$/g,\"\")),a}var f=function(b){for(var c=b.length,d=a(\"head\");c--;)0===d.has(\".\"+b[c]).length&&d.append('<meta class=\"'+b[c]+'\" />')};f([\"foundation-mq-small\",\"founda"
+      },
+      "task_for_drafter": "Draft a rule that captures the inline version constant shown in lab/research/owl-carousel/out/source/2.3.4/docs_src/assets/js/foundation.min.js ('version: 5.2.2'). If this file ships to clients as-is (no build step), section is 'banner_rules' or a body-channel rule. If it's a build-time source that gets compiled (Sass / Less), prefer the COMPILED output's emitted form -- use retrieve_source on the matching .css output to find it."
+    },
+    {
+      "candidate_id": "owl-carousel--inline_const--lab-research-owl-carousel-out-source-2-3-4-docs-src-assets-js-foundation-min-js--L3",
+      "kind": "inline_version_const",
+      "channel": "js body",
+      "anchor": "version",
+      "version_observed": "5.2.2",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/docs_src/assets/js/foundation.min.js",
+        "line_start": 3,
+        "line_end": 5,
+        "preview": "for(this.cache={},this.cached_images=[],this.images_loaded=0===b;c--;){if(d++,a[c]){var f=a[c].getAttribute(e)||\"\";f.length>0&&this.cached_images.push(a[c])}d===b&&(this.images_loaded=!0,this.enhance(\"images\"))}return this},update_nodes:function(){var a=this.S(\"[\"+this.data_attr+\"]\").not(\"img\"),b=a."
+      },
+      "task_for_drafter": "Draft a rule that captures the inline version constant shown in lab/research/owl-carousel/out/source/2.3.4/docs_src/assets/js/foundation.min.js ('version: 5.2.2'). If this file ships to clients as-is (no build step), section is 'banner_rules' or a body-channel rule. If it's a build-time source that gets compiled (Sass / Less), prefer the COMPILED output's emitted form -- use retrieve_source on the matching .css output to find it."
+    },
+    {
+      "candidate_id": "owl-carousel--inline_const--lab-research-owl-carousel-out-source-2-3-4-docs-src-assets-vendors-foundation-min-js--L1",
+      "kind": "inline_version_const",
+      "channel": "js body",
+      "anchor": "version",
+      "version_observed": "5.2.2",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/docs_src/assets/vendors/foundation.min.js",
+        "line_start": 1,
+        "line_end": 3,
+        "preview": "!function(a,b,c,d){\"use strict\";function e(a){return(\"string\"==typeof a||a instanceof String)&&(a=a.replace(/^['\\\\/\"]+|(;\\s?})+|['\\\\/\"]+$/g,\"\")),a}var f=function(b){for(var c=b.length,d=a(\"head\");c--;)0===d.has(\".\"+b[c]).length&&d.append('<meta class=\"'+b[c]+'\" />')};f([\"foundation-mq-small\",\"founda"
+      },
+      "task_for_drafter": "Draft a rule that captures the inline version constant shown in lab/research/owl-carousel/out/source/2.3.4/docs_src/assets/vendors/foundation.min.js ('version: 5.2.2'). If this file ships to clients as-is (no build step), section is 'banner_rules' or a body-channel rule. If it's a build-time source that gets compiled (Sass / Less), prefer the COMPILED output's emitted form -- use retrieve_source on the matching .css output to find it."
+    },
+    {
+      "candidate_id": "owl-carousel--inline_const--lab-research-owl-carousel-out-source-2-3-4-docs-src-assets-vendors-foundation-min-js--L2",
+      "kind": "inline_version_const",
+      "channel": "js body",
+      "anchor": "version",
+      "version_observed": "5.2.2",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/docs_src/assets/vendors/foundation.min.js",
+        "line_start": 2,
+        "line_end": 4,
+        "preview": "!function(a,b,c,d){\"use strict\";function e(a){return(\"string\"==typeof a||a instanceof String)&&(a=a.replace(/^['\\\\/\"]+|(;\\s?})+|['\\\\/\"]+$/g,\"\")),a}var f=function(b){for(var c=b.length,d=a(\"head\");c--;)0===d.has(\".\"+b[c]).length&&d.append('<meta class=\"'+b[c]+'\" />')};f([\"foundation-mq-small\",\"founda"
+      },
+      "task_for_drafter": "Draft a rule that captures the inline version constant shown in lab/research/owl-carousel/out/source/2.3.4/docs_src/assets/vendors/foundation.min.js ('version: 5.2.2'). If this file ships to clients as-is (no build step), section is 'banner_rules' or a body-channel rule. If it's a build-time source that gets compiled (Sass / Less), prefer the COMPILED output's emitted form -- use retrieve_source on the matching .css output to find it."
+    },
+    {
+      "candidate_id": "owl-carousel--inline_const--lab-research-owl-carousel-out-source-2-3-4-docs-src-assets-vendors-foundation-min-js--L3",
+      "kind": "inline_version_const",
+      "channel": "js body",
+      "anchor": "version",
+      "version_observed": "5.2.2",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/docs_src/assets/vendors/foundation.min.js",
+        "line_start": 3,
+        "line_end": 5,
+        "preview": "for(this.cache={},this.cached_images=[],this.images_loaded=0===b;c--;){if(d++,a[c]){var f=a[c].getAttribute(e)||\"\";f.length>0&&this.cached_images.push(a[c])}d===b&&(this.images_loaded=!0,this.enhance(\"images\"))}return this},update_nodes:function(){var a=this.S(\"[\"+this.data_attr+\"]\").not(\"img\"),b=a."
+      },
+      "task_for_drafter": "Draft a rule that captures the inline version constant shown in lab/research/owl-carousel/out/source/2.3.4/docs_src/assets/vendors/foundation.min.js ('version: 5.2.2'). If this file ships to clients as-is (no build step), section is 'banner_rules' or a body-channel rule. If it's a build-time source that gets compiled (Sass / Less), prefer the COMPILED output's emitted form -- use retrieve_source on the matching .css output to find it."
+    },
+    {
+      "candidate_id": "owl-carousel--inline_const--lab-research-owl-carousel-out-source-2-3-4-docs-assets-js-foundation-min-js--L1",
+      "kind": "inline_version_const",
+      "channel": "js body",
+      "anchor": "version",
+      "version_observed": "5.2.2",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/docs/assets/js/foundation.min.js",
+        "line_start": 1,
+        "line_end": 3,
+        "preview": "!function(a,b,c,d){\"use strict\";function e(a){return(\"string\"==typeof a||a instanceof String)&&(a=a.replace(/^['\\\\/\"]+|(;\\s?})+|['\\\\/\"]+$/g,\"\")),a}var f=function(b){for(var c=b.length,d=a(\"head\");c--;)0===d.has(\".\"+b[c]).length&&d.append('<meta class=\"'+b[c]+'\" />')};f([\"foundation-mq-small\",\"founda"
+      },
+      "task_for_drafter": "Draft a rule that captures the inline version constant shown in lab/research/owl-carousel/out/source/2.3.4/docs/assets/js/foundation.min.js ('version: 5.2.2'). If this file ships to clients as-is (no build step), section is 'banner_rules' or a body-channel rule. If it's a build-time source that gets compiled (Sass / Less), prefer the COMPILED output's emitted form -- use retrieve_source on the matching .css output to find it."
+    },
+    {
+      "candidate_id": "owl-carousel--inline_const--lab-research-owl-carousel-out-source-2-3-4-docs-assets-js-foundation-min-js--L2",
+      "kind": "inline_version_const",
+      "channel": "js body",
+      "anchor": "version",
+      "version_observed": "5.2.2",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/docs/assets/js/foundation.min.js",
+        "line_start": 2,
+        "line_end": 4,
+        "preview": "!function(a,b,c,d){\"use strict\";function e(a){return(\"string\"==typeof a||a instanceof String)&&(a=a.replace(/^['\\\\/\"]+|(;\\s?})+|['\\\\/\"]+$/g,\"\")),a}var f=function(b){for(var c=b.length,d=a(\"head\");c--;)0===d.has(\".\"+b[c]).length&&d.append('<meta class=\"'+b[c]+'\" />')};f([\"foundation-mq-small\",\"founda"
+      },
+      "task_for_drafter": "Draft a rule that captures the inline version constant shown in lab/research/owl-carousel/out/source/2.3.4/docs/assets/js/foundation.min.js ('version: 5.2.2'). If this file ships to clients as-is (no build step), section is 'banner_rules' or a body-channel rule. If it's a build-time source that gets compiled (Sass / Less), prefer the COMPILED output's emitted form -- use retrieve_source on the matching .css output to find it."
+    },
+    {
+      "candidate_id": "owl-carousel--inline_const--lab-research-owl-carousel-out-source-2-3-4-docs-assets-js-foundation-min-js--L3",
+      "kind": "inline_version_const",
+      "channel": "js body",
+      "anchor": "version",
+      "version_observed": "5.2.2",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/docs/assets/js/foundation.min.js",
+        "line_start": 3,
+        "line_end": 5,
+        "preview": "for(this.cache={},this.cached_images=[],this.images_loaded=0===b;c--;){if(d++,a[c]){var f=a[c].getAttribute(e)||\"\";f.length>0&&this.cached_images.push(a[c])}d===b&&(this.images_loaded=!0,this.enhance(\"images\"))}return this},update_nodes:function(){var a=this.S(\"[\"+this.data_attr+\"]\").not(\"img\"),b=a."
+      },
+      "task_for_drafter": "Draft a rule that captures the inline version constant shown in lab/research/owl-carousel/out/source/2.3.4/docs/assets/js/foundation.min.js ('version: 5.2.2'). If this file ships to clients as-is (no build step), section is 'banner_rules' or a body-channel rule. If it's a build-time source that gets compiled (Sass / Less), prefer the COMPILED output's emitted form -- use retrieve_source on the matching .css output to find it."
+    },
+    {
+      "candidate_id": "owl-carousel--inline_const--lab-research-owl-carousel-out-source-2-3-4-docs-assets-vendors-foundation-min-js--L1",
+      "kind": "inline_version_const",
+      "channel": "js body",
+      "anchor": "version",
+      "version_observed": "5.2.2",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/docs/assets/vendors/foundation.min.js",
+        "line_start": 1,
+        "line_end": 3,
+        "preview": "!function(a,b,c,d){\"use strict\";function e(a){return(\"string\"==typeof a||a instanceof String)&&(a=a.replace(/^['\\\\/\"]+|(;\\s?})+|['\\\\/\"]+$/g,\"\")),a}var f=function(b){for(var c=b.length,d=a(\"head\");c--;)0===d.has(\".\"+b[c]).length&&d.append('<meta class=\"'+b[c]+'\" />')};f([\"foundation-mq-small\",\"founda"
+      },
+      "task_for_drafter": "Draft a rule that captures the inline version constant shown in lab/research/owl-carousel/out/source/2.3.4/docs/assets/vendors/foundation.min.js ('version: 5.2.2'). If this file ships to clients as-is (no build step), section is 'banner_rules' or a body-channel rule. If it's a build-time source that gets compiled (Sass / Less), prefer the COMPILED output's emitted form -- use retrieve_source on the matching .css output to find it."
+    },
+    {
+      "candidate_id": "owl-carousel--inline_const--lab-research-owl-carousel-out-source-2-3-4-docs-assets-vendors-foundation-min-js--L2",
+      "kind": "inline_version_const",
+      "channel": "js body",
+      "anchor": "version",
+      "version_observed": "5.2.2",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/docs/assets/vendors/foundation.min.js",
+        "line_start": 2,
+        "line_end": 4,
+        "preview": "!function(a,b,c,d){\"use strict\";function e(a){return(\"string\"==typeof a||a instanceof String)&&(a=a.replace(/^['\\\\/\"]+|(;\\s?})+|['\\\\/\"]+$/g,\"\")),a}var f=function(b){for(var c=b.length,d=a(\"head\");c--;)0===d.has(\".\"+b[c]).length&&d.append('<meta class=\"'+b[c]+'\" />')};f([\"foundation-mq-small\",\"founda"
+      },
+      "task_for_drafter": "Draft a rule that captures the inline version constant shown in lab/research/owl-carousel/out/source/2.3.4/docs/assets/vendors/foundation.min.js ('version: 5.2.2'). If this file ships to clients as-is (no build step), section is 'banner_rules' or a body-channel rule. If it's a build-time source that gets compiled (Sass / Less), prefer the COMPILED output's emitted form -- use retrieve_source on the matching .css output to find it."
+    },
+    {
+      "candidate_id": "owl-carousel--inline_const--lab-research-owl-carousel-out-source-2-3-4-docs-assets-vendors-foundation-min-js--L3",
+      "kind": "inline_version_const",
+      "channel": "js body",
+      "anchor": "version",
+      "version_observed": "5.2.2",
+      "evidence": {
+        "file_path": "lab/research/owl-carousel/out/source/2.3.4/docs/assets/vendors/foundation.min.js",
+        "line_start": 3,
+        "line_end": 5,
+        "preview": "for(this.cache={},this.cached_images=[],this.images_loaded=0===b;c--;){if(d++,a[c]){var f=a[c].getAttribute(e)||\"\";f.length>0&&this.cached_images.push(a[c])}d===b&&(this.images_loaded=!0,this.enhance(\"images\"))}return this},update_nodes:function(){var a=this.S(\"[\"+this.data_attr+\"]\").not(\"img\"),b=a."
+      },
+      "task_for_drafter": "Draft a rule that captures the inline version constant shown in lab/research/owl-carousel/out/source/2.3.4/docs/assets/vendors/foundation.min.js ('version: 5.2.2'). If this file ships to clients as-is (no build step), section is 'banner_rules' or a body-channel rule. If it's a build-time source that gets compiled (Sass / Less), prefer the COMPILED output's emitted form -- use retrieve_source on the matching .css output to find it."
+    }
+  ]
+}

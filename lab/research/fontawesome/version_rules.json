@@ -1,0 +1,464 @@
+{
+  "generated_at": "2026-05-13",
+  "source": "https://codeload.github.com/FortAwesome/Font-Awesome/zip/refs/tags/{tag}",
+  "primary_version": "7.2.0",
+  "cross_versions": [
+    "4.7.0",
+    "5.15.4",
+    "6.7.2"
+  ],
+  "rule_count": 28,
+  "url_patterns": [
+    {
+      "pattern": "use\\.fontawesome\\.com/releases/v?([0-9]+\\.[0-9]+\\.[0-9]+)",
+      "regex_family": "FA official CDN: use.fontawesome.com/releases/vX.Y.Z",
+      "validated_examples": [
+        "https://use.fontawesome.com/releases/v6.6.0/css/all.css"
+      ]
+    },
+    {
+      "pattern": "cdnjs\\.cloudflare\\.com/ajax/libs/font-awesome/([0-9]+\\.[0-9]+\\.[0-9]+)",
+      "regex_family": "cdnjs CDN: ajax/libs/font-awesome/X.Y.Z",
+      "validated_examples": [
+        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      ]
+    },
+    {
+      "pattern": "maxcdn\\.bootstrapcdn\\.com/font-awesome/([0-9]+\\.[0-9]+\\.[0-9]+)",
+      "regex_family": "MaxCDN: bootstrapcdn.com/font-awesome/X.Y.Z",
+      "validated_examples": [
+        "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      ]
+    },
+    {
+      "pattern": "font[-_]?awesome[^?]*\\?ver=([0-9]+\\.[0-9]+(?:\\.[0-9]+)?(?:[\\w.\\-]*)?)",
+      "regex_family": "WP asset URL: ?ver=X.Y.Z (font-awesome)",
+      "validated_examples": [
+        "/wp-content/plugins/font-awesome/assets/css/all.min.css?ver=5.1.5"
+      ],
+      "note": "Capture group requires at least X.Y (one dot) to filter out 10-digit cache-bust timestamps like ?ver=1775631036"
+    }
+  ],
+  "rules": [
+    {
+      "path": "/css/all.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/css/all.min.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/css/brands.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/css/brands.min.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/css/fontawesome.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/css/fontawesome.min.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/css/regular.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/css/regular.min.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/css/solid.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/css/solid.min.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/css/svg-with-js.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/css/svg-with-js.min.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/css/v4-shims.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/css/v4-shims.min.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/js/all.js",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/js/all.min.js",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/js/brands.js",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/js/brands.min.js",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/js/conflict-detection.js",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/js/conflict-detection.min.js",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/js/fontawesome.js",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/js/fontawesome.min.js",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/js/regular.js",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/js/regular.min.js",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/js/solid.js",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/js/solid.min.js",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/js/v4-shims.js",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    },
+    {
+      "path": "/js/v4-shims.min.js",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "validated_versions": [
+        "7.2.0",
+        "5.15.4",
+        "6.7.2"
+      ],
+      "sample_context": {
+        "7.2.0": "/*!\\n * Font Awesome Free 7.2.0 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "5.15.4": "/*!\\n * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com\\n * License - http",
+        "6.7.2": "/*!\\n * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com\\n * License - http"
+      }
+    }
+  ]
+}

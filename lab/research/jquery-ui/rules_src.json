@@ -1,0 +1,29 @@
+{
+  "tech_slug": "jquery-ui",
+  "canonical_name": "jQuery UI",
+  "banner_rules": [
+    {
+      "rule_id": "banner_jquery_ui",
+      "pattern": "/\\*!\\s*jQuery\\s+UI\\s+-\\s+v(\\d+\\.\\d+(?:\\.\\d+)?)",
+      "extracts": {"version": {"g": 1}},
+      "applies_to": "js body (first 8 KiB)",
+      "confidence": "high",
+      "source": {
+        "releases_validated": ["1.12.1", "1.13.3", "1.14.1"],
+        "format_observed": [
+          "/*! jQuery UI - v1.12.1 - 2016-09-14\\n* http://jqueryui.com\\n* Includes: widget.js, position.js, ...",
+          "/*! jQuery UI - v1.13.3 - 2024-04-26\\n* https://jqueryui.com\\n* Includes: widget.js, position.js, ...",
+          "/*! jQuery UI - v1.14.1 - 2024-10-30\\n* https://jqueryui.com\\n* Includes: widget.js, position.js, ..."
+        ],
+        "files": ["dist/jquery-ui.min.js", "dist/jquery-ui.js"],
+        "principle": "jQuery UI's release build emits a stable banner at the top of every dist file: '/*! jQuery UI - v X.Y.Z - YYYY-MM-DD'. The literal '- v' separator is distinctive and absent from non-jquery-ui libraries. Verified identical across 1.12.x (jQuery Foundation copyright), 1.13.x and 1.14.x (OpenJS Foundation copyright) -- copyright changed in 2023, banner shape did not. Per CLAUDE.md sec 7, this rule models the SIGNAL (jQuery UI + dash-v + dotted version) rather than the surrounding samples; the date suffix and includes line are intentionally outside the capture. Source: WebFetch on 2026-05-18 of code.jquery.com/ui/1.12.1/jquery-ui.min.js, code.jquery.com/ui/1.13.3/jquery-ui.min.js, code.jquery.com/ui/1.14.1/jquery-ui.min.js -- all three files start with the cited banner verbatim.",
+        "rejects_by_design": [
+          "'jQuery UI 1.14.1' without the '- v' separator (no other build emits this -- the dash-v is the producer's signature)",
+          "'jquery-ui.min.js' filename mentions alone (handled by lab_url_patterns id=22 for the code.jquery.com CDN case)",
+          "Bogus retire.js URI captures like '01_14_01' or '6giay.vn/webmail/plugins/jqueryui/js' -- those are upstream retire.js URI-rule false positives at the EVIDENCE level; this banner rule is what reconcile uses for the rolled-up tech.version. Verified 5/5 malformed-corpus targets (6giay.vn, 769audio.vn, baothuathienhue.vn, baovephapluat.vn, capstone.edu.vn) -- rolled-up tech.version is already correct because retire.js's own filecontent rule fires; this lab rule is the override-layer (CLAUDE.md sec 5) guaranteeing the canonical signal survives an upstream retire.js refresh."
+        ],
+        "negative_overlap_check": "Retire.js carries an equivalent filecontent rule ('/\\\\*!? jQuery UI - v(...)'). Both rules fire on the same bodies and produce the same version; reconcile dedups. No risk of conflicting outputs because both derive from the same producer banner. This duplication is intentional per CLAUDE.md sec 5: lab.db serves as override layer so a single-source refresh cannot regress detection."
+      }
+    }
+  ]
+}

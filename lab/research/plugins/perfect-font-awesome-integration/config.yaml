@@ -1,0 +1,23 @@
+slug: perfect-font-awesome-integration
+archive_url: https://downloads.wordpress.org/plugin/{slug}.zip
+raw_url: https://plugins.svn.wordpress.org/{slug}/tags/{tag}/{path}
+primary: 2.3.1
+cross: []
+include_paths:
+- readme.txt
+- '*.php'
+- '**/*.php'
+- block.json
+- package.json
+regex_bank:
+- label: 'wp plugin readme: Stable tag: X.Y.Z'
+  pattern: (?im)^Stable\s*tag\s*:\s*([0-9][\w.\-]*)
+- label: 'php header: Version: X.Y.Z'
+  pattern: (?im)^\s*\*?\s*Version\s*:\s*([0-9][\w.\-]*)
+- label: 'json: "version": "X.Y.Z"'
+  pattern: '"version"\s*:\s*"([0-9][^"]*)"'
+- label: 'php define: PLUGIN_VERSION-style constant'
+  pattern: define\s*\(\s*['"][A-Z][A-Z0-9_]*VERSION['"]\s*,\s*['"]([0-9][\w.\-]*)['"]
+secondary_techs:
+- slug: fontawesome
+  path_filter: '(?:^|/)font[-_]?awesome(?:[-_]|/)'

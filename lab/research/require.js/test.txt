@@ -1,0 +1,101 @@
+
+b	bsscommerce.com	🇻🇳	$343,148+	$26,795+		466+		151,031	
+d	dafc.com.vn	🇻🇳	$58,396+	$24,209+	38+			632,162	
+d	dyson.vn	🇻🇳	$579,964+	$18,131+	47+			142,827	
+g	guardian.com.vn	🇻🇳	$228,620+	$14,895+	3,613+	21,838+		412,529	
+l	laviewater.com	🇻🇳	$226,581+	$14,703+	34+			111,702	
+f	footlocker.com.vn	🇻🇳	$72,917+	$12,965+				739,719	
+t	learning.tcbs.com.vn	🇻🇳		$11,517+			300+	166,804	
+n	nguyenkim.com	🇻🇳		$11,380+		3,425+		92,857	
+a	abbottvietnam.com.vn	🇻🇳	$51,100+	$10,352+				622,868	
+r	shop.rohto.com.vn	🇻🇳	$14,045+	$10,204+	321+			479,021	
+m	moc.gov.vn	🇻🇳		$9,040+				134,410	
+v	ilit.vgu.edu.vn	🇻🇳		$7,915+				203,615	
+h	lms-sepd.hust.edu.vn	🇻🇳		$7,640+		203+		50,464	
+h	mlearning.hoasen.edu.vn	🇻🇳		$7,000+		101+		285,355	
+v	lms.vnua.edu.vn	🇻🇳		$6,599+				237,932	
+d	daikin.com.vn	🇻🇳		$6,374+	83+			857,488	
+h	lms.hub.edu.vn	🇻🇳		$6,140+				320,316	
+u	ilearn.uhsvnu.edu.vn	🇻🇳		$5,358+				841,361	
+i	indexlivingmallvn.com	🇻🇳	$21,936+	$4,729+	365+			692,926	
+s	shopnings.com	🇻🇳	$55,047+	$4,694+	4,984+			395,413	
+s	ebanking.scb.com.vn	🇻🇳		$4,250+			7,200+	515,391	
+a	shop.annam-gourmet.com	🇻🇳	$1,260+	$4,188+		16+		383,828	
+z	zotabox.com	🇻🇳		$4,158+		3,027+		26,041	
+s	shopeefood.vn	🇻🇳		$3,407+				32,099	
+c	converse.vn	🇻🇳	$76,976+	$3,402+	329+	31,408+		854,920	
+a	acfc.com.vn	🇻🇳	$85,610+	$3,128+	234+	216+	231+	153,169	
+j	jollibee.com.vn	🇻🇳	$51,660+	$3,090+	72+			324,539	
+c	else.ctu.edu.vn	🇻🇳		$3,017+		2,550+		126,852	
+f	format.vn	🇻🇳	$66,490+	$2,747+	1,251+			772,432	
+m	maxcare.com.vn	🇻🇳	$85,456+	$2,730+	172+			792,678	
+m	moneyveo.vn	🇻🇳		$2,569+				594,305	
+d	lms.dlu.edu.vn	🇻🇳		$2,462+				170,089	
+h	tari.huflit.edu.vn	🇻🇳		$2,404+		356+		101,106	
+v	aseanidentity.vietnam.vn	🇻🇳		$2,400+				2,193	
+m	mcdtbnn.mard.gov.vn	🇻🇳		$2,330+				279,587	
+o	ou.edu.vn	🇻🇳		$2,137+				101,760	
+h	lmsttth.hcmute.edu.vn	🇻🇳		$2,099+	13+			86,166	
+c	caobang.gov.vn	🇻🇳		$2,099+				170,827	
+l	laocai.gov.vn	🇻🇳		$2,099+				153,561	
+u	lms.uef.edu.vn	🇻🇳		$2,020+		438+		266,290	
+v	baotang.vinaphone.com.vn	🇻🇳		$1,796+			2,000+	320,720	
+h	e-learning.hcmut.edu.vn	🇻🇳		$1,720+				53,575	
+m	tdkt.mof.gov.vn	🇻🇳		$1,640+				55,792	
+u	courses.ut.edu.vn	🇻🇳		$1,400+				172,759	
+h	ls.hsc.com.vn	🇻🇳		$995+				330,772	
+k	tms.kfcvietnam.com.vn	🇻🇳		$699+			165+	572,095	
+h	lms.hvpnvn.edu.vn	🇻🇳		$210+				682,210	
+e	eiu.edu.vn	🇻🇳		$171+				940,893	
+w	weset.edu.vn	🇻🇳		$60+		772+		828,533	
+t	daotaonoibo.teky.edu.vn	🇻🇳					170+
+a	runner-exam.data-viewer.asics.com	🇯🇵	$100,000,000+	$174,198+		109,806+	9,500+	6,760	
+f	quote.au.fujitsu.com	🇺🇸	$100,000,000+	$154,268+		3,345+	1,270+	4,823	
+o	my-dev.opentext.com	🇨🇦		$150,714+		21,704+	14,307+	7,224	
+r	app4.cwp.roche.com	🇺🇸		$149,727+		240,510+	94,052+	5,546	
+g	ultrasoundfleet.gehealthcare.com	🇺🇸	$2,614,280+	$146,063+	11+	112,976+	50,580+	20,869	
+b	letstalk.bell.ca	🇨🇦		$138,483+		83,876+	52,000+	6,286	
+s	ausbildung.siemens.com	🇺🇸	$100,000,000+	$135,967+		211,625+	8,175+	1,787	
+m	mc.connect.mckesson.com	🇺🇸		$130,043+		21,814+	22,057+	16,309	
+d	danfoss.com	🇩🇰	$1,582,743+	$124,620+		12,499+	40,000+	15,798	
+a	careers.alaskaair.com	🇺🇸		$116,682+		645,081+	3,000+	7,682	
+a	giftcards.abercrombie.com	🇺🇸		$113,503+		4,700,000+	19,635+	10,511	
+a	asana.com	🇺🇸	$547,212,032+	$102,651+		125,294+	1,201+	2,189	
+o	servicerobot.socialsolution.omron.com	🇯🇵		$100,986+			39,427+	20,428	
+n	pro.nfl.com	🇺🇸		$100,886+		493,954+	3,114+	3,107	
+c	coveo.com	🇨🇦		$97,014+		1,086+	600+	3,727	
+p	live-thenation.pantheon.io	🇺🇸		$96,085+	87+	1,102+	261+	5,765	
+i	showme.ingenico.com	🇺🇳	$100,000,000+	$92,087+		14,562+	7,500+	25,431	
+b	kyndryldevopsescaperoom.broadcom.com	🇺🇸		$90,476+		61,803+	40,919+	2,346	
+d	world.dolcegabbana.com	🇮🇹	$1,163,723+	$89,918+		5,110,165+	3,150+	23,652	
+m	chatrouter-dev.medtronic.com	🇺🇸		$86,977+		85,261+	75,896+	5,336	
+r	redbull.com	🇺🇸	$100,000,000+	$84,031+		1,929,948+	11,886+	3,474	
+u	auto-sales.usbank.com	🇺🇸	$105,169+	$81,317+		45,386+	59,540+	6,662	
+l	group.legalandgeneral.com	🇬🇧		$77,831+		11,888+	7,981+	83,623	
+h	channel-reality-show.ext.hpe.com	🇺🇸		$77,687+		46+	208,808+	2,077	
+k	kia.com	🇺🇸		$77,655+		36,364+	2,821+	4,044	
+m	motorolasolutions.com	🇺🇸		$75,748+		20,603+	17,917+	17,772	
+t	scishare-app.mobile.thermofisher.com	🇺🇸		$75,024+		65,638+	53,105+	6,412	
+h	hyundai.com	🇰🇷	$100,000,000+	$74,366+	298+	417,090+	250,000+	5,292	
+g	garmin.com	🇺🇸		$72,700+		216,721+	7,500+	1,055	
+m	morningstar.com	🇫🇷	$1,870,599,936+	$72,105+		233,647+	7,453+	3,730	
+i	events.intercom.com	🇺🇳		$71,472+		43,973+	630+	1,909	
+e	invoice-pay.elsevier.com	🇬🇧	$100,000,000+	$71,159+		1,662+	10,000+	1,671	
+b	paketrechner.bmw.at	🇩🇪	$916,472+	$69,953+		18,201+		97,385	
+g	gsk.com	🇺🇸	$100,000,000+	$68,482+		96,053+	97,921+	12,799	
+s	photostage.samsclub.com	🇺🇸		$66,428+		144,129+	34,540+	3,182	
+t	thenorthface.com	🇺🇸		$65,584+		672,067+	3,185+	11,842	
+n	nba.com	🇺🇸		$65,199+		535,566+		2,007	
+b	bloomingdales.com	🇺🇸	$418,064+	$63,084+		333,051+	10,000+	8,668	
+t	timberland.com	🇺🇸	$1,161,377+	$62,435+		142,774+	2,807+	17,913	
+c	own-the-moment-with.capgemini.com	🇺🇳		$61,194+				5,991	
+a	voeux-france.alstom.com	🇫🇷	$100,000,000+	$58,783+		154,141+	10,000+	25,451	
+m	qa-closedcaptioning.mlb.com	🇺🇳		$55,449+				2,251	
+m	macys.com	🇺🇸		$55,338+		822,427+	2+	1,004	
+h	sit.shop.hillspet.com	🇺🇸	$52,848+	$53,187+	80+	21,230+	2,358+	30,058	
+d	prixfondation.desjardins.com	🇨🇦	$1,053,666+	$51,100+		19,709+	47,655+	10,318	
+d	energie-efficientie.dupont.com	🇺🇸		$50,547+		66,862+	33,581+	15,249	
+s	quotes.safeco.com	🇺🇸		$49,867+		25,446+	2,616+	30,748	
+t	tous.com	🇺🇸	$640,961+	$49,327+			2,000+	18,362	
+s	dupper.storaenso.com	🇸🇪	$100,000,000+	$48,169+		11,441+	24,455+	29,426	
+d	dominos.com

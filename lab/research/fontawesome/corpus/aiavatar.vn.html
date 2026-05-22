@@ -1,0 +1,1720 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="csrf-token" content="YAnqlsuheLTg1tTM32qEfJi3e3qWrVb1dWtMZ8P1">
+
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://aiavatar.vn/assets/css/style.css?v=1778923654">
+    <link rel="icon" href="https://aiavatar.vn/assets/img/faviicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://aiavatar.vn/assets/css/toastr.css?v=1778923654">
+        <link rel="stylesheet" href="https://aiavatar.vn/assets/carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://aiavatar.vn/assets/carousel/assets/owl.theme.default.min.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EHHF0M8ZG3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-EHHF0M8ZG3');
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RQLK01H9WP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-RQLK01H9WP');
+    </script>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '754164113911605');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=754164113911605&ev=PageView&noscript=1"
+        /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+<body class="hidden">
+    <div class="top-content home-page">
+        <div class="container-header">
+        <div class="header">
+            <div class="container-left-header">
+                <div class="mobile-menu-btn" id="menuBtn">
+                    <img src="https://aiavatar.vn/assets/img/sidebar.png" alt="">
+                </div>
+                <div class="container-logo container-logo-mobile">
+                    <a href="https://aiavatar.vn"><img class="logo" src="https://aiavatar.vn/assets/img/logo-wc.png" alt=""></a>
+                </div>
+            </div>
+            <!-- Thêm nút menu chỉ hiển thị trên mobile -->
+
+
+            <div class="left-header">
+                <div class="container-logo container-logo-pc">
+
+                    <a href="https://aiavatar.vn"><img class="logo" src="https://aiavatar.vn/assets/img/logo-wc.png" alt=""></a>
+                </div>
+
+                <div class="sidebar">
+                    <div class="menu-item"                         style="background: linear-gradient(90deg, #FFA692 0%, #FB9ED5 100%) !important;
+border-radius: 20px;"
+                          onclick="window.location.href='/'" >
+                        <p data-lang="Home">Home</p>
+                    </div>
+
+                    <div class="menu-item" onclick="window.location.href='/chat-ai'" >
+                        <p data-lang="AI Assistant" class="chat-ai" >AI Assistant</p>
+                    </div>
+                    <div class="menu-item"  onclick="window.location.href='/personal'" >
+                        <p data-lang="Personal" >Personal</p>
+                    </div>
+
+
+
+                </div>
+                <div class="vip">
+                    <img onclick="openPopupVip()" src="https://aiavatar.vn/assets/img/vip.png" alt="">
+                </div>
+
+
+                <div class="sidebar-mobile" id="sidebarMobile">
+                    <button class="close-sidebar-btn" id="closeSidebarBtn"><img style="width: 80%" src="https://aiavatar.vn/assets/img/icon-close.png" alt=""></button>
+                    <div class="menu-scroll">
+                        <div class="sidebar">
+                            <div class="logo-mobile">
+
+                                <img src="https://aiavatar.vn/assets/img/tet_mb.png" alt="">
+
+                            </div>
+
+
+
+
+
+
+
+                            <div  class="menu-item"  onclick="window.location.href='/see-all'">
+                                <img src="https://aiavatar.vn/assets/img/ai_video2.png" alt="">
+                                <p data-lang="AI Video">AI Video</p>
+                            </div>
+                            <div  class="menu-item"  onclick="window.location.href='/image?type=remove'">
+                                <img src="https://aiavatar.vn/assets/img/ai_image2.png" alt="">
+                                <p data-lang="AI Image">AI Image</p>
+                            </div>
+                            <div  class="menu-item"  onclick="window.location.href='/chat-ai'">
+                                <img  src="https://aiavatar.vn/assets/img/ai_assia2.png" alt="">
+                                <p data-lang="AI Assistant">AI Assistant</p>
+                            </div>
+                            <div class="menu-item"  onclick="openDownloand()">
+                                <img src="https://aiavatar.vn/assets/img/ai_beauty2.png" alt="">
+                                <p data-lang="Beauty AI">Beauty AI</p>
+                            </div>
+                            <div  class="menu-item" onclick="window.location.href='/ai-animal'">
+                                <img src="https://aiavatar.vn/assets/img/ai_animal2.png" alt="">
+                                <p data-lang="AI Animal">AI Animal</p>
+                            </div>
+                            <div  class="menu-item" onclick="openMyVideo()">
+                                <img src="https://aiavatar.vn/assets/img/my_video2.png" alt="">
+                                <p data-lang="My Creations">My Creations</p>
+                            </div>
+                            <div  class="menu-item menu-personal"  onclick="window.location.href='/personal'">
+                                <img  src="https://aiavatar.vn/assets/img/account2.png" alt="">
+                                <p data-lang="Personal">Personal</p>
+                            </div>
+                            <div  class="menu-item" onclick="openPopupVipMobile()">
+                                <img src="https://aiavatar.vn/assets/img/sub2.png" alt="">
+                                <p data-lang="Subcription">Subcription</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="mobileOverlay" class="mobile-overlay"></div>
+
+            </div>
+            <div class="right-header desktop-signin">
+                <img data-lang="sign" data-en="https://aiavatar.vn/assets/img/btn-sign.png" data-vi="https://aiavatar.vn/assets/img/sign-vi.png" onclick="openPopup()" src="https://aiavatar.vn/assets/img/btn-sign.png" alt="">
+            </div>
+        </div>
+
+</div>
+<div class="border-header">
+
+</div>
+
+<div class="popup-overlay" id="loginPopup" >
+    <div class="popup-content">
+        <button class="close-btn" onclick="closePopup()">&times;</button>
+
+        <div class="popup-left">
+            <h4>Welcome to AI Avatar!<br>Please sign in</h4>
+
+            <button class="social-btn fb" >
+                <img  onclick="loginFacebook()" src="https://aiavatar.vn/assets/img/facebook.png" alt="Facebook">
+            </button>
+
+            <button class="social-btn google">
+                <img onclick="loginGoogle()" src="https://aiavatar.vn/assets/img/google.png" alt="Google">
+            </button>
+
+            <p class="divider">Or sign in to your account</p>
+
+            <input id="input-phone" style="margin-bottom: 20px" type="number" placeholder="Enter phone number" required>
+            <button class="submit-btn" id="btn-login-phone">Sign in</button>
+        </div>
+
+        <div class="popup-right">
+            <img src="https://aiavatar.vn/assets/img/right-start.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="popup-overlay" id="supperVip">
+    <div class="popup-content_vip" style="background: url('https://aiavatar.vn/assets/img/popup-pc.png') no-repeat center center;background-size: contain;">
+        <button class="close-btn" onclick="closePopupVip()"><img src="https://aiavatar.vn/assets/img/close-vip.png" alt=""></button>
+       <div class="content-header-pc">
+           <img src="https://aiavatar.vn/assets/img/logo-vip.png" alt="">
+           <p>SUPER VIP</p>
+       </div>
+    </div>
+    <div class="content-popup-pc">
+        <div class="left-content-pc">
+            <div class="list-content-vip">
+
+                <div class="item-content-vip" data-icon-white="https://aiavatar.vn/assets/img/icon-i-white.png"
+                     data-icon-green="https://aiavatar.vn/assets/img/icon-i-green.png">
+                    <p data-lang="Weekly package">Weekly package</p>
+                    <p>99.000đ</p>
+                    <img class="icon-inf-package" onclick="openPopupVipPc('day')" src="https://aiavatar.vn/assets/img/icon-i-green.png" alt="">
+                </div>
+                <div class="item-content-vip active"    data-icon-white="https://aiavatar.vn/assets/img/icon-i-white.png"
+                     data-icon-green="https://aiavatar.vn/assets/img/icon-i-green.png">
+                    <p data-lang="Monthly package">Monthly package</p>
+                    <p>399.000đ</p>
+                    <img class="icon-inf-package" onclick="openPopupVipPc('month')"  src="https://aiavatar.vn/assets/img/icon-i-white.png" alt="">
+                    <img data-lang="Best" data-en="https://aiavatar.vn/assets/img/text-best-value.png" data-vi="https://aiavatar.vn/assets/img/text-best-value-vi.png" class="best-value" src="https://aiavatar.vn/assets/img/text-best-value.png" alt="">
+                </div>
+                <div class="item-content-vip"    data-icon-white="https://aiavatar.vn/assets/img/icon-i-white.png"
+                     data-icon-green="https://aiavatar.vn/assets/img/icon-i-green.png">
+                    <p data-lang="Yearly package">Yearly package</p>
+                    <p>1.999.000đ</p>
+                    <img class="icon-inf-package" onclick="openPopupVipPc('year')"  src="https://aiavatar.vn/assets/img/icon-i-green.png" alt="">
+                </div>
+            </div>
+            <div class="btn-vip">
+                <img data-lang="BtnBest" data-en="https://aiavatar.vn/assets/img/vipBold.png" data-vi="https://aiavatar.vn/assets/img/btn-vip-vi.png" src="https://aiavatar.vn/assets/img/btn-subvip.png" alt="">
+            </div>
+        </div>
+        <div class="right-content-pc">
+            <p class="title-content-pc" data-lang="AI Avatar Pro Privileges">AI Avatar Pro Privileges</p>
+            <div class="item-content-header">
+                <img src="https://aiavatar.vn/assets/img/icon-red.png" alt="">
+                <p data-lang="Unlock all Effect">Unlock all Effect</p>
+            </div>
+            <div class="item-content-header">
+                <img src="https://aiavatar.vn/assets/img/icon-red.png" alt="">
+                <p data-lang="No watermark">No watermark</p>
+            </div>
+            <div class="item-content-header">
+                <img src="https://aiavatar.vn/assets/img/icon-red.png" alt="">
+                <p data-lang="Unlimited create and save video">Unlimited create and save video</p>
+            </div>
+            <div class="btn-package-vip">
+                <img onclick="window.location.href='/sub-package'" data-lang="BtnPackageVip" data-en="https://aiavatar.vn/assets/img/btn-package-hot.png" data-vi="https://aiavatar.vn/assets/img/btn-package-hot.png" src="https://aiavatar.vn/assets/img/btn-package-hot.png" alt="">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="popup-modal" class="popup-overlay">
+    <div class="popup-content">
+        <span class="close-btn" onclick="togglePopup()">&times;</span>
+        <div class="center-content">
+            <img class="logo-dowloand" src="https://aiavatar.vn/assets/img/logoDowloand.png"/>
+            <p class="text-content-popup" data-lang="Download the App to access this feature">Download the App to access<br>this feature</p>
+            <img   class="btn-downloand" src="https://aiavatar.vn/assets/img/btn-dowloandApp.png" alt="">
+        </div>
+
+    </div>
+</div>
+<div class="modal-layout-animal">
+    <div class="modal-comming">
+        <img src="https://aiavatar.vn/assets/img/iconx.png" class="icon-close" alt="Close"> <!-- icon X -->
+        <div class="content-modal">
+            <h4 data-lang="Coming Soon!"> Coming Soon !</h4>
+            <p data-lang="We’re working hard to bring this feature to you.">We’re working hard to bring this feature to you.</p>
+        </div>
+
+    </div>
+</div>
+<div class="modal-layout">
+    <div class="modal-downloand">
+        <img src="https://aiavatar.vn/assets/img/iconx.png" class="icon-close" alt="Close"> <!-- icon X -->
+        <div class="content-modal">
+            <div class="header-modal">
+                <img class="logo-dowloand" src="https://aiavatar.vn/assets/img/logoApp.png" alt="">
+                <h4>AI AVATAR</h4>
+            </div>
+
+            <h5 data-lang="Download the App to access this feature"> Download the App to access this feature</h5>
+            <img onclick="window.location.href='/download'" data-lang="try" data-en="https://aiavatar.vn/assets/img/downApp.png" data-vi="https://aiavatar.vn/assets/img/try-vi.png" class="btn-downloand" src="https://aiavatar.vn/assets/img/downApp.png" alt="">
+        </div>
+
+    </div>
+</div>
+<div class="popup-overlay" id="supperVipMobile" >
+    <div class="popup-content-mobile" style="background: url('https://aiavatar.vn/assets/img/bg-vip.png') no-repeat center center;background-size: cover;">
+        <button class="close-btn" onclick="closePopupVipMobile()"><img src="https://aiavatar.vn/assets/img/close-vip.png" alt=""></button>
+        <div class="header-vip">
+            <div class="top-vip">
+                <img src="https://aiavatar.vn/assets/img/logo-vip.png" alt="">
+                <p class="title-popup">SUPER VIP</p>
+            </div>
+            <div class="content-header-vip">
+                <div class="item-content-header">
+                    <img src="https://aiavatar.vn/assets/img/icon-like.png" alt="">
+                    <p data-lang="Unlock all Effect">Unlock all Effect</p>
+                </div>
+                <div class="item-content-header">
+                    <img src="https://aiavatar.vn/assets/img/icon-like.png" alt="">
+                    <p data-lang="No watermark">No watermark</p>
+                </div>
+                <div class="item-content-header">
+                    <img src="https://aiavatar.vn/assets/img/icon-like.png" alt="">
+                    <p data-lang="Unlimited create and save video">Unlimited create and save video</p>
+                </div>
+            </div>
+        </div>
+        <div class="content-vip">
+            <div class="list-content-vip">
+
+                <div class="item-content-vip" data-icon-white="https://aiavatar.vn/assets/img/icon-i-white.png"
+                     data-icon-green="https://aiavatar.vn/assets/img/icon-i-green.png">
+                    <p data-lang="Weekly package">Weekly package</p>
+                    <p>99.000đ</p>
+                    <img class="icon-inf-package" onclick="openPopupVipDay('day')" src="https://aiavatar.vn/assets/img/icon-i-green.png" alt="">
+                </div>
+                <div class="item-content-vip active"    data-icon-white="https://aiavatar.vn/assets/img/icon-i-white.png"
+                     data-icon-green="https://aiavatar.vn/assets/img/icon-i-green.png">
+                    <p data-lang="Monthly package">Monthly package</p>
+                    <p>399.000đ</p>
+                    <img class="icon-inf-package" onclick="openPopupVipDay('month')" src="https://aiavatar.vn/assets/img/icon-i-white.png" alt="">
+                    <img class="best-value" data-lang="BestMb" data-en="https://aiavatar.vn/assets/img/text-best-value.png" data-vi="https://aiavatar.vn/assets/img/text-best-value-vi.png"  src="https://aiavatar.vn/assets/img/text-best-value.png" alt="">
+                </div>
+                <div class="item-content-vip"    data-icon-white="https://aiavatar.vn/assets/img/icon-i-white.png"
+                     data-icon-green="https://aiavatar.vn/assets/img/icon-i-green.png">
+                    <p data-lang="Yearly package">Yearly package</p>
+                    <p>1.999.000đ</p>
+                    <img class="icon-inf-package" onclick="openPopupVipDay('year')" src="https://aiavatar.vn/assets/img/icon-i-green.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="footer-vip">
+            <img data-lang="btn-confirm" data-en="https://aiavatar.vn/assets/img/btn-confirm.png" data-vi="https://aiavatar.vn/assets/img/btn-confirm-vi.png" src="https://aiavatar.vn/assets/img/btn-confirm.png" alt="">
+
+        </div>
+        <div class="footer-package">
+            <img class="img-btn-package" onclick="window.location.href='/sub-package'" data-lang="BtnPackageVip" data-en="https://aiavatar.vn/assets/img/package-mb.png" data-vi="https://aiavatar.vn/assets/img/package-mb.png" src="https://aiavatar.vn/assets/img/package-mb.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="popup-overlay" id="dayVip">
+    <div class="popup-content-vip-mobile" >
+        <div class="header-popup-vip" style="background: url('https://aiavatar.vn/assets/img/header-popup.png') no-repeat center center;background-size: cover;height: 50px">
+            <p data-lang="GÓI TUẦN">GÓI TUẦN</p>
+            <button class="close-btn" onclick="closePopupDayVipMobile()"><img src="https://aiavatar.vn/assets/img/close-vip.png" alt=""></button>
+        </div>
+        <div class="content-popup-vip">
+            <p class="title-content" data-lang="Sử dụng MIỄN PHÍ các tính năng VIP:">Sử dụng MIỄN PHÍ các tính năng VIP:</p>
+            <div class="item-content-day-vip">
+                <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+                <p data-lang="Tạo và lưu video không giới hạn đối với toàn bộ Category trên web/app, chất lượng cao.">Tạo và lưu video không giới hạn đối với toàn bộ Category trên web/app, chất lượng cao.</p>
+            </div>
+            <div class="item-content-day-vip">
+                <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+                <p data-lang="Sử dụng toàn bộ tính năng AI Beauty.">Sử dụng toàn bộ tính năng AI Beauty.</p>
+            </div>
+            <div class="item-content-day-vip">
+                <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+                <p data-lang="Tạo 15 ảnh Chibi, 20 lượt sử dụng tính năng xóa nền, 20 lượt sử dụng tính năng xóa đối tượng và 20 lượt thay đổi kiểu tóc.">Tạo 15 ảnh Chibi, 20 lượt sử dụng tính năng xóa nền, 20 lượt sử dụng tính năng xóa đối tượng và 20 lượt thay đổi kiểu tóc.</p>
+            </div>
+            <div class="item-content-day-vip">
+                <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+                <p data-lang="Sử dụng 475 lượt chat/ngày với chức năng Ai Assitance.">Sử dụng 475 lượt chat/ngày với chức năng Ai Assitance.</p>
+            </div>
+            <div class="item-content-day-vip">
+                <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+                <p data-lang="Tắt quảng cáo khi truy cập app/web/wap.">Tắt quảng cáo khi truy cập app/web/wap.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="popup-overlay" id="monthVip" >
+    <div class="popup-content-vip-mobile" >
+        <div class="header-popup-vip" style="background: url('https://aiavatar.vn/assets/img/header-popup.png') no-repeat center center;background-size: cover;height: 50px">
+            <p data-lang="GÓI THÁNG">GÓI THÁNG</p>
+            <button class="close-btn" onclick="closePopupDayVipMobile()"><img src="https://aiavatar.vn/assets/img/close-vip.png" alt=""></button>
+        </div>
+        <div class="content-popup-vip">
+            <p class="title-content" data-lang="Sử dụng MIỄN PHÍ các tính năng VIP:">Sử dụng MIỄN PHÍ các tính năng VIP:</p>
+            <div class="item-content-day-vip">
+                <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+                <p data-lang="Tạo và lưu video không giới hạn đối với toàn bộ Category trên web/app, chất lượng cao.">Tạo và lưu video không giới hạn đối với toàn bộ Category trên web/app, chất lượng cao.</p>
+            </div>
+            <div class="item-content-day-vip">
+                <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+                <p data-lang="Sử dụng toàn bộ tính năng AI Beauty.">Sử dụng toàn bộ tính năng AI Beauty.</p>
+            </div>
+            <div class="item-content-day-vip">
+                <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+                <p data-lang="Tạo 65 ảnh Chibi, 85 lượt sử dụng tính năng xóa nền, 85 lượt sử dụng tính năng xóa đối tượng và 85 lượt thay đổi kiểu tóc.">Tạo 65 ảnh Chibi, 85 lượt sử dụng tính năng xóa nền, 85 lượt sử dụng tính năng xóa đối tượng và 85 lượt thay đổi kiểu tóc.</p>
+            </div>
+            <div class="item-content-day-vip">
+                <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+                <p data-lang="Sử dụng 1500 lượt chat/tháng với chức năng Ai Assitance.">Sử dụng 1500 lượt chat/tháng với chức năng Ai Assitance.</p>
+            </div>
+            <div class="item-content-day-vip">
+                <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+                <p data-lang="Tắt quảng cáo khi truy cập app/web/wap.">Tắt quảng cáo khi truy cập app/web/wap.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="popup-overlay" id="yearVip" >
+    <div class="popup-content-vip-mobile" >
+        <div class="header-popup-vip" style="background: url('https://aiavatar.vn/assets/img/header-popup.png') no-repeat center center;background-size: cover;height: 50px">
+            <p data-lang="GÓI NĂM">GÓI NĂM</p>
+            <button class="close-btn" onclick="closePopupDayVipMobile()"><img src="https://aiavatar.vn/assets/img/close-vip.png" alt=""></button>
+        </div>
+        <div class="content-popup-vip">
+            <p class="title-content" data-lang="Sử dụng MIỄN PHÍ các tính năng VIP:">Sử dụng MIỄN PHÍ các tính năng VIP:</p>
+            <div class="item-content-day-vip">
+                <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+                <p data-lang="Tạo và lưu video không giới hạn đối với toàn bộ Category trên web/app, chất lượng cao.">Tạo và lưu video không giới hạn đối với toàn bộ Category trên web/app, chất lượng cao.</p>
+            </div>
+            <div class="item-content-day-vip">
+                <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+                <p data-lang="Sử dụng toàn bộ tính năng AI Beauty.">Sử dụng toàn bộ tính năng AI Beauty.</p>
+            </div>
+            <div class="item-content-day-vip">
+                <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+                <p data-lang="Tạo 350 ảnh Chibi, 400 lượt sử dụng tính năng xóa nền, 400 lượt sử dụng tính năng xóa đối tượng và 400 lượt thay đổi kiểu tóc.">Tạo 350 ảnh Chibi, 400 lượt sử dụng tính năng xóa nền, 400 lượt sử dụng tính năng xóa đối tượng và 400 lượt thay đổi kiểu tóc.</p>
+            </div>
+            <div class="item-content-day-vip">
+                <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+                <p data-lang="Sử dụng 8000 lượt chat/năm với chức năng Ai Assitance.">Sử dụng 8000 lượt chat/năm với chức năng Ai Assitance.</p>
+            </div>
+            <div class="item-content-day-vip">
+                <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+                <p data-lang="Tắt quảng cáo khi truy cập app/web/wap.">Tắt quảng cáo khi truy cập app/web/wap.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="popup-overlay" id="dayVipPC" >
+    <div class="popup-content_vip" style="background: url('https://aiavatar.vn/assets/img/popup-pc.png') no-repeat center center;background-size: contain;">
+        <button class="close-btn" onclick="closePopupDayVipPc()"><img src="https://aiavatar.vn/assets/img/close-vip.png" alt=""></button>
+        <div class="content-header-pc">
+            <p data-lang="GÓI TUẦN">GÓI TUẦN</p>
+        </div>
+    </div>
+    <div class="content-popup-pc">
+        <p class="title-popup-pc" data-lang="Sử dụng MIỄN PHÍ các tính năng VIP:">Sử dụng MIỄN PHÍ các tính năng VIP:</p>
+        <div class="item-content-day-vip">
+            <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+            <p data-lang="Tạo và lưu video không giới hạn đối với toàn bộ Category trên web/app, chất lượng cao.">Tạo và lưu video không giới hạn đối với toàn bộ Category trên web/app, chất lượng cao.</p>
+        </div>
+        <div class="item-content-day-vip">
+            <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+            <p data-lang="Sử dụng toàn bộ tính năng AI Beauty.">Sử dụng toàn bộ tính năng AI Beauty.</p>
+        </div>
+        <div class="item-content-day-vip">
+            <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+            <p data-lang="Tạo 15 ảnh Chibi, 20 lượt sử dụng tính năng xóa nền, 20 lượt sử dụng tính năng xóa đối tượng và 20 lượt thay đổi kiểu tóc.">Tạo 15 ảnh Chibi, 20 lượt sử dụng tính năng xóa nền, 20 lượt sử dụng tính năng xóa đối tượng và 20 lượt thay đổi kiểu tóc.</p>
+        </div>
+        <div class="item-content-day-vip">
+            <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+            <p data-lang="Sử dụng 475 lượt chat/ngày với chức năng Ai Assitance.">Sử dụng 475 lượt chat/ngày với chức năng Ai Assitance.</p>
+        </div>
+        <div class="item-content-day-vip">
+            <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+            <p data-lang="Tắt quảng cáo khi truy cập app/web/wap.">Tắt quảng cáo khi truy cập app/web/wap.
+            </p>
+        </div>
+    </div>
+
+</div>
+<div class="popup-overlay" id="monthVipPC" >
+    <div class="popup-content_vip" style="background: url('https://aiavatar.vn/assets/img/popup-pc.png') no-repeat center center;background-size: contain;">
+        <button class="close-btn" onclick="closePopupDayVipPc()"><img src="https://aiavatar.vn/assets/img/close-vip.png" alt=""></button>
+        <div class="content-header-pc">
+            <p data-lang="GÓI THÁNG">GÓI THÁNG</p>
+        </div>
+    </div>
+    <div class="content-popup-pc">
+        <p class="title-popup-pc" data-lang="Sử dụng MIỄN PHÍ các tính năng VIP:">Sử dụng MIỄN PHÍ các tính năng VIP:</p>
+        <div class="item-content-day-vip">
+            <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+            <p data-lang="Tạo và lưu video không giới hạn đối với toàn bộ Category trên web/app, chất lượng cao.">Tạo và lưu video không giới hạn đối với toàn bộ Category trên web/app, chất lượng cao.</p>
+        </div>
+        <div class="item-content-day-vip">
+            <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+            <p data-lang="Sử dụng toàn bộ tính năng AI Beauty.">Sử dụng toàn bộ tính năng AI Beauty.</p>
+        </div>
+        <div class="item-content-day-vip">
+            <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+            <p data-lang="Tạo 65 ảnh Chibi, 85 lượt sử dụng tính năng xóa nền, 85 lượt sử dụng tính năng xóa đối tượng và 85 lượt thay đổi kiểu tóc.">Tạo 65 ảnh Chibi, 85 lượt sử dụng tính năng xóa nền, 85 lượt sử dụng tính năng xóa đối tượng và 85 lượt thay đổi kiểu tóc.</p>
+        </div>
+        <div class="item-content-day-vip">
+            <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+            <p data-lang="Sử dụng 1500 lượt chat/tháng với chức năng Ai Assitance.">Sử dụng 1500 lượt chat/tháng với chức năng Ai Assitance.</p>
+        </div>
+        <div class="item-content-day-vip">
+            <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+            <p data-lang="Tắt quảng cáo khi truy cập app/web/wap.">Tắt quảng cáo khi truy cập app/web/wap.
+            </p>
+        </div>
+    </div>
+
+</div>
+<div class="popup-overlay" id="yearVipPC" >
+    <div class="popup-content_vip" style="background: url('https://aiavatar.vn/assets/img/popup-pc.png') no-repeat center center;background-size: contain;">
+        <button class="close-btn" onclick="closePopupDayVipPc()"><img src="https://aiavatar.vn/assets/img/close-vip.png" alt=""></button>
+        <div class="content-header-pc">
+            <p data-lang="GÓI NĂM">GÓI NĂM</p>
+        </div>
+    </div>
+    <div class="content-popup-pc">
+        <p class="title-popup-pc" data-lang="Sử dụng MIỄN PHÍ các tính năng VIP:">Sử dụng MIỄN PHÍ các tính năng VIP:</p>
+        <div class="item-content-day-vip">
+            <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+            <p data-lang="Tạo và lưu video không giới hạn đối với toàn bộ Category trên web/app, chất lượng cao.">Tạo và lưu video không giới hạn đối với toàn bộ Category trên web/app, chất lượng cao.</p>
+        </div>
+        <div class="item-content-day-vip">
+            <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+            <p data-lang="Sử dụng toàn bộ tính năng AI Beauty.">Sử dụng toàn bộ tính năng AI Beauty.</p>
+        </div>
+        <div class="item-content-day-vip">
+            <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+            <p data-lang="Tạo 350 ảnh Chibi, 400 lượt sử dụng tính năng xóa nền, 400 lượt sử dụng tính năng xóa đối tượng và 400 lượt thay đổi kiểu tóc.">Tạo 350 ảnh Chibi, 400 lượt sử dụng tính năng xóa nền, 400 lượt sử dụng tính năng xóa đối tượng và 400 lượt thay đổi kiểu tóc.</p>
+        </div>
+        <div class="item-content-day-vip">
+            <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+            <p data-lang="Sử dụng 8000 lượt chat/năm với chức năng Ai Assitance.">Sử dụng 8000 lượt chat/năm với chức năng Ai Assitance.</p>
+        </div>
+        <div class="item-content-day-vip">
+            <img src="https://aiavatar.vn/assets/img/icon-like-red.png" alt="">
+            <p data-lang="Tắt quảng cáo khi truy cập app/web/wap.">Tắt quảng cáo khi truy cập app/web/wap.
+            </p>
+        </div>
+    </div>
+
+</div>
+<div class="popup-overlay" id="otp">
+    <div class="popup-content_otp" >
+        <img src="https://aiavatar.vn/assets/img/bg-otp.png" alt="">
+        <button class="close-btn" onclick="closePopupOtp()"><img src="https://aiavatar.vn/assets/img/btn-close3.png" alt=""></button>
+        <div class="content-otp">
+            <p data-lang="Nhập mật khẩu" style="font-weight: bold">Nhập mật khẩu</p>
+            <div class="otp-inputs">
+                <input class="otp-input" type="text" id="otp1" maxlength="1" oninput="handleInput(event, this, 'otp2', null)" />
+                <input class="otp-input" type="text" id="otp2" maxlength="1" oninput="handleInput(event, this, 'otp3', 'otp1')" />
+                <input class="otp-input" type="text" id="otp3" maxlength="1" oninput="handleInput(event, this, 'otp4', 'otp2')" />
+                <input class="otp-input" type="text" id="otp4" maxlength="1" oninput="handleInput(event, this, 'otp5', 'otp3')" />
+                <input class="otp-input" type="text" id="otp5" maxlength="1" oninput="handleInput(event, this, 'otp6', 'otp4')" />
+                <input class="otp-input" type="text" id="otp6" maxlength="1" oninput="handleInput(event, this, null, 'otp5')" />
+            </div>
+            <img id="btn-access-otp" class="btn-access" src="https://aiavatar.vn/assets/img/btn-ok2.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="popup-overlay" id="welcome" >
+    <div class="popup-content_welcome" >
+        <img data-lang="popup-welcome" data-vi="https://aiavatar.vn/assets/img/bg-welcome3.png" data-en="https://aiavatar.vn/assets/img/welcome-vi2.png" src="https://aiavatar.vn/assets/img/bg-welcome3.png" alt="">
+        <button class="close-btn" onclick="closePopupWelcome()"><img src="https://aiavatar.vn/assets/img/btn-close3.png" alt=""></button>
+        <div class="container-ok">
+            <img  onclick="loginGoogle()" class="icon-gg" src="https://aiavatar.vn/assets/img/icon-google.png" alt="">
+            <img style="opacity: 1" onclick="loginFacebook()" class="icon-opacity" src="https://aiavatar.vn/assets/img/btn-login-fb.png" alt="">
+            <img class="icon-opacity" onclick="onpenLogin()" style="opacity: 1"  src="https://aiavatar.vn/assets/img/phone-active.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="popup-overlay" id="subPackageVip">
+    <div class="popup-content_welcome" >
+        <img data-lang="popup-packageVip" data-vi="https://aiavatar.vn/assets/img/popup-packagevip.png" data-en="https://aiavatar.vn/assets/img/bg-popup-vip-en.png" src="https://aiavatar.vn/assets/img/popup-packagevip.png" alt="">
+        <div class="container-btn-package">
+            <img id="btnUpgrade" class="icon-package" data-lang="btn-up-vip" data-vi="https://aiavatar.vn/assets/img/btn-upgrade.png" data-en="https://aiavatar.vn/assets/img/btn-up-vip-en.png" src="https://aiavatar.vn/assets/img/btn-upgrade.png" alt="">
+            <img id="btnClosePopup" style="opacity: 1" data-lang="btn-close-vip" data-vi="https://aiavatar.vn/assets/img/btn-close.png" data-en="https://aiavatar.vn/assets/img/btn-close-en.png" class="icon-btn-close" src="https://aiavatar.vn/assets/img/btn-close.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="popup-overlay" id="login-mobile">
+    <div class="popup-content-login_mobile">
+        <img data-lang="banner-login" data-vi="https://aiavatar.vn/assets/img/bg-login-vi2.png" data-en="https://aiavatar.vn/assets/img/bg-loginen2.png" src="https://aiavatar.vn/assets/img/bg-login-vi2.png" alt="">
+        <button class="close-btn" onclick="closePopupLogin()"><img  src="https://aiavatar.vn/assets/img/btn-close3.png" alt=""></button>
+        <div class="container-input">
+            <input id="phone-number" type="text" placeholder="Nhập số điện thoại" required>
+            <input id="password" type="password" placeholder="Nhập mật khẩu" required>
+            <img data-lang="btn-login" data-vi="https://aiavatar.vn/assets/img/btn-login-mobile.png" data-en="https://aiavatar.vn/assets/img/login-en.png" id="btn-submit-phone" src="https://aiavatar.vn/assets/img/btn-login-mobile.png" alt="">
+            <p id="openForgot" data-lang="Quên mật khẩu">Quên mật khẩu</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="popup-overlay" id="forgot-password">
+    <div class="popup-content-login_mobile">
+        <img data-lang="banner-forget" data-vi="https://aiavatar.vn/assets/img/bg-forget-vi.png" data-en="https://aiavatar.vn/assets/img/bg-forgot-en.png" src="https://aiavatar.vn/assets/img/bg-forget-vi.png" alt="">
+        <button class="close-btn" onclick="closePopupForgot()"><img  src="https://aiavatar.vn/assets/img/btn-close3.png" alt=""></button>
+        <div class="container-input">
+            <input id="phone-number-forget" type="text" placeholder="Nhập số điện thoại" required>
+            <img data-lang="btn-forget" data-vi="https://aiavatar.vn/assets/img/btn-forget-vi.png" data-en="https://aiavatar.vn/assets/img/btn-forgot-en.png" id="btn-submit-forgot" src="https://aiavatar.vn/assets/img/btn-forget-vi.png" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+<div class="popup-overlay" id="login-success">
+    <div class="popup-content_welcome" >
+        <img src="https://aiavatar.vn/assets/img/login-success.png" alt="">
+        <div class="container-login">
+            <img class="btn-ok" onclick="closeLogin()" src="https://aiavatar.vn/assets/img/btn-ok4.png" alt="">
+        </div>
+    </div>
+</div>
+        <div class="container slider-wap" style="padding-bottom: 20px !important;">
+            <section class="banner banner-main">
+                <div class="owl-one owl-carousel owl-theme" id="banner-slider">
+                    <!-- Slide Lottie -->
+
+
+
+
+
+
+
+
+
+                    <!-- Slide PNG (fallback) -->
+                    
+                        <div class="item png-slide">
+                            <a href="">
+                                <img
+                                    class="banner-app"
+                                    src="https://cdn.thienphuocmedia.info/aiavatar/banner/2025/09/09/1757409052_68bfef1c09ba0.png"
+                                    data-desktop="https://cdn.thienphuocmedia.info/aiavatar/banner/2025/09/09/1757409052_68bfef1c09ba0.png"
+                                    data-mobile="https://cdn.thienphuocmedia.info/aiavatar/banner/2025/09/09/1757409072_68bfef30ca8f9.png"
+                                    alt="banner web"
+                                >
+                            </a>
+                        </div>
+                    
+                        <div class="item png-slide">
+                            <a href="">
+                                <img
+                                    class="banner-app"
+                                    src="https://cdn.thienphuocmedia.info/aiavatar/banner/2026/03/24/1774339468_69c2458c1914d.png"
+                                    data-desktop="https://cdn.thienphuocmedia.info/aiavatar/banner/2026/03/24/1774339468_69c2458c1914d.png"
+                                    data-mobile="https://cdn.thienphuocmedia.info/aiavatar/banner/2026/03/23/1774257763_69c1066341654.png"
+                                    alt="Tặng data PC"
+                                >
+                            </a>
+                        </div>
+                    
+                        <div class="item png-slide">
+                            <a href="">
+                                <img
+                                    class="banner-app"
+                                    src="https://cdn.thienphuocmedia.info/aiavatar/banner/2026/05/12/1778555898_6a029bfa5af51.png"
+                                    data-desktop="https://cdn.thienphuocmedia.info/aiavatar/banner/2026/05/12/1778555898_6a029bfa5af51.png"
+                                    data-mobile="https://cdn.thienphuocmedia.info/aiavatar/banner/2026/05/12/1778555921_6a029c111a4fb.png"
+                                    alt="World cup PC"
+                                >
+                            </a>
+                        </div>
+                    
+                </div>
+
+            </section>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container">
+            <div class="container-content">
+
+                <div class="list-function">
+                    <div class="item-function">
+                        <div class="header-content">
+                            <div class="left-header-content">
+                                <div class="top-header-content">
+
+                                    <img src="https://aiavatar.vn/assets/img/ai_video2.png" alt="">
+                                    <h3 data-lang="AI Video">AI Video</h3>
+                                </div>
+
+                                <div class="tooltip-wrapper">
+                                    <img src="https://aiavatar.vn/assets/img/inf.png" alt="" class="icon-inf">
+                                    <div class="tooltip-box">
+                                        <img src="https://aiavatar.vn/assets/img/iconx.png" class="icon-close-tooltip" alt="Close"> <!-- icon X -->
+                                        <h4 data-lang="How to use:">How to use:</h4>
+                                        <p ><strong data-lang="Step 1:">Step 1:</strong> <span data-lang="Select a Template">Select a Template</span><br>
+                                            </p>
+                                        <p><strong data-lang="Step 2:">Step 2:</strong> <span data-lang="Upload your Photo">Upload your Photo</span><br>
+                                            <span data-lang="Upload your photo and ensure the face can be well detected.">Upload your photo and ensure the face can be well detected.</span></p>
+                                        <p><strong data-lang="Step 3:">Step 3:</strong> <span data-lang="Download & Share">Download & Share</span><br>
+                                            <span data-lang="Preview the animated video and then download it or share on social networks."></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-header-content" onclick="window.location.href='/see-all'">
+                                <p data-lang="See All">See All</p>
+                                <img src="https://aiavatar.vn/assets/img/icon-right.png" alt="" class="icon-see-all">
+                            </div>
+                        </div>
+                        <div class="center-content">
+                            <div class="template-home">
+                                                                    <div class="item-template action-template-home" data-id="839"
+                                         data-type="1"
+                                         data-name="Wavin Flag"
+                                         data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/lWsWby1F8ACQ0Dpc6x8QUsvlFTsWqxg2YImA5A8J.mp4">
+                                        <div class="content-template content-template-video">
+                                            <img data-id="839"
+                                                 data-type="1"
+                                                 data-name="Wavin Flag"
+                                                 data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/lWsWby1F8ACQ0Dpc6x8QUsvlFTsWqxg2YImA5A8J.mp4"
+                                                 src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/gif/202605/lWsWby1F8ACQ0Dpc6x8QUsvlFTsWqxg2YImA5A8J.gif"
+                                                 loading="lazy"
+                                            >
+
+                                            <div class="list-icon">
+                                                                                                    <img class="icon-hot icon-type" src="https://aiavatar.vn/assets/img/hotT.png" alt="">
+                                                                                            </div>
+                                            <div class="footer-template">
+                                                <p title="Wavin Flag">Wavin Flag</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="item-template action-template-home" data-id="835"
+                                         data-type="1"
+                                         data-name="Dreamers"
+                                         data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/VnrMGS9eNFlps09P0gTeVC7ufQsqkuLAqK0ivNUM.mp4">
+                                        <div class="content-template content-template-video">
+                                            <img data-id="835"
+                                                 data-type="1"
+                                                 data-name="Dreamers"
+                                                 data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/VnrMGS9eNFlps09P0gTeVC7ufQsqkuLAqK0ivNUM.mp4"
+                                                 src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/gif/202605/VnrMGS9eNFlps09P0gTeVC7ufQsqkuLAqK0ivNUM.gif"
+                                                 loading="lazy"
+                                            >
+
+                                            <div class="list-icon">
+                                                                                                    <img class="icon-new icon-type" src="https://aiavatar.vn/assets/img/newT.png" alt="">
+                                                                                            </div>
+                                            <div class="footer-template">
+                                                <p title="Dreamers">Dreamers</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="item-template action-template-home" data-id="701"
+                                         data-type="1"
+                                         data-name="I Love You"
+                                         data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/rMRgRlPZO8SVBWQwxonU7vsPv8IpkjBnR3gzQkyi.mp4">
+                                        <div class="content-template content-template-video">
+                                            <img data-id="701"
+                                                 data-type="1"
+                                                 data-name="I Love You"
+                                                 data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/rMRgRlPZO8SVBWQwxonU7vsPv8IpkjBnR3gzQkyi.mp4"
+                                                 src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/gif/202605/rMRgRlPZO8SVBWQwxonU7vsPv8IpkjBnR3gzQkyi.gif"
+                                                 loading="lazy"
+                                            >
+
+                                            <div class="list-icon">
+                                                                                                    <img class="icon-hot icon-type" src="https://aiavatar.vn/assets/img/hotT.png" alt="">
+                                                                                            </div>
+                                            <div class="footer-template">
+                                                <p title="I Love You">I Love You</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="item-template action-template-home" data-id="837"
+                                         data-type="1"
+                                         data-name="Waka Waka"
+                                         data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/aXrfUtaqkkYqiljrAw0jMoqK2uEcCPvRVQtKRgN4.mp4">
+                                        <div class="content-template content-template-video">
+                                            <img data-id="837"
+                                                 data-type="1"
+                                                 data-name="Waka Waka"
+                                                 data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/aXrfUtaqkkYqiljrAw0jMoqK2uEcCPvRVQtKRgN4.mp4"
+                                                 src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/gif/202605/aXrfUtaqkkYqiljrAw0jMoqK2uEcCPvRVQtKRgN4.gif"
+                                                 loading="lazy"
+                                            >
+
+                                            <div class="list-icon">
+                                                                                                    <img class="icon-new icon-type" src="https://aiavatar.vn/assets/img/newT.png" alt="">
+                                                                                            </div>
+                                            <div class="footer-template">
+                                                <p title="Waka Waka">Waka Waka</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="item-template action-template-home" data-id="707"
+                                         data-type="1"
+                                         data-name="Lấy Chồng Miền Bắc"
+                                         data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/nDX6HBurIbT1RFIo8s0Rhu2mjiHXLK6lp2uEuBTC.mp4">
+                                        <div class="content-template content-template-video">
+                                            <img data-id="707"
+                                                 data-type="1"
+                                                 data-name="Lấy Chồng Miền Bắc"
+                                                 data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/nDX6HBurIbT1RFIo8s0Rhu2mjiHXLK6lp2uEuBTC.mp4"
+                                                 src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/gif/202603/nDX6HBurIbT1RFIo8s0Rhu2mjiHXLK6lp2uEuBTC.gif"
+                                                 loading="lazy"
+                                            >
+
+                                            <div class="list-icon">
+                                                                                                    <img class="icon-hot icon-type" src="https://aiavatar.vn/assets/img/hotT.png" alt="">
+                                                                                            </div>
+                                            <div class="footer-template">
+                                                <p title="Lấy Chồng Miền Bắc">Lấy Chồng Miền Bắc</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="item-template action-template-home" data-id="627"
+                                         data-type="1"
+                                         data-name="Nhậu Cũng Là Đam Mê"
+                                         data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/Qm9moMV4hL1FDD10nJoVEeNX81Lu05dRmTZjlddm.mp4">
+                                        <div class="content-template content-template-video">
+                                            <img data-id="627"
+                                                 data-type="1"
+                                                 data-name="Nhậu Cũng Là Đam Mê"
+                                                 data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/Qm9moMV4hL1FDD10nJoVEeNX81Lu05dRmTZjlddm.mp4"
+                                                 src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/gif/202601/Qm9moMV4hL1FDD10nJoVEeNX81Lu05dRmTZjlddm.gif"
+                                                 loading="lazy"
+                                            >
+
+                                            <div class="list-icon">
+                                                                                                    <img class="icon-new icon-type" src="https://aiavatar.vn/assets/img/newT.png" alt="">
+                                                                                            </div>
+                                            <div class="footer-template">
+                                                <p title="Nhậu Cũng Là Đam Mê">Nhậu Cũng Là Đam Mê</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="item-template action-template-home" data-id="677"
+                                         data-type="1"
+                                         data-name="Holly Christmas"
+                                         data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/hv014CXFao9QrNv9aN2FBDWKF2s9n8s1bz2FyJpk.mp4">
+                                        <div class="content-template content-template-video">
+                                            <img data-id="677"
+                                                 data-type="1"
+                                                 data-name="Holly Christmas"
+                                                 data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/hv014CXFao9QrNv9aN2FBDWKF2s9n8s1bz2FyJpk.mp4"
+                                                 src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/gif/202512/hv014CXFao9QrNv9aN2FBDWKF2s9n8s1bz2FyJpk.gif"
+                                                 loading="lazy"
+                                            >
+
+                                            <div class="list-icon">
+                                                                                                    <img class="icon-hot icon-type" src="https://aiavatar.vn/assets/img/hotT.png" alt="">
+                                                                                            </div>
+                                            <div class="footer-template">
+                                                <p title="Holly Christmas">Holly Christmas</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="item-template action-template-home" data-id="687"
+                                         data-type="1"
+                                         data-name="How Are You Doing?"
+                                         data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/5VKBZU9d9RLGrb91vQD8uk8P5e3y96RAmRvY6zsZ.mp4">
+                                        <div class="content-template content-template-video">
+                                            <img data-id="687"
+                                                 data-type="1"
+                                                 data-name="How Are You Doing?"
+                                                 data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/5VKBZU9d9RLGrb91vQD8uk8P5e3y96RAmRvY6zsZ.mp4"
+                                                 src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/gif/202603/5VKBZU9d9RLGrb91vQD8uk8P5e3y96RAmRvY6zsZ.gif"
+                                                 loading="lazy"
+                                            >
+
+                                            <div class="list-icon">
+                                                                                                    <img class="icon-new icon-type" src="https://aiavatar.vn/assets/img/newT.png" alt="">
+                                                                                            </div>
+                                            <div class="footer-template">
+                                                <p title="How Are You Doing?">How Are You Doing?</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="item-template action-template-home" data-id="691"
+                                         data-type="1"
+                                         data-name="Yêu Bền Bỉ"
+                                         data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/tC5vExqBP993HcuuqUhb6DSasIQVIdlnlcZ8Z2gA.mp4">
+                                        <div class="content-template content-template-video">
+                                            <img data-id="691"
+                                                 data-type="1"
+                                                 data-name="Yêu Bền Bỉ"
+                                                 data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/tC5vExqBP993HcuuqUhb6DSasIQVIdlnlcZ8Z2gA.mp4"
+                                                 src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/gif/202603/tC5vExqBP993HcuuqUhb6DSasIQVIdlnlcZ8Z2gA.gif"
+                                                 loading="lazy"
+                                            >
+
+                                            <div class="list-icon">
+                                                                                                    <img class="icon-hot icon-type" src="https://aiavatar.vn/assets/img/hotT.png" alt="">
+                                                                                            </div>
+                                            <div class="footer-template">
+                                                <p title="Yêu Bền Bỉ">Yêu Bền Bỉ</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                                    <div class="item-template action-template-home" data-id="437"
+                                         data-type="1"
+                                         data-name="Farting"
+                                         data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/OIUbrudUaNoRK7UPESY6UrzDlkX6cnJYxWeca1Yg.mp4">
+                                        <div class="content-template content-template-video">
+                                            <img data-id="437"
+                                                 data-type="1"
+                                                 data-name="Farting"
+                                                 data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/OIUbrudUaNoRK7UPESY6UrzDlkX6cnJYxWeca1Yg.mp4"
+                                                 src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/gif/202510/OIUbrudUaNoRK7UPESY6UrzDlkX6cnJYxWeca1Yg.gif"
+                                                 loading="lazy"
+                                            >
+
+                                            <div class="list-icon">
+                                                                                                    <img class="icon-new icon-type" src="https://aiavatar.vn/assets/img/newT.png" alt="">
+                                                                                            </div>
+                                            <div class="footer-template">
+                                                <p title="Farting">Farting</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="container-content">
+            <div class="list-function">
+                <div class="item-function">
+                    <div class="header-content">
+                        <div class="left-header-content">
+                            <div class="top-header-content">
+
+                                <img src="https://aiavatar.vn/assets/img/ai_image2.png" alt="">
+                                <h3 data-lang="AI Image">AI Image</h3>
+                            </div>
+                            <div class="tooltip-wrapper">
+                                <img src="https://aiavatar.vn/assets/img/inf.png" alt="" class="icon-inf">
+                                <div class="tooltip-box">
+                                    <img src="https://aiavatar.vn/assets/img/iconx.png" class="icon-close-tooltip" alt="Close"> <!-- icon X -->
+                                    <h4 data-lang="How to use:">How to use:</h4>
+                                    <p><strong data-lang="Step 1:">Step 1:</strong> <span data-lang="Choose the effect you want to apply .">Choose the effect you want to apply .</span></p>
+                                    <p><strong data-lang="Step 2:">Step 2:</strong> <span data-lang="Select and upload the image to which you’d like to apply the effect.">Select and upload the image to which you’d like to apply the effect.</span><br>
+                                        <span data-lang="Note: the face in the image must be clearly visible.">Note: the face in the image must be clearly visible.</span></p>
+                                    <p><strong data-lang="Step 3:">Step 3:</strong> <span data-lang="Download & Share">Download & Share</span><br>
+                                        <span data-lang="Automatically remove the background—or manually select objects to erase—using AI Avatar.">Automatically remove the background—or manually select objects to erase—using AI Avatar.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center-content">
+                        <div class="list-image">
+                            <div class="item-image" onclick="handleRedirect('chibi')">
+                                <div class="template-swap content-template" id="card-chibi">
+
+                                    <img class="swap a show" src="https://aiavatar.vn/assets/img/chibi-truoc.png" alt="">
+                                    <img class="swap b" src="https://aiavatar.vn/assets/img/chibi-sau.png" alt="">
+                                    <div class="shine"></div>
+                                    <img class="icon-hot-ai" src="https://aiavatar.vn/assets/img/hotT.png" alt="">
+                                    <div class="footer-template">
+                                        <p data-lang="Chibi Transformation">Chibi Transformation</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item-image">
+                                <div class="template-swap content-template" id="card-delete" onclick="handleRedirect('delete')">
+                                    <img class="swap a show" src="https://aiavatar.vn/assets/img/delete-truoc.png" alt="">
+                                    <img class="swap b" src="https://aiavatar.vn/assets/img/delete-sau.png" alt="">
+                                    <div class="shine"></div>
+                                    <img class="icon-hot-ai" src="https://aiavatar.vn/assets/img/hotT.png" alt="">
+                                    <div class="footer-template">
+                                        <p data-lang="Delete Object">Delete Object</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-image">
+                                <div class="template-swap content-template" id="card-hair" onclick="handleRedirect('hair')">
+                                    <img class="swap a show" src="https://aiavatar.vn/assets/img/hair-truoc.png" alt="">
+                                    <img class="swap b" src="https://aiavatar.vn/assets/img/hair-sau.png" alt="">
+                                    <div class="shine"></div>
+                                    <img class="icon-hot-ai" src="https://aiavatar.vn/assets/img/newT.png" alt="">
+                                    <div class="footer-template">
+                                        <p data-lang="Hairstyle Change">Hairstyle Change</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item-image">
+                                <div class="template-swap content-template" id="card-remove" onclick="handleRedirect('remove')">
+                                    <img class="swap a show" src="https://aiavatar.vn/assets/img/remove-truoc.png" alt="">
+                                    <img class="swap b" src="https://aiavatar.vn/assets/img/remove-sau.png" alt="">
+                                    <div class="shine"></div>
+                                    <img class="icon-hot-ai" src="https://aiavatar.vn/assets/img/hotT.png" alt="">
+                                    <div class="footer-template">
+                                        <p data-lang="Remove Background">Remove Background</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="item-function">
+                    <div class="header-content">
+                        <div class="left-header-content">
+                            <div class="top-header-content">
+
+                                <img class="icon-animal" src="https://aiavatar.vn/assets/img/ai_animal2.png" alt="">
+                                <h3 data-lang="AI Animal">AI Animal</h3>
+                            </div>
+
+                            <div class="tooltip-wrapper">
+                                <img src="https://aiavatar.vn/assets/img/inf.png" alt="" class="icon-inf">
+                                <div class="tooltip-box">
+                                    <img src="https://aiavatar.vn/assets/img/iconx.png" class="icon-close-tooltip" alt="Close"> <!-- icon X -->
+                                    <h4 data-lang="How to use:">How to use:</h4>
+                                    <p><strong data-lang="Step 1:">Step 1:</strong> <span data-lang="Choose an animation template you like">Choose an animation template you like</span></p>
+                                    <p><strong data-lang="Step 2:">Step 2:</strong> <span data-lang="Upload your Aniamal Photo and ensure the face can be well detected.">Upload your Aniamal Photo and ensure the face can be well detected.</span></p>
+                                    <p><strong data-lang="Step 3:">Step 3:</strong> <span data-lang="Preview the animated video and then download it to your local folder or share on social network with links.">Preview the animated video and then download it to your local folder or share on social network with links.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        <div class="right-header-content" onclick="window.location.href='/ai-animal'">
+
+                            <p data-lang="See All">See All</p>
+                            <img src="https://aiavatar.vn/assets/img/icon-right.png" alt="" class="icon-see-all">
+                        </div>
+
+
+                    </div>
+                    <div class="center-content">
+                        <div class="template-home">
+                                                            <div class="item-template template-animal" data-id="643"
+                                     data-type="3"
+                                     data-name="I don&#039;t know"
+                                     data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/cotDgigYaeMCzPtl0uYpAb1SjwTK7AMvr1ZnSqkF.mp4">
+                                    <div class="content-template">
+                                        <img data-id="643"
+                                             data-type="3"
+                                             data-name="I don&#039;t know"
+                                             data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/cotDgigYaeMCzPtl0uYpAb1SjwTK7AMvr1ZnSqkF.mp4"
+                                             src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/gif/202510/cotDgigYaeMCzPtl0uYpAb1SjwTK7AMvr1ZnSqkF.gif"
+                                             loading="lazy"
+                                        >
+                                        <div class="list-icon">
+                                                                                            <img class="icon-hot icon-type" src="https://aiavatar.vn/assets/img/hotT.png" alt="">
+                                                                                    </div>
+                                        <div class="footer-template" >
+                                            <p  title="I don&#039;t know">I don&#039;t know</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="item-template template-animal" data-id="463"
+                                     data-type="3"
+                                     data-name="Te teh té adu aduh"
+                                     data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/toLsAzy5eQWY41XS7V4Nk7wlHtwSGznYWYiPaoyS.mp4">
+                                    <div class="content-template">
+                                        <img data-id="463"
+                                             data-type="3"
+                                             data-name="Te teh té adu aduh"
+                                             data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/toLsAzy5eQWY41XS7V4Nk7wlHtwSGznYWYiPaoyS.mp4"
+                                             src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/gif/202510/toLsAzy5eQWY41XS7V4Nk7wlHtwSGznYWYiPaoyS.gif"
+                                             loading="lazy"
+                                        >
+                                        <div class="list-icon">
+                                                                                            <img class="icon-new icon-type" src="https://aiavatar.vn/assets/img/newT.png" alt="">
+                                                                                    </div>
+                                        <div class="footer-template" >
+                                            <p  title="Te teh té adu aduh">Te teh té adu aduh</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="item-template template-animal" data-id="535"
+                                     data-type="3"
+                                     data-name="You Are My Friend?"
+                                     data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/bKE5Qd4WYnz4gSJnJuUe8CpmJOQrWxcIWGI72ocY.mp4">
+                                    <div class="content-template">
+                                        <img data-id="535"
+                                             data-type="3"
+                                             data-name="You Are My Friend?"
+                                             data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/bKE5Qd4WYnz4gSJnJuUe8CpmJOQrWxcIWGI72ocY.mp4"
+                                             src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/gif/202510/bKE5Qd4WYnz4gSJnJuUe8CpmJOQrWxcIWGI72ocY.gif"
+                                             loading="lazy"
+                                        >
+                                        <div class="list-icon">
+                                                                                            <img class="icon-hot icon-type" src="https://aiavatar.vn/assets/img/hotT.png" alt="">
+                                                                                    </div>
+                                        <div class="footer-template" >
+                                            <p  title="You Are My Friend?">You Are My Friend?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="item-template template-animal" data-id="645"
+                                     data-type="3"
+                                     data-name="I Love You"
+                                     data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/6OphBbZoy1IwoM4gp8NVOiM7QUj27yNzZZumRSHo.mp4">
+                                    <div class="content-template">
+                                        <img data-id="645"
+                                             data-type="3"
+                                             data-name="I Love You"
+                                             data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/6OphBbZoy1IwoM4gp8NVOiM7QUj27yNzZZumRSHo.mp4"
+                                             src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/gif/202510/6OphBbZoy1IwoM4gp8NVOiM7QUj27yNzZZumRSHo.gif"
+                                             loading="lazy"
+                                        >
+                                        <div class="list-icon">
+                                                                                            <img class="icon-new icon-type" src="https://aiavatar.vn/assets/img/newT.png" alt="">
+                                                                                    </div>
+                                        <div class="footer-template" >
+                                            <p  title="I Love You">I Love You</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="item-template template-animal" data-id="459"
+                                     data-type="3"
+                                     data-name="Last Christmas"
+                                     data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/2lfBhE2OnqvO83RH5I04O9EGV1qufIDG4SRX0KXG.mp4">
+                                    <div class="content-template">
+                                        <img data-id="459"
+                                             data-type="3"
+                                             data-name="Last Christmas"
+                                             data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/2lfBhE2OnqvO83RH5I04O9EGV1qufIDG4SRX0KXG.mp4"
+                                             src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/gif/202510/2lfBhE2OnqvO83RH5I04O9EGV1qufIDG4SRX0KXG.gif"
+                                             loading="lazy"
+                                        >
+                                        <div class="list-icon">
+                                                                                            <img class="icon-hot icon-type" src="https://aiavatar.vn/assets/img/hotT.png" alt="">
+                                                                                    </div>
+                                        <div class="footer-template" >
+                                            <p  title="Last Christmas">Last Christmas</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="item-template template-animal" data-id="531"
+                                     data-type="3"
+                                     data-name="You Are Not Alone"
+                                     data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/7eexYfB2GQt6BbFaw1SaIjj1cn9VElDO409bAliO.mp4">
+                                    <div class="content-template">
+                                        <img data-id="531"
+                                             data-type="3"
+                                             data-name="You Are Not Alone"
+                                             data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/7eexYfB2GQt6BbFaw1SaIjj1cn9VElDO409bAliO.mp4"
+                                             src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/gif/202510/7eexYfB2GQt6BbFaw1SaIjj1cn9VElDO409bAliO.gif"
+                                             loading="lazy"
+                                        >
+                                        <div class="list-icon">
+                                                                                            <img class="icon-new icon-type" src="https://aiavatar.vn/assets/img/newT.png" alt="">
+                                                                                    </div>
+                                        <div class="footer-template" >
+                                            <p  title="You Are Not Alone">You Are Not Alone</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class="item-template template-animal" data-id="653"
+                                     data-type="3"
+                                     data-name="How Are You Doing?"
+                                     data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/xthQS5Yn7LekCGULJRMXmS5cwgb8eB3pP1c8axru.mp4">
+                                    <div class="content-template">
+                                        <img data-id="653"
+                                             data-type="3"
+                                             data-name="How Are You Doing?"
+                                             data-src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/demo/xthQS5Yn7LekCGULJRMXmS5cwgb8eB3pP1c8axru.mp4"
+                                             src="https://cdn.thienphuocmedia.info/aiavatar/aivideo/gif/202510/xthQS5Yn7LekCGULJRMXmS5cwgb8eB3pP1c8axru.gif"
+                                             loading="lazy"
+                                        >
+                                        <div class="list-icon">
+                                                                                            <img class="icon-hot icon-type" src="https://aiavatar.vn/assets/img/hotT.png" alt="">
+                                                                                    </div>
+                                        <div class="footer-template" >
+                                            <p  title="How Are You Doing?">How Are You Doing?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="item-function">
+                    <div class="header-content">
+                        <div class="left-header-content">
+                            <div class="top-header-content">
+
+                                <img src="https://aiavatar.vn/assets/img/ai_beauty2.png" alt="">
+                                <h3 data-lang="Beauty AI">Beauty AI</h3>
+                            </div>
+
+                            <div class="tooltip-wrapper">
+                                <img src="https://aiavatar.vn/assets/img/inf.png" alt="" class="icon-inf">
+                                <div class="tooltip-box">
+                                    <img src="https://aiavatar.vn/assets/img/iconx.png" class="icon-close-tooltip" alt="Close"> <!-- icon X -->
+                                    <h4 data-lang="How to use:">How to use:</h4>
+                                    <p><strong data-lang="Step 1:">Step 1:</strong> <span data-lang="Choose the effect you want to apply">Choose the effect you want to apply</span></p>
+                                    <p><strong data-lang="Step 2:">Step 2:</strong> <span data-lang="Select and upload the image to which you’d like to apply the effect.">Select and upload the image to which you’d like to apply the effect.</span>  <br>
+                                        <span data-lang="Note: the face in the image must be clearly visible.">Note: the face in the image must be clearly visible.</span>
+                                    </p>
+                                    <p><strong data-lang="Step 3:">Step 3:</strong> <span data-lang="Use the built-in photo beautification features to create your perfect image.">Use the built-in photo beautification features to create your perfect image.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center-content content-downloand">
+                        <div class="list-image">
+                            <div class="item-image" >
+                                <div class="template-swap content-template" id="card-skin">
+                                    <img class="swap a show" src="https://aiavatar.vn/assets/img/skin-truoc.png" alt="">
+                                    <img class="swap b" src="https://aiavatar.vn/assets/img/skin-sau.png" alt="">
+                                    <div class="shine"></div>
+                                    <div class="footer-template">
+                                        <p data-lang="Smooth skin">Smooth skin</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-image">
+                                <div class="template-swap content-template" id="card-face">
+                                    <img class="swap a show" src="https://aiavatar.vn/assets/img/face-truoc.png" alt="">
+                                    <img class="swap b" src="https://aiavatar.vn/assets/img/face-sau.png" alt="">
+
+
+                                    <div class="shine"></div>
+                                    <div class="footer-template">
+                                        <p data-lang="Slim face">Slim face</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-image">
+                                <div class="template-swap content-template" id="card-filter">
+                                    <img class="swap a show" src="https://aiavatar.vn/assets/img/fillter-truoc.png" alt="">
+                                    <img class="swap b" src="https://aiavatar.vn/assets/img/fillter-sau.png" alt="">
+                                    <img class="swap c" src="https://aiavatar.vn/assets/img/fillter-c.png" alt="">
+                                    <div class="shine"></div>
+                                    <div class="footer-template">
+                                        <p data-lang="Filter">Filter</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-image">
+                                <div class="template-swap content-template" id="card-big">
+                                    <img class="swap a show" src="https://aiavatar.vn/assets/img/big-truoc.png" alt="">
+                                    <img class="swap b" src="https://aiavatar.vn/assets/img/big-sau.png" alt="">
+                                    <div class="shine"></div>
+                                    <div class="footer-template">
+                                        <p data-lang="Big Eyes">Big Eyes</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="item-function">
+                    <div class="header-content">
+                        <div class="left-header-content">
+                            <div class="top-header-content top-my-video">
+                                <img src="https://aiavatar.vn/assets/img/my_video2.png" alt="">
+                                <h3 data-lang="My Creations">My Creations</h3>
+                            </div>
+
+                        </div>
+                        <div class="right-header-content" id="see-all-video">
+                            <p  id="see-myVideo" data-lang="See All">See All</p>
+                            <img src="https://aiavatar.vn/assets/img/icon-right.png" alt="" class="icon-see-all">
+                        </div>
+                    </div>
+                    <div class="center-content" id="myVideo">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal-layout-animal">
+        <div class="modal-comming">
+            <img src="https://aiavatar.vn/assets/img/iconx.png" class="icon-close" alt="Close"> <!-- icon X -->
+            <div class="content-modal">
+                <h4 data-lang="Coming Soon!"> Coming Soon !</h4>
+                <p data-lang="We’re working hard to bring this feature to you.">We’re working hard to bring this feature to you.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    <div class="header-footer">
+        <div class="logo_footer">
+            <a href="#"><img src="https://aiavatar.vn/assets/img/logo_footer_new.png" alt=""></a>
+        </div>
+        <div class="list-btn-download">
+            <img onclick="window.location.href='https://apps.apple.com/us/app/ai-avatar/id6746903125'" src="https://aiavatar.vn/assets/img/appstore.png" alt="">
+            <img  onclick="window.location.href='https://play.google.com/store/apps/details?id=vn.aiavatar.android'" src="https://aiavatar.vn/assets/img/googleplay.png" alt="">
+        </div>
+    </div>
+    <div class="text-footer">
+        <h5 class="name-company">Công Ty Cổ Phần Giải Pháp AI Việt</h5>
+        <h5 class="name-company">AI VIET SOLUTION JOIN STOCK COMPANY</h5>
+        <p>Địa chỉ: Số nhà 7 ngõ 43 đường Trần Khát Chân, P. Vĩnh Tuy – TP Hà Nội</p>
+        <p>Số điện thoại: 0814478461</p>
+        <p>Người chịu trách nhiệm quản lý nội dung: Ông Nguyễn Ngọc Nam </p>
+        <p>Mã số thuế: 0111076043</p>
+        <p>
+            Giấy phép mạng xã hội: 696/GXN -SVHTT ngày 12/12/2025
+        </p>
+        <h5 class="all-right">© 2025 TPM  All Rights Reserved</h5>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    window.__LANG__ = "vi";
+    window.__TRANSLATIONS__ = {"Home":"Trang ch\u1ee7","Help \u0026 Support":"Tr\u1ee3 gi\u00fap \u0026 H\u1ed7 tr\u1ee3","About Us":"V\u1ec1 ch\u00fang t\u00f4i","Policy \u0026 Terms of Service":"Ch\u00ednh s\u00e1ch \u0026 \u0110i\u1ec1u kho\u1ea3n d\u1ecbch v\u1ee5","Language":"Ng\u00f4n ng\u1eef","Log Out":"\u0110\u0103ng xu\u1ea5t","AI Assistant":"Tr\u1ee3 l\u00fd AI","Personal":"C\u00e1 nh\u00e2n","I agree to the terms of service and privacy policy":"T\u00f4i \u0111\u1ed3ng \u00fd v\u1edbi \u0111i\u1ec1u kho\u1ea3n d\u1ecbch v\u1ee5 v\u00e0 ch\u00ednh s\u00e1ch b\u1ea3o m\u1eadt","AI Video":"Video AI","See All":"Xem t\u1ea5t c\u1ea3","How to use:":"C\u00e1ch s\u1eed d\u1ee5ng:","Step 1:":"B\u01b0\u1edbc 1:","Select a Template":"Ch\u1ecdn hi\u1ec7u \u1ee9ng b\u1ea1n mu\u1ed1n \u00e1p d\u1ee5ng.","Step 2:":"B\u01b0\u1edbc 2:","Step 3:":"B\u01b0\u1edbc 3:","Upload your Photo":"T\u1ea3i L\u00ean \u1ea2nh C\u1ee7a B\u1ea1n","Package":"G\u00f3i c\u01b0\u1edbc","Nh\u1eadp m\u1eadt kh\u1ea9u":"Nh\u1eadp m\u1eadt kh\u1ea9u","Qu\u00ean m\u1eadt kh\u1ea9u":"Qu\u00ean m\u1eadt kh\u1ea9u","T\u1ea1o 350 \u1ea3nh Chibi, 400 l\u01b0\u1ee3t s\u1eed d\u1ee5ng t\u00ednh n\u0103ng x\u00f3a n\u1ec1n, 400 l\u01b0\u1ee3t s\u1eed d\u1ee5ng t\u00ednh n\u0103ng x\u00f3a \u0111\u1ed1i t\u01b0\u1ee3ng v\u00e0 400 l\u01b0\u1ee3t thay \u0111\u1ed5i ki\u1ec3u t\u00f3c.":"T\u1ea1o 350 \u1ea3nh Chibi, 400 l\u01b0\u1ee3t s\u1eed d\u1ee5ng t\u00ednh n\u0103ng x\u00f3a n\u1ec1n, 400 l\u01b0\u1ee3t s\u1eed d\u1ee5ng t\u00ednh n\u0103ng x\u00f3a \u0111\u1ed1i t\u01b0\u1ee3ng v\u00e0 400 l\u01b0\u1ee3t thay \u0111\u1ed5i ki\u1ec3u t\u00f3c.","T\u1ea1o 65 \u1ea3nh Chibi, 85 l\u01b0\u1ee3t s\u1eed d\u1ee5ng t\u00ednh n\u0103ng x\u00f3a n\u1ec1n, 85 l\u01b0\u1ee3t s\u1eed d\u1ee5ng t\u00ednh n\u0103ng x\u00f3a \u0111\u1ed1i t\u01b0\u1ee3ng v\u00e0 85 l\u01b0\u1ee3t thay \u0111\u1ed5i ki\u1ec3u t\u00f3c.":"T\u1ea1o 65 \u1ea3nh Chibi, 85 l\u01b0\u1ee3t s\u1eed d\u1ee5ng t\u00ednh n\u0103ng x\u00f3a n\u1ec1n, 85 l\u01b0\u1ee3t s\u1eed d\u1ee5ng t\u00ednh n\u0103ng x\u00f3a \u0111\u1ed1i t\u01b0\u1ee3ng v\u00e0 85 l\u01b0\u1ee3t thay \u0111\u1ed5i ki\u1ec3u t\u00f3c.","T\u1ea1o 15 \u1ea3nh Chibi, 20 l\u01b0\u1ee3t s\u1eed d\u1ee5ng t\u00ednh n\u0103ng x\u00f3a n\u1ec1n, 20 l\u01b0\u1ee3t s\u1eed d\u1ee5ng t\u00ednh n\u0103ng x\u00f3a \u0111\u1ed1i t\u01b0\u1ee3ng v\u00e0 20 l\u01b0\u1ee3t thay \u0111\u1ed5i ki\u1ec3u t\u00f3c.":"T\u1ea1o 15 \u1ea3nh Chibi, 20 l\u01b0\u1ee3t s\u1eed d\u1ee5ng t\u00ednh n\u0103ng x\u00f3a n\u1ec1n, 20 l\u01b0\u1ee3t s\u1eed d\u1ee5ng t\u00ednh n\u0103ng x\u00f3a \u0111\u1ed1i t\u01b0\u1ee3ng v\u00e0 20 l\u01b0\u1ee3t thay \u0111\u1ed5i ki\u1ec3u t\u00f3c.","List of Mobifone packages":"DANH S\u00c1CH C\u00c1C G\u00d3I C\u01af\u1edaC MOBIFONE","Upload your photo and ensure the face can be well detected.":"T\u1ea3i l\u00ean \u1ea3nh c\u1ee7a b\u1ea1n v\u00e0 \u0111\u1ea3m b\u1ea3o khu\u00f4n m\u1eb7t c\u00f3 th\u1ec3 \u0111\u01b0\u1ee3c ph\u00e1t hi\u1ec7n r\u00f5 r\u00e0ng.","Download \u0026 Share":"T\u1ea3i V\u1ec1 \u0026 Chia S\u1ebb","Preview the animated video and then download it or share on social networks.":"Xem tr\u01b0\u1edbc video ho\u1ea1t h\u00ecnh v\u00e0 sau \u0111\u00f3 t\u1ea3i v\u1ec1 ho\u1eb7c chia s\u1ebb l\u00ean c\u00e1c m\u1ea1ng x\u00e3 h\u1ed9i.","AI Image":"\u1ea2nh AI","G\u00d3I AVATAR NG\u00c0Y AVA5":"G\u00d3I AVATAR NG\u00c0Y AVA5","S\u1eed d\u1ee5ng 50 l\u01b0\u1ee3t chat v\u1edbi Chuy\u00ean gia AI\/ng\u00e0y":"S\u1eed d\u1ee5ng 50 l\u01b0\u1ee3t chat v\u1edbi Chuy\u00ean gia AI\/ng\u00e0y","G\u00d3I AVATAR NG\u00c0Y AVA6":"G\u00d3I AVATAR NG\u00c0Y AVA6","Ph\u00ed d\u1ecbch v\u1ee5 6.000\u0111\/ng\u00e0y":"Ph\u00ed d\u1ecbch v\u1ee5 6.000\u0111\/ng\u00e0y","G\u00d3I AVATAR TH\u00c1NG AVA135":"G\u00d3I AVATAR TH\u00c1NG AVA135","4GB\/ng\u00e0y dung l\u01b0\u1ee3ng truy c\u1eadp":"4GB\/ng\u00e0y dung l\u01b0\u1ee3ng truy c\u1eadp","Data truy c\u1eadp TikTok, Youtube":"Data truy c\u1eadp TikTok, Youtube","Ph\u00ed d\u1ecbch v\u1ee5 135.000\u0111\/th\u00e1ng":"Ph\u00ed d\u1ecbch v\u1ee5 135.000\u0111\/th\u00e1ng","Ph\u00ed d\u1ecbch v\u1ee5 405.000\u0111\/3th\u00e1ng":"Ph\u00ed d\u1ecbch v\u1ee5 405.000\u0111\/3th\u00e1ng","G\u00d3I AVATAR TH\u00c1NG 3AVA135":"G\u00d3I AVATAR TH\u00c1NG 3AVA135","G\u00d3I AVATAR N\u0102M":"G\u00d3I AVATAR N\u0102M","S\u1eed d\u1ee5ng 200 l\u01b0\u1ee3t chat v\u1edbi Chuy\u00ean gia AI\/ng\u00e0y":"S\u1eed d\u1ee5ng 200 l\u01b0\u1ee3t chat v\u1edbi Chuy\u00ean gia AI\/ng\u00e0y","Ph\u00ed d\u1ecbch v\u1ee5 1.620.000\u0111\/12th\u00e1ng":"Ph\u00ed d\u1ecbch v\u1ee5 1.620.000\u0111\/12th\u00e1ng","S\u1eed d\u1ee5ng 20 l\u01b0\u1ee3t cho t\u00ednh n\u0103ng t\u1ea1o Avatar Chibi":"S\u1eed d\u1ee5ng 20 l\u01b0\u1ee3t cho t\u00ednh n\u0103ng t\u1ea1o Avatar Chibi","S\u1eed d\u1ee5ng 80 l\u01b0\u1ee3t cho m\u1ed7i t\u00ednh n\u0103ng Remove BG, Hairchain, Delete Object":"S\u1eed d\u1ee5ng 80 l\u01b0\u1ee3t cho m\u1ed7i t\u00ednh n\u0103ng Remove BG, Hairchain, Delete Object","G\u00d3I AVATAR TH\u00c1NG 6AVA135":"G\u00d3I AVATAR TH\u00c1NG 6AVA135","Ph\u00ed d\u1ecbch v\u1ee5 810.000\u0111\/6th\u00e1ng":"Ph\u00ed d\u1ecbch v\u1ee5 810.000\u0111\/6th\u00e1ng","100MB dung l\u01b0\u1ee3ng truy c\u1eadp":"100MB dung l\u01b0\u1ee3ng truy c\u1eadp","500MB dung l\u01b0\u1ee3ng truy c\u1eadp":"500MB dung l\u01b0\u1ee3ng truy c\u1eadp","S\u1eed d\u1ee5ng to\u00e0n b\u1ed9 t\u00ednh n\u0103ng AI Video":"S\u1eed d\u1ee5ng to\u00e0n b\u1ed9 t\u00ednh n\u0103ng AI Video","S\u1eed d\u1ee5ng 30 l\u01b0\u1ee3t cho m\u1ed7i t\u00ednh n\u0103ng Remove BG, Hairchain, Delete Object":"S\u1eed d\u1ee5ng 30 l\u01b0\u1ee3t cho m\u1ed7i t\u00ednh n\u0103ng Remove BG, Hairchain, Delete Object","S\u1eed d\u1ee5ng 5 l\u01b0\u1ee3t cho t\u00ednh n\u0103ng t\u1ea1o Avatar Chibi":"S\u1eed d\u1ee5ng 5 l\u01b0\u1ee3t cho t\u00ednh n\u0103ng t\u1ea1o Avatar Chibi","S\u1eed d\u1ee5ng 120 l\u01b0\u1ee3t cho m\u1ed7i t\u00ednh n\u0103ng Remove BG, Hairchain, Delete Object":"S\u1eed d\u1ee5ng 120 l\u01b0\u1ee3t cho m\u1ed7i t\u00ednh n\u0103ng Remove BG, Hairchain, Delete Object","S\u1eed d\u1ee5ng MI\u1ec4N PH\u00cd c\u00e1c t\u00ednh n\u0103ng VIP":"S\u1eed d\u1ee5ng MI\u1ec4N PH\u00cd c\u00e1c t\u00ednh n\u0103ng VIP","T\u1ea1o v\u00e0 l\u01b0u video kh\u00f4ng gi\u1edbi h\u1ea1n \u0111\u1ed1i v\u1edbi to\u00e0n b\u1ed9 Category tr\u00ean web\/app, ch\u1ea5t l\u01b0\u1ee3ng cao":"T\u1ea1o v\u00e0 l\u01b0u video kh\u00f4ng gi\u1edbi h\u1ea1n \u0111\u1ed1i v\u1edbi to\u00e0n b\u1ed9 Category tr\u00ean web\/app, ch\u1ea5t l\u01b0\u1ee3ng cao","S\u1eed d\u1ee5ng to\u00e0n b\u1ed9 t\u00ednh n\u0103ng AI Beauty":"S\u1eed d\u1ee5ng to\u00e0n b\u1ed9 t\u00ednh n\u0103ng AI Beauty","S\u1eed d\u1ee5ng 5 l\u01b0\u1ee3t v\u1edbi m\u1ed7i t\u00ednh n\u0103ng c\u1ee7a AI Image":"S\u1eed d\u1ee5ng 5 l\u01b0\u1ee3t v\u1edbi m\u1ed7i t\u00ednh n\u0103ng c\u1ee7a AI Image","S\u1eed d\u1ee5ng 30 l\u01b0\u1ee3t chat v\u1edbi Chuy\u00ean gia AI\/ng\u00e0y":"S\u1eed d\u1ee5ng 30 l\u01b0\u1ee3t chat v\u1edbi Chuy\u00ean gia AI\/ng\u00e0y","T\u1eaft qu\u1ea3ng c\u00e1o khi truy c\u1eadp app\/web\/wap":"T\u1eaft qu\u1ea3ng c\u00e1o khi truy c\u1eadp app\/web\/wap","\u0110\u1ec3 \u0111\u0103ng k\u00fd, so\u1ea1n:":"\u0110\u1ec3 \u0111\u0103ng k\u00fd, so\u1ea1n:","Ph\u00ed d\u1ecbch v\u1ee5 99.000\u0111\/th\u00e1ng":"Ph\u00ed d\u1ecbch v\u1ee5 99.000\u0111\/th\u00e1ng","Ph\u00ed d\u1ecbch v\u1ee5 5.000\u0111\/ng\u00e0y":"Ph\u00ed d\u1ecbch v\u1ee5 5.000\u0111\/ng\u00e0y","S\u1eed d\u1ee5ng 100 l\u01b0\u1ee3t v\u1edbi m\u1ed7i t\u00ednh n\u0103ng c\u1ee7a AI Image":"S\u1eed d\u1ee5ng 100 l\u01b0\u1ee3t v\u1edbi m\u1ed7i t\u00ednh n\u0103ng c\u1ee7a AI Image","S\u1eed d\u1ee5ng 350 l\u01b0\u1ee3t chat v\u1edbi Chuy\u00ean gia AI\/30 ng\u00e0y":"S\u1eed d\u1ee5ng 350 l\u01b0\u1ee3t chat v\u1edbi Chuy\u00ean gia AI\/30 ng\u00e0y","Mi\u1ec5n ph\u00ed 07 ng\u00e0y v\u1edbi l\u1ea7n \u0111\u1ea7u \u0111\u0103ng k\u00fd g\u00f3i":"Mi\u1ec5n ph\u00ed 07 ng\u00e0y v\u1edbi l\u1ea7n \u0111\u1ea7u \u0111\u0103ng k\u00fd g\u00f3i","G\u00d3I AVATAR TH\u00c1NG":"G\u00d3I AVATAR TH\u00c1NG","Wait for the magic...":"H\u00e3y ch\u1edd \u0111i\u1ec1u k\u1ef3 di\u1ec7u\u2026","Choose the effect you want to apply .":"Ch\u1ecdn hi\u1ec7u \u1ee9ng b\u1ea1n mu\u1ed1n \u00e1p d\u1ee5ng.","Select and upload the image to which you\u2019d like to apply the effect.":"Ch\u1ecdn v\u00e0 t\u1ea3i l\u00ean h\u00ecnh \u1ea3nh m\u00e0 b\u1ea1n mu\u1ed1n \u00e1p d\u1ee5ng hi\u1ec7u \u1ee9ng.","Note: the face in the image must be clearly visible.":"L\u01b0u \u00fd: khu\u00f4n m\u1eb7t trong h\u00ecnh \u1ea3nh ph\u1ea3i nh\u00ecn th\u1ea5y r\u00f5 r\u00e0ng.","Automatically remove the background\u2014or manually select objects to erase\u2014using AI Avatar.":"T\u1ef1 \u0111\u1ed9ng x\u00f3a n\u1ec1n ho\u1eb7c ch\u1ecdn th\u1ee7 c\u00f4ng c\u00e1c \u0111\u1ed1i t\u01b0\u1ee3ng c\u1ea7n x\u00f3a b\u1eb1ng AI Avatar.","Remove Background":"X\u00f3a n\u1ec1n","Delete Object":"X\u00f3a \u0111\u1ed1i t\u01b0\u1ee3ng","Chibi Transformation":"Bi\u1ebfn h\u00ecnh Chibi","Hairstyle Change":"Thay \u0111\u1ed5i ki\u1ec3u t\u00f3c","Choose the assistant that best fits your needs.":"Ch\u1ecdn tr\u1ee3 l\u00fd ph\u00f9 h\u1ee3p nh\u1ea5t v\u1edbi nhu c\u1ea7u c\u1ee7a b\u1ea1n.","Type in any question or request you have.":"G\u00f5 b\u1ea5t k\u1ef3 c\u00e2u h\u1ecfi ho\u1eb7c y\u00eau c\u1ea7u n\u00e0o b\u1ea1n c\u00f3.","Get smart, quick, and easy-to-understand responses.":"Nh\u1eadn nh\u1eefng ph\u1ea3n h\u1ed3i th\u00f4ng minh, nhanh ch\u00f3ng v\u00e0 d\u1ec5 hi\u1ec3u.","Feel free to chat \u2013 the AI is always here to support you!":"Tho\u1ea3i m\u00e1i tr\u00f2 chuy\u1ec7n \u2013 AI lu\u00f4n s\u1eb5n s\u00e0ng h\u1ed7 tr\u1ee3 b\u1ea1n!","Beauty AI":"AI l\u00e0m \u0111\u1eb9p","Use the built-in photo beautification features to create your perfect image.":"S\u1eed d\u1ee5ng c\u00e1c t\u00ednh n\u0103ng l\u00e0m \u0111\u1eb9p \u1ea3nh t\u00edch h\u1ee3p s\u1eb5n \u0111\u1ec3 t\u1ea1o ra h\u00ecnh \u1ea3nh ho\u00e0n h\u1ea3o c\u1ee7a b\u1ea1n.","Smooth skin":"L\u00e0n da m\u1ecbn m\u00e0ng","Slim face":"Khu\u00f4n m\u1eb7t thon g\u1ecdn","Filter":"B\u1ed9 L\u1ecdc","Big Eyes":"M\u1eaft to","AI Animal":"AI Animal","Upload your Aniamal Photo and ensure the face can be well detected.":"T\u1ea3i l\u00ean \u1ea3nh \u0111\u1ed9ng v\u1eadt c\u1ee7a b\u1ea1n v\u00e0 \u0111\u1ea3m b\u1ea3o khu\u00f4n m\u1eb7t c\u00f3 th\u1ec3 \u0111\u01b0\u1ee3c nh\u1eadn di\u1ec7n r\u00f5 r\u00e0ng.","Preview the animated video and then download it to your local folder or share on social network with links.":"Xem tr\u01b0\u1edbc video ho\u1ea1t h\u00ecnh v\u00e0 sau \u0111\u00f3 t\u1ea3i xu\u1ed1ng th\u01b0 m\u1ee5c \u0111\u1ecba ph\u01b0\u01a1ng c\u1ee7a b\u1ea1n ho\u1eb7c chia s\u1ebb tr\u00ean m\u1ea1ng x\u00e3 h\u1ed9i v\u1edbi c\u00e1c li\u00ean k\u1ebft.","My Creations":"T\u00e1c ph\u1ea9m c\u1ee7a t\u00f4i","AI Motion":"AI Motion","Upload your photo and make sure your face is clearly visible.":"T\u1ea3i l\u00ean \u1ea3nh c\u1ee7a b\u1ea1n v\u00e0 \u0111\u1ea3m b\u1ea3o khu\u00f4n m\u1eb7t c\u00f3 th\u1ec3 \u0111\u01b0\u1ee3c nh\u1eadn di\u1ec7n r\u00f5 r\u00e0ng.","Wait for the AI to apply the effects and please hold on for a moment to enjoy your fun artistic transformation video.":"Ch\u1edd \u0111\u1ee3i AI \u00e1p d\u1ee5ng hi\u1ec7u \u1ee9ng v\u00e0 vui l\u00f2ng ch\u1edd \u0111\u1ee3i trong gi\u00e2y l\u00e1t \u0111\u1ec3 th\u01b0\u1edfng th\u1ee9c video bi\u1ebfn h\u00ecnh ngh\u1ec7 thu\u1eadt vui nh\u1ed9n c\u1ee7a b\u1ea1n.","Applying AI effects\u2026":"\u0110ang \u00e1p d\u1ee5ng hi\u1ec7u \u1ee9ng AI...","It has started processing. Please do not leave this screen.":"\u0110\u00e3 b\u1eaft \u0111\u1ea7u \u00e1p d\u1ee5ng. Vui l\u00f2ng kh\u00f4ng r\u1eddi kh\u1ecfi m\u00e0n h\u00ecnh n\u00e0y.","Choose a video template you like.":"Ch\u1ecdn m\u1ed9t m\u1eabu video m\u00e0 b\u1ea1n th\u00edch","Upload an image and make sure the face is clearly visible.":"T\u1ea3i l\u00ean \u1ea3nh v\u00e0 \u0111\u1ea3m b\u1ea3o khu\u00f4n m\u1eb7t r\u00f5 r\u00e0ng.","Wait for the AI to apply the effect. After a few seconds, you will receive your transformation video.":"Ch\u1edd AI \u00e1p d\u1ee5ng hi\u1ec7u \u1ee9ng, sau v\u00e0i gi\u00e2y s\u1ebd nh\u1eadn \u0111\u01b0\u1ee3c video bi\u1ebfn h\u00ecnh c\u1ee7a b\u1ea1n.","Weekly package":"G\u00f3i h\u00e0ng tu\u1ea7n","Monthly package":"G\u00f3i h\u00e0ng th\u00e1ng","Yearly package":"G\u00f3i h\u00e0ng n\u0103m","AI Avatar Pro Privileges":"Quy\u1ec1n l\u1ee3i AI Avatar Pro","Unlock all Effect":"M\u1edf kh\u00f3a t\u1ea5t c\u1ea3 hi\u1ec7u \u1ee9ng","No watermark":"Kh\u00f4ng c\u00f3 watermark","Unlimited create and save video":"T\u1ea1o v\u00e0 l\u01b0u video kh\u00f4ng gi\u1edbi h\u1ea1n","Preview":"Xem tr\u01b0\u1edbc","Choose an animation Template you like":"Ch\u1ecdn m\u1ed9t m\u1eabu ho\u1ea1t h\u00ecnh m\u00e0 b\u1ea1n th\u00edch","Upload your Photo and ensure the face can be well detected.":"T\u1ea3i l\u00ean \u1ea3nh c\u1ee7a b\u1ea1n v\u00e0 \u0111\u1ea3m b\u1ea3o khu\u00f4n m\u1eb7t c\u00f3 th\u1ec3 \u0111\u01b0\u1ee3c nh\u1eadn di\u1ec7n r\u00f5 r\u00e0ng.","Choose 2 photos with clear faces to create a video.":"Ch\u1ecdn 2 b\u1ee9c \u1ea3nh c\u00f3 khu\u00f4n m\u1eb7t r\u00f5 r\u00e0ng \u0111\u1ec3 t\u1ea1o video.","YOUR FACE IS BEING":"KHU\u00d4N M\u1eb6T C\u1ee6A B\u1ea0N \u0110ANG \u0110\u01af\u1ee2C","CREATED !":"T\u1ea0O RA!","Loading":"\u0110ang t\u1ea3i","Please wait a moment !":"Vui l\u00f2ng ch\u1edd m\u1ed9t ch\u00fat!","Upload or drag and your image to create a video":"T\u1ea3i l\u00ean \u1ea3nh c\u1ee7a b\u1ea1n \u0111\u1ec3 t\u1ea1o video","messages":"Tin nh\u1eafn","Choose an Animal template you like and preview the motion\/music.":"Ch\u1ecdn m\u1ed9t m\u1eabu \u0110\u1ed9ng v\u1eadt b\u1ea1n th\u00edch v\u00e0 xem tr\u01b0\u1edbc chuy\u1ec3n \u0111\u1ed9ng\/\u00e2m nh\u1ea1c.","The video has been created successfully":"Video \u0111\u00e3 \u0111\u01b0\u1ee3c t\u1ea1o th\u00e0nh c\u00f4ng","Watch video and choose photo":"Xem video v\u00e0 ch\u1ecdn \u1ea3nh","All AI Assistants":"T\u1ea5t c\u1ea3 Tr\u1ee3 l\u00fd AI","empty_folder":"Th\u01b0 m\u1ee5c tr\u1ed1ng","no_creation":"B\u1ea1n ch\u01b0a c\u00f3 t\u00e1c ph\u1ea9m n\u00e0o, h\u00e3y t\u1ea1o t\u00e1c ph\u1ea9m \u0111\u1ea7u ti\u00ean c\u1ee7a b\u1ea1n!","Upload an image to create a new version":"T\u1ea3i l\u00ean m\u1ed9t h\u00ecnh \u1ea3nh \u0111\u1ec3 t\u1ea1o phi\u00ean b\u1ea3n m\u1edbi","Choose Remove Background template.":"Ch\u1ecdn m\u1eabu X\u00f3a n\u1ec1n","Upload your image.":"T\u1ea3i l\u00ean h\u00ecnh \u1ea3nh c\u1ee7a b\u1ea1n.","Background will be removed instantly \u2013 you\u2019ll be taken to the save image screen.":"N\u1ec1n s\u1ebd \u0111\u01b0\u1ee3c x\u00f3a ngay l\u1eadp t\u1ee9c \u2013 b\u1ea1n s\u1ebd \u0111\u01b0\u1ee3c chuy\u1ec3n \u0111\u1ebfn m\u00e0n h\u00ecnh l\u01b0u \u1ea3nh.","Select the Delete Object template.":"Ch\u1ecdn m\u1eabu X\u00f3a \u0111\u1ed1i t\u01b0\u1ee3ng.","Upload your image, then brush over the object you want to remove.":"T\u1ea3i l\u00ean h\u00ecnh \u1ea3nh c\u1ee7a b\u1ea1n, sau \u0111\u00f3 ch\u1ea3i l\u00ean \u0111\u1ed1i t\u01b0\u1ee3ng m\u00e0 b\u1ea1n mu\u1ed1n x\u00f3a.","Tap Delete Object to clean up the image.":"Ch\u1ea1m v\u00e0o X\u00f3a \u0111\u1ed1i t\u01b0\u1ee3ng \u0111\u1ec3 l\u00e0m s\u1ea1ch h\u00ecnh \u1ea3nh.","Choose Create Chibi template.":"Ch\u1ecdn m\u1eabu T\u1ea1o Chibi.","Upload a photo with a clear face.":"T\u1ea3i l\u00ean m\u1ed9t b\u1ee9c \u1ea3nh c\u00f3 khu\u00f4n m\u1eb7t r\u00f5 r\u00e0ng.","Your chibi character will be generated automatically.":"Nh\u00e2n v\u1eadt chibi c\u1ee7a b\u1ea1n s\u1ebd \u0111\u01b0\u1ee3c t\u1ea1o t\u1ef1 \u0111\u1ed9ng.","Choose the effect you want to apply.":"Ch\u1ecdn hi\u1ec7u \u1ee9ng b\u1ea1n mu\u1ed1n \u00e1p d\u1ee5ng.","Upload a photo to try a new hairstyle. Make sure your face is clearly visible.":"T\u1ea3i l\u00ean m\u1ed9t b\u1ee9c \u1ea3nh \u0111\u1ec3 th\u1eed ki\u1ec3u t\u00f3c m\u1edbi. H\u00e3y ch\u1eafc ch\u1eafn r\u1eb1ng khu\u00f4n m\u1eb7t c\u1ee7a b\u1ea1n r\u00f5 r\u00e0ng.","Your hairstyle is being transformed \u2014 please wait a few moments.":"Ki\u1ec3u t\u00f3c c\u1ee7a b\u1ea1n \u0111ang \u0111\u01b0\u1ee3c chuy\u1ec3n \u0111\u1ed5i \u2014 vui l\u00f2ng ch\u1edd trong gi\u00e2y l\u00e1t.","Coming Soon!":"S\u1eafp ra m\u1eaft!","We\u2019re working hard to bring this feature to you.":"Ch\u00fang t\u00f4i \u0111ang n\u1ed7 l\u1ef1c h\u1ebft m\u00ecnh \u0111\u1ec3 mang t\u00ednh n\u0103ng n\u00e0y \u0111\u1ebfn v\u1edbi b\u1ea1n.","Remove BG":"X\u00f3a n\u1ec1n","The image has been created successfully":"H\u00ecnh \u1ea3nh \u0111\u00e3 \u0111\u01b0\u1ee3c t\u1ea1o th\u00e0nh c\u00f4ng.","Generating":"\u0110ang t\u1ea1o","Make Chibi":"T\u1ea1o Chibi","Subcription":"\u0110\u0103ng k\u00fd","How do I cancel my subscription ?":"L\u00e0m th\u1ebf n\u00e0o \u0111\u1ec3 t\u00f4i h\u1ee7y \u0111\u0103ng k\u00fd c\u1ee7a m\u00ecnh?","Thanks for reaching out. We\u2019re sorry to hear that you haven\u2019t had the best experience with AI Avatar. Apple and Google manage payment processes to protect user privacy. You can see how you can claim your refund from the following links.":"C\u1ea3m \u01a1n b\u1ea1n \u0111\u00e3 li\u00ean h\u1ec7. Ch\u00fang t\u00f4i r\u1ea5t ti\u1ebfc khi nghe r\u1eb1ng b\u1ea1n ch\u01b0a c\u00f3 tr\u1ea3i nghi\u1ec7m t\u1ed1t v\u1edbi AI Avatar. Apple v\u00e0 Google qu\u1ea3n l\u00fd c\u00e1c quy tr\u00ecnh thanh to\u00e1n \u0111\u1ec3 b\u1ea3o v\u1ec7 quy\u1ec1n ri\u00eang t\u01b0 c\u1ee7a ng\u01b0\u1eddi d\u00f9ng. B\u1ea1n c\u00f3 th\u1ec3 xem c\u00e1ch y\u00eau c\u1ea7u ho\u00e0n ti\u1ec1n t\u1eeb c\u00e1c li\u00ean k\u1ebft d\u01b0\u1edbi \u0111\u00e2y.","App Store:":"App Store:","Thank you for your understanding.":"C\u1ea3m \u01a1n b\u1ea1n \u0111\u00e3 hi\u1ec3u.","Best regards":"Tr\u00e2n tr\u1ecdng,","AI Avatar Team":"\u0110\u1ed9i ng\u0169 AI Avatar","I made a purchase, why am i not pro?":"T\u00f4i \u0111\u00e3 mua nh\u01b0ng sao v\u1eabn ch\u01b0a th\u00e0nh Pro?","Dear AI Avatar user,":"K\u00ednh g\u1eedi ng\u01b0\u1eddi d\u00f9ng AI Avatar,","We are so sorry to hear that. By clicking the restore purchase button in the payment screen you can activate your premium membership.":"Ch\u00fang t\u00f4i r\u1ea5t ti\u1ebfc khi nghe \u0111i\u1ec1u n\u00e0y. B\u1eb1ng c\u00e1ch nh\u1ea5n v\u00e0o n\u00fat kh\u00f4i ph\u1ee5c giao d\u1ecbch trong m\u00e0n h\u00ecnh thanh to\u00e1n, b\u1ea1n c\u00f3 th\u1ec3 k\u00edch ho\u1ea1t t\u01b0 c\u00e1ch th\u00e0nh vi\u00ean cao c\u1ea5p c\u1ee7a m\u00ecnh.","How can I access my premium from new phone?":"L\u00e0m th\u1ebf n\u00e0o \u0111\u1ec3 t\u00f4i truy c\u1eadp v\u00e0o g\u00f3i Premium tr\u00ean \u0111i\u1ec7n tho\u1ea1i m\u1edbi?","We are so sorry to hear that. It must be still working on the same Apple or Google account. By clicking the restore purchase button in the payment screen you can activate your premium membership.":"Ch\u00fang t\u00f4i r\u1ea5t ti\u1ebfc khi nghe \u0111i\u1ec1u n\u00e0y. B\u1ea1n ph\u1ea3i \u0111\u1ea3m b\u1ea3o r\u1eb1ng v\u1eabn \u0111ang s\u1eed d\u1ee5ng c\u00f9ng m\u1ed9t t\u00e0i kho\u1ea3n Apple ho\u1eb7c Google. B\u1eb1ng c\u00e1ch nh\u1ea5n v\u00e0o n\u00fat kh\u00f4i ph\u1ee5c giao d\u1ecbch trong m\u00e0n h\u00ecnh thanh to\u00e1n, b\u1ea1n c\u00f3 th\u1ec3 k\u00edch ho\u1ea1t t\u01b0 c\u00e1ch th\u00e0nh vi\u00ean cao c\u1ea5p c\u1ee7a m\u00ecnh.","Why didn\u2019t get a free trial?":"T\u1ea1i sao t\u00f4i kh\u00f4ng nh\u1eadn \u0111\u01b0\u1ee3c d\u00f9ng th\u1eed mi\u1ec5n ph\u00ed?","Sorry about the inconvenience you\u2019ve had. We\u2019re also suggesting a weekly option without a free trial. You\u2019ve probably chose that one. You can cancel your subscription via AppStore or Google Play Store. Thank you for your understanding.":"R\u1ea5t ti\u1ebfc v\u1ec1 s\u1ef1 b\u1ea5t ti\u1ec7n m\u00e0 b\u1ea1n \u0111\u00e3 g\u1eb7p ph\u1ea3i. Ch\u00fang t\u00f4i c\u0169ng cung c\u1ea5p m\u1ed9t t\u00f9y ch\u1ecdn \u0111\u0103ng k\u00fd h\u00e0ng tu\u1ea7n m\u00e0 kh\u00f4ng c\u00f3 d\u00f9ng th\u1eed mi\u1ec5n ph\u00ed. C\u00f3 th\u1ec3 b\u1ea1n \u0111\u00e3 ch\u1ecdn t\u00f9y ch\u1ecdn \u0111\u00f3. B\u1ea1n c\u00f3 th\u1ec3 h\u1ee7y \u0111\u0103ng k\u00fd qua AppStore ho\u1eb7c Google Play Store. C\u1ea3m \u01a1n b\u1ea1n \u0111\u00e3 th\u00f4ng c\u1ea3m.","How can I try my own video?":"L\u00e0m th\u1ebf n\u00e0o \u0111\u1ec3 t\u00f4i th\u1eed video c\u1ee7a ch\u00ednh m\u00ecnh?","Our team is working non-stop to produce new face dances. We will continue to add new dances to our app regularly. You can be notified of new dances by allowing notifications. Also for now, you cannot add your video but we are working on getting videos from our users. Stay tuned.":"\u0110\u1ed9i ng\u0169 c\u1ee7a ch\u00fang t\u00f4i \u0111ang l\u00e0m vi\u1ec7c kh\u00f4ng ng\u1eebng \u0111\u1ec3 t\u1ea1o ra nh\u1eefng \u0111i\u1ec7u nh\u1ea3y khu\u00f4n m\u1eb7t m\u1edbi. Ch\u00fang t\u00f4i s\u1ebd ti\u1ebfp t\u1ee5c th\u00eam c\u00e1c \u0111i\u1ec7u nh\u1ea3y m\u1edbi v\u00e0o \u1ee9ng d\u1ee5ng c\u1ee7a m\u00ecnh th\u01b0\u1eddng xuy\u00ean. B\u1ea1n c\u00f3 th\u1ec3 nh\u1eadn th\u00f4ng b\u00e1o v\u1ec1 c\u00e1c \u0111i\u1ec7u nh\u1ea3y m\u1edbi b\u1eb1ng c\u00e1ch cho ph\u00e9p nh\u1eadn th\u00f4ng b\u00e1o. Hi\u1ec7n t\u1ea1i, b\u1ea1n ch\u01b0a th\u1ec3 th\u00eam video c\u1ee7a m\u00ecnh, nh\u01b0ng ch\u00fang t\u00f4i \u0111ang l\u00e0m vi\u1ec7c \u0111\u1ec3 nh\u1eadn video t\u1eeb ng\u01b0\u1eddi d\u00f9ng. H\u00e3y theo d\u00f5i c\u1eadp nh\u1eadt!","Something else":"C\u00f3 g\u00ec kh\u00e1c kh\u00f4ng?","Best regards,":"Tr\u00e2n tr\u1ecdng,","Privacy Policy":"Ch\u00ednh s\u00e1ch b\u1ea3o m\u1eadt","S\u1eed d\u1ee5ng MI\u1ec4N PH\u00cd c\u00e1c t\u00ednh n\u0103ng VIP:":"S\u1eed d\u1ee5ng MI\u1ec4N PH\u00cd c\u00e1c t\u00ednh n\u0103ng VIP:","Use all AI Beauty features.":"S\u1eed d\u1ee5ng MI\u1ec4N PH\u00cd c\u00e1c t\u00ednh n\u0103ng VIP:","T\u1ea1o v\u00e0 l\u01b0u video kh\u00f4ng gi\u1edbi h\u1ea1n \u0111\u1ed1i v\u1edbi to\u00e0n b\u1ed9 Category tr\u00ean web\/app, ch\u1ea5t l\u01b0\u1ee3ng cao.":"T\u1ea1o v\u00e0 l\u01b0u video kh\u00f4ng gi\u1edbi h\u1ea1n \u0111\u1ed1i v\u1edbi to\u00e0n b\u1ed9 Category tr\u00ean web\/app, ch\u1ea5t l\u01b0\u1ee3ng cao.","S\u1eed d\u1ee5ng to\u00e0n b\u1ed9 t\u00ednh n\u0103ng AI Beauty.":"S\u1eed d\u1ee5ng to\u00e0n b\u1ed9 t\u00ednh n\u0103ng AI Beauty.","T\u1ea1o 15 \u1ea3nh Chibi v\u00e0 20 l\u01b0\u1ee3t s\u1eed d\u1ee5ng t\u00ednh n\u0103ng Remove background v\u00e0 Remove Object.":"T\u1ea1o 15 \u1ea3nh Chibi v\u00e0 20 l\u01b0\u1ee3t s\u1eed d\u1ee5ng t\u00ednh n\u0103ng Remove background v\u00e0 Remove Object.","Mi\u1ec5n ph\u00ed data truy c\u1eadp app\/webwap.":"Mi\u1ec5n ph\u00ed data truy c\u1eadp app\/webwap.","T\u1eaft qu\u1ea3ng c\u00e1o khi truy c\u1eadp app\/web\/wap.":"T\u1eaft qu\u1ea3ng c\u00e1o khi truy c\u1eadp app\/web\/wap.","G\u00d3I TU\u1ea6N":"G\u00d3I TU\u1ea6N","G\u00d3I TH\u00c1NG":"G\u00d3I TH\u00c1NG","T\u1ea1o 65 \u1ea3nh Chibi v\u00e0 85 l\u01b0\u1ee3t s\u1eed d\u1ee5ng t\u00ednh n\u0103ng Remove background v\u00e0 Remove Object.":"T\u1ea1o 65 \u1ea3nh Chibi v\u00e0 85 l\u01b0\u1ee3t s\u1eed d\u1ee5ng t\u00ednh n\u0103ng Remove background v\u00e0 Remove Object.","S\u1eed d\u1ee5ng 1500 l\u01b0\u1ee3t chat v\u1edbi ch\u1ee9c n\u0103ng Ai Assitance":"S\u1eed d\u1ee5ng 1500 l\u01b0\u1ee3t chat v\u1edbi ch\u1ee9c n\u0103ng Ai Assistant","S\u1eed d\u1ee5ng 475 l\u01b0\u1ee3t chat\/ng\u00e0y v\u1edbi ch\u1ee9c n\u0103ng Ai Assitance.":"S\u1eed d\u1ee5ng 475 l\u01b0\u1ee3t chat\/ng\u00e0y v\u1edbi ch\u1ee9c n\u0103ng AI Assistant.","S\u1eed d\u1ee5ng 1500 l\u01b0\u1ee3t chat\/th\u00e1ng v\u1edbi ch\u1ee9c n\u0103ng Ai Assitance.":"S\u1eed d\u1ee5ng 1500 l\u01b0\u1ee3t chat\/th\u00e1ng v\u1edbi ch\u1ee9c n\u0103ng AI Assistant.","G\u00d3I N\u0102M":"G\u00d3I N\u0102M","T\u1ea1o 350 \u1ea3nh Chibi v\u00e0 400 l\u01b0\u1ee3t s\u1eed d\u1ee5ng t\u00ednh n\u0103ng Remove background v\u00e0 Remove Object.":"T\u1ea1o 350 \u1ea3nh Chibi v\u00e0 400 l\u01b0\u1ee3t s\u1eed d\u1ee5ng t\u00ednh n\u0103ng Remove background v\u00e0 Remove Object.","S\u1eed d\u1ee5ng 8000 l\u01b0\u1ee3t chat v\u1edbi ch\u1ee9cn\u0103ng Ai Assitance":"S\u1eed d\u1ee5ng 8000 l\u01b0\u1ee3t chat v\u1edbi ch\u1ee9cn\u0103ng Ai Assistant","S\u1eed d\u1ee5ng 1500 l\u01b0\u1ee3t chat v\u1edbi ch\u1ee9c n\u0103ng Ai Assitance.":"S\u1eed d\u1ee5ng 1500 l\u01b0\u1ee3t chat v\u1edbi ch\u1ee9c n\u0103ng AI Assistant.","S\u1eed d\u1ee5ng 8000 l\u01b0\u1ee3t chat\/n\u0103m v\u1edbi ch\u1ee9c n\u0103ng Ai Assitance.":"S\u1eed d\u1ee5ng 8000 l\u01b0\u1ee3t chat\/n\u0103m v\u1edbi ch\u1ee9c n\u0103ng AI Assistant.","S\u1eed d\u1ee5ng 8000 l\u01b0\u1ee3t chat v\u1edbi ch\u1ee9c n\u0103ng Ai Assitance.":"S\u1eed d\u1ee5ng 8000 l\u01b0\u1ee3t chat v\u1edbi ch\u1ee9c n\u0103ng AI Assistant.","Download the App to access this feature":"T\u1ea3i \u1ee9ng d\u1ee5ng \u0111\u1ec3 truy c\u1eadp t\u00ednh n\u0103ng n\u00e0y.","Sign in to your account":"\u0110\u0103ng nh\u1eadp v\u00e0o t\u00e0i kho\u1ea3n c\u1ee7a b\u1ea1n.","Back":"Tr\u1edf l\u1ea1i","Upload Image":"T\u1ea3i l\u00ean h\u00ecnh \u1ea3nh","All Templates":"T\u1ea5t c\u1ea3 m\u1eabu","B\u1ea1n c\u00f3 ch\u1eafc ch\u1eafn mu\u1ed1n xo\u00e1 video n\u00e0y?":"B\u1ea1n c\u00f3 ch\u1eafc ch\u1eafn mu\u1ed1n xo\u00e1 video n\u00e0y?","Xo\u00e1":"Xo\u00e1","Hu\u1ef7":"Hu\u1ef7"};
+</script>
+
+
+<script>
+    const ASSET_URL = "https://aiavatar.vn/";
+</script>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://unpkg.com/pica/dist/pica.min.js"></script>
+<!-- Google tag (gtag.js) -->
+<script src="https://aiavatar.vn/assets/js/toastr.js"></script>
+<script src="https://aiavatar.vn/assets/js/script.js?v=1778923654"></script>
+<script>
+    window.TRACKING_CONFIG = {
+        endpoint: "https://aiavatar.vn/api/tracking"
+    };
+</script>
+<script src="https://aiavatar.vn/assets/js/tracking.js?v=232324322"></script>
+    <script src="https://aiavatar.vn/assets/js/toastr.js"></script>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://aiavatar.vn/assets/carousel/owl.carousel.min.js"></script>
+    <script src="https://aiavatar.vn/assets/js/home.js?v=1778923654"></script>
+    <script>
+        var isMobile = Number('1');
+        var tabFlag = 1;
+        var gameIdInit = 1;
+        var type = 1;
+        var mainType = 1;
+        var bannerConfig = {
+            autoplay : true,
+            autoplayTimeout: 4000, // Tăng thời gian giữa các slide (5 giây)
+            autoplaySpeed: 500,
+            loop:true,
+            nav:false,
+            dots:true,
+            responsive:{
+                0:{
+                    items:1,
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        };
+
+        $('#banner-slider').owlCarousel(bannerConfig)
+
+    </script>
+    <script>
+        function swapBannerSrc() {
+            var isMobile = window.innerWidth < 768;
+            $('#banner-slider .banner-app').each(function () {
+                var $img = $(this);
+                var target = isMobile ? $img.data('mobile') : $img.data('desktop');
+                if ($img.attr('src') !== target) $img.attr('src', target);
+            });
+        }
+
+        // Gọi ngay, sau khi Owl đã init, và khi resize / xoay màn hình
+        $(document).ready(function () {
+            swapBannerSrc();
+            $('#banner-slider').on('initialized.owl.carousel refreshed.owl.carousel resized.owl.carousel', swapBannerSrc);
+            $(window).on('resize orientationchange', debounce(swapBannerSrc, 150));
+        });
+
+        // Debounce nhỏ để đỡ giật khi resize
+        function debounce(fn, wait) {
+            var t; return function(){ clearTimeout(t); t = setTimeout(fn, wait); };
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script>
+        bannerConfig = {
+            autoplay: true, autoplayTimeout: 4000, autoplaySpeed: 500,
+            loop: true, nav: false, dots: true,
+            responsive: {0:{items:1},600:{items:1},1000:{items:1}}
+        };
+
+        const $owl = $('#banner-slider');
+        if (!$owl.hasClass('owl-loaded')) $owl.owlCarousel(bannerConfig); // KHÔNG init lần 2
+
+        function getLottieUrl($el){
+            const desk = $el.data('json');
+            const mobi = $el.data('json-mobile');
+            return (window.innerWidth < 768 && mobi) ? mobi : desk;
+        }
+
+        function initLottie(){
+            $('.banner-lottie').each(function(){
+                const $el = $(this);
+                if ($el.data('initialized')) return;
+
+                const url = getLottieUrl($el);
+                const anim = lottie.loadAnimation({
+                    container: $el[0], renderer: 'svg', loop: true, autoplay: true, path: url,
+                    rendererSettings: { preserveAspectRatio: 'xMidYMid meet' }
+                });
+
+                // Thành công → bỏ PNG slide
+                anim.addEventListener('DOMLoaded', function(){
+                    $owl.trigger('refresh.owl.carousel');
+                });
+
+                // Lỗi → dùng PNG fallback
+                anim.addEventListener('data_failed', function(){
+                    $('.lottie-slide').remove();
+                    $('.png-slide').show();
+                    $owl.trigger('refresh.owl.carousel');
+                });
+
+                $el.data('initialized', 1).data('lottie', anim);
+            });
+        }
+
+        function syncPlay(){
+            $('#banner-slider .banner-lottie').each(function(){
+                const anim = $(this).data('lottie');
+                if (!anim) return;
+                if ($(this).closest('.owl-item').hasClass('active')) anim.play();
+                else anim.pause();
+            });
+        }
+
+        $(function(){
+            initLottie();
+            syncPlay();
+        });
+
+        $owl.on('initialized.owl.carousel refreshed.owl.carousel translated.owl.carousel', syncPlay);
+
+        // Nếu vẫn cần đổi ảnh PNG theo width:
+        function swapBannerSrc() {
+            var isMobile = window.innerWidth < 768;
+            $('#banner-slider .banner-app').each(function () {
+                var $img = $(this);
+                var target = isMobile ? $img.data('mobile') : $img.data('desktop');
+                if ($img.attr('src') !== target) $img.attr('src', target);
+            });
+        }
+        swapBannerSrc();
+        $(window).on('resize orientationchange', function(){
+            swapBannerSrc();
+        });
+    </script>
+
+
+
+
+
+</body>
+</html>

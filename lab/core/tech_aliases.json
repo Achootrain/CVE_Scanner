@@ -1,0 +1,20 @@
+{
+  "_doc": "tech_slug -> canonical scanner name. Used by lab.core.rules to write lab_url_patterns.tech. New techs default to title-cased slug if absent here. Keep in sync with fp.pipeline's _canonical_name_from_url mapping where one exists.",
+  "font-awesome": "Font Awesome",
+  "slick": "Slick",
+  "bootstrap": "Bootstrap",
+  "fancybox": "fancyBox",
+  "jquery": "jQuery",
+  "jquery-ui": "jQuery UI",
+  "next.js": "Next.js",
+  "nuxtjs": "Nuxt.js",
+  "owl-carousel": "Owl Carousel",
+  "require.js": "RequireJS",
+  "shopify": "Shopify",
+  "swiper": "Swiper",
+  "tailwindcss": "Tailwind CSS",
+  "vue": "Vue.js",
+  "wp-rocket": "WP Rocket",
+  "xenforo": "XenForo",
+  "yoast-seo": "Yoast SEO"
+}

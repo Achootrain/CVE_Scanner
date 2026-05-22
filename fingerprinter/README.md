@@ -70,6 +70,12 @@ All matchers honour `part` (`body`/`header`/`response`/`all`), `condition` (`and
 
 ```bash
 python -m pytest tests/ -q
+
+
+python -m fp.cli session-capture https://masterji.co --out .\capture_data\masterji.session.json --window-size 1280x800 
+
+python -m fp.cli browser-capture https://masterji.co --session .\capture_data\masterji.session.json --out .\capture_data\masterji.capture.jsonl --max-pages 50 --window-size 1280x800;
+
 ```
 
 Seven offline tests cover word/regex/status/kval/dsl matchers, negative inversion, AND/OR modes, and regex extractor group capture.

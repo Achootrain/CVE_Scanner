@@ -1,0 +1,265 @@
+{
+  "summary": {
+    "corpus_sites": 8,
+    "version_extracted": 5,
+    "detected_no_version": 2,
+    "no_signal": 1,
+    "version_pct": 62.5,
+    "any_signal_pct": 87.5,
+    "elapsed_s": 20.8,
+    "with_fetch": true
+  },
+  "per_site": [
+    {
+      "version": null,
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://d32q3bqti6sa3p.cloudfront.net/frontend/js/slick.min.js"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://d32q3bqti6sa3p.cloudfront.net/frontend/css/slick.css"
+        },
+        {
+          "rule": "url_slick_theme_css",
+          "kind": "url_filename_rules",
+          "url": "https://bin.vn/frontend/css/slick-theme.css?v=2"
+        }
+      ],
+      "slick_urls": [
+        "https://d32q3bqti6sa3p.cloudfront.net/frontend/css/slick.css",
+        "https://bin.vn/frontend/css/slick-theme.css?v=2",
+        "https://d32q3bqti6sa3p.cloudfront.net/frontend/js/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css",
+        "url_slick_theme_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://bin.vn"
+    },
+    {
+      "version": null,
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://bagps.vn/public/js/slick.min.js"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://bagps.vn/public/css/slick.css"
+        },
+        {
+          "rule": "url_slick_theme_css",
+          "kind": "url_filename_rules",
+          "url": "https://bagps.vn/public/css/slick-theme.css"
+        }
+      ],
+      "slick_urls": [
+        "https://bagps.vn/public/css/slick.css",
+        "https://bagps.vn/public/css/slick-theme.css",
+        "https://bagps.vn/public/js/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css",
+        "url_slick_theme_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://binhanh.vn"
+    },
+    {
+      "version": "1.8.1",
+      "sources": [
+        {
+          "rule": "url_slick_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        },
+        {
+          "rule": "url_slick_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        },
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        }
+      ],
+      "slick_urls": [
+        "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css",
+        "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://binixo.vn"
+    },
+    {
+      "version": "1.8.1",
+      "sources": [
+        {
+          "rule": "url_slick_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        },
+        {
+          "rule": "url_slick_token_then_version",
+          "kind": "url_version_in_path_rules",
+          "url": "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+        },
+        {
+          "rule": "url_slick_with_query_ver",
+          "kind": "url_version_in_path_rules",
+          "url": "https://bkhost.vn/wp-content/themes/bkhost/assets/js/slick.min.js?ver=1.0.9"
+        },
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://bkhost.vn/wp-content/themes/bkhost/assets/js/slick.min.js?ver=1.0.9"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        },
+        {
+          "rule": "url_slick_theme_css",
+          "kind": "url_filename_rules",
+          "url": "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+        }
+      ],
+      "slick_urls": [
+        "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css",
+        "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css",
+        "https://bkhost.vn/wp-content/themes/bkhost/assets/js/slick.min.js?ver=1.0.9"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css",
+        "url_slick_theme_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://bkhost.vn"
+    },
+    {
+      "version": null,
+      "sources": [],
+      "slick_urls": [],
+      "filename_matches": [],
+      "webfont_matches": [],
+      "target": "https://bvhungvuong.vn"
+    },
+    {
+      "version": "1.8.1",
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://bvsc.com.vn/libs/slick/slick.js"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://bvsc.com.vn/libs/slick/slick.css"
+        },
+        {
+          "rule": "url_slick_theme_css",
+          "kind": "url_filename_rules",
+          "url": "https://bvsc.com.vn/libs/slick/slick-theme.css"
+        },
+        {
+          "rule": "banner_slick",
+          "kind": "banner",
+          "url": "https://bvsc.com.vn/libs/slick/slick.js"
+        }
+      ],
+      "slick_urls": [
+        "https://bvsc.com.vn/libs/slick/slick.css",
+        "https://bvsc.com.vn/libs/slick/slick-theme.css",
+        "https://bvsc.com.vn/libs/slick/slick.js"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css",
+        "url_slick_theme_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://bvsc.com.vn"
+    },
+    {
+      "version": "1.8.0",
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://bysgame.vn/public/frontend/js/slick.js"
+        },
+        {
+          "rule": "url_slick_css",
+          "kind": "url_filename_rules",
+          "url": "https://bysgame.vn/public/frontend/css/slick.css"
+        },
+        {
+          "rule": "url_slick_theme_css",
+          "kind": "url_filename_rules",
+          "url": "https://bysgame.vn/public/frontend/css/slick-theme.css"
+        },
+        {
+          "rule": "banner_slick",
+          "kind": "banner",
+          "url": "https://bysgame.vn/public/frontend/js/slick.js"
+        }
+      ],
+      "slick_urls": [
+        "https://bysgame.vn/public/frontend/css/slick.css",
+        "https://bysgame.vn/public/frontend/css/slick-theme.css",
+        "https://bysgame.vn/public/frontend/js/slick.js"
+      ],
+      "filename_matches": [
+        "url_slick_js",
+        "url_slick_css",
+        "url_slick_theme_css"
+      ],
+      "webfont_matches": [],
+      "target": "https://bysgame.vn"
+    },
+    {
+      "version": "1.8.0",
+      "sources": [
+        {
+          "rule": "url_slick_js",
+          "kind": "url_filename_rules",
+          "url": "https://cafeauto.vn/assets/js/plugins/slick.js"
+        },
+        {
+          "rule": "banner_slick",
+          "kind": "banner",
+          "url": "https://cafeauto.vn/assets/js/plugins/slick.js"
+        }
+      ],
+      "slick_urls": [
+        "https://cafeauto.vn/assets/js/plugins/slick.js"
+      ],
+      "filename_matches": [
+        "url_slick_js"
+      ],
+      "webfont_matches": [],
+      "target": "https://cafeauto.vn"
+    }
+  ]
+}

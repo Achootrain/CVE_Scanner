@@ -1,0 +1,166 @@
+{
+  "generated_at": "2026-05-13",
+  "source": "https://downloads.wordpress.org/plugin/perfect-font-awesome-integration.zip",
+  "primary_version": "2.3.1",
+  "cross_versions": [],
+  "rule_count": 1,
+  "rules": [
+    {
+      "path": "/perfect-font-awesome-integration.php",
+      "regex": "(?im)^\\s*\\*?\\s*Version\\s*:\\s*([0-9][\\w.\\-]*)",
+      "regex_family": "php header: Version: X.Y.Z",
+      "validated_versions": [
+        "2.3.1"
+      ],
+      "sample_context": {
+        "2.3.1": "l as adds an Icon insert button in Classic Editor.\\nVersion: 2.3.1\\nAuthor: Kaushik Somaiya\\nAuthor URI: https://wporbit.net/\\nTe"
+      }
+    }
+  ],
+  "bundled_tech_rules": [
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/fontawesome/css/all.css",
+      "url_path_template": "/wp-content/plugins/perfect-font-awesome-integration/fontawesome/css/all.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "detected_version": "6.7.1"
+    },
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/fontawesome/css/all.min.css",
+      "url_path_template": "/wp-content/plugins/perfect-font-awesome-integration/fontawesome/css/all.min.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "detected_version": "6.7.1"
+    },
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/fontawesome/css/brands.css",
+      "url_path_template": "/wp-content/plugins/perfect-font-awesome-integration/fontawesome/css/brands.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "detected_version": "6.7.1"
+    },
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/fontawesome/css/brands.min.css",
+      "url_path_template": "/wp-content/plugins/perfect-font-awesome-integration/fontawesome/css/brands.min.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "detected_version": "6.7.1"
+    },
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/fontawesome/css/fontawesome.css",
+      "url_path_template": "/wp-content/plugins/perfect-font-awesome-integration/fontawesome/css/fontawesome.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "detected_version": "6.7.1"
+    },
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/fontawesome/css/fontawesome.min.css",
+      "url_path_template": "/wp-content/plugins/perfect-font-awesome-integration/fontawesome/css/fontawesome.min.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "detected_version": "6.7.1"
+    },
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/fontawesome/css/regular.css",
+      "url_path_template": "/wp-content/plugins/perfect-font-awesome-integration/fontawesome/css/regular.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "detected_version": "6.7.1"
+    },
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/fontawesome/css/regular.min.css",
+      "url_path_template": "/wp-content/plugins/perfect-font-awesome-integration/fontawesome/css/regular.min.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "detected_version": "6.7.1"
+    },
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/fontawesome/css/solid.css",
+      "url_path_template": "/wp-content/plugins/perfect-font-awesome-integration/fontawesome/css/solid.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "detected_version": "6.7.1"
+    },
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/fontawesome/css/solid.min.css",
+      "url_path_template": "/wp-content/plugins/perfect-font-awesome-integration/fontawesome/css/solid.min.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "detected_version": "6.7.1"
+    },
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/fontawesome/css/svg-with-js.css",
+      "url_path_template": "/wp-content/plugins/perfect-font-awesome-integration/fontawesome/css/svg-with-js.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "detected_version": "6.7.1"
+    },
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/fontawesome/css/svg-with-js.min.css",
+      "url_path_template": "/wp-content/plugins/perfect-font-awesome-integration/fontawesome/css/svg-with-js.min.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "detected_version": "6.7.1"
+    },
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/fontawesome/css/v4-font-face.css",
+      "url_path_template": "/wp-content/plugins/perfect-font-awesome-integration/fontawesome/css/v4-font-face.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "detected_version": "6.7.1"
+    },
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/fontawesome/css/v4-font-face.min.css",
+      "url_path_template": "/wp-content/plugins/perfect-font-awesome-integration/fontawesome/css/v4-font-face.min.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "detected_version": "6.7.1"
+    },
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/fontawesome/css/v4-shims.css",
+      "url_path_template": "/wp-content/plugins/perfect-font-awesome-integration/fontawesome/css/v4-shims.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "detected_version": "6.7.1"
+    },
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/fontawesome/css/v4-shims.min.css",
+      "url_path_template": "/wp-content/plugins/perfect-font-awesome-integration/fontawesome/css/v4-shims.min.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "detected_version": "6.7.1"
+    },
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/fontawesome/css/v5-font-face.css",
+      "url_path_template": "/wp-content/plugins/perfect-font-awesome-integration/fontawesome/css/v5-font-face.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "detected_version": "6.7.1"
+    },
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/fontawesome/css/v5-font-face.min.css",
+      "url_path_template": "/wp-content/plugins/perfect-font-awesome-integration/fontawesome/css/v5-font-face.min.css",
+      "regex": "Font Awesome (?:Free|Pro)\\s+([0-9][\\w.\\-]*)",
+      "regex_family": "header banner: Font Awesome Free|Pro X.Y.Z",
+      "detected_version": "6.7.1"
+    }
+  ]
+}

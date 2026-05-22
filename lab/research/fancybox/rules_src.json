@@ -1,0 +1,30 @@
+{
+  "tech_slug": "fancybox",
+  "canonical_name": "Fancybox",
+  "banner_rules": [
+    {
+      "rule_id": "banner_fancybox",
+      "pattern": "(?i)(?:@fancyapps/ui/)?fancy[Bb]ox\\s+v(\\d+\\.\\d+(?:\\.\\d+)?)",
+      "extracts": {"version": {"g": 1}},
+      "applies_to": "js/css body (first 8 KiB)",
+      "confidence": "high",
+      "source": {
+        "releases_validated": ["2.0.6", "2.1.5", "3.5.7", "4.0.0"],
+        "format_observed": [
+          "/*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */  (v2.x .js and .css)",
+          "// ==========\\n// fancyBox v3.5.7\\n// (v3.x .js only -- v3.x .css has no banner)",
+          "// @fancyapps/ui/Fancybox v4.0.0  (v4.x .js only; new repo @fancyapps/ui)"
+        ],
+        "structural_ceiling": [
+          "v5.x: build minifier strips ALL banners; bundle head is the bare UMD wrapper",
+          "v6.x: banner reduced to '/*! License details at fancyapps.com/license */' with no version"
+        ],
+        "principle": "Three banner shapes across the v2-v4 lineage all share the signal 'fancy[Bb]ox v X.Y.Z'. The token has varying case (fancyBox in v2/v3, Fancybox in v4) and an optional @fancyapps/ui/ namespace prefix from v4 onward -- absorbed by (?i) and the optional prefix group. The rule deliberately does NOT include surrounding comment chars: those vary (/*! vs //) but the signal does not. Source-grounded against four downloaded release artifacts on jsdelivr.",
+        "src_repos": [
+          "github.com/fancyapps/fancybox (v1-3 jQuery plugin)",
+          "github.com/fancyapps/ui (v4+ rewrite)"
+        ]
+      }
+    }
+  ]
+}

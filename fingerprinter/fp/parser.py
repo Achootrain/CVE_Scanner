@@ -105,6 +105,10 @@ def _matcher_payload(m: dict) -> str:
         # Preserve whatever unknown keys the matcher carried — never lose data.
         payload = {k: v for k, v in m.items()
                    if k not in {"type", "name", "part", "condition", "negative", "group"}}
+    # Nuclei word/regex matchers accept `case-insensitive: true` (default false).
+    # Keep the flag alongside the primary payload so cache.py can honour it.
+    if "case-insensitive" in m:
+        payload["case-insensitive"] = bool(m.get("case-insensitive"))
     return json.dumps(payload, ensure_ascii=False)
 
 

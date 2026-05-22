@@ -1,0 +1,32 @@
+# Font Awesome version-detection mining config.
+# Driven by lab/research/mine_paths.py.
+repo: FortAwesome/Font-Awesome
+
+primary: "7.2.0"
+
+cross:
+  - "4.7.0"
+  - "5.15.4"
+  - "6.7.2"
+
+# Paths that a real production website might actually serve. The FA repo
+# also contains js-packages/@fortawesome/* (npm mirrors of the same content),
+# metadata, sprites, otfs, webfonts -- none of which are fingerprintable
+# because they aren't served at canonical URL paths by FA users. Globs use
+# pathlib.PurePosixPath.match semantics.
+include_paths:
+  - "css/*.css"
+  - "js/*.js"
+  - "package.json"
+  - "**/_variables.scss"
+  - "**/variables.less"
+
+# Ordered list. First pattern whose regex matches the +-60 char context
+# around a version occurrence wins -- so put the most specific banners first.
+regex_bank:
+  - label: 'header banner: Font Awesome Free|Pro X.Y.Z'
+    pattern: 'Font Awesome (?:Free|Pro)\s+([0-9][\w.\-]*)'
+  - label: 'json: "version": "X.Y.Z"'
+    pattern: '"version"\s*:\s*"([0-9][^"]*)"'
+  - label: 'scss/less variable: $fa-version | @fa-version'
+    pattern: '(?:\$|@)fa-version\s*:\s*["'']?([0-9][\w.\-]*)'

@@ -1,0 +1,645 @@
+{
+  "releases": {
+    "4.7.0": {
+      "version": "4.7.0",
+      "exists": true,
+      "path": "D:\\DATN2\\lab\\research\\fontawesome\\out\\source\\FA-4.7.0\\Font-Awesome-4.7.0",
+      "css_dir": "css",
+      "font_dir": "fonts",
+      "css_files": [
+        "font-awesome.css",
+        "font-awesome.min.css"
+      ],
+      "font_files": [
+        "FontAwesome.otf",
+        "fontawesome-webfont.eot",
+        "fontawesome-webfont.svg",
+        "fontawesome-webfont.ttf",
+        "fontawesome-webfont.woff",
+        "fontawesome-webfont.woff2"
+      ],
+      "package_version": "4.7.0",
+      "banners": {},
+      "top_classes": [
+        {
+          "class": "fa-lg",
+          "count": 2
+        },
+        {
+          "class": "fa-pull-left",
+          "count": 2
+        },
+        {
+          "class": "fa-pull-right",
+          "count": 2
+        },
+        {
+          "class": "pull-right",
+          "count": 2
+        },
+        {
+          "class": "pull-left",
+          "count": 2
+        },
+        {
+          "class": "fa-rotate-90",
+          "count": 2
+        },
+        {
+          "class": "fa-rotate-180",
+          "count": 2
+        },
+        {
+          "class": "fa-rotate-270",
+          "count": 2
+        },
+        {
+          "class": "fa-flip-horizontal",
+          "count": 2
+        },
+        {
+          "class": "fa-flip-vertical",
+          "count": 2
+        },
+        {
+          "class": "fa-stack-1x",
+          "count": 2
+        },
+        {
+          "class": "fa-stack-2x",
+          "count": 2
+        },
+        {
+          "class": "fa",
+          "count": 1
+        },
+        {
+          "class": "fa-2x",
+          "count": 1
+        },
+        {
+          "class": "fa-3x",
+          "count": 1
+        },
+        {
+          "class": "fa-4x",
+          "count": 1
+        },
+        {
+          "class": "fa-5x",
+          "count": 1
+        },
+        {
+          "class": "fa-fw",
+          "count": 1
+        },
+        {
+          "class": "fa-ul",
+          "count": 1
+        },
+        {
+          "class": "fa-li",
+          "count": 1
+        },
+        {
+          "class": "fa-border",
+          "count": 1
+        },
+        {
+          "class": "fa-spin",
+          "count": 1
+        },
+        {
+          "class": "fa-pulse",
+          "count": 1
+        },
+        {
+          "class": "fa-stack",
+          "count": 1
+        },
+        {
+          "class": "fa-inverse",
+          "count": 1
+        },
+        {
+          "class": "sr-only",
+          "count": 1
+        }
+      ],
+      "family_class_indicators": [
+        "fa"
+      ]
+    },
+    "5.15.4": {
+      "version": "5.15.4",
+      "exists": true,
+      "path": "D:\\DATN2\\lab\\research\\fontawesome\\out\\source\\FA-5.15.4\\Font-Awesome-5.15.4",
+      "css_dir": "css",
+      "font_dir": "webfonts",
+      "css_files": [
+        "all.css",
+        "all.min.css",
+        "brands.css",
+        "brands.min.css",
+        "fontawesome.css",
+        "fontawesome.min.css",
+        "regular.css",
+        "regular.min.css",
+        "solid.css",
+        "solid.min.css",
+        "svg-with-js.css",
+        "svg-with-js.min.css",
+        "v4-shims.css",
+        "v4-shims.min.css"
+      ],
+      "font_files": [
+        "fa-brands-400.eot",
+        "fa-brands-400.svg",
+        "fa-brands-400.ttf",
+        "fa-brands-400.woff",
+        "fa-brands-400.woff2",
+        "fa-regular-400.eot",
+        "fa-regular-400.svg",
+        "fa-regular-400.ttf",
+        "fa-regular-400.woff",
+        "fa-regular-400.woff2",
+        "fa-solid-900.eot",
+        "fa-solid-900.svg",
+        "fa-solid-900.ttf",
+        "fa-solid-900.woff",
+        "fa-solid-900.woff2"
+      ],
+      "package_version": null,
+      "banners": {},
+      "top_classes": [
+        {
+          "class": "fa-pull-left",
+          "count": 6
+        },
+        {
+          "class": "fa-pull-right",
+          "count": 6
+        },
+        {
+          "class": "fa-flip-vertical",
+          "count": 3
+        },
+        {
+          "class": "fa",
+          "count": 2
+        },
+        {
+          "class": "fas",
+          "count": 2
+        },
+        {
+          "class": "far",
+          "count": 2
+        },
+        {
+          "class": "fab",
+          "count": 2
+        },
+        {
+          "class": "fa-rotate-90",
+          "count": 2
+        },
+        {
+          "class": "fa-rotate-180",
+          "count": 2
+        },
+        {
+          "class": "fa-rotate-270",
+          "count": 2
+        },
+        {
+          "class": "fa-flip-horizontal",
+          "count": 2
+        },
+        {
+          "class": "fa-flip-both",
+          "count": 2
+        },
+        {
+          "class": "fa-stack-1x",
+          "count": 2
+        },
+        {
+          "class": "fa-stack-2x",
+          "count": 2
+        },
+        {
+          "class": "fal",
+          "count": 1
+        },
+        {
+          "class": "fad",
+          "count": 1
+        },
+        {
+          "class": "fa-lg",
+          "count": 1
+        },
+        {
+          "class": "fa-xs",
+          "count": 1
+        },
+        {
+          "class": "fa-sm",
+          "count": 1
+        },
+        {
+          "class": "fa-1x",
+          "count": 1
+        },
+        {
+          "class": "fa-2x",
+          "count": 1
+        },
+        {
+          "class": "fa-3x",
+          "count": 1
+        },
+        {
+          "class": "fa-4x",
+          "count": 1
+        },
+        {
+          "class": "fa-5x",
+          "count": 1
+        },
+        {
+          "class": "fa-6x",
+          "count": 1
+        },
+        {
+          "class": "fa-7x",
+          "count": 1
+        },
+        {
+          "class": "fa-8x",
+          "count": 1
+        },
+        {
+          "class": "fa-9x",
+          "count": 1
+        },
+        {
+          "class": "fa-10x",
+          "count": 1
+        },
+        {
+          "class": "fa-fw",
+          "count": 1
+        }
+      ],
+      "family_class_indicators": [
+        "fa",
+        "fab",
+        "fad",
+        "fal",
+        "far",
+        "fas"
+      ]
+    },
+    "6.5.2": {
+      "version": "6.5.2",
+      "exists": true,
+      "path": "D:\\DATN2\\lab\\research\\fontawesome\\out\\source\\FA-6.5.2\\Font-Awesome-6.5.2",
+      "css_dir": "css",
+      "font_dir": "webfonts",
+      "css_files": [
+        "all.css",
+        "all.min.css",
+        "brands.css",
+        "brands.min.css",
+        "fontawesome.css",
+        "fontawesome.min.css",
+        "regular.css",
+        "regular.min.css",
+        "solid.css",
+        "solid.min.css",
+        "svg-with-js.css",
+        "svg-with-js.min.css",
+        "v4-font-face.css",
+        "v4-font-face.min.css",
+        "v4-shims.css",
+        "v4-shims.min.css",
+        "v5-font-face.css",
+        "v5-font-face.min.css"
+      ],
+      "font_files": [
+        "fa-brands-400.ttf",
+        "fa-brands-400.woff2",
+        "fa-regular-400.ttf",
+        "fa-regular-400.woff2",
+        "fa-solid-900.ttf",
+        "fa-solid-900.woff2",
+        "fa-v4compatibility.ttf",
+        "fa-v4compatibility.woff2"
+      ],
+      "package_version": null,
+      "banners": {},
+      "top_classes": [
+        {
+          "class": "fas",
+          "count": 3
+        },
+        {
+          "class": "fa-solid",
+          "count": 3
+        },
+        {
+          "class": "far",
+          "count": 3
+        },
+        {
+          "class": "fa-regular",
+          "count": 3
+        },
+        {
+          "class": "fab",
+          "count": 3
+        },
+        {
+          "class": "fa-brands",
+          "count": 3
+        },
+        {
+          "class": "fa",
+          "count": 2
+        },
+        {
+          "class": "fa-classic",
+          "count": 2
+        },
+        {
+          "class": "fa-beat",
+          "count": 2
+        },
+        {
+          "class": "fa-bounce",
+          "count": 2
+        },
+        {
+          "class": "fa-fade",
+          "count": 2
+        },
+        {
+          "class": "fa-beat-fade",
+          "count": 2
+        },
+        {
+          "class": "fa-flip",
+          "count": 2
+        },
+        {
+          "class": "fa-shake",
+          "count": 2
+        },
+        {
+          "class": "fa-spin",
+          "count": 2
+        },
+        {
+          "class": "fa-pulse",
+          "count": 2
+        },
+        {
+          "class": "fa-spin-pulse",
+          "count": 2
+        },
+        {
+          "class": "fa-flip-vertical",
+          "count": 2
+        },
+        {
+          "class": "fa-stack-1x",
+          "count": 2
+        },
+        {
+          "class": "fa-stack-2x",
+          "count": 2
+        },
+        {
+          "class": "fa-sharp",
+          "count": 1
+        },
+        {
+          "class": "fa-1x",
+          "count": 1
+        },
+        {
+          "class": "fa-2x",
+          "count": 1
+        },
+        {
+          "class": "fa-3x",
+          "count": 1
+        },
+        {
+          "class": "fa-4x",
+          "count": 1
+        },
+        {
+          "class": "fa-5x",
+          "count": 1
+        },
+        {
+          "class": "fa-6x",
+          "count": 1
+        },
+        {
+          "class": "fa-7x",
+          "count": 1
+        },
+        {
+          "class": "fa-8x",
+          "count": 1
+        },
+        {
+          "class": "fa-9x",
+          "count": 1
+        }
+      ],
+      "family_class_indicators": [
+        "fa",
+        "fa-brands",
+        "fa-regular",
+        "fa-sharp",
+        "fa-solid",
+        "fab",
+        "far",
+        "fas"
+      ]
+    },
+    "7.2.0": {
+      "version": "7.2.0",
+      "exists": true,
+      "path": "D:\\DATN2\\lab\\research\\fontawesome\\out\\source\\FortAwesome_Font-Awesome-7.2.0\\Font-Awesome-7.2.0",
+      "css_dir": "css",
+      "font_dir": "webfonts",
+      "css_files": [
+        "all.css",
+        "all.min.css",
+        "brands.css",
+        "brands.min.css",
+        "fontawesome.css",
+        "fontawesome.min.css",
+        "regular.css",
+        "regular.min.css",
+        "solid.css",
+        "solid.min.css",
+        "svg-with-js.css",
+        "svg-with-js.min.css",
+        "svg.css",
+        "svg.min.css",
+        "v4-font-face.css",
+        "v4-font-face.min.css",
+        "v4-shims.css",
+        "v4-shims.min.css",
+        "v5-font-face.css",
+        "v5-font-face.min.css"
+      ],
+      "font_files": [
+        "fa-brands-400.woff2",
+        "fa-regular-400.woff2",
+        "fa-solid-900.woff2",
+        "fa-v4compatibility.woff2"
+      ],
+      "package_version": null,
+      "banners": {},
+      "top_classes": [
+        {
+          "class": "fa-brands",
+          "count": 5
+        },
+        {
+          "class": "fa-classic",
+          "count": 5
+        },
+        {
+          "class": "fa-solid",
+          "count": 4
+        },
+        {
+          "class": "fa-regular",
+          "count": 4
+        },
+        {
+          "class": "fas",
+          "count": 4
+        },
+        {
+          "class": "far",
+          "count": 4
+        },
+        {
+          "class": "fab",
+          "count": 4
+        },
+        {
+          "class": "fa-beat",
+          "count": 2
+        },
+        {
+          "class": "fa-bounce",
+          "count": 2
+        },
+        {
+          "class": "fa-fade",
+          "count": 2
+        },
+        {
+          "class": "fa-beat-fade",
+          "count": 2
+        },
+        {
+          "class": "fa-flip",
+          "count": 2
+        },
+        {
+          "class": "fa-shake",
+          "count": 2
+        },
+        {
+          "class": "fa-spin",
+          "count": 2
+        },
+        {
+          "class": "fa-pulse",
+          "count": 2
+        },
+        {
+          "class": "fa-spin-pulse",
+          "count": 2
+        },
+        {
+          "class": "fa-flip-vertical",
+          "count": 2
+        },
+        {
+          "class": "fa-stack-1x",
+          "count": 2
+        },
+        {
+          "class": "fa-stack-2x",
+          "count": 2
+        },
+        {
+          "class": "fa-web-awesome",
+          "count": 2
+        },
+        {
+          "class": "fa-font-awesome",
+          "count": 2
+        },
+        {
+          "class": "fa-font-awesome-flag",
+          "count": 2
+        },
+        {
+          "class": "fa-font-awesome-logo-full",
+          "count": 2
+        },
+        {
+          "class": "fa",
+          "count": 1
+        },
+        {
+          "class": "fa-1x",
+          "count": 1
+        },
+        {
+          "class": "fa-2x",
+          "count": 1
+        },
+        {
+          "class": "fa-3x",
+          "count": 1
+        },
+        {
+          "class": "fa-4x",
+          "count": 1
+        },
+        {
+          "class": "fa-5x",
+          "count": 1
+        },
+        {
+          "class": "fa-6x",
+          "count": 1
+        }
+      ],
+      "family_class_indicators": [
+        "fa",
+        "fa-brands",
+        "fa-regular",
+        "fa-solid",
+        "fab",
+        "far",
+        "fas"
+      ]
+    }
+  }
+}

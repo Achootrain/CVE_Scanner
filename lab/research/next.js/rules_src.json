@@ -1,0 +1,24 @@
+{
+  "tech_slug": "next.js",
+  "canonical_name": "Next.js",
+  "banner_rules": [
+    {
+      "rule_id": "banner_next_app_bootstrap",
+      "pattern": "window\\.next\\s*=\\s*\\{\\s*version\\s*:\\s*[\"'](\\d+\\.\\d+\\.\\d+(?:[\\-A-Za-z0-9.]*)?)[\"']",
+      "extracts": {"version": {"g": 1}},
+      "applies_to": "any Next.js client JS bundle body",
+      "confidence": "high",
+      "source": {
+        "principle": "Next.js App Router bootstrap assigns window.next = {version: __NEXT_VERSION, appDir: true} at runtime. The version comes from process.env.__NEXT_VERSION which is inlined by the build. This is the canonical version-disclosure for App Router (Next 13+). Pages Router uses a different pattern caught by retire.js fingerprints id 1119-1120.",
+        "src_file": "packages/next/src/client/app-bootstrap.ts",
+        "src_lines": "13-16",
+        "src_url": "https://github.com/vercel/next.js/blob/canary/packages/next/src/client/app-bootstrap.ts",
+        "src_excerpt": "const version = process.env.__NEXT_VERSION\\nwindow.next = {\\n  version,\\n  appDir: true,\\n}",
+        "validated_against": [
+          "bookingcare.vn /_next/static/.../framework-a71af9b1c76f668e.js -> n.version=\"X.Y.Z\" (Pages Router shape via retire.js)",
+          "bachmai.gov.vn /_next/static/.../1255-5a410d1dc2ef3778.js -> window.next={version:\"15.5.14\",appDir:!0} (this rule)"
+        ]
+      }
+    }
+  ]
+}

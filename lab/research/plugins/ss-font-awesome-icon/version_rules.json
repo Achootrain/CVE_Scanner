@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-05-13",
+  "source": "https://downloads.wordpress.org/plugin/ss-font-awesome-icon.zip",
+  "primary_version": "4.1.3",
+  "cross_versions": [],
+  "rule_count": 1,
+  "rules": [
+    {
+      "path": "/fa-icons.php",
+      "regex": "(?im)^\\s*\\*?\\s*Version\\s*:\\s*([0-9][\\w.\\-]*)",
+      "regex_family": "php header: Version: X.Y.Z",
+      "validated_versions": [
+        "4.1.3"
+      ],
+      "sample_context": {
+        "4.1.3": "tion about icon integration. \\nAuthor: Shiful Islam\\nVersion: 4.1.3\\nAuthor URI: http://bn.hs-bd.com/\\n*/\\n\\n/* Plugin Root dir */\\n"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1868 @@
+{
+  "description": "Malformed version strings extracted from scan_results.jsonl. A version is considered malformed if it does NOT match the criteria_regex (semver-ish with optional OpenSSL-style single letter suffix).",
+  "criteria_regex": "^[=v]?\\d+\\.\\d+(?:\\.\\d+){0,2}[a-z]?(?:[-+][0-9A-Za-z.\\-]+)?$",
+  "source_file": "scan_results.jsonl",
+  "count_total_rows": 295,
+  "count_unique_triples": 184,
+  "category_breakdown": {
+    "url_fragment": 12,
+    "min_suffix": 84,
+    "major_only": 47,
+    "hash_like": 2,
+    "underscore_separated": 8,
+    "tag_like": 1,
+    "non_numeric": 30
+  },
+  "category_legend": {
+    "url_fragment": "regex captured a URL path/host as the version (rule too greedy)",
+    "min_suffix": "regex captured trailing .min as part of the version",
+    "underscore_separated": "WP cache filename like 03_07_01 (jquery-3.7.1 cache-busted)",
+    "hash_like": "cachebuster / git short-SHA captured as version",
+    "tag_like": "3c, 32CKD, beta -- non-version asset tag",
+    "major_only": "single integer (likely a major-version range alias)",
+    "non_numeric": "pure-text value like website, product (og:type leak)",
+    "other": "does not fit any specific bucket"
+  },
+  "entries": [
+    {
+      "target": "https://2game.vn",
+      "tech": "Backbone.js",
+      "version": "2game.vn/wp-includes/js",
+      "category": "url_fragment",
+      "url": "https://2game.vn/",
+      "scope": "tech.version",
+      "source": "retirejs,wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://2game.vn",
+      "tech": "Backbone.js",
+      "version": "2game.vn/wp-includes/js",
+      "category": "url_fragment",
+      "url": "https://2game.vn/wp-includes/js/backbone.min.js?ver=1.6.0",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:backbone.js"
+    },
+    {
+      "target": "https://2game.vn",
+      "tech": "jQuery",
+      "version": "2game.vn/wp-includes/js/jquery",
+      "category": "url_fragment",
+      "url": "https://2game.vn/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://568play.vn",
+      "tech": "jQuery",
+      "version": "1.11.0.min",
+      "category": "min_suffix",
+      "url": "https://568play.vn/st-ms/mainsite-3/js/jquery-1.11.0.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://568play.vn",
+      "tech": "Select2",
+      "version": "568play.vn/st-ms/mainsite-3/js",
+      "category": "url_fragment",
+      "url": "https://568play.vn/",
+      "scope": "tech.version",
+      "source": "retirejs,wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://568play.vn",
+      "tech": "Select2",
+      "version": "568play.vn/st-ms/mainsite-3/js",
+      "category": "url_fragment",
+      "url": "https://568play.vn/st-ms/mainsite-3/js/select2.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:select2"
+    },
+    {
+      "target": "https://5giay.vn",
+      "tech": "jQuery",
+      "version": "1.11.0.min",
+      "category": "min_suffix",
+      "url": "https://www.5giay.vn/",
+      "scope": "tech.version",
+      "source": "retirejs,wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://5giay.vn",
+      "tech": "jQuery",
+      "version": "1.11.0.min",
+      "category": "min_suffix",
+      "url": "https://www.5giay.vn/js/jquery/jquery-1.11.0.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://5giay.vn",
+      "tech": "jQuery",
+      "version": "1.11.0.min",
+      "category": "min_suffix",
+      "url": "https://www.5giay.vn/admin/js/jquery/jquery-1.11.0.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://5giay.vn",
+      "tech": "jQuery",
+      "version": "1.11.0.min",
+      "category": "min_suffix",
+      "url": "https://www.5giay.vn/api/js/jquery/jquery-1.11.0.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://5giay.vn",
+      "tech": "jQuery",
+      "version": "1.11.0.min",
+      "category": "min_suffix",
+      "url": "https://www.5giay.vn/images/js/jquery/jquery-1.11.0.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://5giay.vn",
+      "tech": "jQuery",
+      "version": "1.11.0.min",
+      "category": "min_suffix",
+      "url": "https://www.5giay.vn/iNotes/js/jquery/jquery-1.11.0.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://5sfashion.vn",
+      "tech": "bootstrap",
+      "version": "5",
+      "category": "major_only",
+      "url": "https://5sfashion.vn/",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Bootstrap"
+    },
+    {
+      "target": "https://5sfashion.vn",
+      "tech": "bootstrap",
+      "version": "5sfashion.vn/frontend/assets/libs/bootstrap5/js",
+      "category": "url_fragment",
+      "url": "https://5sfashion.vn/frontend/assets/libs/bootstrap5/js/bootstrap.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:bootstrap"
+    },
+    {
+      "target": "https://5sfashion.vn",
+      "tech": "bootstrap",
+      "version": "5sfashion.vn/frontend/assets/libs/bootstrap5",
+      "category": "url_fragment",
+      "url": "https://5sfashion.vn/frontend/assets/libs/bootstrap5/js/bootstrap.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:bootstrap"
+    },
+    {
+      "target": "https://5sfashion.vn",
+      "tech": "jQuery",
+      "version": "3.6.3.min",
+      "category": "min_suffix",
+      "url": "https://5sfashion.vn/frontend/assets/js/jquery-3.6.3.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://5sfashion.vn",
+      "tech": "jquery-validation",
+      "version": "5sfashion.vn/vendors/js/forms/validation",
+      "category": "url_fragment",
+      "url": "https://5sfashion.vn/vendors/js/forms/validation/jquery.validate.min.js?id=e47dfa83559c1c2e2803f6ae4450edb0",
+      "scope": "tech.version",
+      "source": "retirejs",
+      "template_id": null
+    },
+    {
+      "target": "https://6giay.vn",
+      "tech": "jquery",
+      "version": "6giay.vn/webmail/program/js",
+      "category": "url_fragment",
+      "url": "https://6giay.vn/webmail/program/js/jquery.min.js?s=1640817055",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://6giay.vn",
+      "tech": "jquery-ui",
+      "version": "6giay.vn/webmail/plugins/jqueryui/js",
+      "category": "url_fragment",
+      "url": "https://6giay.vn/webmail/plugins/jqueryui/js/jquery-ui.min.js?s=1640816963",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery-ui"
+    },
+    {
+      "target": "https://769audio.vn",
+      "tech": "jQuery",
+      "version": "1.9.1.min",
+      "category": "min_suffix",
+      "url": "https://769audio.vn/js/jquery-1.9.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://769audio.vn",
+      "tech": "jQuery",
+      "version": "769audio.vn/webmail/program/js",
+      "category": "url_fragment",
+      "url": "https://769audio.vn/webmail/program/js/jquery.min.js?s=1640817055",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://769audio.vn",
+      "tech": "jquery-ui",
+      "version": "769audio.vn/webmail/plugins/jqueryui/js",
+      "category": "url_fragment",
+      "url": "https://769audio.vn/webmail/plugins/jqueryui/js/jquery-ui.min.js?s=1640816963",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery-ui"
+    },
+    {
+      "target": "https://9pay.vn",
+      "tech": "jquery",
+      "version": "3.5.0.min",
+      "category": "min_suffix",
+      "url": "https://9pay.vn/webroot/all-js/jquery-3.5.0.min.js",
+      "scope": "tech.version",
+      "source": "retirejs,wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://a2zgoup.com.vn",
+      "tech": "drupal",
+      "version": "7",
+      "category": "major_only",
+      "url": "https://a2zgoup.com.vn/",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Drupal"
+    },
+    {
+      "target": "https://a2zgoup.com.vn",
+      "tech": "drupal",
+      "version": "7",
+      "category": "major_only",
+      "url": "https://a2zgoup.com.vn",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Drupal"
+    },
+    {
+      "target": "https://a2zgoup.com.vn",
+      "tech": "drupal",
+      "version": "7",
+      "category": "major_only",
+      "url": "https://a2zgoup.com.vn/thiet-ke-website-tai-ha-nam",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Drupal"
+    },
+    {
+      "target": "https://a2zgoup.com.vn",
+      "tech": "drupal",
+      "version": "7",
+      "category": "major_only",
+      "url": "https://a2zgoup.com.vn/a",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Drupal"
+    },
+    {
+      "target": "https://abay.vn",
+      "tech": "jQuery",
+      "version": "1.7.1.min",
+      "category": "min_suffix",
+      "url": "https://www.abay.vn/_Web/_File/Js/jquery-1.7.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://abic.com.vn",
+      "tech": "jQuery",
+      "version": "3.3.1.min",
+      "category": "min_suffix",
+      "url": "https://abic.com.vn/Scripts/jquery-3.3.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://aeon.com.vn",
+      "tech": "Bootstrap",
+      "version": "4",
+      "category": "major_only",
+      "url": "https://www.aeon.com.vn/",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Bootstrap"
+    },
+    {
+      "target": "https://af.duytan.edu.vn",
+      "tech": "jQuery",
+      "version": "1.11.1.min",
+      "category": "min_suffix",
+      "url": "https://mydtu.duytan.edu.vn/js/jquery/jquery-1.11.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://aiti.edu.vn",
+      "tech": "jQuery",
+      "version": "1.11.0.min",
+      "category": "min_suffix",
+      "url": "https://aiti.edu.vn/js/jquery/jquery-1.11.0.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://akcompany.vn",
+      "tech": "Apache HTTP Server",
+      "version": "2",
+      "category": "major_only",
+      "url": "https://akcompany.vn/",
+      "scope": "tech.version",
+      "source": "wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://akcompany.vn",
+      "tech": "bootstrap",
+      "version": "3",
+      "category": "major_only",
+      "url": "https://akcompany.vn/",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Bootstrap"
+    },
+    {
+      "target": "https://akishop.com.vn",
+      "tech": "jQuery",
+      "version": "4a6b4899",
+      "category": "hash_like",
+      "url": "https://akishop.com.vn/assets/4a6b4899/jquery.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://alldatasheet.vn",
+      "tech": "jQuery",
+      "version": "3.1.1.min",
+      "category": "min_suffix",
+      "url": "https://www.alldatasheet.vn/js/jquery-3.1.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://alldatasheet.vn",
+      "tech": "jQuery",
+      "version": "3.1.1.min",
+      "category": "min_suffix",
+      "url": "https://www.alldatasheet.vn:443/js/jquery-3.1.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://alokiddy.com.vn",
+      "tech": "jQuery",
+      "version": "3.5.1.min",
+      "category": "min_suffix",
+      "url": "https://alokiddy.com.vn/Content2022/bootstrap/js/jquery-3.5.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://alokiddy.com.vn",
+      "tech": "jQuery",
+      "version": "1.6.4.min",
+      "category": "min_suffix",
+      "url": "https://alokiddy.com.vn/Scripts/jquery-1.6.4.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://amarket.vn",
+      "tech": "Google PageSpeed",
+      "version": "1",
+      "category": "major_only",
+      "url": "https://amarket.vn/",
+      "scope": "tech.version",
+      "source": "wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://amft.vn",
+      "tech": "jQuery",
+      "version": "3.5.1.min",
+      "category": "min_suffix",
+      "url": "https://amft.vn/web/www//themes/default/js/jquery-3.5.1.min.js?v=0.54",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://ananas.vn",
+      "tech": "jQuery",
+      "version": "2.1.4.min",
+      "category": "min_suffix",
+      "url": "https://ananas.vn/wp-content/themes/ananas/assets/js/jquery-2.1.4.min.js?ver=20233105",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://andytoan.vn",
+      "tech": "jQuery",
+      "version": "2.2.4.min",
+      "category": "min_suffix",
+      "url": "https://andytoan.vn/assets/js/vendor/jquery-2.2.4.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://angiang.edu.vn",
+      "tech": "Bootstrap",
+      "version": "7",
+      "category": "major_only",
+      "url": "https://angiang.edu.vn/",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Bootstrap"
+    },
+    {
+      "target": "https://angiang.gov.vn",
+      "tech": "jQuery",
+      "version": "3.7.1.min",
+      "category": "min_suffix",
+      "url": "https://angiang.gov.vn/themes/gavias_batiz/js/jquery-3.7.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://anhducdigital.vn",
+      "tech": "Tippy.js",
+      "version": "5",
+      "category": "major_only",
+      "url": "https://anhducdigital.vn/",
+      "scope": "tech.version",
+      "source": "wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://anhemphim.com.vn",
+      "tech": "jQuery",
+      "version": "3.3.1.min",
+      "category": "min_suffix",
+      "url": "https://anhemphim.com.vn/js/jquery-3.3.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://anhp.vn",
+      "tech": "jQuery",
+      "version": "1.12.4.min",
+      "category": "min_suffix",
+      "url": "https://anhp.vn/templates/themes/js/jquery-1.12.4.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://apollo.edu.vn",
+      "tech": "jQuery",
+      "version": "3.4.1.min",
+      "category": "min_suffix",
+      "url": "https://apollo.edu.vn/apollo/js/jquery-3.4.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://apps.bizweb.vn",
+      "tech": "jQuery",
+      "version": "2.1.4.min",
+      "category": "min_suffix",
+      "url": "https://apps.sapo.vn/Scripts/jquery-2.1.4.min.js?v=100",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://aulac.com.vn",
+      "tech": "Apache HTTP Server",
+      "version": "2",
+      "category": "major_only",
+      "url": "https://aulac.com.vn/",
+      "scope": "tech.version",
+      "source": "wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://aulac.com.vn",
+      "tech": "jquery",
+      "version": "1.9.1.min",
+      "category": "min_suffix",
+      "url": "https://aulac.com.vn/js/jquery-1.9.1.min.js",
+      "scope": "tech.version",
+      "source": "retirejs",
+      "template_id": null
+    },
+    {
+      "target": "https://autodaily.vn",
+      "tech": "jQuery",
+      "version": "1.9.1.min",
+      "category": "min_suffix",
+      "url": "https://autodaily.vn/js/jquery-1.9.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://autodaily.vn",
+      "tech": "jQuery",
+      "version": "3.5.1.min",
+      "category": "min_suffix",
+      "url": "https://forum.autodaily.vn/js/vendor/jquery/jquery-3.5.1.min.js?_v=fa05eac5",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://autodiscover.ssgroup.vn",
+      "tech": "Apache HTTP Server",
+      "version": "2",
+      "category": "major_only",
+      "url": "https://autodiscover.ssgroup.vn/",
+      "scope": "tech.version",
+      "source": "wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://autodiscover.vqs.vn",
+      "tech": "jQuery",
+      "version": "3.4.1.min",
+      "category": "min_suffix",
+      "url": "https://autodiscover.vqs.vn/js/jquery-3.4.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://azmua.vn",
+      "tech": "Apache HTTP Server",
+      "version": "2",
+      "category": "major_only",
+      "url": "https://azmua.vn/",
+      "scope": "tech.version",
+      "source": "wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://azmua.vn",
+      "tech": "jQuery",
+      "version": "3.5.1.min",
+      "category": "min_suffix",
+      "url": "https://azmua.vn/templates/fashion02/assets/lib/jquery/jquery-3.5.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://baa.vn",
+      "tech": "jQuery",
+      "version": "3.6.3.min",
+      "category": "min_suffix",
+      "url": "https://baa.vn/js/jquery-3.6.3.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://backorder.inet.vn",
+      "tech": "bootstrap",
+      "version": "3",
+      "category": "major_only",
+      "url": "https://backorder.inet.vn/",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Bootstrap"
+    },
+    {
+      "target": "https://bacninh.edu.vn",
+      "tech": "Bootstrap",
+      "version": "7",
+      "category": "major_only",
+      "url": "https://bacninh.edu.vn/",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Bootstrap"
+    },
+    {
+      "target": "https://bacninh.gov.vn",
+      "tech": "Bootstrap",
+      "version": "4",
+      "category": "major_only",
+      "url": "https://bacninh.gov.vn/",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Bootstrap"
+    },
+    {
+      "target": "https://bagroup.vn",
+      "tech": "jQuery",
+      "version": "2.2.1.min",
+      "category": "min_suffix",
+      "url": "https://bagps.vn/public/js/jquery-2.2.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://bang.vn",
+      "tech": "jQuery",
+      "version": "3.3.1.min",
+      "category": "min_suffix",
+      "url": "https://www.bang.vn/assets/js/jquery-3.3.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://baoanjsc.com.vn",
+      "tech": "jQuery",
+      "version": "2.1.4.min",
+      "category": "min_suffix",
+      "url": "https://baoanjsc.com.vn/js/jquery-2.1.4.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://baobacgiang.vn",
+      "tech": "jQuery",
+      "version": "1.7.1.min",
+      "category": "min_suffix",
+      "url": "https://res.baobacgiang.vn/res/sethomepage/js/jquery-1.7.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://baocantho.com.vn",
+      "tech": "jQuery",
+      "version": "1.10.1.min",
+      "category": "min_suffix",
+      "url": "https://baocantho.com.vn/static/templates/version1/homepage/js/jquery-1.10.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://baocaobang.vn",
+      "tech": "bootstrap",
+      "version": "4",
+      "category": "major_only",
+      "url": "https://baocaobang.vn/",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Bootstrap"
+    },
+    {
+      "target": "https://baodantoc.vn",
+      "tech": "jQuery",
+      "version": "3.4.1.min",
+      "category": "min_suffix",
+      "url": "https://dantocphattrien.vietnamnet.vn/assets/js/jquery-3.4.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://baodautu.vn",
+      "tech": "jQuery",
+      "version": "3.4.1.min",
+      "category": "min_suffix",
+      "url": "https://baodautu.vn/templates/themes/js/jquery-3.4.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://baodongkhoi.vn",
+      "tech": "jQuery",
+      "version": "1.10.1.min",
+      "category": "min_suffix",
+      "url": "https://dongkhoi.baovinhlong.vn/static/templates/version1/homepage/js/jquery-1.10.1.min.js?id=1.001",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://baohiemxahoidientu.vn",
+      "tech": "jQuery",
+      "version": "3.1.1.min",
+      "category": "min_suffix",
+      "url": "https://baohiemxahoidientu.vn/public/efy-js/jquery/jquery-3.1.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://baohungyen.vn",
+      "tech": "bootstrap",
+      "version": "4",
+      "category": "major_only",
+      "url": "https://baohungyen.vn/",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Bootstrap"
+    },
+    {
+      "target": "https://baolangson.vn",
+      "tech": "bootstrap",
+      "version": "4",
+      "category": "major_only",
+      "url": "https://baolangson.vn/",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Bootstrap"
+    },
+    {
+      "target": "https://baolongan.vn",
+      "tech": "bootstrap",
+      "version": "4",
+      "category": "major_only",
+      "url": "https://baotayninh.vn/",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Bootstrap"
+    },
+    {
+      "target": "https://baoquangninh.vn",
+      "tech": "bootstrap",
+      "version": "4",
+      "category": "major_only",
+      "url": "https://baoquangninh.vn/",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Bootstrap"
+    },
+    {
+      "target": "https://baoquankhu4.com.vn",
+      "tech": "Bootstrap",
+      "version": "7",
+      "category": "major_only",
+      "url": "https://baoquankhu4.com.vn/",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Bootstrap"
+    },
+    {
+      "target": "https://baoquankhu7.vn",
+      "tech": "jQuery",
+      "version": "3.7.1.min",
+      "category": "min_suffix",
+      "url": "https://baoquankhu7.vn/BaoQK7/lib/jquery/jquery-3.7.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://baothuathienhue.vn",
+      "tech": "jQuery",
+      "version": "03_07_01",
+      "category": "underscore_separated",
+      "url": "https://huengaynay.vn/Resources/libraries/jQuery/03_07_01/jquery.min.js?cdv=79",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://baothuathienhue.vn",
+      "tech": "jQuery UI",
+      "version": "01",
+      "category": "major_only",
+      "url": "https://huengaynay.vn/",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:jQuery UI"
+    },
+    {
+      "target": "https://baothuathienhue.vn",
+      "tech": "jQuery UI",
+      "version": "01_14_01",
+      "category": "underscore_separated",
+      "url": "https://huengaynay.vn/Resources/libraries/jQuery-UI/01_14_01/jquery-ui.js?cdv=79",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery-ui"
+    },
+    {
+      "target": "https://baovephapluat.vn",
+      "tech": "jQuery",
+      "version": "03_05_01",
+      "category": "underscore_separated",
+      "url": "https://baovephapluat.vn/Resources/libraries/jQuery/03_05_01/jquery.js?cdv=84",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://baovephapluat.vn",
+      "tech": "jQuery UI",
+      "version": "01",
+      "category": "major_only",
+      "url": "https://baovephapluat.vn/",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:jQuery UI"
+    },
+    {
+      "target": "https://baovephapluat.vn",
+      "tech": "jQuery UI",
+      "version": "01_12_01",
+      "category": "underscore_separated",
+      "url": "https://baovephapluat.vn/Resources/libraries/jQuery-UI/01_12_01/jquery-ui.js?cdv=84",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery-ui"
+    },
+    {
+      "target": "https://baoviet.com.vn",
+      "tech": "drupal",
+      "version": "10",
+      "category": "major_only",
+      "url": "https://baoviet.com.vn/vi",
+      "scope": "tech.version",
+      "source": "nuclei,wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://baoviet.com.vn",
+      "tech": "jQuery",
+      "version": "3.3.1.min",
+      "category": "min_suffix",
+      "url": "https://baoviet.com.vn/themes/md_baoviet/lib/jquery/jquery-3.3.1.min.js?sf9t3z",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://baovietbank.vn",
+      "tech": "FancyBox",
+      "version": "960410695",
+      "category": "hash_like",
+      "url": "https://baovietbank.vn/",
+      "scope": "tech.version",
+      "source": "wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://baovinhlong.com.vn",
+      "tech": "jQuery",
+      "version": "1.11.2.min",
+      "category": "min_suffix",
+      "url": "https://baovinhlong.com.vn/common1/jquery/jquery-1.11.2.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://baria-vungtau.gov.vn",
+      "tech": "jQuery",
+      "version": "3.4.1.min",
+      "category": "min_suffix",
+      "url": "https://hochiminhcity.gov.vn/o/portal-home-multi-theme/js/jquery-3.4.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://baria-vungtau.gov.vn",
+      "tech": "jQuery Migrate",
+      "version": "3.0.0.min",
+      "category": "min_suffix",
+      "url": "https://hochiminhcity.gov.vn/o/portal-home-multi-theme/js/jquery-migrate-3.0.0.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery-migrate"
+    },
+    {
+      "target": "https://batdongsan24h.edu.vn",
+      "tech": "jQuery",
+      "version": "1.11.0.min",
+      "category": "min_suffix",
+      "url": "https://batdongsan24h.edu.vn/js/jquery/jquery-1.11.0.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://bazi.vn",
+      "tech": "drupal",
+      "version": "7",
+      "category": "major_only",
+      "url": "https://bazi.vn/",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Drupal"
+    },
+    {
+      "target": "https://beago.vn",
+      "tech": "Google PageSpeed",
+      "version": "1",
+      "category": "major_only",
+      "url": "https://beago.vn/",
+      "scope": "tech.version",
+      "source": "wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://benhvien108.vn",
+      "tech": "jQuery",
+      "version": "1.11.2.min",
+      "category": "min_suffix",
+      "url": "https://benhvien108.vn/Assets/Common/Plugins/JQuery/jquery-1.11.2.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://benhviennhitrunguong.gov.vn",
+      "tech": "Apache HTTP Server",
+      "version": "2",
+      "category": "major_only",
+      "url": "https://benhviennhitrunguong.gov.vn/",
+      "scope": "tech.version",
+      "source": "wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://benhvienphuongdong.vn",
+      "tech": "Apache HTTP Server",
+      "version": "2",
+      "category": "major_only",
+      "url": "https://benhvienphuongdong.vn/",
+      "scope": "tech.version",
+      "source": "wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://benhvienphuongdong.vn",
+      "tech": "jQuery",
+      "version": "3.4.0.min",
+      "category": "min_suffix",
+      "url": "https://benhvienphuongdong.vn/frontend/js/jquery-3.4.0.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://berich.vn",
+      "tech": "bootstrap",
+      "version": "4",
+      "category": "major_only",
+      "url": "https://berich.vn/",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Bootstrap"
+    },
+    {
+      "target": "https://bestprice.vn",
+      "tech": "jQuery",
+      "version": "1.11.2.min",
+      "category": "min_suffix",
+      "url": "https://www.bestprice.vn/",
+      "scope": "tech.version",
+      "source": "retirejs,url-ver,wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://bestprice.vn",
+      "tech": "jQuery",
+      "version": "1.11.2.min",
+      "category": "min_suffix",
+      "url": "https://www.bestprice.vn/assets/libs/jquery-1.11.2.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://betacinemas.vn",
+      "tech": "FancyBox",
+      "version": "6",
+      "category": "major_only",
+      "url": "https://betacinemas.vn/home.htm",
+      "scope": "tech.version",
+      "source": "wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://betacinemas.vn",
+      "tech": "jQuery",
+      "version": "1.11.2.min",
+      "category": "min_suffix",
+      "url": "https://betacinemas.vn/Assets/Common/Plugins/JQuery/jquery-1.11.2.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://betacinemas.vn",
+      "tech": "Select2",
+      "version": "2",
+      "category": "major_only",
+      "url": "https://betacinemas.vn/home.htm",
+      "scope": "tech.version",
+      "source": "retirejs,wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://betacinemas.vn",
+      "tech": "Select2",
+      "version": "2",
+      "category": "major_only",
+      "url": "https://betacinemas.vn/assets/global/plugins/select2/select2.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:select2"
+    },
+    {
+      "target": "https://bighost.vn",
+      "tech": "Apache HTTP Server",
+      "version": "2",
+      "category": "major_only",
+      "url": "https://bighost.vn/",
+      "scope": "tech.version",
+      "source": "wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://bighost.vn",
+      "tech": "bootstrap",
+      "version": "3",
+      "category": "major_only",
+      "url": "https://bighost.vn/",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Bootstrap"
+    },
+    {
+      "target": "https://blhvip.vn",
+      "tech": "jQuery",
+      "version": "3.4.0.min",
+      "category": "min_suffix",
+      "url": "https://blhvip.vn/frontend/js/jquery-3.4.0.min.js?v=1683738890",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://bluecom.vn",
+      "tech": "bootstrap",
+      "version": "4",
+      "category": "major_only",
+      "url": "https://bluecom.vn/",
+      "scope": "tech.version",
+      "source": "nuclei,wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://bolero.vn",
+      "tech": "jQuery",
+      "version": "1.11.0.min",
+      "category": "min_suffix",
+      "url": "https://dot.com.vn/js/jquery/jquery-1.11.0.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://bookingcare.vn",
+      "tech": "jQuery",
+      "version": "3.6.0.min",
+      "category": "min_suffix",
+      "url": "https://bookingcare.vn/assets/thuvien/jquery-3.6.0.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://btec.edu.vn",
+      "tech": "Select2",
+      "version": "2",
+      "category": "major_only",
+      "url": "https://btec.fpt.edu.vn/",
+      "scope": "tech.version",
+      "source": "retirejs,wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://btec.edu.vn",
+      "tech": "Select2",
+      "version": "2",
+      "category": "major_only",
+      "url": "https://btec.fpt.edu.vn/template/assets/library/select2/select2.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:select2"
+    },
+    {
+      "target": "https://bvbank.net.vn",
+      "tech": "jQuery",
+      "version": "3.3.1.min",
+      "category": "min_suffix",
+      "url": "https://bvbank.net.vn/js/plugins/jquery-3.3.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://bvhttdl.gov.vn",
+      "tech": "jQuery",
+      "version": "3.7.1.min",
+      "category": "min_suffix",
+      "url": "https://bvhttdl.gov.vn/uploads/bvh/lib/bootstrap/js/jquery-3.7.1.min.js?v=1.0",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://bvhttdl.gov.vn",
+      "tech": "jQuery",
+      "version": "3.7.1.min",
+      "category": "min_suffix",
+      "url": "https://bvhttdl.gov.vn/uploads/bvh/lib/bootstrap/js/jquery-3.7.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://bvhungvuong.vn",
+      "tech": "Apache HTTP Server",
+      "version": "2",
+      "category": "major_only",
+      "url": "https://bvhungvuong.vn/",
+      "scope": "tech.version",
+      "source": "wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://bysgame.vn",
+      "tech": "jQuery Migrate",
+      "version": "3.2.0.min",
+      "category": "min_suffix",
+      "url": "https://bysgame.vn/public/frontend/js/jquery-migrate-3.2.0.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery-migrate"
+    },
+    {
+      "target": "https://cadn.com.vn",
+      "tech": "jQuery",
+      "version": "3.5.1.min",
+      "category": "min_suffix",
+      "url": "https://cadn.com.vn/scripts/jquery-3.5.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://cafeland.vn",
+      "tech": "jQuery",
+      "version": "1.11.3.min",
+      "category": "min_suffix",
+      "url": "https://cafeland.vn/static/js/vendor/jquery-1.11.3.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://cangvuhanghaitphcm.gov.vn",
+      "tech": "jQuery",
+      "version": "1.7.2.min",
+      "category": "min_suffix",
+      "url": "https://cangvuhanghaitphcm.gov.vn/scripts/jquery-1.7.2.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://cantho.edu.vn",
+      "tech": "Bootstrap",
+      "version": "7",
+      "category": "major_only",
+      "url": "https://cantho.edu.vn/",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Bootstrap"
+    },
+    {
+      "target": "https://caobang.gov.vn",
+      "tech": "jQuery",
+      "version": "3.6.3.min",
+      "category": "min_suffix",
+      "url": "https://caobang.gov.vn/scripts/jquery-3.6.3.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://caothang.edu.vn",
+      "tech": "Apache HTTP Server",
+      "version": "2",
+      "category": "major_only",
+      "url": "https://caothang.edu.vn/",
+      "scope": "tech.version",
+      "source": "wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://caothang.edu.vn",
+      "tech": "jQuery",
+      "version": "1.3.2.min",
+      "category": "min_suffix",
+      "url": "https://caothang.edu.vn/admin/templates/scripts/jquery-1.3.2.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://capstone.edu.vn",
+      "tech": "jQuery",
+      "version": "03_07_01",
+      "category": "underscore_separated",
+      "url": "https://capstone.edu.vn/Resources/libraries/jQuery/03_07_01/jquery.js?cdv=330",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://capstone.edu.vn",
+      "tech": "jquery-ui",
+      "version": "01_13_03",
+      "category": "underscore_separated",
+      "url": "https://capstone.edu.vn/Resources/libraries/jQuery-UI/01_13_03/jquery-ui.min.js?cdv=330",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery-ui"
+    },
+    {
+      "target": "https://capstone.edu.vn",
+      "tech": "jquery-ui",
+      "version": "01_12_01",
+      "category": "underscore_separated",
+      "url": "https://capstone.edu.vn/Resources/libraries/jQuery-UI/01_12_01/jquery-ui.js?cdv=4",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery-ui"
+    },
+    {
+      "target": "https://careforvietnam.vn",
+      "tech": "jQuery",
+      "version": "2.1.1.min",
+      "category": "min_suffix",
+      "url": "https://careforvietnam.vn/catalog/view/javascript/jquery/jquery-2.1.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://caresoft.vn",
+      "tech": "bootstrap",
+      "version": "3c",
+      "category": "tag_like",
+      "url": "https://home.caresoft.vn/wp-content/themes/3c/js/bootstrap.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:bootstrap"
+    },
+    {
+      "target": "https://caresoft.vn",
+      "tech": "jQuery",
+      "version": "1.10.1.min",
+      "category": "min_suffix",
+      "url": "https://home.caresoft.vn/wp-content/themes/3c/js/jquery-1.10.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://cayvang.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://cayvang.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://cdsonla.edu.vn",
+      "tech": "drupal",
+      "version": "10",
+      "category": "major_only",
+      "url": "https://cdsonla.edu.vn/",
+      "scope": "tech.version",
+      "source": "nuclei,wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://cello.vn",
+      "tech": "jQuery",
+      "version": "2.1.1.min",
+      "category": "min_suffix",
+      "url": "https://cello.vn/application/view/javascript/jquery/jquery-2.1.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://cello.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://cello.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://cellphones.com.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://cellphones.com.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://charleskeith.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://www.charleskeith.vn/vn",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://chatluongbenhvien.vn",
+      "tech": "drupal",
+      "version": "7",
+      "category": "major_only",
+      "url": "https://chatluongbenhvien.vn/misc/drupal.js?t8tvsh",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Drupal"
+    },
+    {
+      "target": "https://checkee.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://checkee.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://chelate.com.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://chelate.com.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://chiaki.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://chiaki.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://chiemtaimobile.vn",
+      "tech": "jQuery",
+      "version": "3.5.1.min",
+      "category": "min_suffix",
+      "url": "https://chiemtaimobile.vn/js/lib/jquery/jquery-3.5.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://chiemtaimobile.vn",
+      "tech": "jQuery Migrate",
+      "version": "3.3.0.min",
+      "category": "min_suffix",
+      "url": "https://chiemtaimobile.vn/js/lib/jquery/jquery-migrate-3.3.0.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery-migrate"
+    },
+    {
+      "target": "https://chinhphu.vn",
+      "tech": "jQuery",
+      "version": "3.6.0.min",
+      "category": "min_suffix",
+      "url": "https://chinhphu.vn/scripts/jquery-3.6.0.min.js?v=1",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://chips.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://chips.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://chobaolam.vn",
+      "tech": "jQuery",
+      "version": "1.11.0.min",
+      "category": "min_suffix",
+      "url": "https://chobaolam.vn/js/jquery/jquery-1.11.0.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://chobaolam.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://chobaolam.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://chogia.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://chogia.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://chongtham.info.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://chongtham.info.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://chothuenha.com.vn",
+      "tech": "jQuery",
+      "version": "1.8.3.min",
+      "category": "min_suffix",
+      "url": "https://chothuenha.com.vn/js/jquery-1.8.3.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://chothuenha.com.vn",
+      "tech": "jQuery",
+      "version": "1.8.3.min",
+      "category": "min_suffix",
+      "url": "https://chothuenha.com.vn/api/js/jquery-1.8.3.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://chothuenha.com.vn",
+      "tech": "jQuery",
+      "version": "1.8.3.min",
+      "category": "min_suffix",
+      "url": "https://chothuenha.com.vn/iNotes/js/jquery-1.8.3.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://chothuenha.com.vn",
+      "tech": "jQuery",
+      "version": "1.8.3.min",
+      "category": "min_suffix",
+      "url": "https://chothuenha.com.vn/admin/js/jquery-1.8.3.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://chothuenha.com.vn",
+      "tech": "jQuery",
+      "version": "1.8.3.min",
+      "category": "min_suffix",
+      "url": "https://chothuenha.com.vn/web/js/jquery-1.8.3.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://chothuenha.com.vn",
+      "tech": "jQuery",
+      "version": "1.8.3.min",
+      "category": "min_suffix",
+      "url": "https://chothuenha.com.vn/bitrix/js/jquery-1.8.3.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://chothuenha.com.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://chothuenha.com.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://chuanmen.edu.vn",
+      "tech": "jQuery",
+      "version": "1.11.0.min",
+      "category": "min_suffix",
+      "url": "https://chuanmen.edu.vn/js/jquery/jquery-1.11.0.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://chuky.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://chuky.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://chungauto.vn",
+      "tech": "bootstrap",
+      "version": "4",
+      "category": "major_only",
+      "url": "https://chungauto.vn/theme/plugins/bootstrap/js/bootstrap.bundle.min.js",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Bootstrap"
+    },
+    {
+      "target": "https://chungta.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://chungta.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://chus.vn",
+      "tech": "jQuery",
+      "version": "3.5.1.min",
+      "category": "min_suffix",
+      "url": "https://chus.vn/js/lib/jquery/jquery-3.5.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://chus.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://chus.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://cict.com.vn",
+      "tech": "jQuery",
+      "version": "3.3.1.min",
+      "category": "min_suffix",
+      "url": "https://cict.com.vn/Scripts/jquery-3.3.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://cict.com.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "product",
+      "category": "non_numeric",
+      "url": "https://cict.com.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://cine.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://cine.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://classic.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://classic.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://clickbuy.com.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://clickbuy.com.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://cloudfly.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://cloudfly.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://cnttshop.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://cnttshop.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://codedream.edu.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://codedream.edu.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://cofer.edu.vn",
+      "tech": "bootstrap",
+      "version": "32_CKD",
+      "category": "underscore_separated",
+      "url": "https://cofer.edu.vn/University/32_CKD/js/bootstrap.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:bootstrap"
+    },
+    {
+      "target": "https://cofer.edu.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://cofer.edu.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://comem.vn",
+      "tech": "jQuery",
+      "version": "3.3.1.min",
+      "category": "min_suffix",
+      "url": "https://comem.vn/js/vendors/jquery-3.3.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://comem.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://comem.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://congan.com.vn",
+      "tech": "jQuery",
+      "version": "1.11.0.min",
+      "category": "min_suffix",
+      "url": "https://congan.com.vn/Sites/CATP/js/jquery-1.11.0.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://congan.com.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://congan.com.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://conganthanhhoa.gov.vn",
+      "tech": "Bootstrap",
+      "version": "7",
+      "category": "major_only",
+      "url": "/3rdparty/Bootstrap/js/ie8-responsive-file-warning.js",
+      "scope": "evidence.version",
+      "source": "wappalyzer",
+      "template_id": "wap:Bootstrap"
+    },
+    {
+      "target": "https://conganthanhhoa.gov.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://conganthanhhoa.gov.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://congdankhuyenhoc.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "article",
+      "category": "non_numeric",
+      "url": "https://congdankhuyenhoc.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://congdongketoan.vn",
+      "tech": "Bootstrap",
+      "version": "2",
+      "category": "major_only",
+      "url": "/js/Redicated\\Bootstrap\\js\\Redicated_Bootstrap.js?_v=0d70adb7",
+      "scope": "tech.version",
+      "source": "wappalyzer",
+      "template_id": null
+    },
+    {
+      "target": "https://congdongketoan.vn",
+      "tech": "jQuery",
+      "version": "3.2.1.min",
+      "category": "min_suffix",
+      "url": "https://congdongketoan.vn/js/vendor/jquery/jquery-3.2.1.min.js?_v=0d70adb7",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://congdongketoan.vn",
+      "tech": "jQuery",
+      "version": "3.2.1.min",
+      "category": "min_suffix",
+      "url": "https://congdongketoan.vn/js/vendor/jquery/jquery-3.2.1.min.js",
+      "scope": "evidence.version",
+      "source": "retirejs",
+      "template_id": "retire:jquery"
+    },
+    {
+      "target": "https://congdongketoan.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://congdongketoan.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://congluan.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://congluan.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    },
+    {
+      "target": "https://congly.vn",
+      "tech": "Open-Graph-Protocol",
+      "version": "website",
+      "category": "non_numeric",
+      "url": "https://congly.vn/",
+      "scope": "tech.version",
+      "source": "whatweb",
+      "template_id": null
+    }
+  ]
+}

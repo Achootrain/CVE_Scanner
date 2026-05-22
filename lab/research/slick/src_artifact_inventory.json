@@ -1,0 +1,34 @@
+{
+  "_meta": {
+    "tech": "slick",
+    "description": "slick carousel - jQuery responsive carousel plugin by Ken Wheeler",
+    "repo": "https://github.com/kenwheeler/slick",
+    "npm_package": "slick-carousel",
+    "license": "MIT",
+    "note": "Single major version line (1.x). Last release v1.8.1 (2017). Unmaintained."
+  },
+  "releases_examined": ["1.5.0", "1.6.0", "1.8.0", "1.8.1"],
+  "artifacts": {
+    "js_banner": {
+      "file": "slick/slick.js",
+      "lines": "1-20",
+      "format": "ASCII art block comment followed by Version: X.Y.Z",
+      "stable_across_versions": true,
+      "note": "Banner present in unminified slick.js only. slick.min.js strips it."
+    },
+    "css_files": {
+      "slick.css": {"path": "slick/slick.css", "description": "Core carousel styles. No banner/version."},
+      "slick-theme.css": {"path": "slick/slick-theme.css", "description": "Optional theme with @font-face for slick icon font."}
+    },
+    "webfonts": {
+      "path": "slick/fonts/",
+      "files": ["slick.eot", "slick.ttf", "slick.woff", "slick.woff2"],
+      "description": "Custom icon font for prev/next arrows."
+    },
+    "package_json": {"name": "slick-carousel", "version": "1.8.1"},
+    "css_class_prefix": {
+      "prefix": "slick-",
+      "distinctive_classes": ["slick-slider", "slick-initialized", "slick-slide", "slick-track", "slick-list", "slick-dots", "slick-prev", "slick-next"]
+    }
+  }
+}

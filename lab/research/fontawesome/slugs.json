@@ -1,0 +1,24 @@
+{
+  "fetched_at": "2026-05-13",
+  "source": "wordpress.org/plugins/<slug>/ verified per plugin (subagent fanout, 18 lookups)",
+  "slugs": [
+    {"product": "Better Font Awesome", "slug": "better-font-awesome", "status": "active", "notes": "70k+ installs, author Mickey Kay"},
+    {"product": "Font Awesome", "slug": "font-awesome", "status": "active", "notes": "Official FortAwesome plugin, 400k+ installs"},
+    {"product": "WP Font Awesome", "slug": "wp-font-awesome", "status": "active", "notes": "Author Zayed Baloch, 10k+ installs"},
+    {"product": "Shortcode for Font Awesome", "slug": "shortcode-for-font-awesome", "status": "active", "notes": "Author smgwebdesign, 700+ installs"},
+    {"product": "AGP Font Awesome Collection", "slug": "agp-font-awesome-collection", "status": "closed", "notes": "Closed 2023-07-27 for Security Issue"},
+    {"product": "Font Awesome 4 Menus", "slug": "font-awesome-4-menus", "status": "closed", "notes": "Closed 2022-11-02 for Security Issue"},
+    {"product": "Font Awesome More Icons", "slug": "font-awesome-more-icons", "status": "closed", "notes": "Closed 2019-06-27 permanently, Author Request"},
+    {"product": "Font Awesome Integration", "slug": "font-awesome-integration", "status": "closed", "notes": "Closed 2019-09-19 for Licensing/Trademark Violation"},
+    {"product": "Block for Font Awesome", "slug": "block-for-font-awesome", "status": "active", "notes": "1k+ installs, actively maintained"},
+    {"product": "WP Font Awesome Share Icons", "slug": "wp-font-awesome-share-icons", "status": "closed", "notes": "Closed 2024-05-17 for Security Issue"},
+    {"product": "Surbma Font Awesome", "slug": "surbma-font-awesome", "status": "active", "notes": "90+ installs"},
+    {"product": "Perfect Font Awesome Integration", "slug": "perfect-font-awesome-integration", "status": "active", "notes": "Author WPOrbit Support, 100+ installs"},
+    {"product": "Incredible Font Awesome", "slug": "incredible-font-awesome", "status": "closed", "notes": "Closed 2025-01-02 for Security Issue"},
+    {"product": "Font Awesome WP", "slug": "font-awesome-wp", "status": "closed", "notes": "Closed 2025-02-04 for Security Issue, author farjana55"},
+    {"product": "Contact Form 7 Star Rating with Font Awesome", "slug": "contact-form-7-star-rating-with-font-awersome", "status": "closed", "notes": "Slug typo 'awersome'. Closed 2025-02-18 for Security Issue"},
+    {"product": "SS Font Awesome Icon", "slug": "ss-font-awesome-icon", "status": "active", "notes": "Author Shiful H, 200+ installs"},
+    {"product": "Advanced Custom Fields: Font Awesome Field", "slug": "advanced-custom-fields-font-awesome", "status": "active", "notes": "90k+ installs (large footprint)"},
+    {"product": "Ed's Font Awesome", "slug": "eds-font-awesome", "status": "active", "notes": "<10 installs, v3.0.1 patches CVE-2026-2496"}
+  ]
+}

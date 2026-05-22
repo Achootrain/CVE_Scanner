@@ -15,5 +15,4 @@ fingerprinter/stub_session.json
 # Per-process auto-log of patterns Layer 2 of safe_regex auto-blacklisted.
 # Curate by hand into fp/regex_blocklist.txt; the audit log is local-only.
 fingerprinter/fp/regex_blocklist.auto.log
-lab
 .env

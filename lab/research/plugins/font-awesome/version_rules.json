@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-05-13",
+  "source": "https://downloads.wordpress.org/plugin/font-awesome.{tag}.zip",
+  "primary_version": "5.1.5",
+  "cross_versions": [
+    "5.1.4",
+    "5.1.3",
+    "5.1.2"
+  ],
+  "rule_count": 2,
+  "rules": [
+    {
+      "path": "/index.php",
+      "regex": "(?im)^\\s*\\*?\\s*Version\\s*:\\s*([0-9][\\w.\\-]*)",
+      "regex_family": "php header: Version: X.Y.Z",
+      "validated_versions": [
+        "5.1.5",
+        "5.1.2",
+        "5.1.3",
+        "5.1.4"
+      ],
+      "sample_context": {
+        "5.1.5": "ught to you by the Font Awesome team.\\n * Version:           5.1.5\\n * Author:            Font Awesome\\n * Author URI:        ht",
+        "5.1.4": "ught to you by the Font Awesome team.\\n * Version:           5.1.4\\n * Author:            Font Awesome\\n * Author URI:        ht",
+        "5.1.3": "ught to you by the Font Awesome team.\\n * Version:           5.1.3\\n * Author:            Font Awesome\\n * Author URI:        ht",
+        "5.1.2": "ught to you by the Font Awesome team.\\n * Version:           5.1.2\\n * Author:            Font Awesome\\n * Author URI:        ht"
+      }
+    },
+    {
+      "path": "/readme.txt",
+      "regex": "(?im)^Stable\\s*tag\\s*:\\s*([0-9][\\w.\\-]*)",
+      "regex_family": "wp plugin readme: Stable tag: X.Y.Z",
+      "validated_versions": [
+        "5.1.5",
+        "5.1.2",
+        "5.1.3",
+        "5.1.4"
+      ],
+      "sample_context": {
+        "5.1.5": " mlwilkerson, robmadole, frrrances, deathnfudge\\nStable tag: 5.1.5\\nTags: FontAwesome, icon, svg icon, iconfont, webfont\\nRequir",
+        "5.1.4": " mlwilkerson, robmadole, frrrances, deathnfudge\\nStable tag: 5.1.4\\nTags: FontAwesome, icon, svg icon, iconfont, webfont\\nRequir",
+        "5.1.3": " mlwilkerson, robmadole, frrrances, deathnfudge\\nStable tag: 5.1.3\\nTags: FontAwesome, icon, svg icon, iconfont, webfont\\nRequir",
+        "5.1.2": " mlwilkerson, robmadole, frrrances, deathnfudge\\nStable tag: 5.1.2\\nTags: FontAwesome, icon, svg icon, iconfont, webfont\\nRequir"
+      }
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "summary": {
+    "test_targets": 23,
+    "versioned": 16,
+    "from_url": 9,
+    "from_body": 7,
+    "kit_only": 0,
+    "no_match": 2,
+    "fetch_err": 5,
+    "detection_rate_pct": 69.6,
+    "elapsed_s": 51.2
+  },
+  "per_site": [
+    {
+      "host": "berich.vn",
+      "version": "4.7.0",
+      "source": "url",
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+      "evidence": "url"
+    },
+    {
+      "host": "betacinemas.vn",
+      "version": "4.3.0",
+      "source": "body",
+      "url": "https://betacinemas.vn/Assets/Common/Plugins/font-awesome/css/font-awesome.min.css",
+      "evidence": "fa_banner"
+    },
+    {
+      "host": "bidecons.com.vn",
+      "version": "5.15.1",
+      "source": "url",
+      "url": "http://bidecons.com.vn/wp-content/uploads/font-awesome/v5.15.1/css/svg-with-js.css",
+      "evidence": "url"
+    },
+    {
+      "host": "bigbag.vn",
+      "version": null,
+      "source": "no_match",
+      "urls": []
+    },
+    {
+      "host": "bighost.vn",
+      "version": "4.7.0",
+      "source": "body",
+      "url": "https://bighost.vn/themes/concung/style/font-awesome-4-7/css/font-awesome.css",
+      "evidence": "fa_banner"
+    },
+    {
+      "host": "bike2school.vn",
+      "version": "4.7.0",
+      "source": "url",
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+      "evidence": "url"
+    },
+    {
+      "host": "binhanh.vn",
+      "version": "5.8.2",
+      "source": "url",
+      "url": "https://bagps.vn/public/fonts/fontawesome-pro-5.8.2-web/css/all.min.css",
+      "evidence": "url"
+    },
+    {
+      "host": "binhdanhocvuso.gov.vn",
+      "version": "4.7.0",
+      "source": "url",
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+      "evidence": "url"
+    },
+    {
+      "host": "binhphuoc.gov.vn",
+      "version": "4.7.0",
+      "source": "body",
+      "url": "https://binhphuoc.gov.vn/assets/css/font-awesome.min.css?t=1749872343",
+      "evidence": "fa_banner"
+    },
+    {
+      "host": "biz.shopy.vn",
+      "version": null,
+      "source": "blocked",
+      "error": "cloudflare:block-status"
+    },
+    {
+      "host": "bkdns.vn",
+      "version": null,
+      "source": "error",
+      "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 10015 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+    },
+    {
+      "host": "bkhost.vn",
+      "version": "6.6.0",
+      "source": "url",
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css",
+      "evidence": "url"
+    },
+    {
+      "host": "bkns.com.vn",
+      "version": null,
+      "source": "http_5xx",
+      "error": null
+    },
+    {
+      "host": "blhvip.vn",
+      "version": "6.2.0",
+      "source": "url",
+      "url": "https://blhvip.vn/asset/css/fontawesome-free-6.2.0-web/css/all.min.css?v=1683738890",
+      "evidence": "url"
+    },
+    {
+      "host": "bmsc.com.vn",
+      "version": "4.7.0",
+      "source": "body",
+      "url": "https://bmsc.com.vn/themes/default/css/font-awesome.min.css",
+      "evidence": "fa_banner"
+    },
+    {
+      "host": "boitarot.com.vn",
+      "version": null,
+      "source": "error",
+      "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 10007 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+    },
+    {
+      "host": "boitarot.vn",
+      "version": "5.15.4",
+      "source": "url",
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css",
+      "evidence": "url"
+    },
+    {
+      "host": "bolero.vn",
+      "version": null,
+      "source": "no_match",
+      "urls": []
+    },
+    {
+      "host": "bravo.com.vn",
+      "version": "5.15.1",
+      "source": "body",
+      "url": "https://www.bravo.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js",
+      "evidence": "fa_banner"
+    },
+    {
+      "host": "bvhungvuong.vn",
+      "version": null,
+      "source": "error",
+      "error": "Timeout: Failed to perform, curl: (28) Connection timed out after 10013 milliseconds. See https://curl.se/libcurl/c/libcurl-errors.html first for more details."
+    },
+    {
+      "host": "bvsc.com.vn",
+      "version": "6.2.1",
+      "source": "url",
+      "url": "https://bvsc.com.vn/libs/fontawesome-free-6.2.1-web/css/fontawesome.css",
+      "evidence": "url"
+    },
+    {
+      "host": "bysgame.vn",
+      "version": "5.13.0",
+      "source": "body",
+      "url": "https://bysgame.vn/public/frontend/css/fontawesome.min.css",
+      "evidence": "fa_banner"
+    },
+    {
+      "host": "cafeauto.vn",
+      "version": "6.2.1",
+      "source": "body",
+      "url": "https://cafeauto.vn/assets/css/plugins/fontawesome.min.css",
+      "evidence": "fa_banner"
+    }
+  ]
+}

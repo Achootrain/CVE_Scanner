@@ -1,3 +1,8 @@
 aiohttp>=3.9
+curl-cffi>=0.7      # Chrome TLS/HTTP2 impersonation for Cloudflare bypass
 PyYAML>=6.0
-mmh3>=4.1   # optional, required only for favicon DSL (mmh3 hash matchers)
+mmh3>=4.1            # optional, required only for favicon DSL (mmh3 hash matchers)
+cloakbrowser>=0.3    # stealth Chromium for the cloak/Stage-5 escalation tier
+
+openai>=1.30         # required for `fp detect-version` with OpenAI/Copilot provider
+crawl4ai>=0.4        # required for `fp collect` (Crawl4AI web crawler)

@@ -1,0 +1,130 @@
+{
+  "_meta": {
+    "tech": "slick",
+    "authored_from": "slick carousel GitHub repo (kenwheeler/slick), releases v1.5.0 through v1.8.1. npm package 'slick-carousel'. Source-grounded: every rule cites a specific release file.",
+    "inventory": "src_artifact_inventory.json",
+    "principle": "every rule cites a file+line in a slick release OR a documented downstream convention. corpus is for validation, not authoring.",
+    "extracts_semantics": {
+      "{\"g\": N}": "value comes from regex capture group N",
+      "{\"l\": V}": "literal value V"
+    }
+  },
+  "banner_rules": [
+    {
+      "id": "banner_slick",
+      "kind": "banner",
+      "pattern": "Version:\\s*(\\d+\\.\\d+(?:\\.\\d+)?)\\s*\\n\\s*Author:\\s*Ken Wheeler",
+      "extracts": {
+        "version": {"g": 1}
+      },
+      "applies_to": "js body",
+      "source": {
+        "releases": ["1.5.0", "1.6.0", "1.8.0", "1.8.1"],
+        "file": "slick/slick.js lines 1-20",
+        "literal": "Version: 1.8.1\\n  Author: Ken Wheeler",
+        "note": "Banner format stable across all 1.x releases. ASCII art header followed by 'Version: X.Y.Z' and 'Author: Ken Wheeler'. The Author line disambiguates from other libraries that may use 'Version:' in comments. Minified slick.min.js strips the banner entirely."
+      },
+      "confidence": "high"
+    }
+  ],
+  "url_version_in_path_rules": [
+    {
+      "id": "url_slick_token_then_version",
+      "kind": "url_version",
+      "pattern": "(?:slick-carousel|slick)[^\\d?#]*?(\\d+\\.\\d+(?:\\.\\d+)?)",
+      "extracts": {
+        "version": {"g": 1}
+      },
+      "applies_to": "any URL string",
+      "source": {
+        "principle": "Proximity match: slick token, then any non-digit non-query chars, then a dotted-semver version. Same shape as the FA rule (lab/research/fontawesome/rules_src.json url_fa_token_then_version) -- one regex per tech, not per CDN host.",
+        "covers": [
+          "cdnjs:        /ajax/libs/slick-carousel/1.8.1/",
+          "jsdelivr npm: /npm/slick-carousel@1.8.1/",
+          "jsdelivr gh:  /gh/kenwheeler/slick@1.8.0/",
+          "unpkg:        /slick-carousel@1.8.1/",
+          "self-hosted:  /slick-1.8.1/, /slick-carousel-1.8.1/, /slick/1.8.0/"
+        ],
+        "rejects_by_design": [
+          "?cb=1.2.3 cache-busters (query boundary)",
+          "?ver=X.Y.Z (handled by separate query rule)"
+        ]
+      },
+      "confidence": "high"
+    },
+    {
+      "id": "url_slick_with_query_ver",
+      "kind": "url_version",
+      "pattern": "slick[^?#]*?[?&](?:ver|version|v)=(\\d+\\.\\d+(?:\\.\\d+)?)",
+      "extracts": {
+        "version": {"g": 1}
+      },
+      "applies_to": "any URL with query string",
+      "source": {
+        "principle": "WordPress wp_enqueue_style/script appends ?ver=$version. Same caveat as the FA query rule: ?ver= may reflect WRAPPER's version when the slick bundle is shipped inside a theme/plugin, not slick's own release number.",
+        "doc_url": "https://developer.wordpress.org/reference/functions/wp_enqueue_script/"
+      },
+      "confidence": "medium"
+    }
+  ],
+  "url_filename_rules": [
+    {
+      "id": "url_slick_js",
+      "kind": "url_filename",
+      "pattern": "(?:^|/)slick(?:\\.min)?\\.js(?:\\?|$|#)",
+      "extracts": {},
+      "applies_to": "any URL",
+      "source": {
+        "releases": ["1.5.0", "1.6.0", "1.8.0", "1.8.1"],
+        "file": "slick/slick.js and slick/slick.min.js",
+        "literal": "Canonical JS filename. Present in all releases."
+      },
+      "confidence": "high",
+      "note": "Detection only; version not extractable from filename alone."
+    },
+    {
+      "id": "url_slick_css",
+      "kind": "url_filename",
+      "pattern": "(?:^|/)slick(?:\\.min)?\\.css(?:\\?|$|#)",
+      "extracts": {},
+      "applies_to": "any URL",
+      "source": {
+        "releases": ["1.5.0", "1.6.0", "1.8.0", "1.8.1"],
+        "file": "slick/slick.css",
+        "literal": "Core carousel stylesheet. Present in all releases."
+      },
+      "confidence": "high",
+      "note": "Detection only."
+    },
+    {
+      "id": "url_slick_theme_css",
+      "kind": "url_filename",
+      "pattern": "(?:^|/)slick-theme(?:\\.min)?\\.css(?:\\?|$|#)",
+      "extracts": {},
+      "applies_to": "any URL",
+      "source": {
+        "releases": ["1.5.0", "1.6.0", "1.8.0", "1.8.1"],
+        "file": "slick/slick-theme.css",
+        "literal": "Optional theme layer. Name 'slick-theme' is distinctive."
+      },
+      "confidence": "high",
+      "note": "Detection only; highly distinctive filename."
+    }
+  ],
+  "webfont_rules": [
+    {
+      "id": "font_slick",
+      "kind": "webfont",
+      "pattern": "(?:^|/)(?:fonts/)?slick\\.(?:woff2|woff|ttf|eot)",
+      "extracts": {},
+      "applies_to": "any URL",
+      "source": {
+        "releases": ["1.5.0", "1.6.0", "1.8.0", "1.8.1"],
+        "file": "slick/fonts/slick.{eot,ttf,woff,woff2}",
+        "literal": "Custom icon font for prev/next arrow glyphs. Referenced in slick-theme.css."
+      },
+      "confidence": "high",
+      "note": "Detection only."
+    }
+  ]
+}

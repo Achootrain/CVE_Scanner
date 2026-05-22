@@ -44,6 +44,67 @@ def test_word_matcher_or_any_hit():
     assert len(dets) == 1 and dets[0].matcher_name == "wp"
 
 
+def test_word_matcher_case_sensitive_by_default():
+    """Nuclei word matchers are case-sensitive unless the template sets
+    `case-insensitive: true`. Without this, templates like jeecg-boot-detect
+    (word: `Jeecg-Boot`) fire on 404 pages that reflect the lowercase path
+    back into the body. Regression test for that FP class."""
+    req = {
+        "matchers_condition": "or",
+        "stop_at_first_match": False,
+        "extractors": [],
+        "matchers": [
+            {"type": "word", "name": None, "part": "body",
+             "condition": "or", "negative": False,
+             "case_insensitive": False,
+             "values": ["Jeecg-Boot"]},
+        ],
+    }
+    # Lowercase path reflection (Drupal 404 / body class) must NOT match.
+    assert len(_evaluate_request(req, _tpl(), "http://t/", "/", _resp(
+        body=b'<body class="page-jeecg-boot">not found /jeecg-boot/</body>'))) == 0
+    # Exact-case occurrence still matches.
+    assert len(_evaluate_request(req, _tpl(), "http://t/", "/", _resp(
+        body=b'Jeecg-Boot admin panel'))) == 1
+
+
+def test_word_matcher_case_insensitive_opt_in():
+    """When `case-insensitive: true`, cache.py lowers values and scanner
+    lowers body — so mixed-case text still matches."""
+    req = {
+        "matchers_condition": "or",
+        "stop_at_first_match": False,
+        "extractors": [],
+        "matchers": [
+            {"type": "word", "name": None, "part": "body",
+             "condition": "or", "negative": False,
+             "case_insensitive": True,
+             "values": ["jeecg-boot"]},   # pre-lowered by cache
+        ],
+    }
+    assert len(_evaluate_request(req, _tpl(), "http://t/", "/", _resp(
+        body=b'<body class="page-Jeecg-Boot">'))) == 1
+
+
+def test_regex_matcher_case_insensitive_opt_in():
+    req = {
+        "matchers_condition": "or",
+        "stop_at_first_match": False,
+        "extractors": [],
+        "matchers": [
+            {"type": "regex", "name": None, "part": "body", "condition": "or",
+             "negative": False, "case_insensitive": True,
+             "values": [r"jeecg-boot"]},
+        ],
+    }
+    assert len(_evaluate_request(req, _tpl(), "http://t/", "/", _resp(
+        body=b'Jeecg-Boot'))) == 1
+    # Default (case-sensitive) regex wouldn't match without the flag.
+    req["matchers"][0]["case_insensitive"] = False
+    assert len(_evaluate_request(req, _tpl(), "http://t/", "/", _resp(
+        body=b'Jeecg-Boot'))) == 0
+
+
 def test_word_matcher_and_all_required():
     req = {
         "matchers_condition": "and",

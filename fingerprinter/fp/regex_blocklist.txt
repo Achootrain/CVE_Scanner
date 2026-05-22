@@ -1,0 +1,49 @@
+# Curated regex blocklist for fp.safe_regex.
+#
+# Patterns listed here are pre-loaded into the global _BLACKLIST at
+# module import. Each pattern is matched verbatim (string equality) against
+# the source pattern of every safe_search call -- the same key used by the
+# auto-blacklist in safe_search itself. Pattern strings come from upstream
+# nuclei templates / Wappalyzer rules / retire.js definitions, copied
+# byte-for-byte from the slow-regex log.
+#
+# Format:
+#   - One pattern per line.
+#   - Lines starting with '#' are comments. Blank lines ignored.
+#   - No quoting, no escaping. The line is the literal pattern string as
+#     it appeared in the slow-regex log line ("pattern='...'").
+#
+# How to add a new entry:
+#   1. Run a pipeline that hangs.
+#   2. In scan_results.stderr find the most recent
+#      "[scan +Xs] matchers slow-regex elapsed=X.Xs ... pattern='...'" line.
+#   3. Copy the contents between the single quotes into a new line below.
+#   4. Re-run; pattern is skipped from then on (calls return None).
+
+# 2026-05-02: nuclei open-journal-systems template. Single pattern with
+# four .* quantifiers + (?i) + dot-instead-of-escaped-dot. Took 146.24s
+# in re.search on a 431 KB SPA homepage (2dep.vn). Classic catastrophic
+# backtracking trigger.
+(?i).*<meta.name="generator".content="Open.Journal.Systems.*>
+.*OpenProject.Foundation.\(OPF\)
+.*?(f|F)(i|I)(r|R)(e|E)(b|B)(a|A)(s|S)(e|E)(i|I)(o|O)[.](c|C)(o|O)(m|M).*?
+\.payu\.com
+<script>[\s\S]*?go-mpulse\.net\/boomerang[\s\S]*?</script>
+<meta (.*)EmpireCMS(.*)>
+<script [^>]*>[\s\S]*//counter\.yadro\.ru/hit
+.*?operation not found.*?
+<style>[\s\S]*\.explain > \.s[\s\S]*\.explain > \.ctr > \.s
+assets\.gurucan\.com
+\.dema\.ai
+static/scripts/furo\.js
+app\.engati\.com/
+<script[^>].*hybris.*.js
+content="(.*)AeroCMS(.*)
+www\.solodev\.com/
+(?:((?:\d+\.)+\d+)\/)?(?:jquery\.)?backstretch(?:\.min)?\.js
+jquery-ui[.-]([\d.]*\d)[^/]*\.js
+widget\.sonetel\.com
+\.getbalance\.com/
+app\.zipchat\.ai
+\.cellxpert\.com/
+app\.lead-concept\.com/

@@ -1,0 +1,607 @@
+{
+  "_meta": {
+    "captured_from": "fp.url_ver + fp.version_probes",
+    "purpose": "seed input for lab.url_ver_lab.seed; replaces direct module import after scanner-side constants are removed.",
+    "last_research_merge": "2026-05-17: next.js banner rule + aliases"
+  },
+  "WP_PLUGIN_MAP": {
+    "acf": "Advanced Custom Fields",
+    "advanced-custom-fields": "Advanced Custom Fields",
+    "akismet": "Akismet",
+    "all-in-one-seo-pack": "All in One SEO",
+    "bbpress": "bbPress",
+    "buddypress": "BuddyPress",
+    "contact-form-7": "Contact Form 7",
+    "duplicate-post": "Duplicate Post",
+    "elementor": "Elementor",
+    "elementor-pro": "Elementor Pro",
+    "gravityforms": "Gravity Forms",
+    "jetpack": "Jetpack",
+    "layerslider": "LayerSlider",
+    "litespeed-cache": "LiteSpeed Cache",
+    "mailchimp-for-wp": "Mailchimp for WordPress",
+    "peepso": "PeepSo",
+    "postbox": "Postbox",
+    "rankmath": "Rank Math SEO",
+    "really-simple-ssl": "Really Simple SSL",
+    "redux-framework": "Redux Framework",
+    "revslider": "Slider Revolution",
+    "updraftplus": "UpdraftPlus",
+    "w3-total-cache": "W3 Total Cache",
+    "woocommerce": "WooCommerce",
+    "woocommerce-payments": "WooCommerce Payments",
+    "wordpress-seo": "Yoast SEO",
+    "wpforms": "WPForms",
+    "wpforms-lite": "WPForms",
+    "wordfence": "Wordfence",
+    "wp-rocket": "WP Rocket",
+    "wp-super-cache": "WP Super Cache",
+    "yoast-seo": "Yoast SEO"
+  },
+  "_JS_LIB_MAP": {
+    "@finsweet/cookie-consent": "Finsweet Cookie Consent",
+    "@mdi/font": "Material Design Icons",
+    "@splidejs/splide-extension-auto-scroll": "Splide Auto Scroll",
+    "@splidejs/splide-extension-intersection": "Splide Intersection",
+    "@unicorn-fail/drupal-bootstrap-styles": "Drupal Bootstrap Styles",
+    "alpine": "Alpine.js",
+    "alpinejs": "Alpine.js",
+    "angular": "Angular",
+    "anime": "Anime.js",
+    "axios": "Axios",
+    "backbone": "Backbone.js",
+    "bootstrap": "Bootstrap",
+    "bootstrap-icons": "Bootstrap Icons",
+    "chart": "Chart.js",
+    "chart.js": "Chart.js",
+    "chartjs": "Chart.js",
+    "clipboard": "clipboard.js",
+    "codemirror": "CodeMirror",
+    "d3": "D3.js",
+    "datatables": "DataTables",
+    "dayjs": "Day.js",
+    "dompurify": "DOMPurify",
+    "fancybox": "Fancybox",
+    "flatpickr": "Flatpickr",
+    "font-awesome": "Font Awesome",
+    "fontawesome": "Font Awesome",
+    "gsap": "GSAP",
+    "hammer": "Hammer.js",
+    "highlight": "highlight.js",
+    "hls.js": "hls.js",
+    "htmx": "htmx",
+    "isotope": "Isotope",
+    "jquery": "jQuery",
+    "jquery-migrate": "jQuery Migrate",
+    "jquery-ui": "jQuery UI",
+    "jquery-validation": "jQuery Validation",
+    "lightbox": "Lightbox",
+    "lightbox2": "Lightbox",
+    "lodash": "Lodash",
+    "lodash-es": "Lodash",
+    "magnific-popup": "Magnific Popup",
+    "masonry": "Masonry",
+    "mediaelement": "MediaElement.js",
+    "moment": "Moment.js",
+    "next.js": "Next.js",
+    "nextjs": "Next.js",
+    "nouislider": "noUiSlider",
+    "owl-carousel": "Owl Carousel",
+    "owl.carousel": "Owl Carousel",
+    "photoswipe": "PhotoSwipe",
+    "pikaday": "Pikaday",
+    "plyr": "Plyr",
+    "popper": "Popper.js",
+    "prism": "Prism.js",
+    "prismjs": "Prism.js",
+    "quill": "Quill",
+    "react": "React",
+    "react-dom": "React",
+    "recombee-js-api-client": "Recombee JS API Client",
+    "remixicon": "Remix Icon",
+    "select2": "Select2",
+    "slick": "Slick",
+    "slick-carousel": "Slick",
+    "socket.io": "Socket.IO",
+    "socket.io-client": "Socket.IO",
+    "socketio": "Socket.IO",
+    "sortable": "SortableJS",
+    "sortablejs": "SortableJS",
+    "swiper": "Swiper",
+    "three": "Three.js",
+    "tinymce": "TinyMCE",
+    "tippy": "Tippy.js",
+    "typed": "Typed.js",
+    "uikit": "UIKit",
+    "underscore": "Underscore.js",
+    "vanilla-lazyload": "LazyLoad",
+    "velocity": "Velocity.js",
+    "video.js": "Video.js",
+    "videojs": "Video.js",
+    "vue": "Vue.js",
+    "waypoints": "Waypoints"
+  },
+  "_CDN_PKG_MAP": {
+    "@finsweet/cookie-consent": "Finsweet Cookie Consent",
+    "@fortawesome/fontawesome-free": "Font Awesome",
+    "@fortawesome/fontawesome-svg-core": "Font Awesome",
+    "@mdi/font": "Material Design Icons",
+    "@popperjs/core": "Popper.js",
+    "@splidejs/splide-extension-auto-scroll": "Splide Auto Scroll",
+    "@splidejs/splide-extension-intersection": "Splide Intersection",
+    "@unicorn-fail/drupal-bootstrap-styles": "Drupal Bootstrap Styles",
+    "alpine": "Alpine.js",
+    "alpinejs": "Alpine.js",
+    "angular": "Angular",
+    "animate.css": "Animate.css",
+    "anime": "Anime.js",
+    "axios": "Axios",
+    "backbone": "Backbone.js",
+    "bootstrap": "Bootstrap",
+    "bootstrap-icons": "Bootstrap Icons",
+    "chart": "Chart.js",
+    "chart.js": "Chart.js",
+    "chartjs": "Chart.js",
+    "clipboard": "clipboard.js",
+    "codemirror": "CodeMirror",
+    "d3": "D3.js",
+    "datatables": "DataTables",
+    "datatables.net": "DataTables",
+    "dayjs": "Day.js",
+    "dompurify": "DOMPurify",
+    "fancybox": "Fancybox",
+    "flatpickr": "Flatpickr",
+    "font-awesome": "Font Awesome",
+    "fontawesome": "Font Awesome",
+    "gsap": "GSAP",
+    "hammer": "Hammer.js",
+    "highlight": "highlight.js",
+    "highlight.js": "highlight.js",
+    "hls.js": "hls.js",
+    "htmx": "htmx",
+    "htmx.org": "htmx",
+    "isotope": "Isotope",
+    "jquery": "jQuery",
+    "jquery-migrate": "jQuery Migrate",
+    "jquery-ui": "jQuery UI",
+    "jquery-validation": "jQuery Validation",
+    "lightbox": "Lightbox",
+    "lightbox2": "Lightbox",
+    "lodash": "Lodash",
+    "lodash-es": "Lodash",
+    "magnific-popup": "Magnific Popup",
+    "masonry": "Masonry",
+    "mediaelement": "MediaElement.js",
+    "moment": "Moment.js",
+    "next.js": "Next.js",
+    "nextjs": "Next.js",
+    "nouislider": "noUiSlider",
+    "owl-carousel": "Owl Carousel",
+    "owl.carousel": "Owl Carousel",
+    "photoswipe": "PhotoSwipe",
+    "pikaday": "Pikaday",
+    "plyr": "Plyr",
+    "popper": "Popper.js",
+    "popper.js": "Popper.js",
+    "prism": "Prism.js",
+    "prismjs": "Prism.js",
+    "quill": "Quill",
+    "react": "React",
+    "react-dom": "React",
+    "recombee-js-api-client": "Recombee JS API Client",
+    "remixicon": "Remix Icon",
+    "select2": "Select2",
+    "slick": "Slick",
+    "slick-carousel": "Slick",
+    "socket.io": "Socket.IO",
+    "socket.io-client": "Socket.IO",
+    "socketio": "Socket.IO",
+    "sortable": "SortableJS",
+    "sortablejs": "SortableJS",
+    "swiper": "Swiper",
+    "three": "Three.js",
+    "tinymce": "TinyMCE",
+    "tippy": "Tippy.js",
+    "tippy.js": "Tippy.js",
+    "typed": "Typed.js",
+    "uikit": "UIKit",
+    "underscore": "Underscore.js",
+    "vanilla-lazyload": "LazyLoad",
+    "velocity": "Velocity.js",
+    "video.js": "Video.js",
+    "videojs": "Video.js",
+    "vue": "Vue.js",
+    "waypoints": "Waypoints"
+  },
+  "_SKIP_STEMS": [
+    "all",
+    "app",
+    "base",
+    "build",
+    "bundle",
+    "chunk",
+    "common",
+    "core",
+    "custom",
+    "dist",
+    "global",
+    "helper",
+    "helpers",
+    "index",
+    "init",
+    "lib",
+    "libs",
+    "main",
+    "min",
+    "minified",
+    "module",
+    "modules",
+    "page",
+    "pages",
+    "polyfills",
+    "public",
+    "runtime",
+    "script",
+    "scripts",
+    "shared",
+    "site",
+    "style",
+    "styles",
+    "theme",
+    "util",
+    "utils",
+    "vendor",
+    "wp",
+    "wp-embed"
+  ],
+  "_CDN_PATTERNS": [
+    {
+      "pattern": "use\\.fontawesome\\.com/releases/v?(\\d+\\.\\d+(?:\\.\\d+)*)",
+      "flags": 32,
+      "pkg_group": null,
+      "version_group": 1,
+      "fixed_name": "Font Awesome"
+    },
+    {
+      "pattern": "cdn\\.jsdelivr\\.net/npm/(@?[^/@?]+(?:/[^/@?]+)?)@(\\d+\\.\\d+(?:\\.\\d+)*)",
+      "flags": 32,
+      "pkg_group": 1,
+      "version_group": 2,
+      "fixed_name": null
+    },
+    {
+      "pattern": "unpkg\\.com/(@?[^/@?]+)@(\\d+\\.\\d+(?:\\.\\d+)*)",
+      "flags": 32,
+      "pkg_group": 1,
+      "version_group": 2,
+      "fixed_name": null
+    },
+    {
+      "pattern": "cdnjs\\.cloudflare\\.com/ajax/libs/([^/?]+)/(\\d+\\.\\d+(?:\\.\\d+)*)",
+      "flags": 32,
+      "pkg_group": 1,
+      "version_group": 2,
+      "fixed_name": null
+    },
+    {
+      "pattern": "ajax\\.googleapis\\.com/ajax/libs/([^/?]+)/(\\d+\\.\\d+(?:\\.\\d+)*)",
+      "flags": 32,
+      "pkg_group": 1,
+      "version_group": 2,
+      "fixed_name": null
+    },
+    {
+      "pattern": "bootstrapcdn\\.com/bootstrap/(\\d+\\.\\d+(?:\\.\\d+)*)",
+      "flags": 32,
+      "pkg_group": null,
+      "version_group": 1,
+      "fixed_name": "Bootstrap"
+    },
+    {
+      "pattern": "code\\.jquery\\.com/jquery-(\\d+\\.\\d+(?:\\.\\d+)*)",
+      "flags": 32,
+      "pkg_group": null,
+      "version_group": 1,
+      "fixed_name": "jQuery"
+    },
+    {
+      "pattern": "code\\.jquery\\.com/ui/(\\d+\\.\\d+(?:\\.\\d+)*)",
+      "flags": 32,
+      "pkg_group": null,
+      "version_group": 1,
+      "fixed_name": "jQuery UI"
+    },
+    {
+      "pattern": "jsdelivr\\.net/npm/((?:@[^/@]+/)?[^/@]+)@([=v]*\\d+\\.\\d+\\.\\d+[0-9A-Za-z\\-]*)(?=[/?#]|$)",
+      "flags": 32,
+      "pkg_group": 1,
+      "version_group": 2,
+      "fixed_name": null,
+      "family": "cdn: jsdelivr_npm",
+      "origin": "research:jsdelivr"
+    },
+    {
+      "pattern": "jsdelivr\\.net/gh/[^/@]+/((?:@[^/@]+/)?[^/@]+)@([=v]*\\d+\\.\\d+\\.\\d+[0-9A-Za-z\\-]*)(?=[/?#]|$)",
+      "flags": 32,
+      "pkg_group": 1,
+      "version_group": 2,
+      "fixed_name": null,
+      "family": "cdn: jsdelivr_gh",
+      "origin": "research:jsdelivr"
+    }
+  ],
+  "_FRAMEWORK_PATTERNS": [
+    {
+      "pattern": "/_next/static/",
+      "flags": 34,
+      "tech": "Next.js",
+      "slug": "next.js"
+    },
+    {
+      "pattern": "/static/chunks/.*-[0-9a-f]{16}\\.js",
+      "flags": 34,
+      "tech": "Next.js",
+      "slug": "next.js"
+    },
+    {
+      "pattern": "/_nuxt/",
+      "flags": 34,
+      "tech": "Nuxt.js",
+      "slug": "nuxt.js"
+    },
+    {
+      "pattern": "/_app/immutable/",
+      "flags": 34,
+      "tech": "SvelteKit",
+      "slug": "sveltekit"
+    },
+    {
+      "pattern": "/page-data/",
+      "flags": 34,
+      "tech": "Gatsby",
+      "slug": "gatsby"
+    },
+    {
+      "pattern": "/build/root-[A-Z0-9]+\\.js",
+      "flags": 34,
+      "tech": "Remix",
+      "slug": "remix"
+    }
+  ],
+  "version_probes_CATALOG": [
+    {
+      "name": "WordPress",
+      "path": "/readme.html",
+      "regex": "<br\\s*/?>\\s*Version\\s+(\\d+\\.\\d+(?:\\.\\d+)?)",
+      "method": "GET",
+      "version_group": 1,
+      "ok_status": [
+        200
+      ],
+      "part": "body",
+      "content_hint": "WordPress",
+      "headers": {}
+    },
+    {
+      "name": "WordPress",
+      "path": "/wp-json/",
+      "regex": "\"version\"\\s*:\\s*\"(\\d+\\.\\d+(?:\\.\\d+)?)\"",
+      "method": "GET",
+      "version_group": 1,
+      "ok_status": [
+        200
+      ],
+      "part": "body",
+      "content_hint": "\"wp/v2\"",
+      "headers": {}
+    },
+    {
+      "name": "Drupal",
+      "path": "/CHANGELOG.txt",
+      "regex": "Drupal\\s+(\\d+\\.\\d+(?:\\.\\d+)?)\\s*,",
+      "method": "GET",
+      "version_group": 1,
+      "ok_status": [
+        200
+      ],
+      "part": "body",
+      "content_hint": "Drupal",
+      "headers": {}
+    },
+    {
+      "name": "Joomla",
+      "path": "/administrator/manifests/files/joomla.xml",
+      "regex": "<version>\\s*(\\d+\\.\\d+(?:\\.\\d+)?)\\s*</version>",
+      "method": "GET",
+      "version_group": 1,
+      "ok_status": [
+        200
+      ],
+      "part": "body",
+      "content_hint": "<version>",
+      "headers": {}
+    },
+    {
+      "name": "phpMyAdmin",
+      "path": "/doc/html/index.html",
+      "regex": "phpMyAdmin\\s+(\\d+\\.\\d+(?:\\.\\d+)?)",
+      "method": "GET",
+      "version_group": 1,
+      "ok_status": [
+        200
+      ],
+      "part": "body",
+      "content_hint": "phpMyAdmin",
+      "headers": {}
+    },
+    {
+      "name": "Grafana",
+      "path": "/api/frontend/settings",
+      "regex": "\"version\"\\s*:\\s*\"(\\d+\\.\\d+\\.\\d+)\"",
+      "method": "GET",
+      "version_group": 1,
+      "ok_status": [
+        200
+      ],
+      "part": "body",
+      "content_hint": "buildInfo",
+      "headers": {}
+    },
+    {
+      "name": "Jenkins",
+      "path": "/",
+      "regex": "X-Jenkins:\\s*(\\d+\\.\\d+(?:\\.\\d+)?)",
+      "method": "GET",
+      "version_group": 1,
+      "ok_status": [
+        200
+      ],
+      "part": "header",
+      "content_hint": null,
+      "headers": {}
+    },
+    {
+      "name": "GitLab",
+      "path": "/api/v4/version",
+      "regex": "\"version\"\\s*:\\s*\"(\\d+\\.\\d+\\.\\d+)",
+      "method": "GET",
+      "version_group": 1,
+      "ok_status": [
+        200
+      ],
+      "part": "body",
+      "content_hint": "\"version\"",
+      "headers": {}
+    },
+    {
+      "name": "GitLab",
+      "path": "/help",
+      "regex": "GitLab\\s+(?:Community|Enterprise)\\s+Edition\\s+(\\d+\\.\\d+\\.\\d+)",
+      "method": "GET",
+      "version_group": 1,
+      "ok_status": [
+        200
+      ],
+      "part": "body",
+      "content_hint": "GitLab",
+      "headers": {}
+    },
+    {
+      "name": "Spring Boot",
+      "path": "/actuator/info",
+      "regex": "\"version\"\\s*:\\s*\"([^\"]+)\"",
+      "method": "GET",
+      "version_group": 1,
+      "ok_status": [
+        200
+      ],
+      "part": "body",
+      "content_hint": "\"build\"",
+      "headers": {}
+    },
+    {
+      "name": "Sentry",
+      "path": "/api/0/",
+      "regex": "\"version\"\\s*:\\s*\\{[^}]*\"current\"\\s*:\\s*\"([^\"]+)\"",
+      "method": "GET",
+      "version_group": 1,
+      "ok_status": [
+        200
+      ],
+      "part": "body",
+      "content_hint": "sentry",
+      "headers": {}
+    },
+    {
+      "name": "Mattermost",
+      "path": "/api/v4/system/ping?get_server_status=true",
+      "regex": "\"ServerVersion\"\\s*:\\s*\"(\\d+\\.\\d+\\.\\d+)",
+      "method": "GET",
+      "version_group": 1,
+      "ok_status": [
+        200
+      ],
+      "part": "body",
+      "content_hint": "ServerVersion",
+      "headers": {}
+    },
+    {
+      "name": "Supabase Storage",
+      "path": "/storage/v1/version",
+      "regex": "^(\\d+\\.\\d+\\.\\d+)\\s*$",
+      "method": "GET",
+      "version_group": 1,
+      "ok_status": [
+        200
+      ],
+      "part": "body",
+      "content_hint": null,
+      "headers": {}
+    },
+    {
+      "name": "generic-api-info",
+      "path": "/api/info",
+      "regex": "\"version\"\\s*:\\s*\"(\\d+\\.\\d+(?:\\.\\d+)?(?:[-+][\\w.]+)?)\"",
+      "method": "GET",
+      "version_group": 1,
+      "ok_status": [
+        200
+      ],
+      "part": "body",
+      "content_hint": null,
+      "headers": {}
+    },
+    {
+      "name": "generic-api-version",
+      "path": "/api/version",
+      "regex": "\"version\"\\s*:\\s*\"(\\d+\\.\\d+(?:\\.\\d+)?(?:[-+][\\w.]+)?)\"",
+      "method": "GET",
+      "version_group": 1,
+      "ok_status": [
+        200
+      ],
+      "part": "body",
+      "content_hint": null,
+      "headers": {}
+    },
+    {
+      "name": "generic-version-json",
+      "path": "/version.json",
+      "regex": "\"version\"\\s*:\\s*\"(\\d+\\.\\d+(?:\\.\\d+)?(?:[-+][\\w.]+)?)\"",
+      "method": "GET",
+      "version_group": 1,
+      "ok_status": [
+        200
+      ],
+      "part": "body",
+      "content_hint": null,
+      "headers": {}
+    },
+    {
+      "name": "generic-package-json",
+      "path": "/package.json",
+      "regex": "\"version\"\\s*:\\s*\"(\\d+\\.\\d+(?:\\.\\d+)?(?:[-+][\\w.]+)?)\"",
+      "method": "GET",
+      "version_group": 1,
+      "ok_status": [
+        200
+      ],
+      "part": "body",
+      "content_hint": "\"name\"",
+      "headers": {}
+    },
+    {
+      "name": "Nginx",
+      "path": "/",
+      "regex": "(?im)^server:\\s*openresty/(\\d+\\.\\d+\\.\\d+)\\.\\d+",
+      "method": "GET",
+      "version_group": 1,
+      "ok_status": [
+        200
+      ],
+      "part": "header",
+      "content_hint": null,
+      "headers": {}
+    }
+  ]
+}

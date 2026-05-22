@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-05-13",
+  "source": "https://downloads.wordpress.org/plugin/block-for-font-awesome.zip",
+  "primary_version": "1.7.7",
+  "cross_versions": [],
+  "rule_count": 2,
+  "rules": [
+    {
+      "path": "/block-for-font-awesome.php",
+      "regex": "(?im)^\\s*\\*?\\s*Version\\s*:\\s*([0-9][\\w.\\-]*)",
+      "regex_family": "php header: Version: X.Y.Z",
+      "validated_versions": [
+        "1.7.7"
+      ],
+      "sample_context": {
+        "1.7.7": "on in a Gutenberg block or a custom HTML block.\\n * Version: 1.7.7\\n * Author: Ciprian Popescu\\n * Author URI: https://getbutter"
+      }
+    },
+    {
+      "path": "/readme.txt",
+      "regex": "(?im)^Stable\\s*tag\\s*:\\s*([0-9][\\w.\\-]*)",
+      "regex_family": "wp plugin readme: Stable tag: X.Y.Z",
+      "validated_versions": [
+        "1.7.7"
+      ],
+      "sample_context": {
+        "1.7.7": "east: 6.4\\nTested up to: 6.9.1\\nRequires PHP: 7.1\\nStable tag: 1.7.7\\nLicense: GPLv3\\nLicense URI: https://www.gnu.org/licenses/gp"
+      }
+    }
+  ]
+}

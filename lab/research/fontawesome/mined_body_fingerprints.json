@@ -1,0 +1,358 @@
+{
+  "fetched": 41,
+  "ok": 38,
+  "matched": 35,
+  "sites_with_version_from_body": 31,
+  "findings": [
+    {
+      "host": "769audio.vn",
+      "url": "https://769audio.vn/css/font-awesome.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "4.3.0"
+        }
+      ]
+    },
+    {
+      "host": "abic.com.vn",
+      "url": "https://abic.com.vn/Styles/lib/font-awesome-all.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "5.9.0"
+        }
+      ]
+    },
+    {
+      "host": "acervietnam.com.vn",
+      "url": "https://www.acervietnam.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "5.15.3"
+        }
+      ]
+    },
+    {
+      "host": "acervietnam.com.vn",
+      "url": "https://www.acervietnam.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "5.15.3"
+        }
+      ]
+    },
+    {
+      "host": "acervietnam.com.vn",
+      "url": "https://www.acervietnam.com.vn/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "5.15.3"
+        }
+      ]
+    },
+    {
+      "host": "adoremon.vn",
+      "url": "https://adoremon.vn/Content/themes/css/font-awesome.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "4.4.0"
+        }
+      ]
+    },
+    {
+      "host": "aeonmall-binhtan.com.vn",
+      "url": "https://aeonmall-binhtan.com.vn/assets/css/fontawesome.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "5.15.4"
+        }
+      ]
+    },
+    {
+      "host": "aigato.vn",
+      "url": "https://aigato.vn/fonts/font-awesome/css/font-awesome.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "4.3.0"
+        }
+      ]
+    },
+    {
+      "host": "apag.edu.vn",
+      "url": "https://apag.edu.vn/Content/publishingv2/css/font-awesome.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "4.7.0"
+        }
+      ]
+    },
+    {
+      "host": "aptistests.vn",
+      "url": "https://page.aptistests.vn/public/template/frontend/fontawesome/css/font-awesome.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "4.7.0"
+        }
+      ]
+    },
+    {
+      "host": "avia.vn",
+      "url": "https://vidi.vn/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=1775631036",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "5.15.3"
+        }
+      ]
+    },
+    {
+      "host": "baa.vn",
+      "url": "https://baa.vn/css/font-awesome.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "4.5.0"
+        }
+      ]
+    },
+    {
+      "host": "backorder.inet.vn",
+      "url": "https://backorder.inet.vn/public/css/libs/font-awesome.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "4.7.0"
+        }
+      ]
+    },
+    {
+      "host": "backorder.inet.vn",
+      "url": "https://backorder.inet.vn/public/css/libs/fontawesome-all.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "5.0.4"
+        }
+      ]
+    },
+    {
+      "host": "bacninhtv.vn",
+      "url": "https://bacninhtv.vn/assets/fonts/awesome/font-awesome.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "4.7.0"
+        }
+      ]
+    },
+    {
+      "host": "bagroup.vn",
+      "url": "https://bagps.vn/public/fonts/fontawesome-pro-5.8.2-web/css/all.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "5.8.2"
+        }
+      ]
+    },
+    {
+      "host": "baoanjsc.com.vn",
+      "url": "https://baoanjsc.com.vn/css/font-awesome.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "4.5.0"
+        }
+      ]
+    },
+    {
+      "host": "baocaobang.vn",
+      "url": "https://baocaobang.vn/assets/fonts/awesome/font-awesome.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "4.7.0"
+        }
+      ]
+    },
+    {
+      "host": "baodongnai.com.vn",
+      "url": "https://baodongnai.com.vn/common/fontawesome-pro-5.15.3-web/css/all.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "5.15.4"
+        }
+      ]
+    },
+    {
+      "host": "baohungyen.vn",
+      "url": "https://baohungyen.vn/assets/fonts/awesome/font-awesome.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "4.7.0"
+        }
+      ]
+    },
+    {
+      "host": "baokhanhhoa.vn",
+      "url": "https://baokhanhhoa.vn/common/fontawesome-pro-5.15.3-web/css/all.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "5.15.4"
+        }
+      ]
+    },
+    {
+      "host": "baolangson.vn",
+      "url": "https://baolangson.vn/assets/fonts/awesome/font-awesome.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "4.7.0"
+        }
+      ]
+    },
+    {
+      "host": "baophunuthudo.vn",
+      "url": "https://static.baophunuthudo.vn/web/fonts/fontawesome-pro-5.15.4-web/css/all.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "5.15.4"
+        }
+      ]
+    },
+    {
+      "host": "baoquangninh.vn",
+      "url": "https://baoquangninh.vn/assets/fonts/awesome/font-awesome.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "4.7.0"
+        }
+      ]
+    },
+    {
+      "host": "baotainguyenmoitruong.vn",
+      "url": "https://sf.ex-cdn.com/nongnghiepmoitruong.vn/v0.2.223/templates/themes/css/font-awesome.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "4.7.0"
+        }
+      ]
+    },
+    {
+      "host": "baotainguyenmoitruong.vn",
+      "url": "https://sf.ex-cdn.com/nongnghiepmoitruong.vn/v0.2.223/templates/themes/css/all.css?f=fonts.css%2Bfont-awesome.min.css%2Bthemify-icons.min.css%2Bjquery.bxslider.min.css%2Bjquery.toast.min.css%2Bowl.carousel.min.css%2Bexplus.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "4.7.0"
+        }
+      ]
+    },
+    {
+      "host": "baotayninh.vn",
+      "url": "https://baotayninh.vn/assets/fonts/awesome/font-awesome.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "4.7.0"
+        }
+      ]
+    },
+    {
+      "host": "baothainguyen.vn",
+      "url": "https://baothainguyen.vn/common/fontawesome-pro-5.15.3-web/css/all.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "5.15.4"
+        }
+      ]
+    },
+    {
+      "host": "baothuathienhue.vn",
+      "url": "https://baothuathienhue.vn/Portals/_default/Resource/font-awesome/css/font-awesome.min.css?v=2026.03.15.1",
+      "matches": [
+        {
+          "rx": "fa_comment_version",
+          "version": "4.7.0"
+        }
+      ]
+    },
+    {
+      "host": "baovephapluat.vn",
+      "url": "https://baovephapluat.vn/Portals/_default/Skins/TN/resource/font-awesome/css/font-awesome.min.css?v=84",
+      "matches": [
+        {
+          "rx": "fa_comment_version",
+          "version": "4.7.0"
+        }
+      ]
+    },
+    {
+      "host": "baovietnhantho.com.vn",
+      "url": "https://baovietnhantho.com.vn/fonts/fontawesome/font-awesome.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "4.7.0"
+        }
+      ]
+    },
+    {
+      "host": "batdongsan.com.vn",
+      "url": "https://staticfile.batdongsan.com.vn/css/fontawesomeMSV/css/font-awesome.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "4.4.0"
+        }
+      ]
+    },
+    {
+      "host": "bdu.edu.vn",
+      "url": "https://bdu.edu.vn/assets/css/font-awesome.min.css?t=1704506109",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "4.7.0"
+        }
+      ]
+    },
+    {
+      "host": "benhvien108.vn",
+      "url": "https://benhvien108.vn/bower_components/font-awesome/css/font-awesome.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "4.7.0"
+        }
+      ]
+    },
+    {
+      "host": "benhvienphuongdong.vn",
+      "url": "https://benhvienphuongdong.vn/frontend/css/font-awesome.min.css",
+      "matches": [
+        {
+          "rx": "fa_banner",
+          "version": "4.7.0"
+        }
+      ]
+    }
+  ]
+}

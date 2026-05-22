@@ -1,0 +1,33 @@
+{
+  "rules": [
+    {
+      "id": "fontawesome_banner_version",
+      "section": "banner_rules",
+      "kind": "banner",
+      "pattern": "^/\\*!\\s*\\*\\s+Font Awesome\\s+([\\d.]+)\\s+by\\s+@davegandy",
+      "extracts": {
+        "version": {
+          "g": 1
+        }
+      },
+      "applies_to": "css body",
+      "confidence": "high",
+      "source": {
+        "principle": "This regex captures the version number from the literal comment 'Font Awesome 4.7.0 by @davegandy' at the top of the CSS file.",
+        "citations": [
+          {
+            "file_path": "lab\\research\\fontawesome\\out\\source\\FA-4.7.0\\Font-Awesome-4.7.0\\css\\font-awesome.css",
+            "line_start": 1,
+            "line_end": 30,
+            "content_hash": "0264e8bf3a7efa10fa7741bde82f9f8c072a020da427e4287d6ea13d221ada58"
+          }
+        ]
+      },
+      "_drafter_meta": {
+        "signal_shape": "version in banner comment",
+        "ninth_gate_outcome": "no_near_match",
+        "turns_used": 4
+      }
+    }
+  ]
+}

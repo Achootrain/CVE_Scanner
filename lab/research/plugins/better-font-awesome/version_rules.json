@@ -1,0 +1,97 @@
+{
+  "generated_at": "2026-05-13",
+  "source": "https://downloads.wordpress.org/plugin/better-font-awesome.{tag}.zip",
+  "primary_version": "2.0.4",
+  "cross_versions": [
+    "2.0.3",
+    "2.0.2",
+    "2.0.1"
+  ],
+  "rule_count": 2,
+  "rules": [
+    {
+      "path": "/better-font-awesome.php",
+      "regex": "(?im)^\\s*\\*?\\s*Version\\s*:\\s*([0-9][\\w.\\-]*)",
+      "regex_family": "php header: Version: X.Y.Z",
+      "validated_versions": [
+        "2.0.4",
+        "2.0.1",
+        "2.0.2",
+        "2.0.3"
+      ],
+      "sample_context": {
+        "2.0.4": "nt Awesome icon plugin for WordPress.\\n * Version:           2.0.4\\n * Author:            Mickey Kay\\n * Author URI:        mick",
+        "2.0.3": "nt Awesome icon plugin for WordPress.\\n * Version:           2.0.3\\n * Author:            Mickey Kay\\n * Author URI:        mick",
+        "2.0.2": "nt Awesome icon plugin for WordPress.\\n * Version:           2.0.2\\n * Author:            Mickey Kay\\n * Author URI:        mick",
+        "2.0.1": "nt Awesome icon plugin for WordPress.\\n * Version:           2.0.1\\n * Author:            Mickey Kay\\n * Author URI:        mick"
+      }
+    },
+    {
+      "path": "/readme.txt",
+      "regex": "(?im)^Stable\\s*tag\\s*:\\s*([0-9][\\w.\\-]*)",
+      "regex_family": "wp plugin readme: Stable tag: X.Y.Z",
+      "validated_versions": [
+        "2.0.4",
+        "2.0.1",
+        "2.0.2",
+        "2.0.3"
+      ],
+      "sample_context": {
+        "2.0.4": "y.me\\nRequires at least: 3.0\\nTested up to: 6.7.2\\nStable tag: 2.0.4\\nLicense: GPLv2+\\nLicense URI: http://www.gnu.org/licenses/gp",
+        "2.0.3": "y.me\\nRequires at least: 3.0\\nTested up to: 6.0.2\\nStable tag: 2.0.3\\nLicense: GPLv2+\\nLicense URI: http://www.gnu.org/licenses/gp",
+        "2.0.2": "y.me\\nRequires at least: 3.0\\nTested up to: 6.0.2\\nStable tag: 2.0.2\\nLicense: GPLv2+\\nLicense URI: http://www.gnu.org/licenses/gp",
+        "2.0.1": "y.me\\nRequires at least: 3.0\\nTested up to: 5.6.2\\nStable tag: 2.0.1\\nLicense: GPLv2+\\nLicense URI: http://www.gnu.org/licenses/gp"
+      }
+    }
+  ],
+  "bundled_tech_rules": [
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/vendor/mickey-kay/better-font-awesome-library/lib/font-awesome/less/variables.less",
+      "url_path_template": "/wp-content/plugins/better-font-awesome/vendor/mickey-kay/better-font-awesome-library/lib/font-awesome/less/variables.less",
+      "regex": "(?:\\$|@)fa-version\\s*:\\s*[\"']?([0-9][\\w.\\-]*)",
+      "regex_family": "scss/less variable: $fa-version | @fa-version",
+      "detected_version": "4.7.0"
+    },
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/vendor/mickey-kay/better-font-awesome-library/lib/font-awesome/package.json",
+      "url_path_template": "/wp-content/plugins/better-font-awesome/vendor/mickey-kay/better-font-awesome-library/lib/font-awesome/package.json",
+      "regex": "\"version\"\\s*:\\s*\"([0-9][^\"]*)\"",
+      "regex_family": "json: \"version\": \"X.Y.Z\"",
+      "detected_version": "4.7.0"
+    },
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/vendor/mickey-kay/better-font-awesome-library/lib/font-awesome/scss/_variables.scss",
+      "url_path_template": "/wp-content/plugins/better-font-awesome/vendor/mickey-kay/better-font-awesome-library/lib/font-awesome/scss/_variables.scss",
+      "regex": "(?:\\$|@)fa-version\\s*:\\s*[\"']?([0-9][\\w.\\-]*)",
+      "regex_family": "scss/less variable: $fa-version | @fa-version",
+      "detected_version": "4.7.0"
+    },
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/vendor/mickey-kay/better-font-awesome-library/lib/fontawesome-iconpicker/bower.json",
+      "url_path_template": "/wp-content/plugins/better-font-awesome/vendor/mickey-kay/better-font-awesome-library/lib/fontawesome-iconpicker/bower.json",
+      "regex": "\"version\"\\s*:\\s*\"([0-9][^\"]*)\"",
+      "regex_family": "json: \"version\": \"X.Y.Z\"",
+      "detected_version": "1.2.2"
+    },
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/vendor/mickey-kay/better-font-awesome-library/lib/fontawesome-iconpicker/extension/manifest.json",
+      "url_path_template": "/wp-content/plugins/better-font-awesome/vendor/mickey-kay/better-font-awesome-library/lib/fontawesome-iconpicker/extension/manifest.json",
+      "regex": "\"version\"\\s*:\\s*\"([0-9][^\"]*)\"",
+      "regex_family": "json: \"version\": \"X.Y.Z\"",
+      "detected_version": "1.2.2"
+    },
+    {
+      "bundled_tech": "fontawesome",
+      "plugin_relative_path": "/vendor/mickey-kay/better-font-awesome-library/lib/fontawesome-iconpicker/package.json",
+      "url_path_template": "/wp-content/plugins/better-font-awesome/vendor/mickey-kay/better-font-awesome-library/lib/fontawesome-iconpicker/package.json",
+      "regex": "\"version\"\\s*:\\s*\"([0-9][^\"]*)\"",
+      "regex_family": "json: \"version\": \"X.Y.Z\"",
+      "detected_version": "1.3.0"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+streamlit>=1.30
+pandas>=2.0
+pyyaml>=6.0
+requests>=2.28
+# curl_cffi gives the back-test fetches a real Chrome TLS fingerprint
+# (JA3/JA4) so Cloudflare/Akamai bot management lets them through. Without
+# it the back-test still works but vanilla requests' TLS handshake is a
+# dead giveaway. Heavily recommended for any real-world target sweep.
+curl_cffi>=0.6

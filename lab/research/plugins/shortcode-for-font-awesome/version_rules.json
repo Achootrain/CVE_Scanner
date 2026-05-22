@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-05-13",
+  "source": "https://downloads.wordpress.org/plugin/shortcode-for-font-awesome.{tag}.zip",
+  "primary_version": "1.4.6",
+  "cross_versions": [
+    "1.4.5",
+    "1.4.4",
+    "1.4.3"
+  ],
+  "rule_count": 1,
+  "rules": [
+    {
+      "path": "/shortcode-for-font-awesome.php",
+      "regex": "(?im)^\\s*\\*?\\s*Version\\s*:\\s*([0-9][\\w.\\-]*)",
+      "regex_family": "php header: Version: X.Y.Z",
+      "validated_versions": [
+        "1.4.6",
+        "1.4.3",
+        "1.4.4",
+        "1.4.5"
+      ],
+      "sample_context": {
+        "1.4.6": " size=\"2x\" color=\"#000000\"] anywhere in WordPress\r\\nVersion: 1.4.6\r\\nAuthor: SMG-Webdesign\r\\nAuthor URI: http://www.smg-webdesig",
+        "1.4.5": " size=\"2x\" color=\"#000000\"] anywhere in WordPress\r\\nVersion: 1.4.5\r\\nAuthor: SMG-Webdesign\r\\nAuthor URI: http://www.smg-webdesig",
+        "1.4.4": " size=\"2x\" color=\"#000000\"] anywhere in WordPress\r\\nVersion: 1.4.4\r\\nAuthor: SMG-Webdesign\r\\nAuthor URI: http://www.smg-webdesig",
+        "1.4.3": " size=\"2x\" color=\"#000000\"] anywhere in WordPress\r\\nVersion: 1.4.3\r\\nAuthor: SMG-Webdesign\r\\nAuthor URI: http://www.smg-webdesig"
+      }
+    }
+  ]
+}
