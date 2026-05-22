@@ -1,6 +1,5 @@
 fingerprinter/.pytest_cache
 fingerprinter/fp/__pytest_cache__
-fingerprinter/fingerprints.db
 fingerprinter/cache.json
 fingerprinter/__pycache__/
 fingerprinter/fp/__pycache__/
